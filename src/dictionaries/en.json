@@ -1,0 +1,135 @@
+{
+    "header": {
+        "about": "About",
+        "skills": "Skills",
+        "experience": "Experience",
+        "projects": "Projects",
+        "contact": "Contact Me"
+    },
+    "hero": {
+        "badge": "Junior Dev",
+        "greeting": "Hello 👋! I am",
+        "title": "Daniel (Peridan)",
+        "subtitle": "Internet Systems Student",
+        "description": "Passionate about technology, I love creating beautiful and functional interfaces. Studying at UniALFA and looking for my first professional experience to grow every day!",
+        "projectsBtn": "View Projects",
+        "linkedinBtn": "My LinkedIn",
+        "floatingBadgeLabel": "Student",
+        "floatingBadgeValue": "UniALFA"
+    },
+    "skills": {
+        "title": "Technical Stack",
+        "js": "JavaScript & TypeScript",
+        "react": "React & Next.js",
+        "php": "PHP & Laravel",
+        "java": "Java",
+        "node": "Node.js & NestJS",
+        "db": "Databases (MySQL)",
+        "web": "HTML, CSS & Bootstrap",
+        "tools": "Docker & Trello"
+    },
+    "experience": {
+        "title": "Professional Journey",
+        "job1": {
+            "role": "IT Intern",
+            "company": "Prefeitura Municipal de Umuarama",
+            "date": "Nov 2025 - Present",
+            "description": "On-site and remote technical support. Responsible for computer formatting, configuration, network printer maintenance, and performance optimization of the public sector's tech infrastructure."
+        },
+        "job2": {
+            "role": "IT Technician",
+            "company": "Colégio Geração Cima",
+            "date": "Mar 2025 - Oct 2025",
+            "description": "Computer lab maintenance, device configuration (projectors, Chromecast, Apple TV), and tech support for teachers. Implemented network restrictions for a safer digital environment."
+        },
+        "job3": {
+            "role": "Maintenance Assistant (Tech Support)",
+            "company": "Imppar Importadora Paranaense",
+            "date": "Oct 2024 - Feb 2025",
+            "description": "Focused on maintenance and technical support in the workplace, developing strong problem-solving and interpersonal communication skills."
+        }
+    },
+    "footer": {
+        "copyright": "© 2026 Daniel (Peridan). Crafted with passion and code."
+    },
+    "seo": {
+        "title": "Daniel (Peridan) | Full Stack Developer",
+        "description": "Portfolio of Daniel Satel Pereira (Peridan), Internet Systems student at UniALFA and Developer. Explore my projects, skills, and professional journey.",
+        "keywords": "Developer, Front-end, Back-end, Portfolio, Daniel Satel Pereira, Peridan, React, Next.js, PHP, Laravel, UniALFA"
+    },
+    "projectsSection": {
+        "title": "Featured Projects",
+        "explore": "Explore Project",
+        "viewAll": "See All Projects",
+        "hubTitle": "My Portfolio",
+        "hubSubtitle": "A complete collection of my academic work, professional projects, and freelance experiences."
+    },
+    "projectsData": {
+        "bem-digital": {
+            "title": "Bem-Digital | NGO Hub",
+            "shortDescription": "Donation campaign platform with inventory control and a modular permission system.",
+            "tags": [
+                "Laravel 12",
+                "Tailwind CSS",
+                "MySQL",
+                "Modular"
+            ],
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD1N78pxkriQLRS5sTcEX1gr1RwpZc51iAKew1BVwNoLShkUc8AvZMyRbWCP_Qp--EDooshTH91IkBjuxCx9XL-ySMoCe3U3YbRbzIno-f6_hWaqNq9Fy1oTeoG9mLaR9DqAHyK4i8atbXgAuSW3pzn4HbL5etk7Yd2GWH-lznTh_RqtXs8TUltkvIcIKx72Gpoh6SmOTLZo2Tmy9JVskv51rU2dkyM3zOI1WoI5PWWA_gzmAyfIKL_2rYsolBn2Eo99sKylQHjc3bN",
+            "period": "Academic Project - Advanced Web Development.",
+            "description": "Bem-Digital is a complete platform for institutions to run donation campaigns. It features inventory control, public profiles for NGOs, donation tracking, and collection point management.",
+            "challengesTitle": "Architecture & Challenges",
+            "challenges": "The project required structuring a complex relational database, using polymorphism for photos and a pivot table for a permission system based on Modules and Rules. Working in a 5-person team required strong technical alignment and Git workflow management.",
+            "repoUrl": "https://github.com/DanielSatelPereira/seu-repo-bem-digital",
+            "backButton": "Back to Portfolio"
+        },
+        "fleet-manager": {
+            "title": "FleetManager | Fleet Management",
+            "shortDescription": "Vehicle entry and exit control system with dynamic dashboards per user profile.",
+            "tags": [
+                "Laravel Sail",
+                "Docker",
+                "Maska JS"
+            ],
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDggm4-9MRgDHl7OapNnan9bC4ozB3tdTP_J_RxiIOKIIvKHb7WrUASrc_G8Zys_tbarbwTJqL5JfUY6Lhvvldxb8CnUxNSPUocoobbTI7jPMMmV7vR5Di-LeHj9Y637hceP_lDuKKQBBb7vK0S-vchMuFUIpr4V_UoKjsy9MP_mcB-THvZgTCwzEiDT0jTB5OH7Er-EjTzn53cBCX4i_eNO7u7fL5dNNOMsPIBjW09_XgWx5wngFXuJ1linOiPMlSjiu9jW_8CG-RE",
+            "period": "Developed for the Public Sector (City Hall).",
+            "description": "A robust internal system, nearly at an ERP level, developed for yard logistics control. It implements full management (CRUDs) with soft deletes, real-time yard operations, and unified global search.",
+            "challengesTitle": "Containerization & Accessibility",
+            "challenges": "The application was 100% containerized using Docker and Laravel Sail to ensure environment parity. For UX, I implemented Dark/Light mode persistence, global font resizing control, and dynamic input masks.",
+            "repoUrl": "https://github.com/DanielSatelPereira/seu-repo-frotas-whitelabel",
+            "backButton": "Back to Portfolio"
+        },
+        "chopits": {
+            "title": "Chopits | E-commerce",
+            "shortDescription": "Functional virtual store clone focused on state management and routing.",
+            "tags": [
+                "TypeScript",
+                "React",
+                "Next.js"
+            ],
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAm3C4NmT1uroornwDFiyKaioSqfxFwhiFXPxZf0CCWN7kOWjSDIm0q34VlX-bxdo6WesoR9cbW0XvHWHgq1KCAF7Gsb6NvcTU6zsSRxcdUiJ9G9LIG0eKYPdq24R-NoByAkrI2AKQtWld4PUP6p29gc0-nRQglASVBRD9O0i9B9UWlTCie09Gv_dS9jq_euZOosSRgcYpR4XYubII2WSLHa3SsODBzGGk87dHcy_vbdwJw_waVZKi7VROe33_5WvKVj5qbsQ0NuvmP",
+            "period": "Academic Project - TypeScript Course.",
+            "description": "A robust Front-end application developed to simulate the shopping experience of a large e-commerce, featuring a shopping cart, product listing, and real-time calculations.",
+            "challengesTitle": "Technical Challenges",
+            "challenges": "The main focus was ensuring strict typing with TypeScript throughout the data flow, from product listing to (mocked) cart checkout, ensuring a bug-free runtime application.",
+            "repoUrl": "https://github.com/DanielSatelPereira/chopits",
+            "backButton": "Back to Portfolio"
+        },
+        "tech-store": {
+            "title": "Corporate Website | TechStore",
+            "shortDescription": "Freelance project delivered to a computer hardware store with a modern, responsive design.",
+            "tags": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "UX/UI"
+            ],
+            "image": "http://googleusercontent.com/profile/picture/3",
+            "period": "Professional Freelance Project.",
+            "description": "Development of a complete corporate website with multiple pages (Home, Services, About, Contact) focused on attracting local clients and detailing the maintenance service portfolio.",
+            "challengesTitle": "Value Delivery",
+            "challenges": "The challenge was working end-to-end: from gathering requirements with the client and designing the interface, to coding and optimizing for mobile devices.",
+            "repoUrl": "https://github.com/DanielSatelPereira/freelance-techstore",
+            "backButton": "Back to Portfolio"
+        }
+    }
+}

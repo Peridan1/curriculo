@@ -1,122 +1,84 @@
-# 📄 PeridanDev — Currículo & Portfólio Online
+# 📄 Peridan.dev — Portfólio Online & Currículo
 
-> Currículo online e portfólio profissional desenvolvido com **Laravel** e **Tailwind CSS**, com foco em apresentação clara, organização de projetos e evolução contínua como desenvolvedor.
+> Portfólio profissional bilíngue (PT/EN) desenvolvido com **Next.js (App Router)**, **TypeScript** e **Tailwind CSS v4**. O projeto utiliza rotas dinâmicas e dicionários JSON para internacionalização, focando em alta performance, SEO e escalabilidade.
 
 🌐 **Domínio:** `peridandev.com.br`  
 🚀 **Status:** Em desenvolvimento contínuo
 
----
-
 ## 🧠 Sobre o projeto
 
-Este projeto nasceu com o objetivo de centralizar minha **apresentação profissional**, reunindo:
+Este projeto nasceu com o objetivo de centralizar minha **apresentação profissional**. O grande diferencial técnico desta aplicação é o seu sistema de rotas dinâmicas, que gera páginas de projetos automaticamente a partir de uma base de dados local, eliminando a necessidade de criar arquivos rígidos para cada novo trabalho.
 
-- Informações de perfil e trajetória  
-- Portfólio de projetos acadêmicos e pessoais  
-- Tecnologias que utilizo e estou aprendendo  
-- Contato profissional  
-
-A ideia é manter um site **simples, performático e visualmente consistente**, evitando excesso de complexidade técnica e priorizando clareza para recrutadores e visitantes.
-
----
+A ideia é manter um site **simples, performático e visualmente consistente**, priorizando a clareza para recrutadores e clientes.
 
 ## 🎯 Objetivos principais
 
-- Servir como **currículo online**  
-- Apresentar projetos de forma organizada  
-- Consolidar minha identidade como desenvolvedor  
-- Praticar boas práticas com Laravel  
-- Evoluir o projeto conforme meu crescimento técnico  
-
----
-
-## 🧱 Estrutura do site
-
-- **Home** — Apresentação objetiva e visão geral  
-- **Portfólio** — Projetos acadêmicos e pessoais  
-- **Sobre** — Trajetória, formação e interesses  
-- **Tecnologias** — Stack atual e em aprendizado  
-- **Contato** — Formas de contato profissional  
-
----
+- Servir como **currículo online bilíngue** (Inglês e Português).
+- Apresentar projetos de forma automatizada e organizada.
+- Consolidar minha identidade como desenvolvedor Full Stack.
+- Aplicar conceitos modernos de Engenharia de Software (Componentização e SSR com Next.js).
 
 ## 🛠️ Tecnologias utilizadas
 
-### Back-end
-- PHP 8.3  
-- Laravel 12  
-- Blade Templates  
+### Front-end & Framework
 
-### Front-end
-- Tailwind CSS  
-- HTML5  
-- JavaScript  
+- Next.js 15+ (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS v4
 
-### Ferramentas
-- Composer  
-- Node.js & NPM  
-- Git & GitHub  
+### Funcionalidades Core
 
----
+- **i18n (Internacionalização):** Sistema nativo sem dependências externas, carregando dicionários (`pt.json`, `en.json`) baseado na URL.
+- **Dynamic Routes:** Geração de páginas de portfólio baseada em _slugs_ (`/projetos/[slug]`).
+- **SEO Dinâmico:** Meta tags configuradas dinamicamente para cada idioma e página.
 
-## 🚀 Tecnologias em estudo
+## 🗂️ Estrutura do projeto
 
-- Tailwind CSS (aprofundamento)  
-- Laravel (boas práticas e organização)  
-- TypeScript  
-- Next.js  
-- Node.js (APIs)  
-- Angular  
-- Spring Boot  
-
----
-
-## 🗂️ Estrutura do projeto (Laravel)
-
-```
-curriculo/
+```text
+src/
 ├── app/
-├── public/
-├── resources/
-│   ├── views/
-│   │   ├── home.blade.php
-│   │   ├── portfolio.blade.php
-│   │   ├── sobre.blade.php
-│   │   └── contato.blade.php
-│   └── css/
-├── routes/
-│   └── web.php
-└── README.md
+│   ├── [lang]/
+│   │   ├── projetos/
+│   │   │   └── [slug]/
+│   │   │       └── page.tsx      # Rota dinâmica dos projetos
+│   │   ├── layout.tsx
+│   │   └── page.tsx              # Home principal
+├── components/                   # Componentes modulares (Hero, Header, Skills)
+└── dictionaries/                 # Base de dados de textos e projetos
+    ├── en.json
+    └── pt.json
 ```
-
----
 
 ## 💻 Como rodar o projeto localmente
 
-```bash
-git clone https://github.com/seu-usuario/curriculo.git
-cd curriculo
-composer install
+```Bash
+
+# Clone o repositório
+
+git clone https://github.com/Peridan1/curriculo.git
+
+# Entre na pasta
+
+cd seu-repo-portfolio
+
+# Instale as dependências
+
 npm install
-php artisan key:generate
-php artisan serve
+
+# Rode o servidor de desenvolvimento
+
+npm run dev
+
+# Acesse no navegador: http://localhost:3000/pt
 ```
-
----
-
-## 🌍 Deploy
-
-Hospedado na **Hostinger**, utilizando:
-- PHP 8.3  
-- Domínio próprio (`.com.br`)  
-
----
 
 ## 👤 Autor
 
-**Daniel Satel Pereira**  
-Desenvolvedor iniciante com foco em **Front-End, UX e Web**
+**Daniel Satel Pereira (Peridan)** Desenvolvedor Full Stack com foco em **Interfaces Modernas e Sistemas Escaláveis**
 
-- LinkedIn: https://www.linkedin.com/in/daniel-satel-pereira/  
-- GitHub: https://github.com/DanielSatelPereira  
-- Email: danielsatelpereira@gmail.com  
+LinkedIn: https://www.linkedin.com/in/daniel-satel-pereira/
+
+GitHub: https://github.com/DanielSatelPereira
+
+Email: danielsatelpereira@gmail.com

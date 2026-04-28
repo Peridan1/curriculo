@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+/* =========================================
+   CONFIGURAÇÕES BASE E TEMAS DINÂMICOS
+   ========================================= */
+@layer base {
+    /* Modo Escuro (O seu padrão original e ponto de partida) */
+    :root {
+        --bg-dynamic: #1a1a1b; /* Charcoal Original */
+        --text-dynamic: #ffffff; /* Branco */
+        --pop-dynamic: #fdf57e; /* Amarelo Pop */
+
+        /* Vidro Escuro: Quase transparente (5%) */
+        --card-glass: rgba(255, 255, 255, 0.05);
+        --card-border: rgba(255, 255, 255, 0.1);
+    }
+
+    .light {
+        /* Fundo Azul Acinzentado (Slate 200) - Muito confortável! */
+        --bg-dynamic: #e2e8f0;
+        --text-dynamic: #0f172a; /* Texto super escuro (Slate 900) */
+        --pop-dynamic: #0284c7; /* O Amarelo vira um Azul Céu vibrante no modo claro! */
+
+        /* Vidro Claro: Muito Branco translúcido (60%) para não ficar fosco */
+        --card-glass: rgba(255, 255, 255, 0.6);
+        --card-border: rgba(255, 255, 255, 0.5);
+    }
+
+    body {
+        /* Aplica a fonte Lexend em todo o site por padrão */
+        font-family: "Lexend", sans-serif;
+
+        /* Aplica as variáveis dinâmicas ao fundo e ao texto do site inteiro */
+        background-color: var(--bg-dynamic);
+        color: var(--text-dynamic);
+
+        /* Transição suave (300ms) para que o fundo mude de forma elegante por trás da explosão */
+        transition:
+            background-color 0.3s ease,
+            color 0.3s ease;
+    }
+}
+
+@theme {
+    /* =========================================
+       PALETA DE CORES PRINCIPAL
+       ========================================= */
+    --color-primary: #c4594b;
+    --color-pop-orange: #f0b96b;
+    --color-warm-accent: #75233d;
+
+    /* A MÁGICA: O 'charcoal' e o 'white' não são mais cores fixas.
+       Eles agora apontam para a variável dinâmica definida lá no topo.
+       Isso faz todos os seus cards, fundos e textos trocarem de cor sozinhos! */
+    --color-charcoal: var(--bg-dynamic);
+    --color-white: var(--text-dynamic);
+    --color-pop-yellow: var(--pop-dynamic);
+
+    /* =========================================
+       TIPOGRAFIA E FORMAS
+       ========================================= */
+    --font-display: "Lexend", sans-serif;
+
+    --radius-DEFAULT: 0.25rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-full: 9999px;
+
+    /* =========================================
+       ANIMAÇÕES
+       ========================================= */
+
+    /* 1. O Cinturão Infinito das Habilidades (Marquee) */
+    --animate-marquee: marquee 25s linear infinite;
+
+    @keyframes marquee {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    /* 2. A Explosão de Luz (Dark/Light Mode) */
+    /* A bolinha nasce pequena (scale 0), cresce 150 vezes até cobrir a tela (scale 150)
+       e depois desaparece (opacity 0) para revelar o novo tema por trás. */
+    @keyframes explosion {
+        0% {
+            transform: translate(-50%, -50%) scale(0);
+            opacity: 1;
+        }
+        50% {
+            transform: translate(-50%, -50%) scale(150);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(150);
+            opacity: 0;
+        }
+    }
+
+    @keyframes clipExplosion {
+        0% {
+            clip-path: circle(0px at var(--click-x, 50%) var(--click-y, 50%));
+            opacity: 1;
+        }
+        100% {
+            clip-path: circle(150vw at var(--click-x, 50%) var(--click-y, 50%));
+            opacity: 1;
+        }
+    }
+}
+
+/* =========================================
+   CLASSES CUSTOMIZADAS (COMPONENTES)
+   ========================================= */
+@layer components {
+    /* Glass Nav: Mantemos a cor escura (rgba(26,26,27)) de propósito!
+       Um menu escuro e translúcido no topo de um site claro dá um contraste super premium. */
+    .glass-nav {
+        background: rgba(26, 26, 27, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(253, 245, 126, 0.1);
+    }
+
+    /* O fundo da Hero section agora respeita a variável dinâmica */
+    .hero-bg {
+        background-color: var(--bg-dynamic);
+    }
+
+    /* Linha do tempo da seção de Experiência */
+    .custom-timeline::before {
+        background: linear-gradient(
+            to bottom,
+            transparent,
+            #f0b96b33,
+            transparent
+        );
+    }
+}

@@ -1,0 +1,135 @@
+{
+    "header": {
+        "about": "Sobre",
+        "skills": "Habilidades",
+        "experience": "Experiência",
+        "projects": "Projetos",
+        "contact": "Fale Comigo"
+    },
+    "hero": {
+        "badge": "Dev Iniciante",
+        "greeting": "Olá 👋! Eu sou o",
+        "title": "Daniel (Peridan)",
+        "subtitle": "Estudante de Sistemas para a Internet",
+        "description": "Apaixonado por tecnologia, adoro criar interfaces bonitas e funcionais. A estudar na UniALFA e em busca da minha primeira experiência profissional para evoluir todos os dias!",
+        "projectsBtn": "Ver Projetos",
+        "linkedinBtn": "O Meu LinkedIn",
+        "floatingBadgeLabel": "Estudante",
+        "floatingBadgeValue": "UniALFA"
+    },
+    "skills": {
+        "title": "Minha Stack de Tecnologia",
+        "js": "JavaScript & TypeScript",
+        "react": "React & Next.js",
+        "php": "PHP & Laravel",
+        "java": "Java",
+        "node": "Node.js & NestJS",
+        "db": "Bancos de Dados",
+        "web": "HTML, CSS & Bootstrap",
+        "tools": "Docker & Trello"
+    },
+    "experience": {
+        "title": "Jornada Profissional",
+        "job1": {
+            "role": "Estagiário de TI",
+            "company": "Prefeitura Municipal de Umuarama",
+            "date": "Nov 2025 - Presente",
+            "description": "Atuação com suporte técnico presencial e remoto. Responsável por formatação, configuração de computadores, manutenção de impressoras em rede e otimização de performance do parque tecnológico do setor público."
+        },
+        "job2": {
+            "role": "Técnico de Informática",
+            "company": "Colégio Geração Cima",
+            "date": "Mar 2025 - Out 2025",
+            "description": "Manutenção dos computadores do laboratório escolar, configuração de dispositivos (projetores, Chromecast, Apple TV) e suporte tecnológico aos professores. Implementação de bloqueios de rede para maior segurança digital."
+        },
+        "job3": {
+            "role": "Assistente de Manutenção (Suporte)",
+            "company": "Imppar Importadora Paranaense",
+            "date": "Out 2024 - Fev 2025",
+            "description": "Atuação focada na manutenção e suporte técnico do ambiente de trabalho, desenvolvendo fortes habilidades de resolução de problemas e comunicação interpessoal com a equipe."
+        }
+    },
+    "footer": {
+        "copyright": "© 2026 Daniel (Peridan). Feito com paixão e código."
+    },
+    "seo": {
+        "title": "Daniel (Peridan) | Desenvolvedor Full Stack",
+        "description": "Portfólio de Daniel Satel Pereira (Peridan), estudante de Sistemas para Internet na UniALFA e Desenvolvedor. Veja meus projetos, habilidades e trajetória profissional.",
+        "keywords": "Desenvolvedor, Front-end, Back-end, Portfólio, Daniel Satel Pereira, Peridan, React, Next.js, PHP, Laravel, UniALFA"
+    },
+    "projectsSection": {
+        "title": "Projetos em Destaque",
+        "explore": "Explorar Projeto",
+        "viewAll": "Ver Todos os Projetos",
+        "hubTitle": "O Meu Portfólio",
+        "hubSubtitle": "Uma coleção completa dos meus trabalhos académicos, projetos profissionais e experiências freelance."
+    },
+    "projectsData": {
+        "bem-digital": {
+            "title": "Bem-Digital | Hub de ONGs",
+            "shortDescription": "Plataforma de campanhas de doação com controle de estoque e sistema modular de permissões.",
+            "tags": [
+                "Laravel 12",
+                "Tailwind CSS",
+                "MySQL",
+                "Modular"
+            ],
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD1N78pxkriQLRS5sTcEX1gr1RwpZc51iAKew1BVwNoLShkUc8AvZMyRbWCP_Qp--EDooshTH91IkBjuxCx9XL-ySMoCe3U3YbRbzIno-f6_hWaqNq9Fy1oTeoG9mLaR9DqAHyK4i8atbXgAuSW3pzn4HbL5etk7Yd2GWH-lznTh_RqtXs8TUltkvIcIKx72Gpoh6SmOTLZo2Tmy9JVskv51rU2dkyM3zOI1WoI5PWWA_gzmAyfIKL_2rYsolBn2Eo99sKylQHjc3bN",
+            "period": "Projeto Acadêmico - Desenvolvimento de Sites Avançado.",
+            "description": "O Bem-Digital é um sistema completo e funcional para que instituições realizem campanhas de doação. A plataforma conta com controle de estoque, perfis públicos para ONGs, registro de doações e gestão de pontos de coleta.",
+            "challengesTitle": "Arquitetura e Desafios",
+            "challenges": "O projeto exigiu a estruturação de um banco de dados relacional complexo, utilizando polimorfismo para fotos e uma tabela pivot para um sistema de permissões baseado em Módulos e Regras. Trabalhar em uma equipe de 5 pessoas exigiu forte alinhamento técnico e uso de repositórios Git.",
+            "repoUrl": "https://github.com/DanielSatelPereira/seu-repo-bem-digital",
+            "backButton": "Voltar para o Portfólio"
+        },
+        "fleet-manager": {
+            "title": "FleetManager | Gestão de Frotas",
+            "shortDescription": "Sistema de controle de entrada e saída de veículos com dashboard dinâmica por perfil de usuário.",
+            "tags": [
+                "Laravel Sail",
+                "Docker",
+                "Maska JS"
+            ],
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDggm4-9MRgDHl7OapNnan9bC4ozB3tdTP_J_RxiIOKIIvKHb7WrUASrc_G8Zys_tbarbwTJqL5JfUY6Lhvvldxb8CnUxNSPUocoobbTI7jPMMmV7vR5Di-LeHj9Y637hceP_lDuKKQBBb7vK0S-vchMuFUIpr4V_UoKjsy9MP_mcB-THvZgTCwzEiDT0jTB5OH7Er-EjTzn53cBCX4i_eNO7u7fL5dNNOMsPIBjW09_XgWx5wngFXuJ1linOiPMlSjiu9jW_8CG-RE",
+            "period": "Desenvolvido para uso no Setor Público (Prefeitura).",
+            "description": "Sistema interno robusto, quase no nível de um ERP, desenvolvido para o controle logístico de pátios. Implementa gestão completa (CRUDs) com soft deletes, operação de pátio em tempo real e pesquisa global unificada.",
+            "challengesTitle": "Conteinerização e Acessibilidade",
+            "challenges": "A aplicação foi 100% conteinerizada utilizando Docker e Laravel Sail para garantir paridade de ambientes. Na UX, implementei persistência de Dark/Light mode, controle de redimensionamento de fonte global e máscaras dinâmicas de input.",
+            "repoUrl": "https://github.com/DanielSatelPereira/seu-repo-frotas-whitelabel",
+            "backButton": "Voltar para o Portfólio"
+        },
+        "chopits": {
+            "title": "Chopits | E-commerce",
+            "shortDescription": "Clone funcional de uma loja virtual focado em gerenciamento de estado e rotas.",
+            "tags": [
+                "TypeScript",
+                "React",
+                "Next.js"
+            ],
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAm3C4NmT1uroornwDFiyKaioSqfxFwhiFXPxZf0CCWN7kOWjSDIm0q34VlX-bxdo6WesoR9cbW0XvHWHgq1KCAF7Gsb6NvcTU6zsSRxcdUiJ9G9LIG0eKYPdq24R-NoByAkrI2AKQtWld4PUP6p29gc0-nRQglASVBRD9O0i9B9UWlTCie09Gv_dS9jq_euZOosSRgcYpR4XYubII2WSLHa3SsODBzGGk87dHcy_vbdwJw_waVZKi7VROe33_5WvKVj5qbsQ0NuvmP",
+            "period": "Projeto Acadêmico - Disciplina de TypeScript.",
+            "description": "Uma aplicação Front-end robusta desenvolvida para simular a experiência de compra de um grande e-commerce, com carrinho de compras, listagem de produtos e cálculos em tempo real.",
+            "challengesTitle": "Desafios Técnicos",
+            "challenges": "O principal foco foi garantir a tipagem estrita com TypeScript em todo o fluxo de dados, desde a listagem de produtos até o fechamento (mockado) do carrinho, garantindo uma aplicação sem erros em tempo de execução.",
+            "repoUrl": "https://github.com/DanielSatelPereira/chopits",
+            "backButton": "Voltar para o Portfólio"
+        },
+        "tech-store": {
+            "title": "Site Institucional | TechStore",
+            "shortDescription": "Projeto Freelance entregue para uma loja de informática com design moderno e responsivo.",
+            "tags": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "UX/UI"
+            ],
+            "image": "http://googleusercontent.com/profile/picture/3",
+            "period": "Projeto Freelance Profissional.",
+            "description": "Desenvolvimento de um site institucional completo com múltiplas páginas (Início, Serviços, Sobre, Contato) focado em atrair clientes locais e detalhar o portfólio de serviços de manutenção.",
+            "challengesTitle": "Entrega de Valor",
+            "challenges": "O desafio foi atuar de ponta a ponta: desde o levantamento de requisitos com o cliente, design da interface, até a codificação e otimização para dispositivos móveis.",
+            "repoUrl": "https://github.com/DanielSatelPereira/freelance-techstore",
+            "backButton": "Voltar para o Portfólio"
+        }
+    }
+}
