@@ -43,8 +43,10 @@ ENV HOSTNAME="0.0.0.0"
 RUN addgroup --system --gid 1001 nodejs && \
     adduser --system --uid 1001 nextjs
 
-# Copia apenas os artefatos compilados standalone e estáticos
-COPY --from=builder /app/public ./public
+# Copia os arquivos públicos garantindo a existência do diretório
+RUN mkdir -p ./public
+COPY --from=builder --chown=nextjs:nodejs /app/public ./public
+
 
 # Define as permissões corretas para o diretório .next
 RUN mkdir .next && chown nextjs:nodejs .next
