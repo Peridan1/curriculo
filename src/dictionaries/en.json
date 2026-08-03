@@ -66,6 +66,7 @@
     },
     "projectsData": {
         "bem-digital": {
+            "featured": true,
             "title": "Bem-Digital | NGO Hub",
             "shortDescription": "Donation campaign platform with inventory control and a modular permission system.",
             "tags": [
@@ -83,6 +84,7 @@
             "backButton": "Back to Portfolio"
         },
         "fleet-manager": {
+            "featured": true,
             "title": "FleetManager | Fleet Management",
             "shortDescription": "Vehicle entry and exit control system with dynamic dashboards per user profile.",
             "tags": [
@@ -99,6 +101,7 @@
             "backButton": "Back to Portfolio"
         },
         "chopits": {
+            "featured": true,
             "title": "Chopits | E-commerce",
             "shortDescription": "Functional virtual store clone focused on state management and routing.",
             "tags": [
@@ -115,6 +118,7 @@
             "backButton": "Back to Portfolio"
         },
         "tech-store": {
+            "featured": true,
             "title": "Corporate Website | TechStore",
             "shortDescription": "Freelance project delivered to a computer hardware store with a modern, responsive design.",
             "tags": [

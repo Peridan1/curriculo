@@ -85,24 +85,23 @@ export default function Header({ dict }: HeaderProps) {
                     <select
                         value={currentLang}
                         onChange={handleLanguageChange}
-                        className="bg-transparent border border-white/10 hover:border-pop-yellow/50 text-white px-3 py-2 rounded-lg text-sm font-bold transition-all cursor-pointer outline-none focus:border-pop-yellow appearance-none"
+                        className="bg-transparent border border-white/10 hover:border-pop-yellow/50 text-white px-3 py-2 rounded-lg text-sm font-bold transition-all hover:scale-105 cursor-pointer outline-none focus:border-pop-yellow appearance-none"
                         style={{
                             WebkitAppearance: "none",
                             MozAppearance: "none",
-                        }} // Remove a seta nativa para um design mais limpo
+                        }}
                     >
-                        <option value="en" className="text-charcoal">
+                        <option value="en" className="text-charcoal bg-slate-900">
                             🇺🇸 EN
                         </option>
-                        <option value="pt" className="text-charcoal">
+                        <option value="pt" className="text-charcoal bg-slate-900">
                             🇧🇷 PT
                         </option>
-                        {/* No futuro, pode simplesmente adicionar <option value="es">🇪🇸 ES</option> aqui! */}
                     </select>
 
                     <a
                         href="mailto:danielsatelpereira@gmail.com"
-                        className="bg-primary hover:brightness-110 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20"
+                        className="bg-primary hover:brightness-110 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20 hover:scale-105"
                     >
                         {dict.header.contact}
                     </a>
@@ -111,3 +110,4 @@ export default function Header({ dict }: HeaderProps) {
         </header>
     );
 }
+
