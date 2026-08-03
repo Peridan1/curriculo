@@ -66,6 +66,7 @@
     },
     "projectsData": {
         "bem-digital": {
+            "featured": true,
             "title": "Bem-Digital | Hub de ONGs",
             "shortDescription": "Plataforma de campanhas de doação com controle de estoque e sistema modular de permissões.",
             "tags": [
@@ -83,6 +84,7 @@
             "backButton": "Voltar para o Portfólio"
         },
         "fleet-manager": {
+            "featured": true,
             "title": "FleetManager | Gestão de Frotas",
             "shortDescription": "Sistema de controle de entrada e saída de veículos com dashboard dinâmica por perfil de usuário.",
             "tags": [
@@ -99,6 +101,7 @@
             "backButton": "Voltar para o Portfólio"
         },
         "chopits": {
+            "featured": true,
             "title": "Chopits | E-commerce",
             "shortDescription": "Clone funcional de uma loja virtual focado em gerenciamento de estado e rotas.",
             "tags": [
@@ -115,6 +118,7 @@
             "backButton": "Voltar para o Portfólio"
         },
         "tech-store": {
+            "featured": true,
             "title": "Site Institucional | TechStore",
             "shortDescription": "Projeto Freelance entregue para uma loja de informática com design moderno e responsivo.",
             "tags": [

@@ -1,0 +1,16 @@
+# Dependências e caches de compilação
+Dockerfile
+docker-compose*.yml
+.dockerignore
+node_modules
+npm-debug.log
+.next
+.git
+.gitignore
+.vscode
+.agents
+README.md
+
+# Arquivos locais com segredos
+.env
+.env.*

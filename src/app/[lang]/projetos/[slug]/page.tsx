@@ -28,8 +28,9 @@ export default async function ProjectTemplate({
     const dict = await dictionaries[lang]();
 
     // Procurar o projeto na nossa "Base de Dados" (o ficheiro JSON)
-    // Utilizar type assertion simples para evitar avisos do TypeScript se as chaves forem dinâmicas
-    const projectData = (dict as any).projectsData[slug];
+    const projectsMap = (dict as unknown as { projectsData: Record<string, Record<string, string>> }).projectsData;
+    const projectData = projectsMap?.[slug];
+
 
     // Se a pessoa tentar aceder a um URL que não existe (ex: /projetos/projeto-fantasma), o Next.js mostra a página 404
     if (!projectData) {
