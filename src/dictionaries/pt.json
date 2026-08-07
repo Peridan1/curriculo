@@ -2,138 +2,268 @@
     "header": {
         "about": "Sobre",
         "skills": "Habilidades",
+        "education": "Formação",
         "experience": "Experiência",
         "projects": "Projetos",
         "contact": "Fale Comigo"
     },
     "hero": {
-        "badge": "Dev Iniciante",
+        "badge": "Desenvolvedor Full Stack Júnior",
         "greeting": "Olá 👋! Eu sou o",
-        "title": "Daniel (Peridan)",
-        "subtitle": "Estudante de Sistemas para a Internet",
-        "description": "Apaixonado por tecnologia, adoro criar interfaces bonitas e funcionais. A estudar na UniALFA e em busca da minha primeira experiência profissional para evoluir todos os dias!",
+        "title": "Daniel Satel Pereira",
+        "nickname": "(Peridan)",
+        "subtitle": "Full Stack | PHP, Laravel, Next.js, React & Node.js",
+        "description": "Desenvolvedor Full Stack com sólida base acadêmica em Sistemas para Internet e experiência prática no setor público e privado. Atualmente atuo com desenvolvimento web utilizando PHP/Laravel, aliado a interfaces modernas com React, Next.js e Tailwind CSS. Possuo vivência prévia em suporte técnico e infraestrutura (Mikrotik, Windows Server), o que me proporciona uma visão sistêmica completa, desde a rede até o software entregue ao usuário.",
         "projectsBtn": "Ver Projetos",
-        "linkedinBtn": "O Meu LinkedIn",
-        "floatingBadgeLabel": "Estudante",
-        "floatingBadgeValue": "UniALFA"
-    },
-    "skills": {
-        "title": "Minha Stack de Tecnologia",
-        "js": "JavaScript & TypeScript",
-        "react": "React & Next.js",
-        "php": "PHP & Laravel",
-        "java": "Java",
-        "node": "Node.js & NestJS",
-        "db": "Bancos de Dados",
-        "web": "HTML, CSS & Bootstrap",
-        "tools": "Docker & Trello"
-    },
-    "experience": {
-        "title": "Jornada Profissional",
-        "job1": {
-            "role": "Estagiário de TI",
-            "company": "Prefeitura Municipal de Umuarama",
-            "date": "Nov 2025 - Presente",
-            "description": "Atuação com suporte técnico presencial e remoto. Responsável por formatação, configuração de computadores, manutenção de impressoras em rede e otimização de performance do parque tecnológico do setor público."
-        },
-        "job2": {
-            "role": "Técnico de Informática",
-            "company": "Colégio Geração Cima",
-            "date": "Mar 2025 - Out 2025",
-            "description": "Manutenção dos computadores do laboratório escolar, configuração de dispositivos (projetores, Chromecast, Apple TV) e suporte tecnológico aos professores. Implementação de bloqueios de rede para maior segurança digital."
-        },
-        "job3": {
-            "role": "Assistente de Manutenção (Suporte)",
-            "company": "Imppar Importadora Paranaense",
-            "date": "Out 2024 - Fev 2025",
-            "description": "Atuação focada na manutenção e suporte técnico do ambiente de trabalho, desenvolvendo fortes habilidades de resolução de problemas e comunicação interpessoal com a equipe."
+        "linkedinBtn": "LinkedIn",
+        "githubBtn": "GitHub",
+        "whatsappBtn": "WhatsApp",
+        "floatingBadgeLabel": "Graduação em Andamento",
+        "floatingBadgeValue": "UniALFA (2024 - 2026)",
+        "personalInfo": {
+            "age": "24 anos",
+            "status": "Brasileiro • Solteiro",
+            "location": "Umuarama/PR",
+            "email": "danielsatelpereira@gmail.com",
+            "phone": "(041) 9 9952-1315",
+            "website": "peridandev.com.br"
         }
     },
-    "footer": {
-        "copyright": "© 2026 Daniel (Peridan). Feito com paixão e código."
+    "skills": {
+        "title": "Habilidades Tecnológicas",
+        "subtitle": "Competências técnicas e metodologias aplicadas na criação de soluções robustas de ponta a ponta.",
+        "categories": {
+            "backend": {
+                "name": "Back-end",
+                "items": ["PHP", "Laravel", "Java (Spring Boot)", "Node.js (NestJS)", "Python"]
+            },
+            "frontend": {
+                "name": "Front-end",
+                "items": ["JavaScript", "TypeScript", "React", "Next.js", "React Native", "Tailwind CSS", "HTML5", "CSS3"]
+            },
+            "database": {
+                "name": "Bancos de Dados",
+                "items": ["MySQL", "Modelagem de Dados Relacionais", "Consultas Otimizadas"]
+            },
+            "engineering": {
+                "name": "Engenharia de Software & Metodologias",
+                "items": ["Clean Architecture", "Engenharia de Requisitos", "Documentação de Software", "Metodologias Ágeis (Kanban/Scrum)", "Trello"]
+            },
+            "devops": {
+                "name": "Ferramentas & DevOps",
+                "items": ["Git & GitHub (Conventional Commits)", "Docker (Laravel Sail)", "Composer", "NPM"]
+            }
+        }
     },
-    "seo": {
-        "title": "Daniel (Peridan) | Desenvolvedor Full Stack",
-        "description": "Portfólio de Daniel Satel Pereira (Peridan), estudante de Sistemas para Internet na UniALFA e Desenvolvedor. Veja meus projetos, habilidades e trajetória profissional.",
-        "keywords": "Desenvolvedor, Front-end, Back-end, Portfólio, Daniel Satel Pereira, Peridan, React, Next.js, PHP, Laravel, UniALFA"
+    "education": {
+        "title": "Formação Educacional",
+        "subtitle": "Evolução acadêmica contínua e qualificação técnica internacional.",
+        "items": [
+            {
+                "degree": "Sistemas para Internet (Superior)",
+                "institution": "UniALFA – Umuarama/PR",
+                "period": "2024 – 2026 (Cursando)",
+                "type": "Graduação Superior",
+                "description": "Formação com ênfase em arquitetura web, engenharia de software, modelagem de banco de dados, desenvolvimento Full Stack e soluções corporativas em nuvem."
+            },
+            {
+                "degree": "Inglês Avançado",
+                "institution": "Wizard – Matinhos/PR",
+                "period": "Concluído",
+                "type": "Idioma Estrangeiro",
+                "description": "Domínio avançado da língua inglesa para leitura de documentações técnicas, redação de código e comunicação em ambientes corporativos e globais de TI."
+            }
+        ]
+    },
+    "experience": {
+        "title": "Experiência Profissional",
+        "subtitle": "Trajetória profissional combinando desenvolvimento de software, automação e infraestrutura de TI.",
+        "jobs": [
+            {
+                "role": "Estagiário de T.I (Desenvolvimento de Software e Infraestrutura)",
+                "company": "Prefeitura Municipal de Umuarama",
+                "date": "Novembro/2025 – Atual",
+                "location": "Umuarama/PR",
+                "category": "Setor Público",
+                "description": "Atuação ativa na criação de sistemas internos, destacando-se o Sistema de Controle de Frota, desenvolvido com Laravel, MySQL e Tailwind, utilizando arquitetura conteinerizada (Docker/Sail). Criação de scripts em Python para automação e estudos aplicados em React Native para projetos mobile.",
+                "subSections": [
+                    {
+                        "label": "Desenvolvimento",
+                        "text": "Desenvolvimento e manutenção de aplicações web internas em Laravel, MySQL e Tailwind com Docker/Sail; automações com Python e desenvolvimento de soluções mobile com React Native."
+                    },
+                    {
+                        "label": "Infraestrutura",
+                        "text": "Suporte técnico presencial e remoto, configuração de redes, formatação, diagnóstico de hardware e manutenção do parque tecnológico da prefeitura."
+                    }
+                ],
+                "tags": ["Laravel", "Docker", "Sail", "MySQL", "Tailwind CSS", "Python", "React Native", "Redes"]
+            },
+            {
+                "role": "Assistente de Manutenção e Infraestrutura",
+                "company": "Imppar Importadora Paranaense (Imppar Pneus)",
+                "date": "Outubro/2024 – Fevereiro/2025",
+                "location": "Umuarama/PR",
+                "category": "Setor Privado",
+                "description": "Suporte técnico em informática e redes de internet, manutenções preventivas e rotinas envolvendo Mikrotik e Windows Server.",
+                "subSections": [
+                    {
+                        "label": "Redes & Servidores",
+                        "text": "Gerenciamento de rotinas operacionais com Mikrotik, servidores Windows Server, roteamento e segurança de rede interna."
+                    },
+                    {
+                        "label": "Suporte Operacional",
+                        "text": "Manutenção preventiva e corretiva de equipamentos, resolução ágil de chamados de TI e suporte a usuários da empresa."
+                    }
+                ],
+                "tags": ["Mikrotik", "Windows Server", "Redes de Computadores", "Suporte Técnico", "Manutenção"]
+            },
+            {
+                "role": "Professor e Tradutor de Inglês",
+                "company": "Professor Particular / Freelancer",
+                "date": "2019 – Atual",
+                "location": "Remoto & Presencial",
+                "category": "Freelancer",
+                "description": "Aulas particulares de inglês (nível básico ao intermediário), presencial e síncrona. Habilidade essencial para a leitura de documentações técnicas e atuação no mercado global de TI.",
+                "subSections": [
+                    {
+                        "label": "Comunicação & Ensino",
+                        "text": "Planejamento pedagógico personalizado, tradução de materiais e mentoria individualizada para alunos com foco em conversação e escrita."
+                    }
+                ],
+                "tags": ["Inglês Avançado", "Tradução Técnica", "Comunicação", "Didática", "Mentoria"]
+            }
+        ]
     },
     "projectsSection": {
         "title": "Projetos em Destaque",
-        "explore": "Explorar Projeto",
+        "subtitle": "Aplicações reais, sistemas corporativos e projetos práticos que evidenciam arquitetura sólida e código limpo.",
+        "explore": "Ver Detalhes",
         "viewAll": "Ver Todos os Projetos",
-        "hubTitle": "O Meu Portfólio",
-        "hubSubtitle": "Uma coleção completa dos meus trabalhos académicos, projetos profissionais e experiências freelance."
+        "hubTitle": "Portfólio de Projetos",
+        "hubSubtitle": "Uma coleção completa dos meus projetos acadêmicos, desenvolvimentos profissionais e trabalhos práticos."
     },
     "projectsData": {
         "bem-digital": {
             "featured": true,
-            "title": "Bem-Digital | Hub de ONGs",
-            "shortDescription": "Plataforma de campanhas de doação com controle de estoque e sistema modular de permissões.",
+            "title": "Hub de ONGs (Bem-Digital)",
+            "shortDescription": "Sistema modular e completo em Laravel e MySQL para gestão de campanhas de doação, estoque e doadores.",
             "tags": [
-                "Laravel 12",
+                "Laravel",
+                "Blade",
+                "Alpine.js",
                 "Tailwind CSS",
-                "MySQL",
-                "Modular"
+                "MySQL"
             ],
             "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD1N78pxkriQLRS5sTcEX1gr1RwpZc51iAKew1BVwNoLShkUc8AvZMyRbWCP_Qp--EDooshTH91IkBjuxCx9XL-ySMoCe3U3YbRbzIno-f6_hWaqNq9Fy1oTeoG9mLaR9DqAHyK4i8atbXgAuSW3pzn4HbL5etk7Yd2GWH-lznTh_RqtXs8TUltkvIcIKx72Gpoh6SmOTLZo2Tmy9JVskv51rU2dkyM3zOI1WoI5PWWA_gzmAyfIKL_2rYsolBn2Eo99sKylQHjc3bN",
-            "period": "Projeto Acadêmico - Desenvolvimento de Sites Avançado.",
-            "description": "O Bem-Digital é um sistema completo e funcional para que instituições realizem campanhas de doação. A plataforma conta com controle de estoque, perfis públicos para ONGs, registro de doações e gestão de pontos de coleta.",
-            "challengesTitle": "Arquitetura e Desafios",
-            "challenges": "O projeto exigiu a estruturação de um banco de dados relacional complexo, utilizando polimorfismo para fotos e uma tabela pivot para um sistema de permissões baseado em Módulos e Regras. Trabalhar em uma equipe de 5 pessoas exigiu forte alinhamento técnico e uso de repositórios Git.",
+            "period": "Projeto Acadêmico & Social",
+            "description": "O Bem-Digital é um sistema modular e completo desenvolvido em Laravel (Blade/Alpine.js/Tailwind) e MySQL para gestão de campanhas de doação, controle de estoque e doadores. Permite que instituições sem fins lucrativos gerenciem doações em tempo real com transparência e segurança.",
+            "challengesTitle": "Arquitetura e Desafios de Engenharia",
+            "challenges": "O projeto exigiu a estruturação de um banco de dados relacional complexo, utilizando polimorfismo e tabelas pivot para um sistema de permissões baseado em Módulos e Regras. Trabalho em equipe ágil com repositórios Git, Clean Architecture e boas práticas de Conventional Commits.",
             "repoUrl": "https://github.com/DanielSatelPereira/seu-repo-bem-digital",
-            "backButton": "Voltar para o Portfólio"
+            "backButton": "Voltar para o Início"
         },
         "fleet-manager": {
             "featured": true,
-            "title": "FleetManager | Gestão de Frotas",
-            "shortDescription": "Sistema de controle de entrada e saída de veículos com dashboard dinâmica por perfil de usuário.",
+            "title": "Sistema de Controle de Frota (FleetManager)",
+            "shortDescription": "Sistema conteinerizado em Docker/Sail para gestão de veículos, movimentações e motoristas na prefeitura.",
             "tags": [
                 "Laravel Sail",
                 "Docker",
-                "Maska JS"
+                "MySQL",
+                "Tailwind CSS"
             ],
             "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDggm4-9MRgDHl7OapNnan9bC4ozB3tdTP_J_RxiIOKIIvKHb7WrUASrc_G8Zys_tbarbwTJqL5JfUY6Lhvvldxb8CnUxNSPUocoobbTI7jPMMmV7vR5Di-LeHj9Y637hceP_lDuKKQBBb7vK0S-vchMuFUIpr4V_UoKjsy9MP_mcB-THvZgTCwzEiDT0jTB5OH7Er-EjTzn53cBCX4i_eNO7u7fL5dNNOMsPIBjW09_XgWx5wngFXuJ1linOiPMlSjiu9jW_8CG-RE",
-            "period": "Desenvolvido para uso no Setor Público (Prefeitura).",
-            "description": "Sistema interno robusto, quase no nível de um ERP, desenvolvido para o controle logístico de pátios. Implementa gestão completa (CRUDs) com soft deletes, operação de pátio em tempo real e pesquisa global unificada.",
-            "challengesTitle": "Conteinerização e Acessibilidade",
-            "challenges": "A aplicação foi 100% conteinerizada utilizando Docker e Laravel Sail para garantir paridade de ambientes. Na UX, implementei persistência de Dark/Light mode, controle de redimensionamento de fonte global e máscaras dinâmicas de input.",
-            "repoUrl": "https://github.com/DanielSatelPereira/seu-repo-frotas-whitelabel",
-            "backButton": "Voltar para o Portfólio"
+            "period": "Setor Público – Prefeitura de Umuarama",
+            "description": "Sistema interno robusto desenvolvido para o controle logístico de frotas e pátios públicos. Implementa CRUDs completos com soft deletes, registro em tempo real de saída e chegada de veículos, controle de abastecimento e filtros dinâmicos.",
+            "challengesTitle": "Conteinerização e Desempenho",
+            "challenges": "Ambiente totalmente conteinerizado utilizando Docker e Laravel Sail para garantir paridade total entre desenvolvimento e produção. Interface intuitiva com Tailwind CSS, validação estrita de dados e consultas SQL otimizadas.",
+            "repoUrl": "https://github.com/DanielSatelPereira",
+            "backButton": "Voltar para o Início"
+        },
+        "investment-manager": {
+            "featured": true,
+            "title": "Sistema de Gestão de Investimentos",
+            "shortDescription": "Aplicação em PHP Orientado a Objetos com arquitetura MVC e gráficos interativos de rendimento.",
+            "tags": [
+                "PHP POO",
+                "Arquitetura MVC",
+                "MySQL",
+                "Gráficos Interativos"
+            ],
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAm3C4NmT1uroornwDFiyKaioSqfxFwhiFXPxZf0CCWN7kOWjSDIm0q34VlX-bxdo6WesoR9cbW0XvHWHgq1KCAF7Gsb6NvcTU6zsSRxcdUiJ9G9LIG0eKYPdq24R-NoByAkrI2AKQtWld4PUP6p29gc0-nRQglASVBRD9O0i9B9UWlTCie09Gv_dS9jq_euZOosSRgcYpR4XYubII2WSLHa3SsODBzGGk87dHcy_vbdwJw_waVZKi7VROe33_5WvKVj5qbsQ0NuvmP",
+            "period": "Projeto Acadêmico & Prático",
+            "description": "Aplicação desenvolvida em PHP Orientado a Objetos seguindo rigorosamente a arquitetura MVC (Model-View-Controller). Permite aos usuários registrar investimentos, acompanhar rentabilidade e projetar ganhos com gráficos dinâmicos.",
+            "challengesTitle": "Modelagem Orientada a Objetos e MVC",
+            "challenges": "Separação estrita de responsabilidades entre regras de negócio, persistência de dados e apresentação visual, aplicando princípios de Clean Code, abstração de classes e cálculos financeiros precisos.",
+            "repoUrl": "https://github.com/DanielSatelPereira",
+            "backButton": "Voltar para o Início"
+        },
+        "hackathon-events-api": {
+            "featured": true,
+            "title": "API de Eventos & Front-end Integrado",
+            "shortDescription": "Integração Front-end em PHP consumindo uma API RESTful completa desenvolvida em Node.js.",
+            "tags": [
+                "PHP",
+                "Node.js",
+                "RESTful API",
+                "JSON",
+                "Hackathon"
+            ],
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD1N78pxkriQLRS5sTcEX1gr1RwpZc51iAKew1BVwNoLShkUc8AvZMyRbWCP_Qp--EDooshTH91IkBjuxCx9XL-ySMoCe3U3YbRbzIno-f6_hWaqNq9Fy1oTeoG9mLaR9DqAHyK4i8atbXgAuSW3pzn4HbL5etk7Yd2GWH-lznTh_RqtXs8TUltkvIcIKx72Gpoh6SmOTLZo2Tmy9JVskv51rU2dkyM3zOI1WoI5PWWA_gzmAyfIKL_2rYsolBn2Eo99sKylQHjc3bN",
+            "period": "Projeto de Hackathon",
+            "description": "Solução desenvolvida em maratona de programação para gerenciamento e credenciamento de participantes em eventos acadêmicos e empresariais, com comunicação assíncrona entre serviços.",
+            "challengesTitle": "Consumo de APIs e Integração Assíncrona",
+            "challenges": "Desenvolvimento do back-end em Node.js estruturando endpoints RESTful com autenticação e paginação, além do front-end em PHP consumindo e tratando os fluxos com tratamento preventivo de falhas.",
+            "repoUrl": "https://github.com/DanielSatelPereira",
+            "backButton": "Voltar para o Início"
         },
         "chopits": {
-            "featured": true,
+            "featured": false,
             "title": "Chopits | E-commerce",
-            "shortDescription": "Clone funcional de uma loja virtual focado em gerenciamento de estado e rotas.",
+            "shortDescription": "Clone funcional de uma loja virtual focado em gerenciamento de estado global e rotas dinâmicas.",
             "tags": [
                 "TypeScript",
                 "React",
-                "Next.js"
+                "Next.js",
+                "Tailwind CSS"
             ],
             "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAm3C4NmT1uroornwDFiyKaioSqfxFwhiFXPxZf0CCWN7kOWjSDIm0q34VlX-bxdo6WesoR9cbW0XvHWHgq1KCAF7Gsb6NvcTU6zsSRxcdUiJ9G9LIG0eKYPdq24R-NoByAkrI2AKQtWld4PUP6p29gc0-nRQglASVBRD9O0i9B9UWlTCie09Gv_dS9jq_euZOosSRgcYpR4XYubII2WSLHa3SsODBzGGk87dHcy_vbdwJw_waVZKi7VROe33_5WvKVj5qbsQ0NuvmP",
-            "period": "Projeto Acadêmico - Disciplina de TypeScript.",
-            "description": "Uma aplicação Front-end robusta desenvolvida para simular a experiência de compra de um grande e-commerce, com carrinho de compras, listagem de produtos e cálculos em tempo real.",
-            "challengesTitle": "Desafios Técnicos",
-            "challenges": "O principal foco foi garantir a tipagem estrita com TypeScript em todo o fluxo de dados, desde a listagem de produtos até o fechamento (mockado) do carrinho, garantindo uma aplicação sem erros em tempo de execução.",
+            "period": "Projeto Acadêmico – TypeScript & Next.js",
+            "description": "Uma aplicação Front-end robusta desenvolvida para simular a experiência de compra de um grande e-commerce, com carrinho de compras interativo, listagem de produtos com filtros e cálculos em tempo real.",
+            "challengesTitle": "Tipagem Estrita e Desempenho",
+            "challenges": "O principal foco foi garantir a tipagem estrita com TypeScript em todo o fluxo de dados, eliminando erros em tempo de execução e criando uma interface ultra-rápida com componentes React.",
             "repoUrl": "https://github.com/DanielSatelPereira/chopits",
-            "backButton": "Voltar para o Portfólio"
+            "backButton": "Voltar para o Início"
         },
         "tech-store": {
-            "featured": true,
+            "featured": false,
             "title": "Site Institucional | TechStore",
             "shortDescription": "Projeto Freelance entregue para uma loja de informática com design moderno e responsivo.",
             "tags": [
                 "HTML5",
                 "CSS3",
                 "JavaScript",
-                "UX/UI"
+                "UI/UX Responsivo"
             ],
-            "image": "http://googleusercontent.com/profile/picture/3",
-            "period": "Projeto Freelance Profissional.",
-            "description": "Desenvolvimento de um site institucional completo com múltiplas páginas (Início, Serviços, Sobre, Contato) focado em atrair clientes locais e detalhar o portfólio de serviços de manutenção.",
-            "challengesTitle": "Entrega de Valor",
-            "challenges": "O desafio foi atuar de ponta a ponta: desde o levantamento de requisitos com o cliente, design da interface, até a codificação e otimização para dispositivos móveis.",
-            "repoUrl": "https://github.com/DanielSatelPereira/freelance-techstore",
-            "backButton": "Voltar para o Portfólio"
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDggm4-9MRgDHl7OapNnan9bC4ozB3tdTP_J_RxiIOKIIvKHb7WrUASrc_G8Zys_tbarbwTJqL5JfUY6Lhvvldxb8CnUxNSPUocoobbTI7jPMMmV7vR5Di-LeHj9Y637hceP_lDuKKQBBb7vK0S-vchMuFUIpr4V_UoKjsy9MP_mcB-THvZgTCwzEiDT0jTB5OH7Er-EjTzn53cBCX4i_eNO7u7fL5dNNOMsPIBjW09_XgWx5wngFXuJ1linOiPMlSjiu9jW_8CG-RE",
+            "period": "Projeto Freelance Profissional",
+            "description": "Desenvolvimento de um site institucional completo com múltiplas páginas (Início, Serviços, Sobre, Contato) focado em atrair clientes locais e detalhar o portfólio de serviços de manutenção e venda de equipamentos.",
+            "challengesTitle": "Entrega de Valor e Design Orientado à Conversão",
+            "challenges": "Atuação de ponta a ponta: levantamento de requisitos, arquitetura de informação, desenvolvimento do design responsivo e otimização de velocidade para dispositivos móveis.",
+            "repoUrl": "https://github.com/DanielSatelPereira",
+            "backButton": "Voltar para o Início"
         }
+    },
+    "footer": {
+        "copyright": "© 2026 Daniel Satel Pereira (Peridan). Desenvolvido com Next.js, React e Tailwind CSS.",
+        "location": "Umuarama/PR – Brasil",
+        "quickLinks": "Links Rápidos",
+        "contactMe": "Fale Comigo",
+        "available": "Disponível para novos desafios e projetos"
+    },
+    "seo": {
+        "title": "Daniel Satel Pereira (Peridan) | Desenvolvedor Full Stack",
+        "description": "Portfólio de Daniel Satel Pereira (Peridan), Desenvolvedor Full Stack Júnior e estudante de Sistemas para Internet na UniALFA. Experiência em PHP, Laravel, Next.js, React, Node.js e Docker.",
+        "keywords": "Daniel Satel Pereira, Peridan, Desenvolvedor Full Stack, PHP, Laravel, React, Next.js, TypeScript, Docker, UniALFA, Umuarama, Portfólio"
     }
 }

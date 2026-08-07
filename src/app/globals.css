@@ -1,40 +1,63 @@
 @import "tailwindcss";
 
 /* =========================================
-   CONFIGURAÇÕES BASE E TEMAS DINÂMICOS
+   CONFIGURAÇÕES BASE E TEMAS DINÂMICOS FUTURISTAS
    ========================================= */
 @layer base {
 
-    /* MODO ESCURO (O Padrão) */
+    /* MODO ESCURO FUTURISTA (Deep Obsidian & Cyber Cyan / Matrix Neon) */
     :root {
-        --bg-dynamic: #1a1a1b;
-        /* Seu Charcoal original (mantido para não perder a identidade) */
-        --text-dynamic: #ffffff;
-        /* Branco puro */
+        --bg-dynamic: #07090e;
+        /* Preto cósmico / Obsidian profundo */
+        --bg-surface: #0e121a;
+        /* Superfície elevada para cards */
+        --text-dynamic: #f8fafc;
+        /* Branco puro / Ice */
+        --text-muted: #94a3b8;
+        /* Slate suave para leitura fluida */
 
-        /* O Pop Yellow agora é o seu Volt Green (#DBF227) que brilha no escuro! */
-        --pop-dynamic: #DBF227;
+        /* Cores Neon & Cyber Glow */
+        --cyan-neon: #00f0ff;
+        /* Ciano Elétrico principal */
+        --emerald-neon: #00ff9d;
+        /* Verde Matrix / Glow */
+        --purple-neon: #a855f7;
+        /* Violeta Cyberpunk */
+        --pop-dynamic: #00f0ff;
+        /* Cor de destaque padrão */
 
-        /* Vidro Escuro (translúcido sutil) */
-        --card-glass: rgba(255, 255, 255, 0.05);
-        --card-border: rgba(219, 242, 38, 0.1);
-        /* Borda com leve tom do verde neon */
+        /* Glassmorphism Futurista com Glow */
+        --card-glass: rgba(14, 18, 27, 0.75);
+        --card-border: rgba(0, 240, 255, 0.15);
+        --card-glow: rgba(0, 240, 255, 0.08);
+        --nav-glass: rgba(7, 9, 14, 0.85);
     }
 
-    /* MODO CLARO (O "Green Globe") */
+    /* MODO CLARO FUTURISTA (Cyber Hologram / Ice Clean) */
     .light {
-        /* Fundo Areia/Bege (#D6D58E) - 0% de fadiga visual, leitura de livro! */
-        --bg-dynamic: #D6D58E;
+        --bg-dynamic: #f1f5f9;
+        /* Ice Gray ultra clean */
+        --bg-surface: #ffffff;
+        /* Branco puro */
+        --text-dynamic: #0a0f1d;
+        /* Azul noite profundo */
+        --text-muted: #475569;
+        /* Slate escuro */
 
-        /* Texto Azul Marinho Profundo (#042940) - Contraste super premium */
-        --text-dynamic: #042940;
+        /* Cores de Destaque no Modo Claro */
+        --cyan-neon: #0284c7;
+        /* Azul Elétrico */
+        --emerald-neon: #059669;
+        /* Esmeralda nítido */
+        --purple-neon: #7c3aed;
+        /* Violeta profundo */
+        --pop-dynamic: #0284c7;
 
-        /* O Pop no fundo areia vira o Teal Escuro (#005C53) para os botões e destaques */
-        --pop-dynamic: #005C53;
-
-        /* Vidro Claro: Usamos o fundo marinho com muita transparência para não ficar fosco */
-        --card-glass: rgba(255, 255, 255, 0.35);
-        --card-border: rgba(255, 255, 255, 0.6);
+        /* Glassmorphism Claro */
+        --card-glass: rgba(255, 255, 255, 0.85);
+        --card-border: rgba(2, 132, 199, 0.2);
+        --card-glow: rgba(2, 132, 199, 0.05);
+        --nav-glass: rgba(241, 245, 249, 0.85);
     }
 
     body {
@@ -42,58 +65,63 @@
         background-color: var(--bg-dynamic);
         color: var(--text-dynamic);
         transition: background-color 0.3s ease, color 0.3s ease;
+        background-image: 
+            radial-gradient(circle at 15% 15%, rgba(0, 240, 255, 0.05) 0%, transparent 40%),
+            radial-gradient(circle at 85% 65%, rgba(168, 85, 247, 0.04) 0%, transparent 40%);
+        background-attachment: fixed;
     }
 }
 
 @theme {
     /* =========================================
-       PALETA DE CORES PRINCIPAL
+       PALETA DE CORES FUTURISTA
        ========================================= */
-    /* Primary agora é o Moss Green da sua paleta (#9FC131) */
-    --color-primary: #9FC131;
-    --color-warm-accent: #005C53;
-
-    /* Variáveis Inteligentes */
+    --color-primary: #00f0ff;
+    --color-primary-glow: rgba(0, 240, 255, 0.4);
+    --color-emerald-neon: #00ff9d;
+    --color-purple-neon: #a855f7;
     --color-charcoal: var(--bg-dynamic);
+    --color-surface: var(--bg-surface);
     --color-white: var(--text-dynamic);
     --color-pop-yellow: var(--pop-dynamic);
+    --color-pop-orange: #00ff9d;
 
     --font-display: "Lexend", sans-serif;
 
-    --radius-DEFAULT: 0.25rem;
-    --radius-lg: 0.5rem;
-    --radius-xl: 0.75rem;
+    --radius-DEFAULT: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
     --radius-full: 9999px;
-
-    /* =========================================
-       ANIMAÇÕES (EXPLOSÃO CLIP-PATH)
-       ========================================= */
-    @keyframes clipExplosion {
-        0% {
-            clip-path: circle(0px at var(--click-x, 50%) var(--click-y, 50%));
-            opacity: 1;
-        }
-
-        100% {
-            clip-path: circle(150vw at var(--click-x, 50%) var(--click-y, 50%));
-            opacity: 1;
-        }
-    }
 }
 
 @layer components {
     .glass-nav {
-        /* O menu no topo sempre escuro com blur, otimizado para GPU */
-        background: rgba(4, 41, 64, 0.85);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border-bottom: 1px solid rgba(219, 242, 38, 0.1);
+        background: var(--nav-glass);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--card-border);
         transform: translateZ(0);
         will-change: transform;
     }
 
     .hero-bg {
-        background-color: var(--bg-dynamic);
+        background-color: transparent;
+    }
+
+    /* Brilho neon futurista */
+    .neon-glow {
+        box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+    }
+
+    .neon-border {
+        border-color: var(--card-border);
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .neon-border:hover {
+        border-color: rgba(0, 240, 255, 0.5);
+        box-shadow: 0 0 25px rgba(0, 240, 255, 0.15);
     }
 }
 

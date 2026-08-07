@@ -9,6 +9,7 @@ interface HeaderProps {
         header: {
             about: string;
             skills: string;
+            education?: string;
             experience: string;
             projects: string;
             contact: string;
@@ -20,8 +21,8 @@ export default function Header({ dict }: HeaderProps) {
     const pathname = usePathname();
     const router = useRouter();
 
-    // Descobrir qual é o idioma atual a partir do URL (ex: "/pt/sobre" -> "pt")
-    const currentLang = pathname.split("/")[1] || "en";
+    // Descobrir qual é o idioma atual a partir do URL (ex: "/pt/projetos" -> "pt")
+    const currentLang = pathname.split("/")[1] || "pt";
 
     // Função que lida com a mudança no <select>
     const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -36,40 +37,49 @@ export default function Header({ dict }: HeaderProps) {
     return (
         <header className="fixed top-0 left-0 right-0 z-50 glass-nav">
             <div className="max-w-300 mx-auto px-6 h-20 flex items-center justify-between">
-                {/* Logótipo */}
-                <div className="flex items-center gap-3">
-                    <div className="size-10 bg-primary rounded-lg flex items-center justify-center text-white">
-                        <span className="material-symbols-outlined">
+                {/* Logotipo Futurista */}
+                <Link
+                    href={`/${currentLang}`}
+                    className="flex items-center gap-3 group"
+                >
+                    <div className="size-10 bg-gradient-to-br from-cyan-400 to-emerald-500 rounded-xl flex items-center justify-center text-slate-950 font-black shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                        <span className="material-symbols-outlined text-xl">
                             terminal
                         </span>
                     </div>
-                    <h2 className="text-pop-yellow text-xl font-bold tracking-tight">
-                        Peridan<span className="text-white">.dev</span>
+                    <h2 className="text-cyan-400 text-xl font-black tracking-tight group-hover:text-emerald-400 transition-colors">
+                        Peridan<span className="text-slate-100">.dev</span>
                     </h2>
-                </div>
+                </Link>
 
                 {/* Menu de Navegação */}
-                <nav className="hidden md:flex items-center gap-10">
+                <nav className="hidden lg:flex items-center gap-8">
                     <Link
-                        className="text-white/80 hover:text-pop-yellow transition-colors text-sm font-semibold"
+                        className="text-slate-300 hover:text-cyan-400 transition-colors text-sm font-semibold"
                         href={`/${currentLang}/#about`}
                     >
                         {dict.header.about}
                     </Link>
                     <Link
-                        className="text-white/80 hover:text-pop-yellow transition-colors text-sm font-semibold"
+                        className="text-slate-300 hover:text-cyan-400 transition-colors text-sm font-semibold"
                         href={`/${currentLang}/#skills`}
                     >
                         {dict.header.skills}
                     </Link>
                     <Link
-                        className="text-white/80 hover:text-pop-yellow transition-colors text-sm font-semibold"
+                        className="text-slate-300 hover:text-emerald-400 transition-colors text-sm font-semibold"
+                        href={`/${currentLang}/#education`}
+                    >
+                        {dict.header.education || "Formação"}
+                    </Link>
+                    <Link
+                        className="text-slate-300 hover:text-cyan-400 transition-colors text-sm font-semibold"
                         href={`/${currentLang}/#experience`}
                     >
                         {dict.header.experience}
                     </Link>
                     <Link
-                        className="text-white/80 hover:text-pop-yellow transition-colors text-sm font-semibold"
+                        className="text-slate-300 hover:text-cyan-400 transition-colors text-sm font-semibold"
                         href={`/${currentLang}/projetos`}
                     >
                         {dict.header.projects}
@@ -77,7 +87,7 @@ export default function Header({ dict }: HeaderProps) {
                 </nav>
 
                 {/* Botões: Seletores de Tema e Idioma + Contato */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3">
                     {/* Seletor de Tema */}
                     <ThemeToggle />
 
@@ -85,24 +95,29 @@ export default function Header({ dict }: HeaderProps) {
                     <select
                         value={currentLang}
                         onChange={handleLanguageChange}
-                        className="bg-transparent border border-white/10 hover:border-pop-yellow/50 text-white px-3 py-2 rounded-lg text-sm font-bold transition-all hover:scale-105 cursor-pointer outline-none focus:border-pop-yellow appearance-none"
+                        className="bg-slate-900 border border-cyan-500/30 hover:border-cyan-400 text-slate-100 px-2.5 py-2 rounded-xl text-xs font-bold transition-all hover:scale-105 cursor-pointer outline-none focus:border-cyan-400 appearance-none shadow-sm"
                         style={{
                             WebkitAppearance: "none",
                             MozAppearance: "none",
                         }}
+                        aria-label="Selecionar Idioma"
                     >
-                        <option value="en" className="text-charcoal bg-slate-900">
-                            🇺🇸 EN
-                        </option>
-                        <option value="pt" className="text-charcoal bg-slate-900">
+                        <option value="pt" className="text-slate-100 bg-slate-900">
                             🇧🇷 PT
+                        </option>
+                        <option value="en" className="text-slate-100 bg-slate-900">
+                            🇺🇸 EN
                         </option>
                     </select>
 
+                    {/* Botão de Contato com Gradiente Futurista */}
                     <a
                         href="mailto:danielsatelpereira@gmail.com"
-                        className="bg-primary hover:brightness-110 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20 hover:scale-105"
+                        className="bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 px-5 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all shadow-lg shadow-cyan-500/20 hover:scale-105 hidden sm:inline-flex items-center gap-1.5"
                     >
+                        <span className="material-symbols-outlined text-base">
+                            mail
+                        </span>
                         {dict.header.contact}
                     </a>
                 </div>
@@ -110,4 +125,3 @@ export default function Header({ dict }: HeaderProps) {
         </header>
     );
 }
-
