@@ -1,67 +1,108 @@
-// 1. Contrato com o TypeScript
 interface FooterProps {
     dict: {
         footer: {
             copyright: string;
+            location?: string;
+            quickLinks?: string;
+            contactMe?: string;
+            available?: string;
         };
     };
 }
 
 export default function Footer({ dict }: FooterProps) {
     return (
-        <footer className="bg-charcoal py-12 border-t border-white/10">
-            <div className="max-w-300 mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
-                {/* Logo Padronizada */}
-                <div className="flex items-center gap-3">
-                    <div className="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
-                        <span className="material-symbols-outlined text-sm">
-                            terminal
-                        </span>
+        <footer className="bg-slate-950/80 py-16 border-t border-cyan-500/15 relative overflow-hidden" id="contact">
+            {/* Linha de Neon Superior */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-cyan-500/40 to-transparent"></div>
+
+            <div className="max-w-300 mx-auto px-6">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-12">
+                    {/* Logo e Apresentação */}
+                    <div className="flex flex-col items-center md:items-start gap-3 text-center md:text-left">
+                        <div className="flex items-center gap-3">
+                            <div className="size-9 bg-gradient-to-br from-cyan-400 to-emerald-500 rounded-xl flex items-center justify-center text-slate-950 font-black shadow-md shadow-cyan-500/20">
+                                <span className="material-symbols-outlined text-base">
+                                    terminal
+                                </span>
+                            </div>
+                            <h2 className="text-cyan-400 text-xl font-black">
+                                Peridan<span className="text-slate-100">.dev</span>
+                            </h2>
+                        </div>
+                        <p className="text-slate-400 text-xs max-w-sm leading-relaxed">
+                            Daniel Satel Pereira • Desenvolvedor Full Stack Júnior
+                            <br />
+                            Umuarama/PR – Brasil
+                        </p>
                     </div>
-                    <h2 className="text-pop-yellow text-lg font-bold">
-                        Peridan<span className="text-white">.dev</span>
-                    </h2>
+
+                    {/* Links de Contato e Redes Sociais */}
+                    <div className="flex flex-wrap items-center justify-center gap-3">
+                        {/* E-mail */}
+                        <a
+                            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 border border-cyan-500/20 text-slate-300 hover:text-cyan-400 hover:border-cyan-400 transition-all text-xs font-semibold shadow-sm hover:shadow-cyan-500/10"
+                            href="mailto:danielsatelpereira@gmail.com"
+                            title="Enviar E-mail"
+                        >
+                            <span className="material-symbols-outlined text-sm text-cyan-400">
+                                mail
+                            </span>
+                            danielsatelpereira@gmail.com
+                        </a>
+
+                        {/* WhatsApp */}
+                        <a
+                            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 border border-emerald-500/20 text-slate-300 hover:text-emerald-400 hover:border-emerald-400 transition-all text-xs font-semibold shadow-sm hover:shadow-emerald-500/10"
+                            href="https://wa.me/5541999521315"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="WhatsApp"
+                        >
+                            <span className="material-symbols-outlined text-sm text-emerald-400">
+                                chat
+                            </span>
+                            (041) 9 9952-1315
+                        </a>
+
+                        {/* GitHub */}
+                        <a
+                            className="p-2.5 rounded-xl bg-slate-900 border border-cyan-500/20 text-slate-300 hover:text-cyan-400 hover:border-cyan-400 transition-all shadow-sm hover:shadow-cyan-500/10"
+                            href="https://github.com/DanielSatelPereira"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="GitHub"
+                        >
+                            <span className="material-symbols-outlined text-base">
+                                code
+                            </span>
+                        </a>
+
+                        {/* LinkedIn */}
+                        <a
+                            className="p-2.5 rounded-xl bg-slate-900 border border-cyan-500/20 text-slate-300 hover:text-cyan-400 hover:border-cyan-400 transition-all shadow-sm hover:shadow-cyan-500/10"
+                            href="https://www.linkedin.com/in/daniel-satel-pereira/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="LinkedIn"
+                        >
+                            <span className="material-symbols-outlined text-base">
+                                work
+                            </span>
+                        </a>
+                    </div>
                 </div>
 
-                {/* Texto de Copyright Dinâmico */}
-                <p className="text-white/40 text-sm text-center">
-                    {dict.footer.copyright}
-                </p>
+                <div className="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-center">
+                    {/* Texto de Copyright */}
+                    <p className="text-slate-500 text-xs">
+                        {dict.footer.copyright}
+                    </p>
 
-                {/* Links de Contato Reais */}
-                <div className="flex items-center gap-6">
-                    {/* E-mail */}
-                    <a
-                        className="text-pop-orange hover:text-pop-yellow transition-colors"
-                        href="mailto:danielsatelpereira@gmail.com"
-                        title="Enviar E-mail"
-                    >
-                        <span className="material-symbols-outlined">mail</span>
-                    </a>
-
-                    {/* LinkedIn */}
-                    <a
-                        className="text-pop-orange hover:text-pop-yellow transition-colors"
-                        href="https://www.linkedin.com/in/daniel-satel-pereira/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="LinkedIn"
-                    >
-                        <span className="material-symbols-outlined">work</span>
-                    </a>
-
-                    {/* Instagram */}
-                    <a
-                        className="text-pop-orange hover:text-pop-yellow transition-colors"
-                        href="https://www.instagram.com/daniel_satel_pereira/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Instagram"
-                    >
-                        <span className="material-symbols-outlined">
-                            photo_camera
-                        </span>
-                    </a>
+                    <div className="flex items-center gap-2 text-xs text-cyan-400">
+                        <span className="size-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        {dict.footer.available || "Disponível para novos projetos e oportunidades"}
+                    </div>
                 </div>
             </div>
         </footer>
