@@ -56,5 +56,12 @@ else
     exit 1
 fi
 
+# 6. Atualiza dicionário de palavras do projeto para o corretor ortográfico (cSpell)
+echo -e "\n${CYAN}--- Atualizando Dicionário Ortográfico do Projeto ---${NC}"
+node .agents/scripts/extract-dictionary-words.mjs
+if [ $? -eq 0 ]; then
+    echo -e "${GREEN}[OK]${NC} Dicionário ortográfico sincronizado com sucesso!"
+fi
+
 echo -e "\n${GREEN}=== Projeto e Ambiente 100% Saudáveis e Prontos para Execução! ===${NC}"
 exit 0

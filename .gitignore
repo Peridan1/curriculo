@@ -39,6 +39,7 @@ Thumbs.db
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+!.vscode/custom-dictionary.txt
 .idea/
 
 # TypeScript Cache

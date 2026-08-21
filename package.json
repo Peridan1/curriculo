@@ -6,7 +6,9 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "eslint"
+        "lint": "eslint",
+        "dict:sync": "node .agents/scripts/extract-dictionary-words.mjs",
+        "verify": "./.agents/scripts/verify-project.sh"
     },
     "dependencies": {
         "framer-motion": "^12.38.0",
