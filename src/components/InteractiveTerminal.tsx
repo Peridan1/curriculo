@@ -20,6 +20,20 @@ interface TerminalProps {
                 curriculoText: string;
                 contactText: string;
                 unknownCommand: string;
+                triviaMenu?: string;
+                triviaTech?: string;
+                triviaMusic?: string;
+                triviaMovies?: string;
+                triviaGames?: string;
+                triviaPlaylist?: string;
+                easterEgg42?: string;
+                easterEggPeace?: string;
+                easterEggMatrix?: string;
+                easterEggCoffee?: string;
+                easterEggStarWars?: string;
+                easterEggVim?: string;
+                easterEggRickroll?: string;
+                easterEggDeploy?: string;
             };
         };
     };
@@ -47,7 +61,9 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
         {
             id: "welcome-2",
             type: "output",
-            text: "Type 'help' to see all available commands or click the chips below.",
+            text: lang === "pt"
+                ? "💡 Digite 'help' para ver os comandos ou 'curiosidades' para explorar hobbies e cultura pop!"
+                : "💡 Type 'help' to see commands or 'curiosities' to explore hobbies & pop culture!",
         },
     ]);
 
@@ -81,6 +97,8 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
 
         switch (cmd) {
             case "help":
+            case "ajuda":
+            case "man":
                 newEntries.push({
                     id: `out-${Date.now()}`,
                     type: "output",
@@ -88,6 +106,8 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
                 });
                 break;
             case "whoami":
+            case "bio":
+            case "sobre":
                 newEntries.push({
                     id: `out-${Date.now()}`,
                     type: "output",
@@ -95,6 +115,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
                 });
                 break;
             case "skills":
+            case "habilidades":
                 newEntries.push({
                     id: `out-${Date.now()}`,
                     type: "output",
@@ -102,6 +123,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
                 });
                 break;
             case "stack":
+            case "tecnologias":
                 newEntries.push({
                     id: `out-${Date.now()}`,
                     type: "output",
@@ -109,6 +131,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
                 });
                 break;
             case "projects":
+            case "projetos":
                 newEntries.push({
                     id: `out-${Date.now()}`,
                     type: "output",
@@ -132,11 +155,163 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
                 }, 1000);
                 break;
             case "contact":
+            case "contato":
             case "social":
                 newEntries.push({
                     id: `out-${Date.now()}`,
                     type: "output",
                     text: t.contactText,
+                });
+                break;
+            case "curiosidades":
+            case "curiosities":
+            case "trivia":
+            case "hobbies":
+                newEntries.push({
+                    id: `out-${Date.now()}`,
+                    type: "output",
+                    text: t.triviaMenu || "",
+                });
+                break;
+            case "tech":
+            case "curiosidades tech":
+            case "curiosities tech":
+                newEntries.push({
+                    id: `out-${Date.now()}`,
+                    type: "output",
+                    text: t.triviaTech || "",
+                });
+                break;
+            case "musica":
+            case "music":
+            case "musicas":
+            case "songs":
+            case "curiosidades musica":
+            case "curiosities music":
+                newEntries.push({
+                    id: `out-${Date.now()}`,
+                    type: "output",
+                    text: t.triviaMusic || "",
+                });
+                break;
+            case "filmes":
+            case "movies":
+            case "cinema":
+            case "series":
+            case "curiosidades filmes":
+            case "curiosities movies":
+                newEntries.push({
+                    id: `out-${Date.now()}`,
+                    type: "output",
+                    text: t.triviaMovies || "",
+                });
+                break;
+            case "games":
+            case "jogos":
+            case "curiosidades games":
+            case "curiosities games":
+                newEntries.push({
+                    id: `out-${Date.now()}`,
+                    type: "output",
+                    text: t.triviaGames || "",
+                });
+                break;
+            case "playlist":
+            case "playlists":
+            case "spotify":
+            case "curiosidades playlist":
+            case "curiosities playlist":
+                newEntries.push({
+                    id: `out-${Date.now()}`,
+                    type: "output",
+                    text: t.triviaPlaylist || "",
+                });
+                break;
+            case "42":
+            case "universe":
+            case "universo":
+            case "mochileiro":
+            case "towel":
+            case "toalha":
+                newEntries.push({
+                    id: `out-${Date.now()}`,
+                    type: "output",
+                    text: t.easterEgg42 || "",
+                });
+                break;
+            case "viemos em paz":
+            case "viemos empaz":
+            case "we come in peace":
+            case "peace":
+            case "alien":
+            case "et":
+                newEntries.push({
+                    id: `out-${Date.now()}`,
+                    type: "output",
+                    text: t.easterEggPeace || "",
+                });
+                break;
+            case "matrix":
+            case "neo":
+            case "morpheus":
+            case "rabbit":
+            case "pill":
+                newEntries.push({
+                    id: `out-${Date.now()}`,
+                    type: "output",
+                    text: t.easterEggMatrix || "",
+                });
+                break;
+            case "coffee":
+            case "cafe":
+            case "café":
+            case "cafeina":
+                newEntries.push({
+                    id: `out-${Date.now()}`,
+                    type: "output",
+                    text: t.easterEggCoffee || "",
+                });
+                break;
+            case "starwars":
+            case "star wars":
+            case "yoda":
+            case "force":
+            case "jedi":
+                newEntries.push({
+                    id: `out-${Date.now()}`,
+                    type: "output",
+                    text: t.easterEggStarWars || "",
+                });
+                break;
+            case "vim":
+            case "exit":
+            case "quit":
+            case ":q":
+            case ":wq":
+            case ":q!":
+                newEntries.push({
+                    id: `out-${Date.now()}`,
+                    type: "output",
+                    text: t.easterEggVim || "",
+                });
+                break;
+            case "rickroll":
+            case "rick":
+            case "astley":
+                newEntries.push({
+                    id: `out-${Date.now()}`,
+                    type: "output",
+                    text: t.easterEggRickroll || "",
+                });
+                break;
+            case "git push --force":
+            case "git push -f":
+            case "force-push":
+            case "deploy":
+                newEntries.push({
+                    id: `out-${Date.now()}`,
+                    type: "output",
+                    text: t.easterEggDeploy || "",
                 });
                 break;
             case "date":
@@ -151,6 +326,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
                 });
                 break;
             case "sudo":
+            case "su":
                 newEntries.push({
                     id: `out-${Date.now()}`,
                     type: "output",
@@ -178,17 +354,18 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
     const shortcutChips = [
         { label: "whoami", cmd: "whoami" },
         { label: "skills", cmd: "skills" },
-        { label: "stack", cmd: "stack" },
+        { label: lang === "pt" ? "curiosidades" : "curiosities", cmd: lang === "pt" ? "curiosidades" : "curiosities" },
         { label: "projects", cmd: "projects" },
         { label: "curriculo", cmd: "curriculo" },
         { label: "contact", cmd: "contact" },
+        { label: "42", cmd: "42" },
         { label: "clear", cmd: "clear" },
     ];
 
     return (
-        <div className="w-full rounded-3xl overflow-hidden border border-slate-300 dark:border-cyan-500/30 bg-slate-950 text-slate-100 shadow-2xl shadow-cyan-500/10 font-mono flex flex-col">
+        <div className="w-full h-full rounded-3xl overflow-hidden border border-slate-300 dark:border-cyan-500/30 bg-slate-950 text-slate-100 shadow-2xl shadow-cyan-500/10 font-mono flex flex-col justify-between">
             {/* Barra Superior do Terminal */}
-            <div className="bg-slate-900 px-4 py-3 border-b border-slate-800 flex items-center justify-between select-none">
+            <div className="bg-slate-900 px-4 py-3 border-b border-slate-800 flex items-center justify-between select-none shrink-0">
                 <div className="flex items-center gap-2">
                     <span className="size-3 rounded-full bg-rose-500 inline-block"></span>
                     <span className="size-3 rounded-full bg-amber-500 inline-block"></span>
@@ -208,7 +385,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             {/* Corpo do Terminal (Histórico de Saída) */}
             <div
                 ref={terminalBodyRef}
-                className="p-5 overflow-y-auto max-h-90 min-h-55 text-xs sm:text-sm space-y-3 leading-relaxed"
+                className="grow p-5 overflow-y-auto min-h-60 max-h-80 lg:max-h-96 text-xs sm:text-sm space-y-3 leading-relaxed"
                 onClick={() => inputRef.current?.focus()}
             >
                 {history.map((item) => {
@@ -245,7 +422,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             </div>
 
             {/* Barra de Atalhos Rápidos */}
-            <div className="bg-slate-900/90 border-t border-slate-800 px-4 py-2 flex items-center gap-1.5 overflow-x-auto scrollbar-none">
+            <div className="bg-slate-900/90 border-t border-slate-800 px-4 py-2 flex items-center gap-1.5 overflow-x-auto scrollbar-none shrink-0">
                 <span className="text-[11px] font-bold text-slate-400 shrink-0 mr-1">
                     {t.shortcutsLabel}
                 </span>
@@ -263,7 +440,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             {/* Linha de Comando / Input */}
             <form
                 onSubmit={handleSubmit}
-                className="bg-slate-950 p-4 border-t border-slate-800 flex items-center gap-2"
+                className="bg-slate-950 p-4 border-t border-slate-800 flex items-center gap-2 shrink-0"
             >
                 <span className="text-emerald-400 font-black text-sm sm:text-base select-none">
                     peridan@dev:~$
@@ -283,7 +460,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
                     type="submit"
                     className="px-3 py-1.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-black text-xs transition-all cursor-pointer shadow-md shadow-cyan-500/20 shrink-0"
                 >
-                    Enter
+                    Exec
                 </button>
             </form>
         </div>
