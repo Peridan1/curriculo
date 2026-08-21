@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="gradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="shadowLight" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0284c7" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <!-- Background Squircle Clean com borda definida -->
+  <rect x="3" y="3" width="58" height="58" rx="16" ry="16" fill="#f8fafc" stroke="url(#gradLight)" stroke-width="2.5" />
+  
+  <!-- Linha de terminal decorativa suave -->
+  <path d="M11 20 L16 25 L11 30" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5" />
+  
+  <!-- Tipografia Monograma PD -->
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="28" letter-spacing="-1.5">
+    <text x="17" y="43" fill="#0284c7">p</text>
+    <text x="33" y="43" fill="#0f172a">d</text>
+  </g>
+  
+  <!-- Ponto neon de status ativo -->
+  <circle cx="51" cy="41" r="3.5" fill="#059669" />
+</svg>

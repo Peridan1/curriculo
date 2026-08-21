@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, "../../");
 
-const targetDirs = ["src", ".agents", ".vscode"];
+const targetDirs = ["src", ".agents", ".vscode", "public"];
 const targetFiles = [
     "README.md",
     "package.json",
@@ -30,7 +30,7 @@ function scanDirectory(dirPath) {
         if (entry.isDirectory()) {
             if (entry.name === "node_modules" || entry.name === ".git" || entry.name === ".next") continue;
             scanDirectory(path.relative(rootDir, fullPath));
-        } else if (/\.(md|ts|tsx|js|mjs|json|sh|css)$/.test(entry.name)) {
+        } else if (/\.(md|ts|tsx|js|mjs|json|sh|css|svg)$/.test(entry.name)) {
             allFiles.push(fullPath);
         }
     }

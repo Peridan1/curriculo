@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "../components/ThemeProvider";
+import DynamicFavicon from "../components/DynamicFavicon";
 
 export const metadata: Metadata = {
     title: "Curriculo - Peridan",
-    description: "Curriculo criado por Daniel Satel Pereira(Peridan)",
+    description: "Portfólio & Currículo de Daniel Satel Pereira (Peridan)",
+    icons: {
+        icon: [
+            {
+                url: "/icon.svg",
+                type: "image/svg+xml",
+            },
+        ],
+    },
 };
-
 
 export default function RootLayout({
     children,
@@ -26,7 +34,10 @@ export default function RootLayout({
                 />
             </head>
             <body className="antialiased">
-                <ThemeProvider>{children}</ThemeProvider>
+                <ThemeProvider>
+                    <DynamicFavicon />
+                    {children}
+                </ThemeProvider>
             </body>
         </html>
     );

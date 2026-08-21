@@ -281,7 +281,9 @@ appear
 appearance
 appeared
 appears
+appendChild
 appgroup
+apple
 applicable
 application
 Application
@@ -451,6 +453,7 @@ backdrop
 backend
 Backend
 background
+Background
 backgroundImage
 backHome
 backup
@@ -1157,6 +1160,7 @@ CPU
 cpus
 create
 Created
+createElement
 createProject
 creates
 createSessionWorktree
@@ -1279,6 +1283,7 @@ Decisions
 declarar
 Declare
 declare
+decorativa
 dedicada
 Deep
 deep
@@ -1296,10 +1301,12 @@ Defina
 define
 Define
 defineConfig
+definida
 definidas
 definidos
 Definir
 definir
+defs
 degree
 Degree
 deixa
@@ -1533,6 +1540,7 @@ Dockerfile
 dockerfile
 dockerignore
 docs
+document
 Document
 Documentação
 documentação
@@ -1586,6 +1594,7 @@ Dúvidas
 dúvidas
 dynamic
 Dynamic
+DynamicFavicon
 each
 Each
 earnings
@@ -1932,6 +1941,7 @@ existência
 existente
 existentes
 existing
+existingLinks
 existir
 exists
 existsSync
@@ -2047,6 +2057,7 @@ featuredProjects
 Features
 featuring
 February
+feDropShadow
 feedback
 feeds
 feel
@@ -2069,6 +2080,7 @@ files
 FILES
 fileURLToPath
 filhos
+fill
 FILL
 fillcolor
 filled
@@ -2112,6 +2124,7 @@ flex
 flexibilidade
 floatingBadgeLabel
 floatingBadgeValue
+flood
 flow
 Flow
 Flowchart
@@ -2368,9 +2381,11 @@ Got
 got
 Gpoh
 GPU
+gradDark
 Grade
 gradient
 Gradientes
+gradLight
 Graduação
 graduações
 gráficos
@@ -2502,9 +2517,10 @@ html
 HTML
 HTMLDivElement
 HTMLInputElement
+HTMLLinkElement
 HTMLSelectElement
-HTTP
 http
+HTTP
 https
 Hub
 hubSubtitle
@@ -2528,6 +2544,7 @@ ico
 icon
 Ícone
 ícones
+iconHref
 icons
 IDE
 ideia
@@ -2919,6 +2936,7 @@ Ler
 let
 Let
 letras
+letter
 levantamento
 levará
 Leve
@@ -2953,6 +2971,9 @@ limpo
 limpos
 line
 linear
+linearGradient
+linecap
+linejoin
 língua
 Língua
 linguagem
@@ -3243,6 +3264,7 @@ monitoramento
 Monitoramento
 monitoring
 mono
+Monograma
 Monta
 Montagem
 montagem
@@ -3373,6 +3395,7 @@ NEVER
 new
 newEntries
 newLang
+newLink
 next
 Next
 NEXT
@@ -3507,6 +3530,7 @@ ofereça
 ofereço
 off
 Official
+offset
 Oficial
 Olá
 old
@@ -3560,6 +3584,7 @@ Ordenação
 ordenadas
 ordenado
 order
+org
 organizada
 organizations
 orienta
@@ -3868,9 +3893,9 @@ PORT
 Porta
 portas
 Portas
+Portfólio
 Portfolio
 portfolio
-Portfólio
 portfólio
 ports
 Português
@@ -4156,6 +4181,7 @@ quer
 queries
 Query
 query
+querySelectorAll
 Question
 questione
 Questione
@@ -4249,6 +4275,7 @@ Record
 recruitment
 recrutadores
 recrutamento
+rect
 Recupera
 recursos
 Recursos
@@ -4379,6 +4406,7 @@ Resolução
 resolution
 resolve
 resolvedParams
+resolvedTheme
 resolveJsonModule
 resolvida
 resolvido
@@ -4458,6 +4486,7 @@ risca
 risk
 Risk
 Robot
+Roboto
 robust
 Robust
 robusta
@@ -4488,6 +4517,7 @@ roteadores
 roteamento
 rotina
 rotinas
+round
 rounded
 Route
 router
@@ -4549,6 +4579,7 @@ scenario
 Scenario
 scenarios
 schedule
+scheme
 school
 Sci
 Scope
@@ -4595,6 +4626,7 @@ seem
 seems
 seen
 segments
+Segoe
 segredos
 Segredos
 seguida
@@ -4693,6 +4725,8 @@ Seu
 seus
 sexta
 shadow
+shadowDark
+shadowLight
 shaking
 shape
 share
@@ -4854,6 +4888,7 @@ soundtracks
 source
 Source
 space
+spacing
 span
 Specialized
 specific
@@ -4865,6 +4900,7 @@ split
 spotify
 Spring
 SQL
+Squircle
 src
 SRP
 SSG
@@ -4896,6 +4932,7 @@ status
 Status
 stay
 sTcEX
+stdDeviation
 steps
 still
 stop
@@ -4917,6 +4954,7 @@ Strict
 strictly
 string
 String
+stroke
 Structural
 Structure
 structured
@@ -4988,6 +5026,7 @@ swap
 Swarm
 switch
 switches
+sym
 symbols
 Symbols
 symptom
@@ -5085,6 +5124,7 @@ tentou
 teoria
 ter
 terceiros
+term
 terminal
 Terminal
 terminalBodyRef
@@ -5510,6 +5550,7 @@ VIEMOS
 View
 view
 viewAll
+viewBox
 viewport
 vim
 Vim
@@ -5581,6 +5622,7 @@ WebkitOverflowScrolling
 website
 Website
 week
+weight
 welcome
 Welcome
 were
@@ -5653,6 +5695,8 @@ WSLHa
 WvKVj
 www
 XgWx
+xml
+xmlns
 XvHWHgq
 XYubII
 yaml
