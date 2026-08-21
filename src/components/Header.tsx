@@ -37,7 +37,7 @@ export default function Header({ dict }: HeaderProps) {
     };
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 glass-nav print:hidden">
+        <header className="fixed top-0 left-0 right-0 z-50 glass-nav shadow-xs dark:shadow-none print:hidden">
             <div className="max-w-300 mx-auto px-6 h-20 flex items-center justify-between">
                 {/* Logotipo */}
                 <Link
@@ -57,14 +57,14 @@ export default function Header({ dict }: HeaderProps) {
                 {/* Menu de Navegação Principal */}
                 <nav className="hidden md:flex items-center gap-7">
                     <Link
-                        className="text-slate-800 dark:text-slate-300 hover:text-cyan-700 dark:hover:text-cyan-400 transition-colors text-sm font-bold"
+                        className="text-slate-950 dark:text-slate-200 hover:text-cyan-700 dark:hover:text-cyan-400 transition-colors text-sm font-black tracking-tight"
                         href={`/${currentLang}`}
                     >
                         {dict.header.home || "Início"}
                     </Link>
 
                     <Link
-                        className="text-slate-800 dark:text-slate-300 hover:text-cyan-700 dark:hover:text-cyan-400 transition-colors text-sm font-bold"
+                        className="text-slate-950 dark:text-slate-200 hover:text-cyan-700 dark:hover:text-cyan-400 transition-colors text-sm font-black tracking-tight"
                         href={`/${currentLang}/projetos`}
                     >
                         {dict.header.projects}
@@ -72,7 +72,7 @@ export default function Header({ dict }: HeaderProps) {
 
                     {/* Link para o Currículo com destaque visual */}
                     <Link
-                        className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-cyan-100/90 dark:bg-cyan-500/10 text-cyan-950 dark:text-cyan-300 border border-cyan-300 dark:border-cyan-500/30 hover:bg-cyan-200 dark:hover:bg-cyan-500/20 transition-all text-xs font-black shadow-xs hover:scale-105"
+                        className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-cyan-100 dark:bg-cyan-500/10 text-cyan-950 dark:text-cyan-300 border-2 border-cyan-400 dark:border-cyan-500/30 hover:bg-cyan-200 dark:hover:bg-cyan-500/20 transition-all text-xs font-black shadow-xs hover:scale-105"
                         href={`/${currentLang}/curriculo`}
                     >
                         <span className="material-symbols-outlined text-base">
@@ -91,7 +91,7 @@ export default function Header({ dict }: HeaderProps) {
                     <select
                         value={currentLang}
                         onChange={handleLanguageChange}
-                        className="bg-slate-200/80 dark:bg-slate-900 border border-slate-300 dark:border-cyan-500/30 hover:border-cyan-500 text-slate-900 dark:text-slate-100 px-2.5 py-2 rounded-xl text-xs font-bold transition-all hover:scale-105 cursor-pointer outline-none focus:border-cyan-500 appearance-none shadow-sm"
+                        className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-900 border border-slate-300 dark:border-cyan-500/30 hover:border-cyan-600 text-slate-950 dark:text-slate-100 px-2.5 py-2 rounded-xl text-xs font-black transition-all hover:scale-105 cursor-pointer outline-none focus:border-cyan-600 appearance-none shadow-xs"
                         style={{
                             WebkitAppearance: "none",
                             MozAppearance: "none",

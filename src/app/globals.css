@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Configuração do Tailwind CSS v4 para suporte a tema via classe (.dark) com next-themes */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* =========================================
    CONFIGURAÇÕES BASE E TEMAS DINÂMICOS
    ========================================= */
@@ -38,8 +41,8 @@
         /* Branco puro */
         --text-dynamic: #0f172a;
         /* Slate 900 de altíssimo contraste */
-        --text-muted: #334155;
-        /* Slate 700 para leitura confortável e nítida */
+        --text-muted: #1e293b;
+        /* Slate 800 para leitura confortável e nítida */
 
         /* Cores de Destaque no Modo Claro */
         --cyan-neon: #0284c7;
@@ -47,11 +50,11 @@
         --purple-neon: #7c3aed;
         --pop-dynamic: #0284c7;
 
-        /* Glassmorphism Claro */
-        --card-glass: rgba(255, 255, 255, 0.85);
-        --card-border: rgba(2, 132, 199, 0.2);
-        --card-glow: rgba(2, 132, 199, 0.05);
-        --nav-glass: rgba(248, 250, 252, 0.85);
+        /* Glassmorphism Claro - Fundo mais escuro/encorpado e contrastante */
+        --card-glass: rgba(255, 255, 255, 0.95);
+        --card-border: rgba(148, 163, 184, 0.35);
+        --card-glow: rgba(2, 132, 199, 0.08);
+        --nav-glass: rgba(226, 232, 240, 0.94);
     }
 
     body {
