@@ -1,86 +1,65 @@
-# Padrões Arquiteturais e Padrão de Código (Admin Conselhos)
+# Padrões Arquiteturais e Estrutura de Código (Next.js 16 + React 19)
 
-Este documento especifica os padrões de design de código, arquitetura de visualizações (Twig) e convenções visuais adotados no projeto Admin Conselhos.
-
----
-
-## 1. Padrão de Listagem de Dados (Views Twig)
-
-As telas de listagem de registros (ex: `index.twig`) devem seguir uma estrutura visual unificada baseada no Bootstrap 4 e Limitless Admin Template.
-
-### Estrutura do Layout
-- **Layout Base**: Estender `{% extends "layout/default.twig" %}` e definir `{% block title %} Nome do Recurso {% endblock %}`.
-- **Scripts**: Incluir os scripts necessários na seção de scripts (ex: `{% include "layout/scripts_table.twig" %}`).
-- **Cabeçalho da Página**: Utilizar a estrutura de Page Header do Limitless:
-  ```html
-  <div class="page-header page-header-light">
-      <div class="page-header-content header-elements-md-inline">
-          <div class="page-title d-flex">
-              <h4><span class="font-weight-semibold">Relatório de [Recurso]</span></h4>
-          </div>
-      </div>
-      <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-          <div class="d-flex">
-              <div class="breadcrumb">
-                  <a class="breadcrumb-item" href="{{ path_for('home') }}"><i class="icon-home2 mr-2"></i> Home</a>
-                  <span class="breadcrumb-item active">[Recurso]</span>
-              </div>
-          </div>
-      </div>
-  </div>
-  ```
-
-### Estrutura da Tabela e Ações
-- **Container**: Envolto em uma `.card`.
-- **Tabela**:
-  ```html
-  <table class="table table-bordered table-hover datatable-button-html5-columns">
-      <thead>
-          <tr>
-              <th>Coluna 1</th>
-              <th style="width: 100px;">Ações</th>
-          </tr>
-      </thead>
-      <tbody>
-          {% for item in itens %}
-              <tr>
-                  <td>{{ item.coluna1 }}</td>
-                  <td class="text-center">
-                      {# Renderização das Ações (dropdown) #}
-                      {% include 'components/table-actions.twig' with {
-                          'actions': [
-                              { 'url': path_for('form-[recurso]', { 'id': item.id }), 'icon': 'icon-pencil7', 'label': 'Editar' }
-                          ]
-                      } %}
-                  </td>
-              </tr>
-          {% endfor %}
-      </tbody>
-  </table>
-  ```
+Este documento especifica a arquitetura técnica, divisão de responsabilidades e convenções de código adotadas no projeto **Curriculo / Portfólio Peridan.dev**.
 
 ---
 
-## 2. Padrão de Formulários (Views Twig)
+## 1. Arquitetura Base (Next.js 16 App Router)
 
-As telas de cadastro/edição (ex: `cadastrar.twig`) devem priorizar os componentes reutilizáveis.
+A aplicação utiliza o **Next.js 16 (App Router)** com **React 19** e **TypeScript**, estruturada sob a pasta `src/`:
 
-### Componentes de Entrada
-* **Campos de Texto**: Usar `{% include 'components/input.twig' with { ... } %}`.
-* **Seleções**: Usar `{% include 'components/select.twig' with { ... } %}`.
-* **Caixas de Texto**: Usar `{% include 'components/textarea.twig' with { ... } %}`.
-* **Rodapé do Formulário**: Usar `{{ include('sections/form-submit.twig') }}` para consistência nos botões de envio.
+```text
+src/
+├── app/
+│   ├── [lang]/                  # Rotas internacionalizadas
+│   │   ├── page.tsx             # Página inicial (Hero, Skills, Experience, Education, Projects)
+│   │   ├── projetos/
+│   │   │   ├── page.tsx         # Listagem completa de projetos
+│   │   │   └── [slug]/
+│   │   │       └── page.tsx     # Detalhes individuais do projeto
+│   │   └── layout.tsx           # Layout com Header, Footer e ThemeProvider
+│   ├── globals.css              # Variáveis CSS semânticas e TailwindCSS v4
+│   └── favicon.ico
+├── components/                  # Componentes reutilizáveis de UI
+│   ├── Header.tsx               # Barra de navegação e controles
+│   ├── Hero.tsx                 # Seção principal de introdução
+│   ├── Skills.tsx               # Grade de habilidades técnicas
+│   ├── Experience.tsx           # Linha do tempo profissional
+│   ├── Education.tsx            # Formação acadêmica e certificações
+│   ├── Projects.tsx             # Vitrine de projetos em destaque
+│   ├── ThemeToggle.tsx          # Botão alternador de tema (claro/escuro)
+│   ├── ThemeProvider.tsx        # Provedor do next-themes
+│   └── Footer.tsx               # Rodapé com redes e copyright
+├── dictionaries/                # Dicionários de tradução JSON
+│   ├── pt.json                  # Português do Brasil
+│   └── en.json                  # Inglês
+└── proxy.ts                     # Middleware/Proxy para detecção de idioma
+```
 
 ---
 
-## 3. Padrão de Controllers (PHP Slim)
+## 2. Server Components vs. Client Components
 
-Os controllers do Slim Framework devem seguir o fluxo MVC padrão:
+* **Server Components (Padrão)**:
+  * Todas as páginas (`page.tsx`, `layout.tsx`) e a maioria dos componentes de exibição de dados devem ser Server Components.
+  * Vantagens: Zero impacto no bundle JS do cliente, renderização ultra-rápida no servidor e SEO otimizado.
+  * Atenção ao Next.js 16: Em rotas dinâmicas, `params` é uma **Promise** assíncrona (`const { lang } = await params;`).
 
-- **Estrutura**: Receber `$request`, `$response` e `$args` nos métodos de rota.
-- **Tratamento de Dados**: Utilizar models ou repositórios para executar a lógica de persistência e validações de banco.
-- **Mensagens de Sessão (Flash)**: Setar mensagens de sucesso ou erro usando `$this->flash->addMessage('success', 'Mensagem')` ou `$this->flash->addMessage('error', 'Mensagem')`.
-- **Renderização**: Retornar a renderização da view correspondente via Twig:
-  ```php
-  return $this->view->render($response, 'pages/usuario/index.twig', $data);
-  ```
+* **Client Components (`"use client"`)**:
+  * Utilizados apenas quando há necessidade de hooks (`useState`, `useEffect`, `usePathname`), eventos de interação direta do usuário (`onClick`, `onChange`) ou bibliotecas de tema (`useTheme` do `next-themes`).
+  * Exemplos no projeto: `ThemeToggle.tsx`, `ThemeProvider.tsx`, interações específicas de filtros ou carrosséis.
+
+---
+
+## 3. Fluxo de Dados e Internacionalização (i18n)
+
+1. **Detecção e Redirecionamento**: `src/proxy.ts` intercepta requisições na raiz `/` e redireciona para `/[lang]` baseado no cabeçalho `accept-language`.
+2. **Carregamento do Dicionário**: As páginas leem o dicionário correspondente ao `lang` da URL e repassam os blocos de dados necessários para os componentes filhos via `props`.
+3. **Simetria de Dados**: Chaves e estruturas de objetos em `pt.json` e `en.json` devem ser 100% idênticas.
+
+---
+
+## 4. Otimização e SEO
+
+* **Metadados Dinâmicos**: As páginas exportam funções `generateMetadata` tipadas com títulos, descrições e OpenGraph adaptados ao idioma ativo.
+* **Componente Image**: Sempre utilize `next/image` para imagens de projetos e perfil, configurando `width`, `height`, `alt` e `loading="lazy"` (ou `priority` para o Hero).
