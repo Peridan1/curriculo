@@ -1,11 +1,89 @@
 {
     "header": {
+        "home": "Home",
         "about": "About",
         "skills": "Skills",
         "education": "Education",
         "experience": "Experience",
         "projects": "Projects",
+        "curriculum": "Curriculum",
         "contact": "Contact Me"
+    },
+    "homePage": {
+        "hero": {
+            "badge": "Junior Full Stack Engineer",
+            "greeting": "Hello, world! 👋 I am",
+            "name": "Daniel Satel Pereira",
+            "nickname": "Peridan.dev",
+            "title": "Full Stack Developer & Solution Builder",
+            "description": "Specialized in combining the solidity and clean architecture of modern backend (PHP/Laravel, Node.js, Java) with modern, reactive, and ultra-fast web interfaces in React, Next.js, and TypeScript.",
+            "ctaProjects": "Explore Projects",
+            "ctaCurriculum": "View Full Resume",
+            "ctaTerminal": "Try Web Terminal",
+            "availability": "Available for new opportunities & challenges",
+            "location": "Umuarama/PR – Brazil",
+            "university": "UniALFA (Internet Systems)"
+        },
+        "terminal": {
+            "headerTitle": "peridan@dev: ~ (bash)",
+            "welcome": "Welcome to Peridan's Developer Shell! Type a command or use the quick shortcut chips below:",
+            "shortcutsLabel": "Quick Commands:",
+            "inputPlaceholder": "Type a command (e.g. help, whoami, skills, projects, curriculo, contact, clear)...",
+            "helpText": "Available commands:\n  whoami    - Who is Daniel Satel Pereira\n  skills    - Core technical stack & competencies\n  stack     - Development ecosystem & architecture details\n  projects  - Highlighted software projects\n  curriculo - Open formal curriculum page\n  contact   - Direct contact channels & social links\n  date      - Local date and time in Umuarama/PR\n  clear     - Clear terminal screen",
+            "whoamiText": "Daniel Satel Pereira (Peridan)\nAge: 24 | Location: Umuarama/PR – Brazil\nEducation: Internet Systems (UniALFA)\nProfile: Junior Full Stack Developer passionate about scalable architecture, clean code, and high performance.",
+            "skillsText": "⚡ Backend: PHP 8+, Laravel, Node.js (NestJS), Java (Spring Boot), Python\n🎨 Frontend: React 19, Next.js 16 (App Router), TypeScript, TailwindCSS v4\n🗄️ Databases: MySQL, PostgreSQL, Relational Modeling\n🛠️ Infra & DevOps: Mikrotik RouterOS, Windows Server, Docker, Git/GitHub",
+            "stackText": "Architecture: Clean Code, MVC, RESTful APIs, Server Components, SSR/SSG, WCAG AAA Accessibility, and fluid 60 FPS.",
+            "projectsText": "Featured projects:\n  1. NGO Hub (Bem-Digital) - Laravel, Blade, MySQL\n  2. Fleet Manager - Laravel, Docker/Sail, MySQL\n  3. Investment Manager - PHP OOP, MVC\n  4. Events API & Front-end - Node.js, PHP\n  5. Chopits - React & Next.js E-commerce\nType 'curriculo' or 'projects' to navigate.",
+            "curriculoText": "Redirecting to full formal Curriculum page...",
+            "contactText": "📬 Email: danielsatelpereira@gmail.com\n📱 WhatsApp: +55 (041) 9 9952-1315\n🐙 GitHub: github.com/DanielSatelPereira\n💼 LinkedIn: linkedin.com/in/daniel-satel-pereira",
+            "unknownCommand": "Command not recognized. Type 'help' to see accepted commands."
+        },
+        "bento": {
+            "badge": "Highlights & Capabilities",
+            "title": "End-to-End Systemic Vision",
+            "subtitle": "From networking and server infrastructure to reactive frontend and enterprise backend architectures.",
+            "fullstackCard": {
+                "badge": "Backend & Frontend",
+                "title": "Full Stack Development",
+                "description": "Practical mastery of PHP/Laravel and Node.js for business logic, and Next.js/React for modern and accessible interfaces."
+            },
+            "infraCard": {
+                "badge": "Networking & Servers",
+                "title": "Infrastructure & Support",
+                "description": "Solid experience in Mikrotik RouterOS, structured cabling, Windows Server, and Docker containerization."
+            },
+            "locationCard": {
+                "badge": "Location & Timezone",
+                "city": "Umuarama/PR",
+                "country": "Brazil",
+                "status": "On-site, Hybrid or Remote"
+            },
+            "educationCard": {
+                "badge": "Academy",
+                "degree": "Internet Systems",
+                "institution": "UniALFA Umuarama",
+                "period": "2024 - 2026"
+            },
+            "curriculumCtaCard": {
+                "badge": "Complete Document",
+                "title": "Detailed Professional Resume",
+                "description": "View chronological timeline with all professional experiences, academic education, and export/print to PDF option.",
+                "btn": "Access Resume"
+            }
+        }
+    },
+    "curriculumPage": {
+        "badge": "Official Document",
+        "title": "Professional Curriculum",
+        "subtitle": "Detailed career history, qualifications, and engineering projects of Daniel Satel Pereira.",
+        "printButton": "Print / Save as PDF",
+        "backHome": "Back to Home",
+        "summaryTitle": "Executive Summary",
+        "summaryText": "Junior Full Stack Developer with a solid academic background in Internet Systems and practical experience in both the public and private sectors. Currently working with web development using PHP/Laravel, combined with modern interfaces using React, Next.js, and Tailwind CSS. Previous experience in technical support and infrastructure (Mikrotik, Windows Server), providing a comprehensive systemic view, from the network to the software delivered to the end-user.",
+        "skillsTitle": "Technical Competencies",
+        "experienceTitle": "Professional Experience",
+        "educationTitle": "Education",
+        "contactTitle": "Contact & Socials"
     },
     "hero": {
         "badge": "Junior Full Stack Developer",
@@ -60,93 +138,93 @@
         "subtitle": "Continuous academic progression and advanced international language qualification.",
         "items": [
             {
-                "degree": "Degree in Internet Systems (Higher Education)",
-                "institution": "UniALFA – Umuarama/PR, Brazil",
-                "period": "2024 – 2026 (In progress)",
-                "type": "Bachelor / Associate Degree",
-                "description": "Emphasis on web architecture, software engineering, database modeling, full stack development, and cloud-ready enterprise solutions."
+                "degree": "Internet Systems (Higher Degree)",
+                "institution": "UniALFA – Umuarama/PR",
+                "period": "2024 – 2026 (In Progress)",
+                "type": "Higher Education",
+                "description": "Degree with emphasis on web architecture, software engineering, database modeling, Full Stack development, and enterprise cloud solutions."
             },
             {
                 "degree": "Advanced English",
-                "institution": "Wizard – Matinhos/PR, Brazil",
+                "institution": "Wizard – Matinhos/PR",
                 "period": "Completed",
                 "type": "Foreign Language",
-                "description": "Advanced proficiency in English for reading technical documentation, software development, and communicating in global IT corporate environments."
+                "description": "Advanced proficiency in English for reading technical documentation, writing clean code, and communicating in corporate and global IT environments."
             }
         ]
     },
     "experience": {
         "title": "Professional Experience",
-        "subtitle": "Professional journey combining software development, automation scripts, and IT infrastructure.",
+        "subtitle": "Career trajectory combining software development, automation, and IT infrastructure.",
         "jobs": [
             {
                 "role": "IT Intern (Software Development and Infrastructure)",
-                "company": "City Hall of Umuarama (Prefeitura Municipal)",
-                "date": "November 2025 – Present",
+                "company": "Municipality of Umuarama",
+                "date": "November/2025 – Present",
                 "location": "Umuarama/PR, Brazil",
                 "category": "Public Sector",
-                "description": "Active participation in creating internal systems, notably the Fleet Control System, developed with Laravel, MySQL, and Tailwind CSS, utilizing a containerized architecture (Docker/Sail). Created Python scripts for automation and applied studies in React Native for mobile projects.",
+                "description": "Active participation in creating internal systems, notably the Fleet Control System developed with Laravel, MySQL, and Tailwind using containerized architecture (Docker/Sail). Creation of Python automation scripts and applied mobile studies in React Native.",
                 "subSections": [
                     {
                         "label": "Development",
-                        "text": "Internal web application development and maintenance using Laravel, MySQL, Tailwind with Docker/Sail; automated routine scripting in Python and applied mobile research in React Native."
+                        "text": "Development and maintenance of internal web applications in Laravel, MySQL, and Tailwind with Docker/Sail; Python automations and mobile solutions with React Native."
                     },
                     {
                         "label": "Infrastructure",
-                        "text": "On-site and remote technical support, network configuration, operating system installations, hardware diagnostics, and overall tech park maintenance."
+                        "text": "On-site and remote technical support, network configuration, disk formatting, hardware diagnostics, and maintenance of municipal tech assets."
                     }
                 ],
                 "tags": ["Laravel", "Docker", "Sail", "MySQL", "Tailwind CSS", "Python", "React Native", "Networking"]
             },
             {
                 "role": "Maintenance and Infrastructure Assistant",
-                "company": "Imppar Importadora Paranaense (Imppar Pneus)",
-                "date": "October 2024 – February 2025",
+                "company": "Imppar Importadora Paranaense (Imppar Tires)",
+                "date": "October/2024 – February/2025",
                 "location": "Umuarama/PR, Brazil",
                 "category": "Private Sector",
-                "description": "Provided IT and network technical support, performed preventive maintenance, and handled daily routines involving Mikrotik and Windows Server.",
+                "description": "Technical support in IT and Internet networks, preventive maintenance, and operational routines involving Mikrotik and Windows Server.",
                 "subSections": [
                     {
-                        "label": "Networks & Servers",
-                        "text": "Management of operational routines with Mikrotik, Windows Server environments, internal routing, and corporate network security."
+                        "label": "Networking & Servers",
+                        "text": "Management of operational routines with Mikrotik, Windows Server environments, routing, and internal network security."
                     },
                     {
                         "label": "Operational Support",
-                        "text": "Preventive and corrective hardware maintenance, responsive IT ticket troubleshooting, and end-user assistance."
+                        "text": "Preventive and corrective hardware maintenance, agile IT ticket resolution, and direct enterprise user support."
                     }
                 ],
-                "tags": ["Mikrotik", "Windows Server", "Computer Networks", "Technical Support", "Hardware Maintenance"]
+                "tags": ["Mikrotik", "Windows Server", "Computer Networks", "Technical Support", "Maintenance"]
             },
             {
                 "role": "English Teacher and Translator",
                 "company": "Private Tutor / Freelancer",
                 "date": "2019 – Present",
-                "location": "Remote & In-Person",
-                "category": "Freelance",
-                "description": "Conducted private English lessons (beginner to intermediate level), both in-person and online. An essential skill for reading technical documentation and operating effectively in the global IT market.",
+                "location": "Remote & On-site",
+                "category": "Freelancer",
+                "description": "Private English classes (basic to intermediate levels), on-site and synchronous. Essential skill for reading technical documentation and operating in the global IT market.",
                 "subSections": [
                     {
                         "label": "Communication & Teaching",
-                        "text": "Personalized pedagogical plans, technical translation of documentation, and individual mentorship focusing on practical speaking and technical writing."
+                        "text": "Personalized pedagogical planning, technical material translation, and individualized mentoring focused on conversation and technical writing."
                     }
                 ],
-                "tags": ["Advanced English", "Technical Translation", "Communication", "Mentorship", "Pedagogy"]
+                "tags": ["Advanced English", "Technical Translation", "Communication", "Didactics", "Mentoring"]
             }
         ]
     },
     "projectsSection": {
         "title": "Featured Projects",
-        "subtitle": "Real-world applications, enterprise systems, and hands-on projects highlighting clean code and solid architecture.",
+        "subtitle": "Real-world applications, enterprise systems, and practical projects showcasing solid architecture and clean code.",
         "explore": "View Details",
-        "viewAll": "See All Projects",
-        "hubTitle": "Project Portfolio",
-        "hubSubtitle": "A complete collection of my academic work, professional systems, and practical projects."
+        "viewAll": "View All Projects",
+        "hubTitle": "Projects Portfolio",
+        "hubSubtitle": "A complete collection of my academic projects, professional developments, and hands-on software creations."
     },
     "projectsData": {
         "bem-digital": {
             "featured": true,
             "title": "NGO Hub (Bem-Digital)",
-            "shortDescription": "Comprehensive modular platform in Laravel & MySQL for donation campaigns, inventory control, and donors.",
+            "shortDescription": "Full-featured modular system in Laravel and MySQL for managing donation campaigns, inventory, and donors.",
             "tags": [
                 "Laravel",
                 "Blade",
@@ -156,16 +234,16 @@
             ],
             "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD1N78pxkriQLRS5sTcEX1gr1RwpZc51iAKew1BVwNoLShkUc8AvZMyRbWCP_Qp--EDooshTH91IkBjuxCx9XL-ySMoCe3U3YbRbzIno-f6_hWaqNq9Fy1oTeoG9mLaR9DqAHyK4i8atbXgAuSW3pzn4HbL5etk7Yd2GWH-lznTh_RqtXs8TUltkvIcIKx72Gpoh6SmOTLZo2Tmy9JVskv51rU2dkyM3zOI1WoI5PWWA_gzmAyfIKL_2rYsolBn2Eo99sKylQHjc3bN",
             "period": "Academic & Social Project",
-            "description": "Bem-Digital is a complete and modular system developed in Laravel (Blade/Alpine.js/Tailwind) and MySQL for managing donation campaigns, inventory control, and donors. It empowers non-profit organizations to run transparent and real-time operations.",
-            "challengesTitle": "Architecture & Engineering Challenges",
-            "challenges": "The project required structuring a complex relational database, utilizing polymorphism and pivot tables for a permission system based on Modules and Rules. Collaborated in an agile team using Git repositories, Clean Architecture, and Conventional Commits.",
+            "description": "Bem-Digital is a comprehensive modular system developed with Laravel (Blade/Alpine.js/Tailwind) and MySQL for managing donation campaigns, inventory control, and donor relations. It enables non-profit organizations to manage donations in real time with transparency and security.",
+            "challengesTitle": "Architecture and Engineering Challenges",
+            "challenges": "The project required architecting a complex relational database using polymorphism and pivot tables for a modular Roles & Permissions system. Agile teamwork using Git, Clean Architecture, and Conventional Commits.",
             "repoUrl": "https://github.com/DanielSatelPereira/seu-repo-bem-digital",
             "backButton": "Back to Home"
         },
         "fleet-manager": {
             "featured": true,
             "title": "Fleet Control System (FleetManager)",
-            "shortDescription": "Containerized Docker/Sail system for municipal vehicle management, dispatch operations, and drivers.",
+            "shortDescription": "Docker/Sail containerized system for managing municipal vehicles, trips, and drivers.",
             "tags": [
                 "Laravel Sail",
                 "Docker",
@@ -173,35 +251,35 @@
                 "Tailwind CSS"
             ],
             "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDggm4-9MRgDHl7OapNnan9bC4ozB3tdTP_J_RxiIOKIIvKHb7WrUASrc_G8Zys_tbarbwTJqL5JfUY6Lhvvldxb8CnUxNSPUocoobbTI7jPMMmV7vR5Di-LeHj9Y637hceP_lDuKKQBBb7vK0S-vchMuFUIpr4V_UoKjsy9MP_mcB-THvZgTCwzEiDT0jTB5OH7Er-EjTzn53cBCX4i_eNO7u7fL5dNNOMsPIBjW09_XgWx5wngFXuJ1linOiPMlSjiu9jW_8CG-RE",
-            "period": "Public Sector – City Hall of Umuarama",
-            "description": "A robust internal system designed for municipal logistics and fleet yard operations. Implements complete CRUD management with soft deletes, real-time departure and return tracking, fuel monitoring, and dynamic filters.",
-            "challengesTitle": "Containerization & Reliability",
-            "challenges": "Entire environment containerized using Docker and Laravel Sail to achieve absolute environment parity between development and production. Clean interface styled with Tailwind CSS, strict validation, and optimized SQL queries.",
+            "period": "Public Sector – Municipality of Umuarama",
+            "description": "Robust internal system developed for the logistical control of municipal fleets. Features full CRUDs with soft deletes, real-time logging of vehicle departures/arrivals, fuel tracking, and dynamic filters.",
+            "challengesTitle": "Containerization and Performance",
+            "challenges": "Fully containerized environment using Docker and Laravel Sail to guarantee complete parity between development and production. Clean Tailwind CSS UI, strict data validation, and optimized SQL queries.",
             "repoUrl": "https://github.com/DanielSatelPereira",
             "backButton": "Back to Home"
         },
         "investment-manager": {
             "featured": true,
             "title": "Investment Management System",
-            "shortDescription": "Object-Oriented PHP application utilizing MVC architecture and interactive return charts.",
+            "shortDescription": "Object-Oriented PHP application with MVC architecture and interactive return charts.",
             "tags": [
-                "OOP PHP",
+                "PHP OOP",
                 "MVC Architecture",
                 "MySQL",
                 "Interactive Charts"
             ],
             "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAm3C4NmT1uroornwDFiyKaioSqfxFwhiFXPxZf0CCWN7kOWjSDIm0q34VlX-bxdo6WesoR9cbW0XvHWHgq1KCAF7Gsb6NvcTU6zsSRxcdUiJ9G9LIG0eKYPdq24R-NoByAkrI2AKQtWld4PUP6p29gc0-nRQglASVBRD9O0i9B9UWlTCie09Gv_dS9jq_euZOosSRgcYpR4XYubII2WSLHa3SsODBzGGk87dHcy_vbdwJw_waVZKi7VROe33_5WvKVj5qbsQ0NuvmP",
-            "period": "Academic & Practical Project",
-            "description": "Object-Oriented PHP application strictly adhering to MVC (Model-View-Controller) architecture. Enables users to register investments, track yield performance, and project future returns through interactive charts.",
-            "challengesTitle": "Object-Oriented Design & Clean MVC",
-            "challenges": "Strict separation of concerns between business logic, data persistence, and UI rendering, applying Clean Code principles, class abstraction, and high-precision financial calculations.",
+            "period": "Academic & Hands-on Project",
+            "description": "Application built in Object-Oriented PHP strictly following the MVC (Model-View-Controller) architecture. Enables users to register investments, track performance, and project earnings with dynamic charts.",
+            "challengesTitle": "Object-Oriented Modeling & MVC",
+            "challenges": "Strict separation of concerns across business rules, data persistence, and UI presentation, applying Clean Code, class abstraction, and accurate financial calculations.",
             "repoUrl": "https://github.com/DanielSatelPereira",
             "backButton": "Back to Home"
         },
         "hackathon-events-api": {
             "featured": true,
             "title": "Events API & Integrated Front-end",
-            "shortDescription": "Front-end integration in PHP consuming a complete RESTful API built in Node.js.",
+            "shortDescription": "PHP Front-end integration consuming a full RESTful API built in Node.js.",
             "tags": [
                 "PHP",
                 "Node.js",
@@ -211,9 +289,9 @@
             ],
             "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD1N78pxkriQLRS5sTcEX1gr1RwpZc51iAKew1BVwNoLShkUc8AvZMyRbWCP_Qp--EDooshTH91IkBjuxCx9XL-ySMoCe3U3YbRbzIno-f6_hWaqNq9Fy1oTeoG9mLaR9DqAHyK4i8atbXgAuSW3pzn4HbL5etk7Yd2GWH-lznTh_RqtXs8TUltkvIcIKx72Gpoh6SmOTLZo2Tmy9JVskv51rU2dkyM3zOI1WoI5PWWA_gzmAyfIKL_2rYsolBn2Eo99sKylQHjc3bN",
             "period": "Hackathon Project",
-            "description": "Event management solution built during a coding marathon to handle participant credentials and event schedules, with asynchronous cross-service communication.",
-            "challengesTitle": "API Consumption & Asynchronous Integration",
-            "challenges": "Developed Node.js back-end RESTful endpoints with token authentication and pagination, alongside PHP front-end data consumption with resilient fallback handling.",
+            "description": "Programming marathon solution for participant registration and event check-ins in academic and corporate settings, featuring asynchronous inter-service communication.",
+            "challengesTitle": "API Consumption & Async Integration",
+            "challenges": "Node.js back-end structuring RESTful endpoints with authentication and pagination, coupled with a PHP front-end consuming feeds with preventive error handling.",
             "repoUrl": "https://github.com/DanielSatelPereira",
             "backButton": "Back to Home"
         },
@@ -229,16 +307,16 @@
             ],
             "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAm3C4NmT1uroornwDFiyKaioSqfxFwhiFXPxZf0CCWN7kOWjSDIm0q34VlX-bxdo6WesoR9cbW0XvHWHgq1KCAF7Gsb6NvcTU6zsSRxcdUiJ9G9LIG0eKYPdq24R-NoByAkrI2AKQtWld4PUP6p29gc0-nRQglASVBRD9O0i9B9UWlTCie09Gv_dS9jq_euZOosSRgcYpR4XYubII2WSLHa3SsODBzGGk87dHcy_vbdwJw_waVZKi7VROe33_5WvKVj5qbsQ0NuvmP",
             "period": "Academic Project – TypeScript & Next.js",
-            "description": "A robust Front-end application developed to simulate the shopping experience of a large e-commerce platform, with an interactive shopping cart, product filtering, and real-time checkout calculations.",
-            "challengesTitle": "Strict Typing & Performance",
-            "challenges": "Ensuring strict TypeScript typing across the whole data pipeline, preventing runtime bugs and crafting an ultra-smooth React interface.",
+            "description": "Robust front-end application built to simulate the purchasing experience of a major e-commerce store, with interactive shopping cart, filtered product listings, and real-time total calculations.",
+            "challengesTitle": "Strict Typing and Performance",
+            "challenges": "Primary focus on strict TypeScript typing throughout the data flow, eliminating runtime errors and creating an ultra-fast UI with React components.",
             "repoUrl": "https://github.com/DanielSatelPereira/chopits",
             "backButton": "Back to Home"
         },
         "tech-store": {
             "featured": false,
-            "title": "Corporate Website | TechStore",
-            "shortDescription": "Freelance project delivered to a computer hardware store with a modern, responsive design.",
+            "title": "Institutional Website | TechStore",
+            "shortDescription": "Freelance project delivered for a computer retail and repair store with modern responsive design.",
             "tags": [
                 "HTML5",
                 "CSS3",
@@ -247,23 +325,53 @@
             ],
             "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDggm4-9MRgDHl7OapNnan9bC4ozB3tdTP_J_RxiIOKIIvKHb7WrUASrc_G8Zys_tbarbwTJqL5JfUY6Lhvvldxb8CnUxNSPUocoobbTI7jPMMmV7vR5Di-LeHj9Y637hceP_lDuKKQBBb7vK0S-vchMuFUIpr4V_UoKjsy9MP_mcB-THvZgTCwzEiDT0jTB5OH7Er-EjTzn53cBCX4i_eNO7u7fL5dNNOMsPIBjW09_XgWx5wngFXuJ1linOiPMlSjiu9jW_8CG-RE",
             "period": "Professional Freelance Project",
-            "description": "Complete corporate website with multiple pages (Home, Services, About, Contact) designed to attract local clients and highlight maintenance and hardware retail services.",
+            "description": "Multi-page institutional website (Home, Services, About, Contact) focused on local customer acquisition and detailing equipment maintenance and retail services.",
             "challengesTitle": "Value Delivery & Conversion-Oriented Design",
-            "challenges": "Handled end-to-end execution: client requirement discovery, information architecture, responsive UI design, and mobile performance optimization.",
+            "challenges": "End-to-end execution: requirements gathering, information architecture, responsive design development, and mobile speed optimization.",
             "repoUrl": "https://github.com/DanielSatelPereira",
             "backButton": "Back to Home"
         }
     },
     "footer": {
-        "copyright": "© 2026 Daniel Satel Pereira (Peridan). Built with Next.js, React and Tailwind CSS.",
+        "copyright": "© 2026 Daniel Satel Pereira (Peridan). Built with Next.js, React, and Tailwind CSS.",
         "location": "Umuarama/PR – Brazil",
         "quickLinks": "Quick Links",
         "contactMe": "Contact Me",
+        "privacy": "Terms & Privacy",
         "available": "Available for new challenges and projects"
+    },
+    "cookieBanner": {
+        "text": "This website uses local storage and essential cookies to save your theme (light/dark) and language preferences. No personal data is tracked or sold.",
+        "accept": "Got it",
+        "learnMore": "Terms & Privacy"
+    },
+    "privacyPage": {
+        "badge": "Transparency & Security",
+        "title": "Terms of Use & Privacy Policy",
+        "subtitle": "Clear information on data usage, essential cookies, and portfolio terms.",
+        "backHome": "Back to Home",
+        "sections": {
+            "intro": {
+                "title": "1. Overview",
+                "text": "This portfolio is maintained by Daniel Satel Pereira (Peridan) exclusively to showcase professional and academic projects, technical skills, and curriculum. We fully respect your privacy under the General Data Protection Law (LGPD / GDPR)."
+            },
+            "cookies": {
+                "title": "2. Cookies & Local Storage Usage",
+                "text": "We only use strictly necessary resources for site functionality:\n• Theme Preference (localStorage): Saves your choice between Light Mode and Dark Mode.\n• Language Preference (Route Cookie): Keeps your view in Portuguese or English based on your selection.\nWe do not use third-party tracking cookies, advertising pixels, or invasive behavioral monitoring tools."
+            },
+            "terms": {
+                "title": "3. Terms of Use & Intellectual Property",
+                "text": "The content made available on this website (text, demonstration architectures, and personal projects) is intended for informational and recruitment purposes. Linked code and repositories follow their respective GitHub licenses."
+            },
+            "contact": {
+                "title": "4. Questions & Inquiries",
+                "text": "For any questions regarding this website or terms, please contact danielsatelpereira@gmail.com or WhatsApp +55 (041) 9 9952-1315."
+            }
+        }
     },
     "seo": {
         "title": "Daniel Satel Pereira (Peridan) | Full Stack Developer",
-        "description": "Portfolio of Daniel Satel Pereira (Peridan), Junior Full Stack Developer and Internet Systems student at UniALFA. Experienced in PHP, Laravel, Next.js, React, Node.js, and Docker.",
+        "description": "Portfolio of Daniel Satel Pereira (Peridan), Junior Full Stack Developer and Internet Systems student at UniALFA. Experience with PHP, Laravel, Next.js, React, Node.js, and Docker.",
         "keywords": "Daniel Satel Pereira, Peridan, Full Stack Developer, PHP, Laravel, React, Next.js, TypeScript, Docker, UniALFA, Umuarama, Portfolio"
     }
 }
