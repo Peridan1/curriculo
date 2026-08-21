@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { TerminalIcon, ServerIcon, WorkIcon } from "./icons";
 
 interface SubSection {
     label: string;
@@ -29,7 +30,7 @@ interface ExperienceProps {
 }
 
 export default function Experience({ dict }: ExperienceProps) {
-    const icons = ["terminal", "dns", "translate"];
+    const icons = [TerminalIcon, ServerIcon, WorkIcon];
 
     return (
         <section className="py-24 max-w-300 mx-auto px-6 relative" id="experience">
@@ -48,6 +49,7 @@ export default function Experience({ dict }: ExperienceProps) {
 
             <div className="relative space-y-10 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-linear-to-b before:from-cyan-500/40 before:via-emerald-400/40 before:to-purple-500/20">
                 {dict.experience.jobs.map((job, index) => {
+                    const IconComponent = icons[index] || WorkIcon;
                     return (
                         <motion.div
                             key={index}
@@ -59,9 +61,7 @@ export default function Experience({ dict }: ExperienceProps) {
                         >
                             {/* Ícone Central da Linha do Tempo */}
                             <div className="flex items-center justify-center size-11 rounded-2xl border-2 border-cyan-500/50 bg-white dark:bg-slate-900 text-cyan-700 dark:text-cyan-400 shadow-xl shadow-cyan-500/10 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 mt-1 z-10 group-hover:scale-110 group-hover:border-cyan-400 group-hover:shadow-cyan-400/30 transition-all">
-                                <span className="material-symbols-outlined text-lg">
-                                    {icons[index] || "work"}
-                                </span>
+                                <IconComponent className="size-5" />
                             </div>
 
                             {/* Cartão de Conteúdo da Experiência */}

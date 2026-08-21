@@ -1,4 +1,11 @@
 import Link from "next/link";
+import {
+    TerminalIcon,
+    MailIcon,
+    WhatsAppIcon,
+    GitHubIcon,
+    LinkedInIcon,
+} from "./icons";
 
 interface FooterProps {
     dict: {
@@ -25,9 +32,7 @@ export default function Footer({ dict }: FooterProps) {
                     <div className="flex flex-col items-center md:items-start gap-3 text-center md:text-left">
                         <div className="flex items-center gap-3">
                             <div className="size-9 bg-linear-to-br from-cyan-400 to-emerald-500 rounded-xl flex items-center justify-center text-slate-950 font-black shadow-md shadow-cyan-500/20">
-                                <span className="material-symbols-outlined text-base">
-                                    terminal
-                                </span>
+                                <TerminalIcon className="size-5" />
                             </div>
                             <h2 className="text-cyan-700 dark:text-cyan-400 text-xl font-black">
                                 Peridan<span className="text-slate-950 dark:text-slate-100">.dev</span>
@@ -48,50 +53,42 @@ export default function Footer({ dict }: FooterProps) {
                             href="mailto:danielsatelpereira@gmail.com"
                             title="Enviar E-mail"
                         >
-                            <span className="material-symbols-outlined text-sm text-cyan-700 dark:text-cyan-400">
-                                mail
-                            </span>
+                            <MailIcon className="size-4 text-cyan-700 dark:text-cyan-400" />
                             danielsatelpereira@gmail.com
                         </a>
 
                         {/* WhatsApp */}
                         <a
-                            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-emerald-500/20 text-slate-900 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:border-emerald-500 transition-all text-xs font-bold shadow-xs hover:shadow-emerald-500/10"
+                            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-emerald-500/20 text-slate-900 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:border-emerald-500 transition-all text-xs font-bold shadow-xs hover:shadow-emerald-500/10 group"
                             href="https://wa.me/5541999521315"
                             target="_blank"
                             rel="noopener noreferrer"
                             title="WhatsApp"
                         >
-                            <span className="material-symbols-outlined text-sm text-emerald-700 dark:text-emerald-400">
-                                chat
-                            </span>
+                            <WhatsAppIcon className="size-4 text-[#25D366] group-hover:scale-110 transition-transform" />
                             (041) 9 9952-1315
                         </a>
 
                         {/* GitHub */}
                         <a
-                            className="p-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-cyan-500/20 text-slate-900 dark:text-slate-300 hover:text-cyan-700 dark:hover:text-cyan-400 hover:border-cyan-500 transition-all shadow-xs hover:shadow-cyan-500/10"
+                            className="p-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-cyan-500/20 text-slate-900 dark:text-slate-300 hover:text-cyan-700 dark:hover:text-cyan-400 hover:border-cyan-500 transition-all shadow-xs hover:shadow-cyan-500/10 group"
                             href="https://github.com/DanielSatelPereira"
                             target="_blank"
                             rel="noopener noreferrer"
                             title="GitHub"
                         >
-                            <span className="material-symbols-outlined text-base">
-                                code
-                            </span>
+                            <GitHubIcon className="size-4.5 text-slate-900 dark:text-white group-hover:scale-110 transition-transform" />
                         </a>
 
                         {/* LinkedIn */}
                         <a
-                            className="p-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-cyan-500/20 text-slate-900 dark:text-slate-300 hover:text-cyan-700 dark:hover:text-cyan-400 hover:border-cyan-500 transition-all shadow-xs hover:shadow-cyan-500/10"
+                            className="p-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-cyan-500/20 text-slate-900 dark:text-slate-300 hover:text-cyan-700 dark:hover:text-cyan-400 hover:border-cyan-500 transition-all shadow-xs hover:shadow-cyan-500/10 group"
                             href="https://www.linkedin.com/in/daniel-satel-pereira/"
                             target="_blank"
                             rel="noopener noreferrer"
                             title="LinkedIn"
                         >
-                            <span className="material-symbols-outlined text-base">
-                                work
-                            </span>
+                            <LinkedInIcon className="size-4.5 text-[#0A66C2] group-hover:scale-110 transition-transform" />
                         </a>
                     </div>
                 </div>

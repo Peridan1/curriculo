@@ -2,6 +2,7 @@ import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import CookieBanner from "../../../components/CookieBanner";
 import Link from "next/link";
+import { ArrowRightIcon } from "../../../components/icons";
 
 const dictionaries = {
     en: () =>
@@ -89,10 +90,8 @@ export default async function ProjectsHub({
                                             className="inline-flex items-center gap-2 text-cyan-800 dark:text-cyan-400 font-bold hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors text-sm mt-auto"
                                             href={`/${lang}/projetos/${slug}`}
                                         >
-                                            {dict.projectsSection.explore}{" "}
-                                            <span className="material-symbols-outlined text-base">
-                                                arrow_forward
-                                            </span>
+                                            {dict.projectsSection.explore}
+                                            <ArrowRightIcon className="size-4" />
                                         </Link>
                                     </div>
                                 </div>

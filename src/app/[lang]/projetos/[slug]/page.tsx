@@ -3,6 +3,7 @@ import Footer from "../../../../components/Footer";
 import CookieBanner from "../../../../components/CookieBanner";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ArrowLeftIcon, GitHubIcon } from "../../../../components/icons";
 
 interface ProjectDetail {
     title: string;
@@ -58,9 +59,7 @@ export default async function ProjectTemplate({
                     href={`/${lang}/#projects`}
                     className="inline-flex items-center gap-2 text-cyan-800 dark:text-cyan-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors mb-8 font-black text-sm"
                 >
-                    <span className="material-symbols-outlined text-base">
-                        arrow_back
-                    </span>
+                    <ArrowLeftIcon className="size-4" />
                     {projectData.backButton}
                 </Link>
 
@@ -117,9 +116,9 @@ export default async function ProjectTemplate({
                         href={projectData.repoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-3 bg-white dark:bg-slate-900 border-2 border-cyan-500/40 hover:border-cyan-500 text-cyan-800 dark:text-cyan-400 hover:text-white dark:hover:text-slate-950 hover:bg-linear-to-r hover:from-cyan-500 hover:to-emerald-500 px-8 py-4 rounded-xl font-bold transition-all shadow-md shadow-cyan-500/10"
+                        className="inline-flex items-center gap-3 bg-white dark:bg-slate-900 border-2 border-cyan-500/40 hover:border-cyan-500 text-cyan-800 dark:text-cyan-400 hover:text-white dark:hover:text-slate-950 hover:bg-linear-to-r hover:from-cyan-500 hover:to-emerald-500 px-8 py-4 rounded-xl font-bold transition-all shadow-md shadow-cyan-500/10 group"
                     >
-                        <span className="material-symbols-outlined">code</span>
+                        <GitHubIcon className="size-5 text-slate-900 dark:text-white group-hover:scale-110 transition-transform" />
                         {lang === "pt"
                             ? "Ver Repositório no GitHub"
                             : "View GitHub Repository"}

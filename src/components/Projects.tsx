@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRef } from "react";
+import { ArrowLeftIcon, ArrowRightIcon } from "./icons";
 
 interface ProjectItem {
     featured: boolean;
@@ -69,18 +70,14 @@ export default function Projects({ dict, lang }: ProjectsProps) {
                         className="size-10 rounded-full border border-slate-300 dark:border-cyan-500/20 bg-white dark:bg-slate-900/80 hover:bg-slate-100 dark:hover:bg-cyan-500/10 hover:border-cyan-500 text-cyan-800 dark:text-cyan-400 flex items-center justify-center transition-all cursor-pointer shadow-md"
                         aria-label="Rolar para a esquerda"
                     >
-                        <span className="material-symbols-outlined text-lg">
-                            arrow_back
-                        </span>
+                        <ArrowLeftIcon className="size-5" />
                     </button>
                     <button
                         onClick={() => scroll("right")}
                         className="size-10 rounded-full border border-slate-300 dark:border-cyan-500/20 bg-white dark:bg-slate-900/80 hover:bg-slate-100 dark:hover:bg-cyan-500/10 hover:border-cyan-500 text-cyan-800 dark:text-cyan-400 flex items-center justify-center transition-all cursor-pointer shadow-md"
                         aria-label="Rolar para a direita"
                     >
-                        <span className="material-symbols-outlined text-lg">
-                            arrow_forward
-                        </span>
+                        <ArrowRightIcon className="size-5" />
                     </button>
                 </div>
 
@@ -141,9 +138,7 @@ export default function Projects({ dict, lang }: ProjectsProps) {
                                         href={`/${lang}/projetos/${slug}`}
                                     >
                                         {dict.projectsSection.explore}
-                                        <span className="material-symbols-outlined text-base">
-                                            arrow_forward
-                                        </span>
+                                        <ArrowRightIcon className="size-4" />
                                     </Link>
                                 </div>
                             </div>

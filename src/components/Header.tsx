@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
+import { TerminalIcon, CurriculumIcon, MailIcon } from "./icons";
 
 interface HeaderProps {
     dict: {
@@ -45,9 +46,7 @@ export default function Header({ dict }: HeaderProps) {
                     className="flex items-center gap-3 group"
                 >
                     <div className="size-10 bg-linear-to-br from-cyan-400 to-emerald-500 rounded-xl flex items-center justify-center text-slate-950 font-black shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
-                        <span className="material-symbols-outlined text-xl">
-                            terminal
-                        </span>
+                        <TerminalIcon className="size-5" />
                     </div>
                     <h2 className="text-cyan-700 dark:text-cyan-400 text-xl font-black tracking-tight group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors">
                         Peridan<span className="text-slate-950 dark:text-slate-100">.dev</span>
@@ -75,9 +74,7 @@ export default function Header({ dict }: HeaderProps) {
                         className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-cyan-100 dark:bg-cyan-500/10 text-cyan-950 dark:text-cyan-300 border-2 border-cyan-400 dark:border-cyan-500/30 hover:bg-cyan-200 dark:hover:bg-cyan-500/20 transition-all text-xs font-black shadow-xs hover:scale-105"
                         href={`/${currentLang}/curriculo`}
                     >
-                        <span className="material-symbols-outlined text-base">
-                            description
-                        </span>
+                        <CurriculumIcon className="size-4" />
                         {dict.header.curriculum || "Currículo"}
                     </Link>
                 </nav>
@@ -111,9 +108,7 @@ export default function Header({ dict }: HeaderProps) {
                         href="mailto:danielsatelpereira@gmail.com"
                         className="bg-linear-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white dark:text-slate-950 px-5 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all shadow-lg shadow-cyan-600/20 hover:scale-105 hidden sm:inline-flex items-center gap-1.5"
                     >
-                        <span className="material-symbols-outlined text-base">
-                            mail
-                        </span>
+                        <MailIcon className="size-4" />
                         {dict.header.contact}
                     </a>
                 </div>

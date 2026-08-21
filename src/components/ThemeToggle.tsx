@@ -2,6 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { useSyncExternalStore } from "react";
+import { ThemeSunIcon, ThemeMoonIcon } from "./icons";
 
 const emptySubscribe = () => () => {};
 
@@ -22,9 +23,15 @@ export default function ThemeToggle() {
             title="Alternar Tema"
             aria-label="Alternar Tema"
         >
-            <span className="material-symbols-outlined text-xl select-none font-bold">
-                {mounted ? (isDark ? "light_mode" : "dark_mode") : "dark_mode"}
-            </span>
+            {mounted ? (
+                isDark ? (
+                    <ThemeSunIcon className="size-5 select-none" />
+                ) : (
+                    <ThemeMoonIcon className="size-5 select-none" />
+                )
+            ) : (
+                <ThemeMoonIcon className="size-5 select-none" />
+            )}
         </button>
     );
 }

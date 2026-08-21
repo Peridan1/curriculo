@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import Link from "next/link";
+import { ArrowLeftIcon } from "../../../components/icons";
 
 const dictionaries = {
     en: () =>
@@ -51,9 +52,7 @@ export default async function PrivacyPage({
                     href={`/${lang}`}
                     className="inline-flex items-center gap-2 text-cyan-800 dark:text-cyan-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors mb-8 font-black text-sm"
                 >
-                    <span className="material-symbols-outlined text-base">
-                        arrow_back
-                    </span>
+                    <ArrowLeftIcon className="size-4" />
                     {p.backHome}
                 </Link>
 

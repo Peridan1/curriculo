@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { CodeIcon, ServerIcon, CalendarIcon, CurriculumIcon } from "./icons";
 
 interface BentoProps {
     lang: string;
@@ -93,9 +94,7 @@ export default function BentoGrid({ dict, lang }: BentoProps) {
                                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-cyan-100/90 dark:bg-cyan-500/10 text-cyan-950 dark:text-cyan-300 border border-cyan-300 dark:border-cyan-500/30">
                                     {b.fullstackCard.badge}
                                 </span>
-                                <span className="material-symbols-outlined text-cyan-700 dark:text-cyan-400 text-2xl group-hover:scale-110 transition-transform">
-                                    developer_mode
-                                </span>
+                                <CodeIcon className="size-6 text-cyan-700 dark:text-cyan-400 group-hover:scale-110 transition-transform" />
                             </div>
                             <h3 className="text-2xl font-black text-slate-950 dark:text-slate-100 mb-3 group-hover:text-cyan-700 dark:group-hover:text-cyan-300 transition-colors">
                                 {b.fullstackCard.title}
@@ -123,9 +122,7 @@ export default function BentoGrid({ dict, lang }: BentoProps) {
                                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-emerald-100/90 dark:bg-emerald-500/10 text-emerald-950 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-500/30">
                                     {b.infraCard.badge}
                                 </span>
-                                <span className="material-symbols-outlined text-emerald-700 dark:text-emerald-400 text-2xl group-hover:scale-110 transition-transform">
-                                    router
-                                </span>
+                                <ServerIcon className="size-6 text-emerald-700 dark:text-emerald-400 group-hover:scale-110 transition-transform" />
                             </div>
                             <h3 className="text-xl font-black text-slate-950 dark:text-slate-100 mb-3 group-hover:text-emerald-700 dark:group-hover:text-emerald-300 transition-colors">
                                 {b.infraCard.title}
@@ -153,9 +150,7 @@ export default function BentoGrid({ dict, lang }: BentoProps) {
                                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-purple-100/90 dark:bg-purple-500/10 text-purple-950 dark:text-purple-300 border border-purple-300 dark:border-purple-500/30">
                                     {b.locationCard.badge}
                                 </span>
-                                <span className="material-symbols-outlined text-purple-700 dark:text-purple-400 text-2xl">
-                                    schedule
-                                </span>
+                                <CalendarIcon className="size-6 text-purple-700 dark:text-purple-400" />
                             </div>
                             <div className="text-2xl font-black font-mono text-purple-700 dark:text-purple-300 mb-2">
                                 {currentTime || "00:00:00"}
@@ -191,9 +186,7 @@ export default function BentoGrid({ dict, lang }: BentoProps) {
                                 href={`/${lang}/curriculo`}
                                 className="inline-flex items-center gap-3 bg-linear-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white dark:text-slate-950 font-black px-8 py-4 rounded-2xl shadow-xl shadow-cyan-600/30 hover:scale-105 transition-all text-base"
                             >
-                                <span className="material-symbols-outlined font-bold">
-                                    description
-                                </span>
+                                <CurriculumIcon className="size-5" />
                                 {b.curriculumCtaCard.btn}
                             </Link>
                         </div>

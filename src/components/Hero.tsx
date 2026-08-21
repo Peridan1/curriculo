@@ -1,4 +1,11 @@
-"use client";
+import {
+    TerminalIcon,
+    ProjectIcon,
+    LinkedInIcon,
+    GitHubIcon,
+    WhatsAppIcon,
+    SchoolIcon,
+} from "./icons";
 
 interface HeroProps {
     dict: {
@@ -67,9 +74,7 @@ export default function Hero({ dict }: HeroProps) {
                             </h1>
 
                             <h2 className="text-emerald-800 dark:text-emerald-400 text-base sm:text-lg lg:text-xl font-bold tracking-wide flex items-center gap-2">
-                                <span className="material-symbols-outlined text-cyan-700 dark:text-cyan-400 text-lg">
-                                    terminal
-                                </span>
+                                <TerminalIcon className="size-5 text-cyan-700 dark:text-cyan-400 shrink-0" />
                                 {dict.hero.subtitle}
                             </h2>
 
@@ -86,9 +91,7 @@ export default function Hero({ dict }: HeroProps) {
                                 href="#projects"
                                 className="bg-linear-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white dark:text-slate-950 px-6 py-3.5 rounded-xl font-black text-sm sm:text-base transition-all transform hover:-translate-y-0.5 shadow-lg shadow-cyan-600/30 flex items-center gap-2"
                             >
-                                <span className="material-symbols-outlined text-lg font-bold">
-                                    deployed_code
-                                </span>
+                                <ProjectIcon className="size-5" />
                                 {dict.hero.projectsBtn}
                             </a>
 
@@ -97,11 +100,9 @@ export default function Hero({ dict }: HeroProps) {
                                 href="https://linkedin.com/in/daniel-satel-pereira"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-white dark:bg-slate-900 border border-cyan-500/40 text-cyan-900 dark:text-cyan-300 px-5 py-3.5 rounded-xl font-bold text-sm sm:text-base hover:bg-cyan-50 dark:hover:bg-cyan-500/10 hover:border-cyan-600 transition-all flex items-center gap-2 shadow-xs"
+                                className="bg-white dark:bg-slate-900 border border-cyan-500/40 text-cyan-900 dark:text-cyan-300 px-5 py-3.5 rounded-xl font-bold text-sm sm:text-base hover:bg-cyan-50 dark:hover:bg-cyan-500/10 hover:border-cyan-600 transition-all flex items-center gap-2 shadow-xs group"
                             >
-                                <span className="material-symbols-outlined text-lg">
-                                    work
-                                </span>
+                                <LinkedInIcon className="size-4.5 text-[#0A66C2] group-hover:scale-110 transition-transform" />
                                 {dict.hero.linkedinBtn}
                             </a>
 
@@ -110,11 +111,9 @@ export default function Hero({ dict }: HeroProps) {
                                 href="https://github.com/DanielSatelPereira"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-white dark:bg-slate-900 border border-slate-300 dark:border-white/15 text-slate-950 dark:text-slate-200 px-5 py-3.5 rounded-xl font-bold text-sm sm:text-base hover:bg-slate-100 dark:hover:bg-white/10 hover:border-slate-400 transition-all flex items-center gap-2 shadow-xs"
+                                className="bg-white dark:bg-slate-900 border border-slate-300 dark:border-white/15 text-slate-950 dark:text-slate-200 px-5 py-3.5 rounded-xl font-bold text-sm sm:text-base hover:bg-slate-100 dark:hover:bg-white/10 hover:border-slate-400 transition-all flex items-center gap-2 shadow-xs group"
                             >
-                                <span className="material-symbols-outlined text-lg">
-                                    code
-                                </span>
+                                <GitHubIcon className="size-4.5 text-slate-900 dark:text-white group-hover:scale-110 transition-transform" />
                                 {dict.hero.githubBtn}
                             </a>
 
@@ -123,11 +122,9 @@ export default function Hero({ dict }: HeroProps) {
                                 href="https://wa.me/5541999521315"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-white dark:bg-slate-900 border border-emerald-500/40 text-emerald-900 dark:text-emerald-400 px-5 py-3.5 rounded-xl font-bold text-sm sm:text-base hover:bg-emerald-50 dark:hover:bg-emerald-500/10 hover:border-emerald-600 transition-all flex items-center gap-2 shadow-xs"
+                                className="bg-white dark:bg-slate-900 border border-emerald-500/40 text-emerald-900 dark:text-emerald-400 px-5 py-3.5 rounded-xl font-bold text-sm sm:text-base hover:bg-emerald-50 dark:hover:bg-emerald-500/10 hover:border-emerald-600 transition-all flex items-center gap-2 shadow-xs group"
                             >
-                                <span className="material-symbols-outlined text-lg">
-                                    chat
-                                </span>
+                                <WhatsAppIcon className="size-4.5 text-[#25D366] group-hover:scale-110 transition-transform" />
                                 {dict.hero.whatsappBtn}
                             </a>
                         </div>
@@ -152,9 +149,7 @@ export default function Hero({ dict }: HeroProps) {
                             <div className="absolute -bottom-5 -right-5 bg-white dark:bg-slate-900/95 backdrop-blur-xl p-4 rounded-2xl shadow-2xl border border-slate-300 dark:border-cyan-500/30 max-w-64">
                                 <div className="flex items-center gap-3">
                                     <div className="size-11 bg-cyan-500/10 rounded-xl flex items-center justify-center text-cyan-700 dark:text-cyan-400 shrink-0 border border-cyan-500/20">
-                                        <span className="material-symbols-outlined text-2xl">
-                                            school
-                                        </span>
+                                        <SchoolIcon className="size-6" />
                                     </div>
                                     <div>
                                         <div className="flex items-center gap-1.5 mb-0.5">

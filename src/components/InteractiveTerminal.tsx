@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { TerminalIcon } from "./icons";
 
 interface TerminalProps {
     lang: string;
@@ -372,9 +373,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
                     <span className="size-3 rounded-full bg-emerald-500 inline-block"></span>
                 </div>
                 <div className="text-xs text-slate-400 font-semibold flex items-center gap-1.5">
-                    <span className="material-symbols-outlined text-sm text-cyan-400">
-                        terminal
-                    </span>
+                    <TerminalIcon className="size-4 text-cyan-400" />
                     {t.headerTitle}
                 </div>
                 <div className="text-[10px] text-emerald-400 font-bold bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-500/30">

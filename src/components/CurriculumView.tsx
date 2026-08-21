@@ -1,6 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import {
+    ArrowLeftIcon,
+    PrintIcon,
+    CodeIcon,
+    WorkIcon,
+    SchoolIcon,
+    PersonIcon,
+} from "./icons";
 
 interface JobItem {
     role: string;
@@ -39,12 +47,11 @@ interface CurriculumViewProps {
         };
         hero: {
             personalInfo: {
+                location: string;
                 age: string;
                 status: string;
-                location: string;
                 email: string;
                 phone: string;
-                website: string;
             };
         };
         skills: {
@@ -93,9 +100,7 @@ export default function CurriculumView({ dict, lang }: CurriculumViewProps) {
                         href={`/${lang}`}
                         className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-cyan-500/30 text-cyan-800 dark:text-cyan-400 font-bold text-sm hover:border-cyan-500 transition-all shadow-xs hover:scale-105"
                     >
-                        <span className="material-symbols-outlined text-base">
-                            arrow_back
-                        </span>
+                        <ArrowLeftIcon className="size-4" />
                         {cp.backHome}
                     </Link>
 
@@ -103,9 +108,7 @@ export default function CurriculumView({ dict, lang }: CurriculumViewProps) {
                         onClick={handlePrint}
                         className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-linear-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white dark:text-slate-950 font-black text-sm transition-all shadow-lg shadow-cyan-600/20 hover:scale-105 cursor-pointer"
                     >
-                        <span className="material-symbols-outlined text-base">
-                            print
-                        </span>
+                        <PrintIcon className="size-4" />
                         {cp.printButton}
                     </button>
                 </div>
@@ -147,21 +150,13 @@ export default function CurriculumView({ dict, lang }: CurriculumViewProps) {
                             <div>
                                 📱 <a href="https://wa.me/5541999521315" className="text-cyan-800 dark:text-cyan-400 hover:underline">{personal.phone}</a>
                             </div>
-                            <div>
-                                🐙 <a href="https://github.com/DanielSatelPereira" target="_blank" rel="noopener noreferrer" className="text-cyan-800 dark:text-cyan-400 hover:underline">github.com/DanielSatelPereira</a>
-                            </div>
-                            <div>
-                                💼 <a href="https://linkedin.com/in/daniel-satel-pereira" target="_blank" rel="noopener noreferrer" className="text-cyan-800 dark:text-cyan-400 hover:underline">linkedin.com/in/daniel-satel-pereira</a>
-                            </div>
                         </div>
                     </header>
 
                     {/* Sumário Executivo */}
                     <section className="mb-10">
                         <h2 className="text-lg font-black uppercase tracking-wider text-cyan-900 dark:text-cyan-400 border-b border-cyan-500/20 pb-2 mb-3 flex items-center gap-2">
-                            <span className="material-symbols-outlined text-base">
-                                person
-                            </span>
+                            <PersonIcon className="size-5" />
                             {cp.summaryTitle}
                         </h2>
                         <p className="text-slate-950 dark:text-slate-200 text-sm leading-relaxed font-normal">
@@ -172,9 +167,7 @@ export default function CurriculumView({ dict, lang }: CurriculumViewProps) {
                     {/* Matriz de Competências Técnicas */}
                     <section className="mb-10">
                         <h2 className="text-lg font-black uppercase tracking-wider text-cyan-900 dark:text-cyan-400 border-b border-cyan-500/20 pb-2 mb-4 flex items-center gap-2">
-                            <span className="material-symbols-outlined text-base">
-                                code
-                            </span>
+                            <CodeIcon className="size-5" />
                             {cp.skillsTitle}
                         </h2>
                         <div className="space-y-3 text-xs leading-relaxed">
@@ -194,9 +187,7 @@ export default function CurriculumView({ dict, lang }: CurriculumViewProps) {
                     {/* Experiência Profissional */}
                     <section className="mb-10">
                         <h2 className="text-lg font-black uppercase tracking-wider text-cyan-900 dark:text-cyan-400 border-b border-cyan-500/20 pb-2 mb-6 flex items-center gap-2">
-                            <span className="material-symbols-outlined text-base">
-                                work
-                            </span>
+                            <WorkIcon className="size-5" />
                             {cp.experienceTitle}
                         </h2>
 
@@ -251,9 +242,7 @@ export default function CurriculumView({ dict, lang }: CurriculumViewProps) {
                     {/* Formação Educacional */}
                     <section>
                         <h2 className="text-lg font-black uppercase tracking-wider text-emerald-900 dark:text-emerald-400 border-b border-emerald-500/20 pb-2 mb-4 flex items-center gap-2">
-                            <span className="material-symbols-outlined text-base">
-                                school
-                            </span>
+                            <SchoolIcon className="size-5" />
                             {cp.educationTitle}
                         </h2>
 

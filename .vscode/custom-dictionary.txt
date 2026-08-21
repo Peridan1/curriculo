@@ -298,6 +298,7 @@ approaches
 approved
 appuser
 Aprecia
+Aprendizado
 Apresentação
 apresentação
 apresentar
@@ -341,7 +342,8 @@ Array
 array
 arrivals
 arrive
-arrow
+ArrowLeftIcon
+ArrowRightIcon
 artefatos
 article
 árvore
@@ -448,8 +450,8 @@ AXuDggm
 azul
 Azul
 babel
-back
 Back
+back
 backButton
 backdrop
 backend
@@ -625,6 +627,7 @@ cafeina
 calc
 calculations
 cálculos
+CalendarIcon
 call
 CALL
 cama
@@ -727,7 +730,6 @@ changes
 channels
 charts
 Charts
-chat
 Chave
 chave
 Chaves
@@ -743,6 +745,8 @@ checkout
 checkpoints
 checks
 chegada
+ChevronLeftIcon
+ChevronRightIcon
 children
 chip
 chips
@@ -804,6 +808,7 @@ Client
 cliente
 clientes
 clip
+clipRule
 clique
 clone
 Clone
@@ -815,6 +820,7 @@ codar
 code
 Code
 codebase
+CodeIcon
 codesign
 codificar
 Código
@@ -1096,6 +1102,7 @@ Cookie
 CookieBanner
 cookieBanner
 CookieBannerProps
+CookieIcon
 Cookies
 cookies
 cópia
@@ -1216,6 +1223,7 @@ curiosities
 CURIOSITIES
 curl
 current
+currentColor
 currentLang
 Currently
 currentPath
@@ -1228,6 +1236,7 @@ curriculoText
 curriculum
 Curriculum
 curriculumCtaCard
+CurriculumIcon
 curriculumPage
 CurriculumPage
 CurriculumView
@@ -1252,8 +1261,8 @@ Dados
 dados
 Daniel
 daniel
-DanielSatelPereira
 danielsatelpereira
+DanielSatelPereira
 daquela
 dark
 Dark
@@ -1262,6 +1271,7 @@ dashboard
 data
 Data
 database
+DatabaseIcon
 Databases
 Date
 date
@@ -1336,7 +1346,6 @@ dependente
 depends
 deploy
 Deploy
-deployed
 depois
 DEPOIS
 Depois
@@ -1422,7 +1431,6 @@ devDependencies
 deve
 DEVE
 developed
-developer
 Developer
 developers
 Development
@@ -1431,7 +1439,6 @@ developments
 devem
 Devemos
 deveria
-devices
 devidamente
 devops
 DevOps
@@ -1529,7 +1536,6 @@ diz
 dkyM
 dNNOMsPIBjW
 DNS
-dns
 doação
 doações
 doadores
@@ -1624,6 +1630,7 @@ Educacional
 education
 Education
 educationCard
+EducationItem
 EducationProps
 educationTitle
 efeito
@@ -1869,6 +1876,7 @@ etapas
 etk
 euZOosSRgcYpR
 even
+evenodd
 event
 evento
 Eventos
@@ -1992,8 +2000,10 @@ exposição
 expostas
 expostos
 expresso
+extends
 extensão
 external
+ExternalLinkIcon
 externas
 externo
 extra
@@ -2083,9 +2093,9 @@ FILES
 fileURLToPath
 filhos
 fill
-FILL
 fillcolor
 filled
+fillRule
 filmes
 Filmes
 filter
@@ -2190,7 +2200,6 @@ form
 forma
 Forma
 Formação
-Formações
 formações
 formais
 Formal
@@ -2359,6 +2368,7 @@ Git
 GitHub
 github
 githubBtn
+GitHubIcon
 gitInit
 give
 given
@@ -2544,9 +2554,11 @@ iAKew
 Ice
 ico
 icon
+IconComponent
 Ícone
 ícones
 iconHref
+IconProps
 icons
 IDE
 ideia
@@ -2911,6 +2923,7 @@ Law
 layer
 Layer
 layers
+LayersIcon
 layout
 Layout
 layouts
@@ -2987,9 +3000,10 @@ linhas
 Link
 link
 Linked
-linkedin
 LinkedIn
+linkedin
 linkedinBtn
+LinkedInIcon
 Links
 links
 linkText
@@ -3025,6 +3039,7 @@ localStorage
 location
 Location
 locationCard
+LocationIcon
 lock
 Lofi
 log
@@ -3066,6 +3081,7 @@ lznTh
 machine
 made
 mail
+MailIcon
 mailto
 main
 maintained
@@ -3231,8 +3247,8 @@ mochileiro
 Mochileiro
 mocks
 Mocks
-mode
 Mode
+mode
 Model
 Modelagem
 modelagem
@@ -3624,8 +3640,6 @@ out
 Out
 Outcome
 outline
-outlined
-Outlined
 output
 Output
 outras
@@ -3796,13 +3810,13 @@ Permitidos
 persistence
 persistência
 Persistência
-person
 personal
 PERSONAL
 personalInfo
 personalizadas
 personalizado
 Personalized
+PersonIcon
 pertença
 pesadas
 Pesquise
@@ -3875,6 +3889,8 @@ Pollution
 Poluição
 poluição
 poluidor
+polygon
+polyline
 polymorphism
 Ponta
 ponta
@@ -3997,6 +4013,7 @@ principles
 print
 Print
 printButton
+PrintIcon
 prioridade
 priority
 priorizando
@@ -4058,6 +4075,7 @@ Project
 projectData
 ProjectDetail
 projectDir
+ProjectIcon
 ProjectItem
 Projects
 projects
@@ -4096,8 +4114,8 @@ Propriedade
 propriedades
 Propriedades
 próprio
-Props
 props
+Props
 prosseguir
 Proteção
 Protection
@@ -4155,7 +4173,6 @@ quais
 quaisquer
 qual
 Qual
-Qualificação
 qualificação
 qualificações
 qualification
@@ -4581,9 +4598,8 @@ Scannable
 scenario
 Scenario
 scenarios
-schedule
 scheme
-school
+SchoolIcon
 Sci
 Scope
 scope
@@ -4687,6 +4703,7 @@ Séries
 serif
 Server
 server
+ServerIcon
 servers
 Servers
 service
@@ -4736,6 +4753,7 @@ share
 Shell
 shell
 SHELL
+ShieldIcon
 shopping
 short
 shortcut
@@ -4897,6 +4915,7 @@ Specialized
 specific
 specs
 speed
+SpeedIcon
 SpeedInsights
 spellCheck
 Spend
@@ -4959,6 +4978,9 @@ strictly
 string
 String
 stroke
+strokeLinecap
+strokeLinejoin
+strokeWidth
 Structural
 Structure
 structured
@@ -5026,13 +5048,13 @@ surface
 sustentam
 sutil
 svg
+SVGProps
+SVGSVGElement
 swap
 Swarm
 switch
 switches
 sym
-symbols
-Symbols
 symptom
 symptoms
 sync
@@ -5132,6 +5154,7 @@ term
 terminal
 Terminal
 terminalBodyRef
+TerminalIcon
 TerminalProps
 Termos
 termos
@@ -5167,8 +5190,10 @@ The
 their
 theme
 Theme
+ThemeMoonIcon
 ThemeProvider
 themes
+ThemeSunIcon
 ThemeToggle
 then
 Then
@@ -5640,6 +5665,7 @@ what
 whatever
 WhatsApp
 whatsappBtn
+WhatsAppIcon
 when
 When
 where
@@ -5682,6 +5708,7 @@ worked
 Workflow
 workflow
 workflows
+WorkIcon
 working
 workingDirectory
 works

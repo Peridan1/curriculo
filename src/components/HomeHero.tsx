@@ -2,6 +2,14 @@
 
 import Link from "next/link";
 import InteractiveTerminal from "./InteractiveTerminal";
+import {
+    TerminalIcon,
+    ProjectIcon,
+    CurriculumIcon,
+    LinkedInIcon,
+    GitHubIcon,
+    WhatsAppIcon,
+} from "./icons";
 
 interface HomeHeroProps {
     lang: string;
@@ -99,9 +107,7 @@ export default function HomeHero({ dict, lang }: HomeHeroProps) {
                                 </h1>
 
                                 <h2 className="text-emerald-800 dark:text-emerald-400 text-base sm:text-lg lg:text-xl font-black tracking-wide flex items-center gap-2">
-                                    <span className="material-symbols-outlined text-cyan-700 dark:text-cyan-400 text-lg">
-                                        terminal
-                                    </span>
+                                    <TerminalIcon className="size-5 text-cyan-700 dark:text-cyan-400 shrink-0" />
                                     {h.title}
                                 </h2>
                             </div>
@@ -121,9 +127,7 @@ export default function HomeHero({ dict, lang }: HomeHeroProps) {
                                 href="#projects"
                                 className="bg-linear-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white dark:text-slate-950 px-5 py-3.5 rounded-2xl font-black text-sm transition-all transform hover:-translate-y-0.5 shadow-lg shadow-cyan-600/25 flex items-center justify-center gap-2 text-center"
                             >
-                                <span className="material-symbols-outlined text-lg font-bold">
-                                    deployed_code
-                                </span>
+                                <ProjectIcon className="size-5" />
                                 <span>{h.ctaProjects}</span>
                             </a>
 
@@ -132,9 +136,7 @@ export default function HomeHero({ dict, lang }: HomeHeroProps) {
                                 href={`/${lang}/curriculo`}
                                 className="bg-white dark:bg-slate-900 border-2 border-cyan-500/40 hover:border-cyan-600 text-cyan-900 dark:text-cyan-300 px-5 py-3.5 rounded-2xl font-black text-sm transition-all hover:scale-105 shadow-xs flex items-center justify-center gap-2 text-center"
                             >
-                                <span className="material-symbols-outlined text-lg">
-                                    description
-                                </span>
+                                <CurriculumIcon className="size-5" />
                                 <span>{h.ctaCurriculum}</span>
                             </Link>
                         </div>
@@ -153,36 +155,30 @@ export default function HomeHero({ dict, lang }: HomeHeroProps) {
                                 href="https://linkedin.com/in/daniel-satel-pereira"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-2 px-4 py-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-cyan-500/30 text-cyan-800 dark:text-cyan-400 hover:border-cyan-600 text-xs font-bold transition-all hover:scale-105 shadow-xs"
+                                className="flex items-center gap-2 px-4 py-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-cyan-500/30 text-cyan-800 dark:text-cyan-400 hover:border-cyan-600 text-xs font-bold transition-all hover:scale-105 shadow-xs group"
                                 title="LinkedIn"
                             >
-                                <span className="material-symbols-outlined text-base">
-                                    work
-                                </span>
+                                <LinkedInIcon className="size-4.5 text-[#0A66C2] group-hover:scale-110 transition-transform" />
                                 <span>LinkedIn</span>
                             </a>
                             <a
                                 href="https://github.com/DanielSatelPereira"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-2 px-4 py-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-white/15 text-slate-950 dark:text-slate-200 hover:border-slate-400 text-xs font-bold transition-all hover:scale-105 shadow-xs"
+                                className="flex items-center gap-2 px-4 py-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-white/15 text-slate-950 dark:text-slate-200 hover:border-slate-400 text-xs font-bold transition-all hover:scale-105 shadow-xs group"
                                 title="GitHub"
                             >
-                                <span className="material-symbols-outlined text-base">
-                                    code
-                                </span>
+                                <GitHubIcon className="size-4.5 text-slate-900 dark:text-white group-hover:scale-110 transition-transform" />
                                 <span>GitHub</span>
                             </a>
                             <a
                                 href="https://wa.me/5541999521315"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-2 px-4 py-3 rounded-2xl bg-white dark:bg-slate-900 border border-emerald-500/40 text-emerald-800 dark:text-emerald-400 hover:border-emerald-600 text-xs font-bold transition-all hover:scale-105 shadow-xs"
+                                className="flex items-center gap-2 px-4 py-3 rounded-2xl bg-white dark:bg-slate-900 border border-emerald-500/40 text-emerald-800 dark:text-emerald-400 hover:border-emerald-600 text-xs font-bold transition-all hover:scale-105 shadow-xs group"
                                 title="WhatsApp"
                             >
-                                <span className="material-symbols-outlined text-base">
-                                    chat
-                                </span>
+                                <WhatsAppIcon className="size-4.5 text-[#25D366] group-hover:scale-110 transition-transform" />
                                 <span>WhatsApp</span>
                             </a>
                         </div>

@@ -1,4 +1,4 @@
-"use client";
+import { ServerIcon, LayersIcon, DatabaseIcon, CodeIcon, ProjectIcon } from "./icons";
 
 interface CategoryData {
     name: string;
@@ -26,35 +26,35 @@ export default function Skills({ dict }: SkillsProps) {
         {
             key: "backend",
             data: dict.skills.categories.backend,
-            icon: "dns",
+            icon: ServerIcon,
             color: "text-cyan-700 dark:text-cyan-400",
             badgeBg: "bg-cyan-100/80 dark:bg-cyan-500/10 text-cyan-950 dark:text-cyan-300 border-cyan-300 dark:border-cyan-500/25",
         },
         {
             key: "frontend",
             data: dict.skills.categories.frontend,
-            icon: "devices",
+            icon: LayersIcon,
             color: "text-emerald-700 dark:text-emerald-400",
             badgeBg: "bg-emerald-100/80 dark:bg-emerald-500/10 text-emerald-950 dark:text-emerald-300 border-emerald-300 dark:border-emerald-500/25",
         },
         {
             key: "database",
             data: dict.skills.categories.database,
-            icon: "database",
+            icon: DatabaseIcon,
             color: "text-purple-700 dark:text-purple-400",
             badgeBg: "bg-purple-100/80 dark:bg-purple-500/10 text-purple-950 dark:text-purple-300 border-purple-300 dark:border-purple-500/25",
         },
         {
             key: "engineering",
             data: dict.skills.categories.engineering,
-            icon: "architecture",
+            icon: CodeIcon,
             color: "text-cyan-700 dark:text-cyan-400",
             badgeBg: "bg-cyan-100/80 dark:bg-cyan-500/10 text-cyan-950 dark:text-cyan-300 border-cyan-300 dark:border-cyan-500/25",
         },
         {
             key: "devops",
             data: dict.skills.categories.devops,
-            icon: "deployed_code",
+            icon: ProjectIcon,
             color: "text-emerald-700 dark:text-emerald-400",
             badgeBg: "bg-emerald-100/80 dark:bg-emerald-500/10 text-emerald-950 dark:text-emerald-300 border-emerald-300 dark:border-emerald-500/25",
         },
@@ -79,36 +79,37 @@ export default function Skills({ dict }: SkillsProps) {
 
                 {/* Grid das Categorias de Habilidades */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {categoriesConfig.map((cat) => (
-                        <div
-                            key={cat.key}
-                            className="p-6 rounded-3xl border border-slate-200 dark:border-cyan-500/15 bg-white dark:bg-slate-900/60 backdrop-blur-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/10 group shadow-sm"
-                        >
-                            <div>
-                                <div className="flex items-center gap-4 mb-6">
-                                    <div className="size-12 rounded-2xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 flex items-center justify-center text-cyan-700 dark:text-cyan-400 group-hover:scale-110 group-hover:bg-cyan-500/10 group-hover:border-cyan-500/30 transition-all">
-                                        <span className={`material-symbols-outlined text-2xl ${cat.color}`}>
-                                            {cat.icon}
-                                        </span>
+                    {categoriesConfig.map((cat) => {
+                        const IconComponent = cat.icon;
+                        return (
+                            <div
+                                key={cat.key}
+                                className="p-6 rounded-3xl border border-slate-200 dark:border-cyan-500/15 bg-white dark:bg-slate-900/60 backdrop-blur-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/10 group shadow-sm"
+                            >
+                                <div>
+                                    <div className="flex items-center gap-4 mb-6">
+                                        <div className="size-12 rounded-2xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 flex items-center justify-center text-cyan-700 dark:text-cyan-400 group-hover:scale-110 group-hover:bg-cyan-500/10 group-hover:border-cyan-500/30 transition-all">
+                                            <IconComponent className={`size-6 ${cat.color}`} />
+                                        </div>
+                                        <h3 className="text-lg font-black text-slate-950 dark:text-slate-100 group-hover:text-cyan-700 dark:group-hover:text-cyan-300 transition-colors">
+                                            {cat.data.name}
+                                        </h3>
                                     </div>
-                                    <h3 className="text-lg font-black text-slate-950 dark:text-slate-100 group-hover:text-cyan-700 dark:group-hover:text-cyan-300 transition-colors">
-                                        {cat.data.name}
-                                    </h3>
-                                </div>
 
-                                <div className="flex flex-wrap gap-2">
-                                    {cat.data.items.map((item, index) => (
-                                        <span
-                                            key={index}
-                                            className={`text-xs font-bold px-3 py-1.5 rounded-xl border ${cat.badgeBg} hover:scale-105 transition-transform cursor-default`}
-                                        >
-                                            {item}
-                                        </span>
-                                    ))}
+                                    <div className="flex flex-wrap gap-2">
+                                        {cat.data.items.map((item, index) => (
+                                            <span
+                                                key={index}
+                                                className={`text-xs font-bold px-3 py-1.5 rounded-xl border ${cat.badgeBg} hover:scale-105 transition-transform cursor-default`}
+                                            >
+                                                {item}
+                                            </span>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
         </section>
