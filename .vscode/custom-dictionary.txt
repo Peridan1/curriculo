@@ -218,6 +218,8 @@ Analise
 Análise
 analise
 Analysis
+Analytics
+analytics
 analyze
 analyzed
 âncoras
@@ -2697,6 +2699,7 @@ ins
 insere
 inset
 Insight
+insights
 Insist
 insistindo
 instalação
@@ -4894,6 +4897,7 @@ Specialized
 specific
 specs
 speed
+SpeedInsights
 spellCheck
 Spend
 split
@@ -5520,6 +5524,7 @@ Ver
 ver
 Verbo
 verbose
+vercel
 verdadeiramente
 Verde
 verifica
