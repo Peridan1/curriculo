@@ -246,7 +246,7 @@
                 "Tailwind CSS",
                 "SEO"
             ],
-            "image": "https://www.brisamarpescados.com.br/images/fachada.png",
+            "image": "/images/projects/brisamar-pescados.jpg",
             "period": "Produção Comercial • CEASA Foz do Iguaçu",
             "description": "A Brisamar Pescados é uma empresa tradicional com mais de 30 anos no mercado de peixes e frutos do mar no Box 130 do CEASA de Foz do Iguaçu. Desenvolvi uma plataforma web moderna, rápida e totalmente responsiva que atende tanto o público de atacado (restaurantes e peixarias) quanto o consumidor final de varejo.",
             "challengesTitle": "Arquitetura Next.js, SEO e Conversão Direta",
@@ -268,7 +268,7 @@
                 "MySQL",
                 "Automação"
             ],
-            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDggm4-9MRgDHl7OapNnan9bC4ozB3tdTP_J_RxiIOKIIvKHb7WrUASrc_G8Zys_tbarbwTJqL5JfUY6Lhvvldxb8CnUxNSPUocoobbTI7jPMMmV7vR5Di-LeHj9Y637hceP_lDuKKQBBb7vK0S-vchMuFUIpr4V_UoKjsy9MP_mcB-THvZgTCwzEiDT0jTB5OH7Er-EjTzn53cBCX4i_eNO7u7fL5dNNOMsPIBjW09_XgWx5wngFXuJ1linOiPMlSjiu9jW_8CG-RE",
+            "image": "/images/projects/fleet-manager.jpg",
             "period": "Setor Público – Prefeitura Municipal de Umuarama",
             "description": "Sistema interno robusto desenvolvido para gerenciar a movimentação de frotas, motoristas, pátios públicos e controle de combustível na Prefeitura de Umuarama. A aplicação evoluiu com a integração de um pipeline analítico em Python para processamento de grandes volumes de dados brutos.",
             "challengesTitle": "Integração Híbrida Laravel + Python e Processamento de Dados",
@@ -290,7 +290,7 @@
                 "SPA",
                 "UI/UX"
             ],
-            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMIJrXQiN8F1mkWdQMF6vIMM-JRZvmsv7C0pbyZqNmfQBU5XGRLNuswwwe4QHun2rrioSKO8DqO-JWoq1N7zwK8IH0534f8pmDc7S2M8O8DekcyEutArNwgmDfrYaTOOJL630KH6dxKedjt4v3aJzDEXyJBH5iL8d2s9ASi4PU64LccDrWItWJsvTEoxGiWnbDAQPrqvM_v1oCGlElS8xgWnUjkVqGnIZqXnbdYWDRI3H6hEyYHe88X6r-6DTM132STENk-Pj8VRQd",
+            "image": "/images/projects/jf-informatica.jpg",
             "period": "Produção Comercial • Umuarama/PR",
             "description": "Plataforma digital desenvolvida para uma empresa especializada em assistência técnica e manutenção de computadores, notebooks, impressoras e consoles de videogame. O objetivo foi criar uma presença digital marcante, ágil e com alto índice de conversão de clientes locais.",
             "challengesTitle": "Experiência do Usuário (UI/UX) e Funil de Atendimento",
@@ -312,7 +312,7 @@
                 "Tailwind CSS",
                 "MySQL"
             ],
-            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD1N78pxkriQLRS5sTcEX1gr1RwpZc51iAKew1BVwNoLShkUc8AvZMyRbWCP_Qp--EDooshTH91IkBjuxCx9XL-ySMoCe3U3YbRbzIno-f6_hWaqNq9Fy1oTeoG9mLaR9DqAHyK4i8atbXgAuSW3pzn4HbL5etk7Yd2GWH-lznTh_RqtXs8TUltkvIcIKx72Gpoh6SmOTLZo2Tmy9JVskv51rU2dkyM3zOI1WoI5PWWA_gzmAyfIKL_2rYsolBn2Eo99sKylQHjc3bN",
+            "image": "/images/projects/bem-digital.jpg",
             "period": "Projeto Acadêmico & Social",
             "description": "O Bem-Digital é um sistema modular e completo desenvolvido em Laravel (Blade/Alpine.js/Tailwind) e MySQL para gestão de campanhas de doação, controle de estoque e doadores. Permite que instituições sem fins lucrativos gerenciem doações em tempo real com transparência e segurança.",
             "challengesTitle": "Arquitetura e Desafios de Engenharia",
@@ -334,7 +334,7 @@
                 "REST API",
                 "Hackathon"
             ],
-            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAm3C4NmT1uroornwDFiyKaioSqfxFwhiFXPxZf0CCWN7kOWjSDIm0q34VlX-bxdo6WesoR9cbW0XvHWHgq1KCAF7Gsb6NvcTU6zsSRxcdUiJ9G9LIG0eKYPdq24R-NoByAkrI2AKQtWld4PUP6p29gc0-nRQglASVBRD9O0i9B9UWlTCie09Gv_dS9jq_euZOosSRgcYpR4XYubII2WSLHa3SsODBzGGk87dHcy_vbdwJw_waVZKi7VROe33_5WvKVj5qbsQ0NuvmP",
+            "image": "/images/projects/bolao-copa.jpg",
             "period": "Hackathon Acadêmico – UniALFA",
             "description": "Solução mobile com arquitetura cliente-servidor criada em maratona de programação (Hackathon) para gerenciamento de bolões e palpites esportivos da Copa do Mundo. A aplicação conecta um aplicativo móvel reativo a um backend robusto em Java.",
             "challengesTitle": "Integração Mobile React Native e Backend Spring Boot",
@@ -356,7 +356,7 @@
                 "RESTful API",
                 "Em Evolução"
             ],
-            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD1N78pxkriQLRS5sTcEX1gr1RwpZc51iAKew1BVwNoLShkUc8AvZMyRbWCP_Qp--EDooshTH91IkBjuxCx9XL-ySMoCe3U3YbRbzIno-f6_hWaqNq9Fy1oTeoG9mLaR9DqAHyK4i8atbXgAuSW3pzn4HbL5etk7Yd2GWH-lznTh_RqtXs8TUltkvIcIKx72Gpoh6SmOTLZo2Tmy9JVskv51rU2dkyM3zOI1WoI5PWWA_gzmAyfIKL_2rYsolBn2Eo99sKylQHjc3bN",
+            "image": "/images/projects/hotsite-unialfa.jpg",
             "period": "Projeto Acadêmico em Refatoração",
             "description": "Plataforma projetada para gerenciamento de hotsites, inscrições e credenciamento de eventos acadêmicos na UniALFA. O projeto combina diferentes camadas tecnológicas conectando front-end em PHP a serviços de backend assíncronos.",
             "challengesTitle": "Arquitetura Híbrida e Refatoração de Serviços",
@@ -377,7 +377,7 @@
                 "MySQL",
                 "Gráficos Interativos"
             ],
-            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAm3C4NmT1uroornwDFiyKaioSqfxFwhiFXPxZf0CCWN7kOWjSDIm0q34VlX-bxdo6WesoR9cbW0XvHWHgq1KCAF7Gsb6NvcTU6zsSRxcdUiJ9G9LIG0eKYPdq24R-NoByAkrI2AKQtWld4PUP6p29gc0-nRQglASVBRD9O0i9B9UWlTCie09Gv_dS9jq_euZOosSRgcYpR4XYubII2WSLHa3SsODBzGGk87dHcy_vbdwJw_waVZKi7VROe33_5WvKVj5qbsQ0NuvmP",
+            "image": "/images/projects/investment-manager.jpg",
             "period": "Projeto Acadêmico & Prático",
             "description": "Aplicação desenvolvida em PHP Orientado a Objetos seguindo rigorosamente a arquitetura MVC (Model-View-Controller). Permite aos usuários registrar investimentos, acompanhar rentabilidade e projetar ganhos com gráficos dinâmicos.",
             "challengesTitle": "Modelagem Orientada a Objetos e MVC",
@@ -398,7 +398,7 @@
                 "Next.js",
                 "Tailwind CSS"
             ],
-            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAm3C4NmT1uroornwDFiyKaioSqfxFwhiFXPxZf0CCWN7kOWjSDIm0q34VlX-bxdo6WesoR9cbW0XvHWHgq1KCAF7Gsb6NvcTU6zsSRxcdUiJ9G9LIG0eKYPdq24R-NoByAkrI2AKQtWld4PUP6p29gc0-nRQglASVBRD9O0i9B9UWlTCie09Gv_dS9jq_euZOosSRgcYpR4XYubII2WSLHa3SsODBzGGk87dHcy_vbdwJw_waVZKi7VROe33_5WvKVj5qbsQ0NuvmP",
+            "image": "/images/projects/chopits.jpg",
             "period": "Projeto Acadêmico – TypeScript & Next.js",
             "description": "Uma aplicação Front-end robusta desenvolvida para simular a experiência de compra de um grande e-commerce, com carrinho de compras interativo, listagem de produtos com filtros e cálculos em tempo real.",
             "challengesTitle": "Tipagem Estrita e Desempenho",
@@ -419,7 +419,7 @@
                 "JavaScript",
                 "Automação Web"
             ],
-            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD1N78pxkriQLRS5sTcEX1gr1RwpZc51iAKew1BVwNoLShkUc8AvZMyRbWCP_Qp--EDooshTH91IkBjuxCx9XL-ySMoCe3U3YbRbzIno-f6_hWaqNq9Fy1oTeoG9mLaR9DqAHyK4i8atbXgAuSW3pzn4HbL5etk7Yd2GWH-lznTh_RqtXs8TUltkvIcIKx72Gpoh6SmOTLZo2Tmy9JVskv51rU2dkyM3zOI1WoI5PWWA_gzmAyfIKL_2rYsolBn2Eo99sKylQHjc3bN",
+            "image": "/images/projects/e-script-website.jpg",
             "period": "Projeto Aberto • GitHub",
             "description": "Website estruturado para demonstrar catálogo de scripts, automações e utilitários web voltados para produtividade e desenvolvimento.",
             "challengesTitle": "Estruturação Semântica e Acessibilidade",
@@ -440,7 +440,7 @@
                 "HTML5/CSS3",
                 "UniALFA"
             ],
-            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDggm4-9MRgDHl7OapNnan9bC4ozB3tdTP_J_RxiIOKIIvKHb7WrUASrc_G8Zys_tbarbwTJqL5JfUY6Lhvvldxb8CnUxNSPUocoobbTI7jPMMmV7vR5Di-LeHj9Y637hceP_lDuKKQBBb7vK0S-vchMuFUIpr4V_UoKjsy9MP_mcB-THvZgTCwzEiDT0jTB5OH7Er-EjTzn53cBCX4i_eNO7u7fL5dNNOMsPIBjW09_XgWx5wngFXuJ1linOiPMlSjiu9jW_8CG-RE",
+            "image": "/images/projects/alfaplus.jpg",
             "period": "Projeto Acadêmico – UniALFA",
             "description": "Aplicação desenvolvida para gerenciar fluxos estudantis, disciplinas e notas no ambiente acadêmico da UniALFA.",
             "challengesTitle": "Lógica de Negócio e Validação de Dados",
@@ -461,7 +461,7 @@
                 "Design Responsivo",
                 "UI/UX"
             ],
-            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMIJrXQiN8F1mkWdQMF6vIMM-JRZvmsv7C0pbyZqNmfQBU5XGRLNuswwwe4QHun2rrioSKO8DqO-JWoq1N7zwK8IH0534f8pmDc7S2M8O8DekcyEutArNwgmDfrYaTOOJL630KH6dxKedjt4v3aJzDEXyJBH5iL8d2s9ASi4PU64LccDrWItWJsvTEoxGiWnbDAQPrqvM_v1oCGlElS8xgWnUjkVqGnIZqXnbdYWDRI3H6hEyYHe88X6r-6DTM132STENk-Pj8VRQd",
+            "image": "/images/projects/site-vitrine.jpg",
             "period": "Projeto Aberto • GitHub",
             "description": "Landing page institucional com layout responsivo, tipografia limpa e hierarquia visual projetada para exibição de serviços e produtos.",
             "challengesTitle": "Estilização Nativa e Alta Performance",
