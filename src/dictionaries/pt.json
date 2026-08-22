@@ -1,11 +1,103 @@
 {
     "header": {
+        "home": "Início",
         "about": "Sobre",
         "skills": "Habilidades",
         "education": "Formação",
         "experience": "Experiência",
         "projects": "Projetos",
+        "curriculum": "Currículo",
         "contact": "Fale Comigo"
+    },
+    "homePage": {
+        "hero": {
+            "badge": "Engenheiro Full Stack Júnior",
+            "greeting": "Olá, mundo! 👋 Eu sou o",
+            "name": "Daniel Satel Pereira",
+            "nickname": "Peridan.dev",
+            "title": "Desenvolvedor Full Stack & Criador de Soluções",
+            "description": "Especialista em unir a solidez e arquitetura limpa do backend (PHP/Laravel, Node.js, Java) com interfaces web modernas, reativas e de altíssimo desempenho em React, Next.js e TypeScript.",
+            "ctaProjects": "Explorar Projetos",
+            "ctaCurriculum": "Ver Currículo Completo",
+            "ctaTerminal": "Testar Terminal Web",
+            "availability": "Disponível para novos desafios e contratações",
+            "location": "Umuarama/PR – Brasil",
+            "university": "UniALFA (Sistemas para Internet)"
+        },
+        "terminal": {
+            "headerTitle": "peridan@dev: ~ (bash)",
+            "welcome": "Bem-vindo ao Developer Shell do Peridan! Digite um comando ou utilize os atalhos rápidos:",
+            "shortcutsLabel": "Comandos Rápidos:",
+            "inputPlaceholder": "Digite um comando (ex: help, whoami, curiosidades, skills, 42, clear)...",
+            "helpText": "Comandos disponíveis:\n  whoami       - Quem é Daniel Satel Pereira\n  skills       - Principais tecnologias e competências\n  stack        - Detalhes do ecossistema de desenvolvimento\n  curiosidades - Menu interativo de hobbies, músicas, filmes e trivia\n  projects     - Principais projetos desenvolvidos\n  curriculo    - Abrir a página de currículo formal\n  contact      - Informações diretas de contato e redes sociais\n  date         - Data e hora local em Umuarama/PR\n  clear        - Limpar tela do terminal\n\n(Psst... há comandos secretos e referências escondidas no terminal!)",
+            "whoamiText": "Daniel Satel Pereira (Peridan)\nIdade: 24 anos | Localização: Umuarama/PR – Brasil\nFormação: Sistemas para Internet (UniALFA)\nPerfil: Desenvolvedor Full Stack Júnior com paixão por arquiteturas escaláveis, código limpo e alta performance.",
+            "skillsText": "⚡ Backend: PHP 8+, Laravel, Node.js (NestJS), Java (Spring Boot), Python\n🎨 Frontend: React 19, Next.js 16 (App Router), TypeScript, TailwindCSS v4\n🗄️ Bancos de Dados: MySQL, PostgreSQL, Modelagem Relacional\n🛠️ Infra & DevOps: Mikrotik RouterOS, Windows Server, Docker, Git/GitHub",
+            "stackText": "Arquitetura: Clean Code, MVC, RESTful APIs, Server Components, SSR/SSG, WCAG AAA Acessibilidade e 60 FPS fluídos.",
+            "projectsText": "Principais projetos em destaque:\n  1. Hub de ONGs (Bem-Digital) - Laravel, Blade, MySQL\n  2. Controle de Frota (FleetManager) - Laravel, Docker/Sail, MySQL\n  3. Gestão de Investimentos - PHP POO, MVC\n  4. API de Eventos & Front-end - Node.js, PHP\n  5. Chopits - E-commerce React & Next.js\nDigite 'curriculo' ou 'projects' para navegar.",
+            "curriculoText": "Redirecionando para o Currículo Formal completo...",
+            "contactText": "📬 E-mail: danielsatelpereira@gmail.com\n📱 WhatsApp: (041) 9 9952-1315\n🐙 GitHub: github.com/DanielSatelPereira\n💼 LinkedIn: linkedin.com/in/daniel-satel-pereira",
+            "unknownCommand": "Comando não reconhecido. Digite 'help' para ver os comandos ou 'curiosidades' para explorar.",
+            "triviaMenu": "┌── [ 🌌 CURIOSIDADES & UNIVERSO PESSOAL DO PERIDAN ] ──┐\n│ Digite uma das opções abaixo para conhecer mais:      │\n│                                                       │\n│   • curiosidades tech     - História com computação   │\n│   • curiosidades musica   - Gêneros e sons favoritos  │\n│   • curiosidades filmes   - Sci-Fi e Cultura Pop      │\n│   • curiosidades games    - Jogos e RPGs preferidos   │\n│   • curiosidades playlist - Trilha sonora para codar  │\n└───────────────────────────────────────────────────────┘\n💡 Dica: Você também pode digitar diretamente 'musica', 'playlist', 'games', 'filmes' ou 'tech'!",
+            "triviaTech": "💻 [Trivia Tech]: Desmontou o primeiro computador aos 12 anos; configurou os primeiros switches e roteadores Mikrotik RouterOS aos 19; apaixonado por entender como as coisas funcionam desde a física do cabo de rede até o pixel renderizado no navegador.",
+            "triviaMusic": "🎧 [Músicas & Sons]: Gêneros favoritos incluem Synthwave / Retrowave (música eletrônica anos 80 futurista), Lo-Fi instrumental para concentração máxima, Rock clássico (Pink Floyd, Dire Straits, Queen) e trilhas sonoras orquestradas de jogos e animes.",
+            "triviaMovies": "🎬 [Filmes & Séries]: Fã incondicional de Ficção Científica e Cyberpunk: Matrix (1999), Interestelar, O Guia do Mochileiro das Galáxias, Blade Runner 2049, Star Wars (Trilogia Original) e a série Mr. Robot.",
+            "triviaGames": "🎮 [Games & RPGs]: Aprecia jogos com histórias profundas e mecânicas imersivas: RPGs (The Witcher 3, Cyberpunk 2077, Chrono Trigger), jogos de estratégia (Age of Empires) e títulos com trilhas sonoras marcantes.",
+            "triviaPlaylist": "🎵 [Playlist do Dev]: Músicas recomendadas para codar com foco:\n  • 'Resonance' - HOME\n  • 'Nightcall' - Kavinsky\n  • 'Tech Noir' - Gunship\n  • 'Daylight' - Lofi Girl Beats\nColoque o fone de ouvido, abra o editor e entre no estado de Flow! 🎧✨",
+            "easterEgg42": "🌌 42: A Resposta Fundamental para a Vida, o Universo e Tudo Mais!\n(O Guia do Mochileiro das Galáxias - Douglas Adams)\nLembre-se: 'NÃO ENTRE EM PÂNICO' e nunca, jamais esqueça a sua toalha! 🚀🧻",
+            "easterEggPeace": "🛸 'VIEMOS EM PAZ!'\nSaudações terráqueo! O sinal de rádio foi interceptado com sucesso pelo Peridan a partir do quadrante Alpha do Paraná. 👽🖖",
+            "easterEggMatrix": "🐇 Siga o coelho branco...\n'Você toma a pílula azul, a história acaba e você acorda na sua cama acreditando no que quiser. Você toma a pílula vermelha, fica no País das Maravilhas e eu te mostro até onde vai a toca do coelho.' 💊🔴",
+            "easterEggCoffee": "☕ [Peridan OS]: Injetando café expresso duplo no terminal...\n[████████████████████] 100%\n⚡ Produtividade aumentada em 500%!\nStatus: HTTP 418 I'm a teapot 🫖",
+            "easterEggStarWars": "⚔️ 'Fazer ou não fazer. Tentativa não há.' — Mestre Yoda.\nQue a Força da tipagem estrita do TypeScript esteja com o seu código! 🌟",
+            "easterEggVim": "🚪 Como sair do Vim em 3 passos:\n  1. Aperte a tecla 'Esc' 10 vezes\n  2. Digite ':wq!' e dê Enter\n  3. Se não funcionar, desligue o computador da tomada! 🔌😂",
+            "easterEggRickroll": "🕺 Never gonna give you up,\nNever gonna let you down,\nNever gonna run around and desert you...\n🎶 Rickrolled com sucesso no terminal!",
+            "easterEggDeploy": "🚨 ALERTA CRÍTICO: Tentativa de 'git push --force' na branch main em plena sexta-feira às 18:00 detectada!\nQue a misericórdia dos logs esteja com os servidores de produção... 💥🔥"
+        },
+        "bento": {
+            "badge": "Destaques & Capacidades",
+            "title": "Visão Sistêmica de Ponta a Ponta",
+            "subtitle": "Da infraestrutura de redes e servidores até o frontend reativo e arquiteturas backend corporativas.",
+            "fullstackCard": {
+                "badge": "Backend & Frontend",
+                "title": "Desenvolvimento Full Stack",
+                "description": "Domínio prático de PHP/Laravel e Node.js para regras de negócio e Next.js/React para interfaces modernas e acessíveis."
+            },
+            "infraCard": {
+                "badge": "Redes & Servidores",
+                "title": "Infraestrutura & Suporte",
+                "description": "Experiência sólida em Mikrotik RouterOS, redes estruturadas, Windows Server e conteinerização Docker."
+            },
+            "locationCard": {
+                "badge": "Localização & Fuso",
+                "city": "Umuarama/PR",
+                "country": "Brasil",
+                "status": "Presencial, Híbrido ou Remoto"
+            },
+            "educationCard": {
+                "badge": "Academia",
+                "degree": "Sistemas para Internet",
+                "institution": "UniALFA Umuarama",
+                "period": "2024 - 2026"
+            },
+            "curriculumCtaCard": {
+                "badge": "Documento Completo",
+                "title": "Currículo Profissional Detalhado",
+                "description": "Consulte a linha do tempo cronológica com todas as experiências profissionais, formações e opção de exportar/imprimir em PDF.",
+                "btn": "Acessar Currículo"
+            }
+        }
+    },
+    "curriculumPage": {
+        "badge": "Documento Oficial",
+        "title": "Currículo Profissional",
+        "subtitle": "Histórico detalhado de atuação, qualificações e projetos de Daniel Satel Pereira.",
+        "printButton": "Imprimir / Salvar PDF",
+        "backHome": "Voltar ao Início",
+        "summaryTitle": "Sumário Executivo",
+        "summaryText": "Desenvolvedor Full Stack com sólida base acadêmica em Sistemas para Internet e experiência prática no setor público e privado. Atualmente atuo com desenvolvimento web utilizando PHP/Laravel, aliado a interfaces modernas com React, Next.js e Tailwind CSS. Possuo vivência prévia em suporte técnico e infraestrutura (Mikrotik, Windows Server), o que me proporciona uma visão sistêmica completa, desde a rede até o software entregue ao usuário.",
+        "skillsTitle": "Matriz de Competências",
+        "experienceTitle": "Experiência Profissional",
+        "educationTitle": "Formação Acadêmica",
+        "contactTitle": "Contato & Redes"
     },
     "hero": {
         "badge": "Desenvolvedor Full Stack Júnior",
@@ -259,7 +351,37 @@
         "location": "Umuarama/PR – Brasil",
         "quickLinks": "Links Rápidos",
         "contactMe": "Fale Comigo",
+        "privacy": "Termos & Privacidade",
         "available": "Disponível para novos desafios e projetos"
+    },
+    "cookieBanner": {
+        "text": "Este site utiliza armazenamento local e cookies essenciais para salvar suas preferências de tema (claro/escuro) e idioma. Nenhum dado pessoal é rastreado ou compartilhado.",
+        "accept": "Entendido",
+        "learnMore": "Termos & Privacidade"
+    },
+    "privacyPage": {
+        "badge": "Transparência & Segurança",
+        "title": "Termos de Uso e Política de Privacidade",
+        "subtitle": "Informações claras sobre o uso de dados, cookies essenciais e termos deste portfólio.",
+        "backHome": "Voltar ao Início",
+        "sections": {
+            "intro": {
+                "title": "1. Visão Geral",
+                "text": "Este portfólio é mantido por Daniel Satel Pereira (Peridan) com a finalidade exclusiva de apresentar projetos profissionais, acadêmicos, habilidades técnicas e currículo profissional. Respeitamos integralmente a sua privacidade segundo as diretrizes da Lei Geral de Proteção de Dados (LGPD) e normativas internacionais."
+            },
+            "cookies": {
+                "title": "2. Uso de Cookies e Armazenamento Local",
+                "text": "Utilizamos apenas recursos estritamente necessários para a correta funcionalidade do site:\n• Preferência de Tema (localStorage): Salva sua escolha entre Modo Claro ou Modo Escuro.\n• Preferência de Idioma (Cookie de Rota): Mantém a visualização em Português ou Inglês conforme sua seleção.\nNão utilizamos cookies de rastreamento de terceiros, pixels de publicidade ou ferramentas invasivas de coleta de comportamento."
+            },
+            "terms": {
+                "title": "3. Termos de Uso e Propriedade Intelectual",
+                "text": "O conteúdo disponibilizado neste site (textos, arquiteturas de demonstração e projetos de autoria própria) destina-se a fins informativos e de recrutamento. Os códigos e repositórios vinculados possuem licenças descritas em seus respectivos repositórios no GitHub."
+            },
+            "contact": {
+                "title": "4. Dúvidas e Contato",
+                "text": "Para quaisquer dúvidas relacionadas a este site ou termos, entre em contato diretamente pelo e-mail danielsatelpereira@gmail.com ou pelo WhatsApp (041) 9 9952-1315."
+            }
+        }
     },
     "seo": {
         "title": "Daniel Satel Pereira (Peridan) | Desenvolvedor Full Stack",

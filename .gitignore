@@ -23,6 +23,12 @@
 
 # Variáveis de Ambiente (Ignorar arquivos locais com segredos, permitir .env.example)
 .env
+.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
 
 # Logs e Debug
 npm-debug.log*
@@ -39,6 +45,7 @@ Thumbs.db
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+!.vscode/custom-dictionary.txt
 .idea/
 
 # TypeScript Cache

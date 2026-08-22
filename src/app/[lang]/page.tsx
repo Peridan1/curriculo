@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Header from "../../components/Header";
-import Hero from "../../components/Hero";
-import Skills from "../../components/Skills";
-import Education from "../../components/Education";
-import Experience from "../../components/Experience";
+import HomeHero from "../../components/HomeHero";
+import BentoGrid from "../../components/BentoGrid";
 import Projects from "../../components/Projects";
 import Footer from "../../components/Footer";
+import CookieBanner from "../../components/CookieBanner";
 
 const dictionaries = {
     en: () =>
@@ -23,7 +22,7 @@ export async function generateMetadata({
     const lang =
         resolvedParams.lang === "pt" || resolvedParams.lang === "en"
             ? resolvedParams.lang
-            : "en";
+            : "pt";
     const dict = await dictionaries[lang]();
 
     return {
@@ -47,18 +46,17 @@ export default async function Home({
     const lang =
         resolvedParams.lang === "pt" || resolvedParams.lang === "en"
             ? resolvedParams.lang
-            : "en";
+            : "pt";
     const dict = await dictionaries[lang]();
 
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen flex flex-col">
             <Header dict={dict} />
-            <Hero dict={dict} />
-            <Skills dict={dict} />
-            <Education dict={dict} />
-            <Experience dict={dict} />
+            <HomeHero dict={dict} lang={lang} />
+            <BentoGrid dict={dict} lang={lang} />
             <Projects dict={dict} lang={lang} />
             <Footer dict={dict} />
+            <CookieBanner dict={dict} lang={lang} />
         </main>
     );
 }

@@ -1,6 +1,6 @@
 # Especificação: Boas Práticas de Desenvolvimento
 
-Este documento descreve os padrões recomendados de commits, escrita de código, comentários e princípios de design que devem ser seguidos por todos os desenvolvedores e agentes de IA no projeto.
+Este documento descreve os padrões recomendados de commits, escrita de código, arquitetura limpa e princípios de desenvolvimento seguidos no projeto **Curriculo / Portfólio Peridan.dev**.
 
 ---
 
@@ -11,53 +11,31 @@ Sempre adote o padrão **Conventional Commits** adaptado para a língua portugue
 ```text
 <tipo>(<escopo>): <descrição curta em PT-BR>
 
-[corpo detalhado se for uma alteração Normal ou Major]
+[corpo detalhado se for uma alteração relevante]
 ```
 
 ### Tipos de Commit Permitidos:
-*   `feat`: Nova funcionalidade para o usuário final.
-*   `fix`: Correção de bug.
-*   `docs`: Mudanças apenas na documentação.
-*   `style`: Alterações que não afetam o significado do código (espaços em branco, formatação, CSS).
-*   `refactor`: Alteração de código que não corrige um bug nem adiciona funcionalidade (refatoração).
-*   `test`: Adição ou modificação de testes.
-*   `chore`: Atualizações de tarefas de build, pacotes, helpers de IDE, gitignore, etc.
-
-### Regras de Descrição por Escala de Mudança:
-1.  **Mudanças Pequenas (Minor/Triviais):**
-    *   Descrição curta na linha do título.
-    *   Não necessita de corpo de texto detalhado.
-    *   Exemplo: `fix(usuario): corrigir alinhamento do icone no botao de retorno`
-2.  **Mudanças Normais e Grandes (Normal/Major):**
-    *   Título curto e objetivo.
-    *   **Obrigatório** incluir um corpo (body) de commit detalhando *o que* foi feito, *o porquê* e os arquivos principais afetados.
-    *   Exemplo:
-        ```text
-        feat(usuario): unificar controle de cadastro com novos componentes de formulario
-
-        - Cria suporte para novos inputs e selects reutilizáveis no cadastro de usuário.
-        - Centraliza validações de CPF/CNPJ no helper local e redireciona rotas legadas.
-        ```
+* `feat`: Nova funcionalidade para o usuário final (ex: nova seção, nova página de projeto).
+* `fix`: Correção de bug visual, tipagem ou erro de execução.
+* `docs`: Mudanças apenas na documentação ou nas specs em `.agents/`.
+* `style`: Formatação, espaçamento ou ajustes cosméticos sem alteração de lógica.
+* `refactor`: Refatoração de código que não altera o comportamento visual ou funcional.
+* `perf`: Otimizações de performance (ex: aceleração GPU, redução de bundle, imagens otimizadas).
+* `test`: Adição ou correção de scripts de teste/validação.
+* `chore`: Atualização de tarefas de build, pacotes, variáveis ou ambiente.
 
 ---
 
-## 2. Padrão de Comentários no Código
+## 2. Princípios de Engenharia e Clean Code
 
-*   **Comentários Explicativos:** Comente sempre o código para explicar decisões complexas ou regras de negócio não óbvias.
-*   **Comentários em Views (Twig):**
-    *   **Nunca** utilize comentários em HTML (`<!-- comentário -->`) nas views Twig para documentar lógica interna. Comentários HTML são enviados ao navegador do cliente em produção.
-    *   **Sempre** utilize comentários nativos do Twig (`{# comentário #}`). Esses comentários são removidos em tempo de compilação no servidor.
+1. **DRY (Don't Repeat Yourself)**: Componentes reutilizáveis (botões, badges, cards, ícones) devem ser centralizados em `src/components/` em vez de duplicar marcações JSX.
+2. **SRP (Single Responsibility Principle)**: Cada componente ou módulo deve ter uma única responsabilidade clara (ex: `ThemeToggle` controla apenas a alternância de tema).
+3. **KISS (Keep It Simple, Stupid)**: Dê preferência a soluções simples, diretas e com CSS nativo antes de introduzir bibliotecas pesadas de JavaScript.
+4. **Tipagem Estrita (Strict TypeScript)**: NUNCA utilize `any`. Todas as props, parâmetros e dicionários de internacionalização devem ter interfaces TypeScript bem definidas.
 
 ---
 
-## 3. Princípios de Design de Código (Clean Code)
+## 3. Fluxo de Git e Ramificações (Branches)
 
-Ao criar novos códigos ou funcionalidades, sempre projete a arquitetura tendo em mente:
-
-1.  **DRY (Don't Repeat Yourself):**
-    *   Evite duplicação de lógica. Se o mesmo trecho de código ou layout visual se repetir, extraia para componentes Twig, Helpers ou Classes de Serviço compartilhadas.
-2.  **Encapsulamento Eficiente:**
-    *   Mantenha a lógica interna de funcionamento das classes oculta de quem as consome. Use modificadores de visibilidade corretos (`private`, `protected`).
-3.  **Princípio da Responsabilidade Única (SRP):**
-    *   Cada classe (Controller, Model, Service) deve ter apenas uma responsabilidade/motivo para mudar.
-    *   Exemplo: Um Controller deve apenas receber a requisição, delegar para a lógica de negócio e retornar a resposta.
+* **Sempre** trabalhe em branches de tópicos separadas a partir da `main` (ex: `feat/nova-secao-contato`, `fix/ajuste-tema-mobile`).
+* Valide a compilação com `npm run build` e typecheck antes de submeter alterações.

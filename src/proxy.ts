@@ -40,6 +40,6 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-    // Ignora TODAS as rotas de API, recursos internos do Next (_next) e arquivos estáticos com extensão (como .png, .js, .css)
-    matcher: ['/((?!api|_next|.*\\..*).*)']
+    // Ignora TODAS as rotas de API, recursos internos do Next (_next), robôs/sitemaps e arquivos estáticos com extensão
+    matcher: ['/((?!api|_next|robots\\.txt|sitemap\\.xml|manifest\\.webmanifest|.*\\..*).*)']
 };

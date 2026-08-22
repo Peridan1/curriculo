@@ -1,105 +1,72 @@
-# Padrões de Anotações e Comentários do Sistema (Admin Conselhos)
+# Padrões de Anotações, Comentários e Tipagem TypeScript
 
-Este guia define as especificações formais de estilo, idioma e formatação para comentários e documentações internas no projeto **Admin Conselhos**. As regras aplicam-se a todas as views Twig, código de produção PHP, testes automatizados (PHPUnit) e arquivos de configuração do sistema.
-
----
-
-## 1. Diretrizes Gerais
-
-### Idioma do Código e Comentários
-* **Língua**: Todos os comentários de desenvolvimento, documentações de métodos, classes, parâmetros e logs devem ser escritos estritamente em **Português do Brasil (PT-BR)**.
-* **Termos Técnicos**: Termos de arquitetura ou engenharia universalmente conhecidos em inglês devem ser mantidos no idioma original (ex: *dependency injection*, *container*, *getter*, *setter*, *middleware*, *Soft Delete*, *Single Responsibility Principle (SRP)*, *mock*).
-
-### Abordagem do Conteúdo
-* **Explicar o "Porquê", não o "O Quê"**: Comentários não devem narrar o que o código faz de forma direta (o que a sintaxe já deixa evidente). Eles devem justificar **o motivo** de uma decisão de design, regras de negócio complexas ou contornos para limitações técnicas.
-* **Evitar Comentários Obsoletos**: Comentários desatualizados, referências a trechos de códigos antigos comentados ou códigos comentados mortos (*commented-out code*) são estritamente proibidos.
+Este guia define as especificações formais de tipagem, documentação JSDoc e estilo de comentários no código do projeto **Curriculo / Portfólio Peridan.dev**.
 
 ---
 
-## 2. Views Twig (`resources/views/`)
+## 1. Diretrizes Gerais de Comentários
 
-* **Sintaxe**: Usar sempre a marcação nativa do Twig `{# comentário #}`. 
-* **Proibição de Comentários HTML**: Nunca utilize a sintaxe HTML `<!-- comentário -->` para anotações de desenvolvimento. Os comentários HTML são renderizados e enviados ao navegador do cliente final, expondo detalhes internos e gerando tráfego desnecessário.
-* **Eliminação de Legados**: Comentários em inglês herdados do template de terceiros (Limitless Admin Template 2.x) devem ser ativamente removidos durante manutenções ou novas criações.
-  * *Exemplos comuns de remoção*: `{# Content area #}`, `{# /content area #}`, `{# /highlighting rows and columns #}`.
-* **Exemplo de Uso Correto**:
-  ```twig
-  {# Alerta de feedback temporário após ações do usuário #}
-  {{ include('components/alert.twig') }}
-  ```
+* **Língua**: Todos os comentários e documentações devem ser escritos estritamente em **Português do Brasil (PT-BR)**.
+* **Termos Técnicos em Inglês**: Mantenha os termos técnicos universais em inglês (ex: *Server Component*, *Client Component*, *Props*, *Hooks*, *Payload*, *Middleware*, *Hydration*, *Bundle*, *Tree-shaking*).
+* **Foco no "Porquê"**: Comentários não devem narrar o que a sintaxe óbvia já mostra. Eles devem justificar **o motivo** de uma decisão arquitetural, escolhas de CSS aceleradas por GPU, contornos de comportamento de navegadores ou lógica de i18n.
+* **Proibição de Código Morto**: Trechos de código comentados (*commented-out code*) ou anotações obsoletas são proibidos.
 
 ---
 
-## 3. Código de Produção PHP (`src/`)
+## 2. Padrões de Tipagem TypeScript
 
-### Comentários de Linha (`//`)
-* **Espaçamento**: Sempre inserir um espaço simples após a declaração do comentário.
-  * *Correto*: `// Atualiza o token do usuário logado`
-  * *Incorreto*: `//Atualiza o token do usuário logado`
-* **Localização**: Devem ser colocados imediatamente acima da linha ou bloco de código a que se referem, mantendo a mesma indentação.
+### Contratos de Props em Componentes React
+Todos os componentes devem definir interfaces claras para suas propriedades:
 
-### PHPDoc de Classes, Interfaces e Traits
-* Devem conter uma descrição curta e objetiva sobre o propósito da classe em PT-BR.
-* Caso utilize a tag `@author`, use o formato padronizado: `@author Nome Completo <email@provedor.com>`.
+```tsx
+// Exemplo de contrato de componente com dados do dicionário
+export interface HeroProps {
+    dict: {
+        badge: string;
+        greeting: string;
+        title: string;
+        subtitle: string;
+        description: string;
+        projectsBtn: string;
+        personalInfo: {
+            email: string;
+            location: string;
+        };
+    };
+    lang: string;
+}
+```
 
-### Propriedades da Classe e Mapeamento ORM/Serializer
-* Com a adoção de atributos nativos no PHP 8 (`#[ORM\...]` e `#[Type(...)]`), blocos PHPDoc do tipo `/** @var tipo */` tornam-se redundantes se a propriedade já possuir declaração de tipo nativa do PHP.
-* **Regra**: Remover PHPDocs redundantes sobre tipos de propriedades.
-  * *Incorreto (Redundante)*:
-    ```php
-    /**
-     * @var int|null
-     */
-    #[ORM\Column(name: 'idperfil', type: Types::INTEGER)]
-    private ?int $idperfil = null;
-    ```
-  * *Correto*:
-    ```php
-    #[ORM\Column(name: 'idperfil', type: Types::INTEGER)]
-    #[Type('integer')]
-    private ?int $idperfil = null;
-    ```
+### JSDoc em Funções Utilitárias e Helpers
+Para funções de formatação, manipulação de rotas ou resolução de dicionários, utilize JSDoc explicativo em PT-BR:
 
-### Métodos (Getters, Setters, Actions, Construtores)
-* **Proibição de PHPDoc Redundante**: Se a assinatura do método declara nativamente os tipos de dados dos parâmetros e o tipo de retorno, o bloco PHPDoc **não deve existir** se sua única função for repetir essas tipagens ou adicionar descrições óbvias.
-  * *Incorreto (Redundante)*:
-    ```php
-    /**
-     * Set cnpjCpf.
-     *
-     * @param string|null $cnpjCpf
-     * @return static
-     */
-    public function setCnpjCpf(?string $cnpjCpf = null): static
-    ```
-  * *Correto*:
-    ```php
-    public function setCnpjCpf(?string $cnpjCpf = null): static
-    ```
-* **Quando usar PHPDoc em Métodos**:
-  1. Para documentar arrays tipados que o PHP não tipa nativamente (ex: `/** @return Categoria[] */`).
-  2. Para declarar exceções lançadas que precisam ser tratadas pela camada superior (ex: `/** @throws Exception */`).
-  3. Para documentar lógicas de negócio complexas que justifiquem parâmetros específicos.
+```ts
+/**
+ * Recupera o dicionário de traduções correspondente ao idioma solicitado.
+ * @param lang - Código do idioma ('pt' ou 'en')
+ * @returns Promessa com o conteúdo completo do dicionário JSON
+ */
+export async function getDictionary(lang: string) {
+    // Implementação...
+}
+```
 
 ---
 
-## 4. Testes Automatizados (`test/`)
+## 3. Comentários em Folhas de Estilo (CSS)
 
-* **Descrição dos Cenários**: Cada método de teste deve conter um PHPDoc curto explicando em linguagem de negócio o que o teste está validando.
-* **Formato**:
-  ```php
-  /**
-   * Valida que o método estático de validação identifica corretamente um CNPJ formatado.
-   */
-  public function testValidarMetodoEstaticoIdentificaCorretamenteCpfOuCnpj()
-  ```
+* Comentários em `src/app/globals.css` devem explicar o papel das variáveis semânticas do tema (modo claro e escuro) e classes utilitárias personalizadas:
 
----
+```css
+/* Paleta semântica do modo claro: tons limpos e contraste balanceado */
+:root {
+  --bg-dynamic: #f8fafc;
+  --text-dynamic: #0f172a;
+}
 
-## 5. Configurações do Sistema (`config/`)
-
-* **Tradução e Limpeza**: Arquivos de configuração de bootstrap, dependências (`dependencies.php`), middlewares (`middleware.php`) e rotas (`routes.php`) devem ter seus comentários herdados em inglês completamente traduzidos e adaptados para PT-BR.
-* **Exemplos**:
-  * Substituir `// DIC configuration` por `// Configuração do Container de Injeção de Dependências (DIC)`
-  * Substituir `// Monolog` por `// Integração com o Monolog (Gerenciamento de Logs)`
-  * Substituir `// Guzzle` por `// Configuração dos clientes de integração HTTP (Guzzle)`
+/* Paleta semântica do modo escuro: tons profundos com alto contraste */
+.dark {
+  --bg-dynamic: #0a0e17;
+  --text-dynamic: #f1f5f9;
+}
+```

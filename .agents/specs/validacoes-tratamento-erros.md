@@ -1,37 +1,38 @@
-# Especificação: Validações, Travas e Tratamento de Erros
+# Especificação: Validações, Resiliência e Tratamento de Erros
 
-Este documento define as diretrizes obrigatórias para validação de dados, aplicação de regras de negócios no backend e tratamento de erros no sistema **Admin Conselhos**.
-
----
-
-## 1. Camadas de Validação
-
-### A. Frontend (jQuery Validate)
-*   Formulários devem utilizar a classe `.form-validate-jquery` para ativar a validação via jQuery Validate.
-*   Mensagens de erro são inseridas dinamicamente com a classe `.validation-invalid-label` (definida no layout do template Limitless).
-*   Evitar inline styles para mensagens de erro; utilizar a formatação automática fornecida pelo JavaScript do template (`public/assets/js/pages/form_validation.js`).
-
-### B. Backend (Slim Controllers)
-*   **Validação de Parâmetros:** Validar se os campos obrigatórios estão preenchidos antes de chamar a persistência.
-*   **Segurança:** Validar a tipagem (ex: se IDs enviados são inteiros válidos) e sanitizar dados de entrada para evitar brechas de segurança.
+Este documento define as diretrizes obrigatórias de validação de dados, integridade de rotas, fallbacks de internacionalização e tratamento de erros no projeto **Curriculo / Portfólio Peridan.dev**.
 
 ---
 
-## 2. Padrão de Mensagens de Feedback
+## 1. Tratamento de Rotas e Slugs Dinâmicos
 
-Toda falha de validação ou erro de operação deve resultar em uma mensagem clara e estruturada para o usuário, respeitando as seguintes convenções:
+* **Validação de Slugs de Projetos**: Ao acessar `/[lang]/projetos/[slug]`, o sistema verifica se a chave do projeto existe no dicionário `dict.projectsList[slug]`.
+* **Disparo de 404 Not Found**: Se o slug for inválido ou não existir para o idioma selecionado, deve-se invocar `notFound()` imediatamente para renderizar a página 404 nativa do Next.js sem quebrar a execução:
 
-1.  **Sem Jargões Técnicos:** É proibido exibir mensagens de erro brutas do banco de dados (ex: `SQLSTATE[23000]: Integrity constraint violation`). O sistema deve capturar esses erros e traduzi-los para uma linguagem amigável.
-2.  **Mensagens Orientadas à Ação:** A mensagem deve explicar de forma simples o que deu errado e o que o usuário deve fazer para corrigir.
-3.  **Idioma:** Todas as mensagens de erro ou feedback devem ser apresentadas em Português do Brasil (PT-BR).
-4.  **Feedback via Sessão Flash:** Utilizar o sistema de flash messages para expor mensagens de sucesso ou erro nas telas:
-    *   Erro: `$this->flash->addMessage('error', 'Mensagem explicativa.');`
-    *   Sucesso: `$this->flash->addMessage('success', 'Operação realizada com sucesso.');`
-5.  **Exibição nas Views:** A view deve incluir `components/alert.twig` (ou bloco equivalente) para exibir os alertas de forma destacada e estilizada no topo da página.
+```tsx
+const project = dict.projectsList ? dict.projectsList[slug] : null;
+
+if (!project) {
+    notFound();
+}
+```
 
 ---
 
-## 3. Resiliência de Conexões e Serviços
+## 2. Resiliência de Idiomas e Fallback de Internacionalização
 
-*   **Try/Catch Obrigatório:** Qualquer chamada de banco de dados ou integração externa (ex: upload de arquivo) que possa lançar exceções deve estar envolvida em blocos `try-catch`.
-*   **Fallback Gracioso:** Em caso de exceção de banco de dados, redirecionar o usuário para a página anterior com uma mensagem flash amigável em vez de permitir que a aplicação trave ou exiba um erro 500 sem estilo.
+* **Idiomas Válidos**: Apenas `pt` e `en` são aceitos nas rotas `/[lang]`.
+* **Sanitização de Idioma**: Caso o parâmetro informado não pertença à lista de idiomas válidos, adote o fallback seguro para `"pt"`:
+
+```ts
+const safeLang = lang === "pt" || lang === "en" ? lang : "pt";
+```
+
+* **Integridade Estrutural dos Dicionários**: Todos os objetos e nós presentes em `src/dictionaries/pt.json` devem existir com a mesma tipagem e estrutura em `src/dictionaries/en.json`.
+
+---
+
+## 3. Tipagem e Validação em Tempo de Build
+
+* **Verificação Estrita**: O projeto adota `strict: true` no `tsconfig.json`. Qualquer erro de tipo bloqueia o build (`npm run build`).
+* **Proteção contra Propriedades Opcionais**: Ao renderizar propriedades que podem não existir em projetos mais simples (ex: `project.challengesTitle` ou `project.tags`), utilize encadeamento opcional e renderização condicional (`project.tags && project.tags.length > 0 && ...`).

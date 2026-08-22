@@ -1,12 +1,16 @@
 @import "tailwindcss";
 
+/* Configuração do Tailwind CSS v4 para suporte a tema via classe (.dark) com next-themes */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* =========================================
-   CONFIGURAÇÕES BASE E TEMAS DINÂMICOS FUTURISTAS
+   CONFIGURAÇÕES BASE E TEMAS DINÂMICOS
    ========================================= */
 @layer base {
 
-    /* MODO ESCURO FUTURISTA (Deep Obsidian & Cyber Cyan / Matrix Neon) */
-    :root {
+    /* MODO ESCURO (Deep Obsidian & Cyber Cyan / Matrix Neon) */
+    :root,
+    .dark {
         --bg-dynamic: #07090e;
         /* Preto cósmico / Obsidian profundo */
         --bg-surface: #0e121a;
@@ -18,46 +22,39 @@
 
         /* Cores Neon & Cyber Glow */
         --cyan-neon: #00f0ff;
-        /* Ciano Elétrico principal */
         --emerald-neon: #00ff9d;
-        /* Verde Matrix / Glow */
         --purple-neon: #a855f7;
-        /* Violeta Cyberpunk */
         --pop-dynamic: #00f0ff;
-        /* Cor de destaque padrão */
 
-        /* Glassmorphism Futurista com Glow */
+        /* Glassmorphism Escuro */
         --card-glass: rgba(14, 18, 27, 0.75);
         --card-border: rgba(0, 240, 255, 0.15);
         --card-glow: rgba(0, 240, 255, 0.08);
         --nav-glass: rgba(7, 9, 14, 0.85);
     }
 
-    /* MODO CLARO FUTURISTA (Cyber Hologram / Ice Clean) */
+    /* MODO CLARO (Clean Ice & Alto Contraste) */
     .light {
-        --bg-dynamic: #f1f5f9;
-        /* Ice Gray ultra clean */
+        --bg-dynamic: #f8fafc;
+        /* Slate 50 ultra clean */
         --bg-surface: #ffffff;
         /* Branco puro */
-        --text-dynamic: #0a0f1d;
-        /* Azul noite profundo */
-        --text-muted: #475569;
-        /* Slate escuro */
+        --text-dynamic: #0f172a;
+        /* Slate 900 de altíssimo contraste */
+        --text-muted: #1e293b;
+        /* Slate 800 para leitura confortável e nítida */
 
         /* Cores de Destaque no Modo Claro */
         --cyan-neon: #0284c7;
-        /* Azul Elétrico */
         --emerald-neon: #059669;
-        /* Esmeralda nítido */
         --purple-neon: #7c3aed;
-        /* Violeta profundo */
         --pop-dynamic: #0284c7;
 
-        /* Glassmorphism Claro */
-        --card-glass: rgba(255, 255, 255, 0.85);
-        --card-border: rgba(2, 132, 199, 0.2);
-        --card-glow: rgba(2, 132, 199, 0.05);
-        --nav-glass: rgba(241, 245, 249, 0.85);
+        /* Glassmorphism Claro - Fundo mais escuro/encorpado e contrastante */
+        --card-glass: rgba(255, 255, 255, 0.95);
+        --card-border: rgba(148, 163, 184, 0.35);
+        --card-glow: rgba(2, 132, 199, 0.08);
+        --nav-glass: rgba(226, 232, 240, 0.94);
     }
 
     body {
@@ -66,23 +63,20 @@
         color: var(--text-dynamic);
         transition: background-color 0.3s ease, color 0.3s ease;
         background-image: 
-            radial-gradient(circle at 15% 15%, rgba(0, 240, 255, 0.05) 0%, transparent 40%),
-            radial-gradient(circle at 85% 65%, rgba(168, 85, 247, 0.04) 0%, transparent 40%);
+            radial-gradient(circle at 15% 15%, rgba(0, 240, 255, 0.03) 0%, transparent 40%),
+            radial-gradient(circle at 85% 65%, rgba(168, 85, 247, 0.02) 0%, transparent 40%);
         background-attachment: fixed;
     }
 }
 
 @theme {
     /* =========================================
-       PALETA DE CORES FUTURISTA
+       PALETA DE CORES FUTURISTA (SEM SOBRESCREVER WHITE/BLACK)
        ========================================= */
     --color-primary: #00f0ff;
     --color-primary-glow: rgba(0, 240, 255, 0.4);
     --color-emerald-neon: #00ff9d;
     --color-purple-neon: #a855f7;
-    --color-charcoal: var(--bg-dynamic);
-    --color-surface: var(--bg-surface);
-    --color-white: var(--text-dynamic);
     --color-pop-yellow: var(--pop-dynamic);
     --color-pop-orange: #00ff9d;
 
@@ -109,7 +103,7 @@
         background-color: transparent;
     }
 
-    /* Brilho neon futurista */
+    /* Brilho neon sutil */
     .neon-glow {
         box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
     }
@@ -125,7 +119,7 @@
     }
 }
 
-/* Otimização de acessibilidade e redução de fadiga de hardware */
+/* Otimização de acessibilidade e redução de movimento */
 @media (prefers-reduced-motion: reduce) {
     *, ::before, ::after {
         animation-duration: 0.01ms !important;

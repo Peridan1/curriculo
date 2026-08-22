@@ -1,62 +1,37 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useState, useSyncExternalStore } from "react";
+import { useSyncExternalStore } from "react";
+import { ThemeSunIcon, ThemeMoonIcon } from "./icons";
 
 const emptySubscribe = () => () => {};
 
 export default function ThemeToggle() {
     const { theme, setTheme } = useTheme();
     const mounted = useSyncExternalStore(emptySubscribe, () => true, () => false);
-    const [isExploding, setIsExploding] = useState(false);
-    const [clickCoords, setClickCoords] = useState({ x: 0, y: 0 });
 
     const isDark = theme === "dark";
 
-
-    const handleToggle = (e: React.MouseEvent) => {
-        const cx = e.clientX;
-        const cy = e.clientY;
-
-        setClickCoords({ x: cx, y: cy });
-        setIsExploding(true);
-
-        setTimeout(() => {
-            setTheme(isDark ? "light" : "dark");
-        }, 300);
-
-        setTimeout(() => setIsExploding(false), 800);
+    const handleToggle = () => {
+        setTheme(isDark ? "light" : "dark");
     };
 
     return (
-        <>
-            {/* O Clarão da Explosão */}
-            {isExploding && (
-                <div
-                    className="fixed z-9999 rounded-full pointer-events-none"
-                    style={{
-                        left: clickCoords.x,
-                        top: clickCoords.y,
-                        width: "2vw",
-                        height: "2vw",
-                        backgroundColor: isDark ? "#f3f4f6" : "#1a1a1b",
-                        animation:
-                            "explosion 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards",
-                    }}
-                />
+        <button
+            onClick={handleToggle}
+            className="size-10 flex items-center justify-center rounded-xl bg-slate-200 hover:bg-slate-300 dark:bg-slate-900 border border-slate-300 dark:border-cyan-500/30 hover:border-cyan-600 dark:hover:border-cyan-400 text-slate-950 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300 transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer shadow-xs"
+            title="Alternar Tema"
+            aria-label="Alternar Tema"
+        >
+            {mounted ? (
+                isDark ? (
+                    <ThemeSunIcon className="size-5 select-none" />
+                ) : (
+                    <ThemeMoonIcon className="size-5 select-none" />
+                )
+            ) : (
+                <ThemeMoonIcon className="size-5 select-none" />
             )}
-
-            {/* O Botão (Sol / Lua) */}
-            <button
-                onClick={handleToggle}
-                className="relative z-10000 size-10 flex items-center justify-center rounded-lg bg-white/5 border border-white/10 hover:border-pop-yellow text-pop-yellow transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
-                title="Trocar Tema"
-            >
-                <span className="material-symbols-outlined text-xl">
-                    {mounted ? (isDark ? "light_mode" : "dark_mode") : "dark_mode"}
-                </span>
-            </button>
-        </>
+        </button>
     );
 }
-

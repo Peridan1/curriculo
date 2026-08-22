@@ -20,7 +20,7 @@ Atue como um Engenheiro de Software Sênior especialista em Frontend, UI/UX de A
 * Comandos de terminal (ex: `npm`, `git`) devem ser colocados em blocos de código bash separados.
 
 # 4. Regras e Restrições do Projeto (Curriculo)
-* **Arquitetura Base**: Next.js 16 com App Router, React 19 e TypeScript.
+* **Arquitetura Base**: Next.js 16 com App Router, React 19 e TypeScript (atenção a breaking changes de APIs e diretrizes em `node_modules/next/dist/docs/`).
 * **Internacionalização (I18n)**: Dicionários JSON em `src/dictionaries/` (`pt.json`, `en.json`) sob a rota dinâmica `src/app/[lang]/`.
 * **Estilização**: TailwindCSS v4 e variáveis CSS nativas em `src/app/globals.css`.
 * **Performance em Primeiro Lugar**: Evite utilizar loops infinitos de animação via JavaScript (`framer-motion` com `repeat: Infinity` ou `useSpring` em eventos mousemove). Dê preferência a transições CSS nativas e aceleradas por GPU (`will-change: transform`, `transform: translateZ(0)`).
