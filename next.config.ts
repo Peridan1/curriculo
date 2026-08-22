@@ -15,8 +15,11 @@ const cspHeader = `
   upgrade-insecure-requests;
 `.replace(/\s{2,}/g, " ").trim();
 
+const isVercel = process.env.VERCEL === "1" || !!process.env.VERCEL;
+
 const nextConfig: NextConfig = {
-  output: "standalone",
+  // Standalone é utilizado em containers Docker (self-hosted); na Vercel o deploy serverless nativo é utilizado
+  output: isVercel ? undefined : "standalone",
   reactCompiler: true,
   // Oculta o cabeçalho X-Powered-By por segurança (Fingerprinting protection)
   poweredByHeader: false,
