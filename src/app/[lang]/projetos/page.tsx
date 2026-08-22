@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import CookieBanner from "../../../components/CookieBanner";
@@ -14,6 +15,29 @@ const dictionaries = {
             (module) => module.default,
         ),
 };
+
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+    const resolvedParams = await params;
+    const lang =
+        resolvedParams.lang === "pt" || resolvedParams.lang === "en"
+            ? resolvedParams.lang
+            : "pt";
+    const dict = await dictionaries[lang]();
+
+    return {
+        title: dict.projectsSection.hubTitle,
+        description: dict.projectsSection.hubSubtitle,
+        openGraph: {
+            title: `${dict.projectsSection.hubTitle} | Daniel Satel Pereira`,
+            description: dict.projectsSection.hubSubtitle,
+            type: "website",
+        },
+    };
+}
 
 export default async function ProjectsHub({
     params,

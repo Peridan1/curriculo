@@ -95,6 +95,7 @@ added
 Added
 addgroup
 adding
+address
 adduser
 addWords
 adequada
@@ -173,6 +174,7 @@ alien
 all
 All
 allFiles
+allow
 allowJs
 along
 Alpha
@@ -193,6 +195,8 @@ alterados
 alternador
 alternância
 Alternar
+alternateLocale
+alternates
 alternativa
 altíssimo
 Alto
@@ -222,6 +226,7 @@ Analytics
 analytics
 analyze
 analyzed
+ancestors
 âncoras
 and
 Andamento
@@ -257,8 +262,8 @@ aparece
 Apenas
 apenas
 Aperte
-API
 api
+API
 APIs
 apk
 Aplicação
@@ -414,6 +419,7 @@ autenticação
 auth
 authentication
 Authority
+authors
 auto
 Auto
 autoCapitalize
@@ -503,8 +509,8 @@ behavioral
 Being
 believe
 below
-Bem
 bem
+Bem
 benéfico
 bento
 Bento
@@ -574,6 +580,7 @@ bridge
 Brilho
 Brilhos
 browser
+browsing
 btn
 bug
 Bug
@@ -607,6 +614,7 @@ BVwNoLShkUc
 bxdo
 Cabeçalho
 cabeçalho
+Cabeçalhos
 cabling
 cabo
 cache
@@ -635,6 +643,7 @@ camada
 Camada
 camadas
 Camadas
+camera
 caminho
 caminhos
 campaigns
@@ -726,6 +735,7 @@ Chamou
 change
 changed
 ChangeEvent
+changeFrequency
 changes
 channels
 charts
@@ -755,8 +765,8 @@ choice
 Choices
 choose
 Choose
-Chopits
 chopits
+Chopits
 chore
 chown
 Chrono
@@ -1000,6 +1010,7 @@ conhecer
 conhecido
 Conhecimento
 conhecimento
+connect
 Connection
 conquistas
 consegue
@@ -1051,6 +1062,7 @@ conteinerizado
 contêm
 contendo
 content
+Content
 Conteúdo
 conteúdo
 conteúdos
@@ -1178,6 +1190,7 @@ creating
 Creation
 creation
 creations
+creator
 credenciais
 credenciamento
 créditos
@@ -1204,9 +1217,12 @@ Crítico
 cronológica
 cronologicamente
 Cross
+cross
 cruciais
 CRUDs
+CSP
 cSpell
+cspHeader
 CSS
 css
 CTA
@@ -1230,8 +1246,8 @@ currentPath
 currentTime
 curriculo
 Curriculo
-Currículo
 currículo
+Currículo
 curriculoText
 curriculum
 Curriculum
@@ -1261,8 +1277,8 @@ Dados
 dados
 Daniel
 daniel
-danielsatelpereira
 DanielSatelPereira
+danielsatelpereira
 daquela
 dark
 Dark
@@ -1337,6 +1353,7 @@ demonstração
 demonstration
 Dentro
 dentro
+DENY
 departures
 dependem
 dependências
@@ -1439,6 +1456,7 @@ developments
 devem
 Devemos
 deveria
+device
 devidamente
 devops
 DevOps
@@ -1473,8 +1491,8 @@ different
 dificuldade
 Diga
 digit
-Digital
 digital
+Digital
 digitar
 Digite
 digite
@@ -1503,6 +1521,7 @@ direta
 diretamente
 diretas
 diretiva
+Diretiva
 direto
 diretório
 Diretório
@@ -1512,6 +1531,7 @@ Diretrizes
 dirname
 dirPath
 DISABLED
+disallow
 Disassembled
 discovery
 Discovery
@@ -1791,8 +1811,8 @@ esnext
 espaçamento
 especialidade
 Especialidade
-Especialista
 especialista
+Especialista
 especialistas
 Especialistas
 especializada
@@ -1875,6 +1895,7 @@ etapa
 etapas
 etk
 euZOosSRgcYpR
+eval
 even
 evenodd
 event
@@ -2111,6 +2132,7 @@ financeiros
 financial
 find
 Find
+Fingerprinting
 finja
 fins
 first
@@ -2128,8 +2150,8 @@ fixing
 fixos
 Flags
 flaky
-Fleet
 fleet
+Fleet
 FleetManager
 fleets
 flex
@@ -2160,8 +2182,8 @@ focused
 foi
 Folha
 Folhas
-Follow
 follow
+Follow
 followed
 following
 Following
@@ -2208,6 +2230,7 @@ Format
 format
 formatação
 Formatação
+formatDetection
 Formato
 formato
 formatting
@@ -2229,6 +2252,7 @@ FPS
 FQX
 fracassada
 Frame
+frame
 Framer
 framer
 framework
@@ -2329,6 +2353,7 @@ genérica
 genéricos
 Gêneros
 genres
+geolocation
 gera
 Gera
 Geração
@@ -2388,6 +2413,7 @@ gonna
 Good
 good
 googleapis
+googleBot
 googleusercontent
 Got
 got
@@ -2419,6 +2445,7 @@ grow
 Grupo
 gsap
 Gsb
+gstatic
 guarantee
 guards
 Guards
@@ -2632,6 +2659,7 @@ inclua
 include
 Included
 includes
+includeSubDomains
 incluem
 inclui
 incluindo
@@ -2653,6 +2681,7 @@ index
 indexado
 indica
 indicação
+Individuais
 individuais
 individualizada
 individualized
@@ -2685,6 +2714,7 @@ Inglês
 inglês
 inglesa
 ingress
+Inicial
 inicial
 inicialização
 Inicialização
@@ -2698,6 +2728,7 @@ init
 initial
 Initial
 initializeWorkspace
+initialScale
 initialWords
 Injecting
 Injetando
@@ -2708,6 +2739,7 @@ inputPlaceholder
 inputRef
 Inquiries
 ins
+insecure
 insere
 inset
 Insight
@@ -2761,8 +2793,8 @@ InteractiveTerminal
 interativa
 interativas
 interatividade
-Interativo
 interativo
+Interativo
 interativos
 Interativos
 Intercepta
@@ -2821,8 +2853,8 @@ investigou
 investigue
 Investimentos
 investimentos
-Investment
 investment
+Investment
 investments
 invocada
 invocado
@@ -2910,9 +2942,12 @@ lança
 lang
 language
 Language
+languages
 Laravel
+large
 las
 last
+lastModified
 late
 later
 laterais
@@ -3098,13 +3133,15 @@ man
 manage
 Management
 management
-Manager
 manager
+Manager
 managing
 mandate
 mandates
 mandatory
 maneira
+manifest
+Manifest
 manifestam
 manipulação
 Mantém
@@ -3205,6 +3242,8 @@ metadados
 Metadados
 Metadata
 metadata
+metadataBase
+MetadataRoute
 metatags
 methodologies
 Methodologies
@@ -3215,6 +3254,7 @@ métricas
 meu
 meus
 Micro
+microphone
 middleware
 Middleware
 Mikrotik
@@ -3288,6 +3328,7 @@ Monta
 Montagem
 montagem
 montagens
+monthly
 more
 morpheus
 Morto
@@ -3416,8 +3457,8 @@ newEntries
 newLang
 newLink
 next
-Next
 NEXT
+Next
 NextConfig
 nextConfig
 NextJS
@@ -3470,6 +3511,7 @@ normalized
 normativas
 nos
 nós
+nosniff
 not
 NOT
 Not
@@ -3656,6 +3698,7 @@ override
 Override
 Overview
 overview
+OWASP
 own
 ozB
 package
@@ -3669,8 +3712,8 @@ Padrões
 padroes
 page
 Page
-página
 Página
+página
 paginação
 páginas
 pagination
@@ -3934,6 +3977,8 @@ PostgreSQL
 postgresql
 postinstall
 power
+Powered
+poweredByHeader
 Practical
 practical
 pragmatic
@@ -3961,7 +4006,9 @@ preferências
 preferido
 preferidos
 prefers
+Prefetch
 prefixo
+preload
 premissas
 premium
 Presença
@@ -3992,6 +4039,7 @@ preventivo
 prevents
 Prevents
 prévia
+preview
 Previous
 primary
 Primary
@@ -4083,6 +4131,7 @@ projectsBtn
 projectsData
 ProjectsHub
 projectsList
+projectSlugs
 projectsMap
 ProjectsProps
 projectsSection
@@ -4119,6 +4168,7 @@ Props
 prosseguir
 Proteção
 Protection
+protection
 provavelmente
 Provavelmente
 Provedor
@@ -4139,14 +4189,15 @@ ptObj
 ptPath
 ptType
 ptVal
+PUBLIC
 public
 Public
-PUBLIC
 publicação
 publicidade
 público
 Público
 públicos
+publisher
 puder
 Pule
 pule
@@ -4285,6 +4336,7 @@ recente
 recentes
 Recentes
 recognized
+recomendada
 recomendadas
 recomendados
 recomendar
@@ -4336,6 +4388,7 @@ referência
 Referência
 referências
 Referências
+Referrer
 refresh
 refreshed
 regarding
@@ -4391,6 +4444,7 @@ repassam
 repeat
 Repeat
 Repetitive
+replace
 replacing
 replicada
 repo
@@ -4408,6 +4462,7 @@ reproduzir
 reproduzível
 requeridos
 request
+requests
 required
 Requirements
 requirements
@@ -4505,8 +4560,11 @@ rigorosamente
 risca
 risk
 Risk
+robôs
 Robot
 Roboto
+robots
+Robots
 robust
 Robust
 robusta
@@ -4544,6 +4602,7 @@ router
 Router
 RouterOS
 routers
+routes
 Routes
 routines
 routing
@@ -4821,11 +4880,18 @@ Sistemático
 sistemático
 Sistêmica
 sistêmica
+SITE
 site
 Site
+sitemap
+Sitemap
+sitemaps
+siteName
+siteUrl
 situation
 size
 Size
+sizes
 skill
 Skill
 SKILL
@@ -4853,6 +4919,7 @@ Smart
 smooth
 SmOTLZo
 snap
+snippet
 sob
 Sob
 sobre
@@ -5024,6 +5091,7 @@ sudoers
 suficiente
 sugerido
 Sumário
+summary
 Summary
 summaryText
 summaryTitle
@@ -5126,12 +5194,14 @@ tela
 telas
 telemetria
 TELEMETRY
+telephone
 têm
 tema
 Tema
 TEMAS
 temas
 tempDir
+template
 Template
 tempo
 Tempo
@@ -5190,6 +5260,7 @@ The
 their
 theme
 Theme
+themeColor
 ThemeMoonIcon
 ThemeProvider
 themes
@@ -5294,6 +5365,7 @@ tools
 top
 Tópicos
 tópicos
+topics
 toque
 tornam
 Tornamos
@@ -5344,6 +5416,7 @@ Transparência
 transparency
 Transparency
 transparent
+Transport
 Traseira
 tratamento
 Tratamento
@@ -5390,6 +5463,7 @@ Turbopack
 turbopack
 Tutor
 twice
+twitter
 Two
 txt
 type
@@ -5442,6 +5516,7 @@ unknown
 unknownAtRules
 unknownCommand
 unless
+unsafe
 UNSET
 until
 unwanted
@@ -5449,7 +5524,9 @@ UoKjsy
 update
 updateClock
 updating
+upgrade
 uppercase
+uri
 url
 URL
 uroornwDFiyKaioSqfxFwhiFXPxZf
@@ -5470,6 +5547,7 @@ usePathname
 user
 USER
 User
+userAgent
 useRef
 useRouter
 users
@@ -5581,6 +5659,7 @@ View
 view
 viewAll
 viewBox
+Viewport
 viewport
 vim
 Vim
@@ -5649,9 +5728,11 @@ web
 webkit
 WebkitAppearance
 WebkitOverflowScrolling
+webmanifest
 website
 Website
 week
+weekly
 weight
 welcome
 Welcome
@@ -5729,10 +5810,12 @@ www
 XgWx
 xml
 xmlns
+XSS
 XvHWHgq
 XYubII
 yaml
 YbRbzIno
+yearly
 years
 yellow
 YELLOW

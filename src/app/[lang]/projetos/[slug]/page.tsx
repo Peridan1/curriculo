@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Header from "../../../../components/Header";
 import Footer from "../../../../components/Footer";
 import CookieBanner from "../../../../components/CookieBanner";
@@ -9,6 +10,7 @@ interface ProjectDetail {
     title: string;
     period: string;
     description: string;
+    shortDescription?: string;
     challengesTitle: string;
     challenges: string;
     repoUrl: string;
@@ -27,6 +29,39 @@ const dictionaries = {
             (module) => module.default,
         ),
 };
+
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ lang: string; slug: string }>;
+}): Promise<Metadata> {
+    const resolvedParams = await params;
+    const lang =
+        resolvedParams.lang === "pt" || resolvedParams.lang === "en"
+            ? resolvedParams.lang
+            : "pt";
+    const slug = resolvedParams.slug;
+    const dict = await dictionaries[lang]();
+
+    const projectsMap = dict.projectsData as Record<string, ProjectDetail>;
+    const projectData = projectsMap?.[slug];
+
+    if (!projectData) {
+        return {
+            title: "Projeto não encontrado | Daniel Satel Pereira",
+        };
+    }
+
+    return {
+        title: `${projectData.title} | Daniel Satel Pereira`,
+        description: projectData.shortDescription || projectData.description,
+        openGraph: {
+            title: `${projectData.title} | Daniel Satel Pereira`,
+            description: projectData.shortDescription || projectData.description,
+            type: "article",
+        },
+    };
+}
 
 export default async function ProjectTemplate({
     params,

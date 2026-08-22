@@ -1,0 +1,67 @@
+# Daniel Satel Pereira (Peridan) - Documentação Completa para LLMs
+
+> Perfil profissional detalhado, histórico de carreira, projetos, competências e arquitetura de Daniel Satel Pereira.
+
+## 1. Dados Pessoais e Resumo Profissional
+
+- **Nome**: Daniel Satel Pereira
+- **Nome Artístico / Nickname**: Peridan (Peridan.dev)
+- **Localização**: Umuarama, Paraná, Brasil
+- **Formação**: Sistemas para Internet na UniALFA (Centro Universitário Campo Real / Alfa Umuarama)
+- **Status**: Disponível para oportunidades profissionais como Desenvolvedor Full Stack Júnior / Pleno Júnior.
+- **Contato**: danielsatelpereira@gmail.com | WhatsApp: +55 (41) 99952-1315
+- **Links**:
+  - Site Oficial: https://peridan.dev
+  - GitHub: https://github.com/DanielSatelPereira
+  - LinkedIn: https://www.linkedin.com/in/daniel-satel-pereira/
+
+## 2. Principais Competências e Stack Tecnológica
+
+### Backend & Linguagens
+- **PHP**: PHP 8.x, Programação Orientada a Objetos (POO), Arquitetura MVC, Tratamento de Erros, PDO, Composer.
+- **Laravel**: Framework completo, Eloquent ORM, Blade Templates, Migrations, Seeders, Middleware, Autenticação e APIs RESTful.
+- **Node.js & TypeScript**: APIs assíncronas, Express/NestJS, tipagem estrita com TypeScript.
+- **Java**: Conceitos fundamentais de orientação a objetos e Spring Boot.
+- **Bancos de Dados**: MySQL, PostgreSQL, modelagem relacional, normalização e queries otimizadas.
+
+### Frontend & UI/UX
+- **React 19 & Next.js 16**: App Router, Server Components, Client Components, Server Actions, Dynamic Routes, Internacionalização (i18n).
+- **Tailwind CSS v4**: Design Systems, CSS Variables nativas, temas claro/escuro dinâmicos, GPU-accelerated micro-animations.
+- **Acessibilidade & Performance**: Padrão WCAG AAA, First Contentful Paint otimizado, 60 FPS fluídos.
+
+### DevOps & Infraestrutura
+- **Docker & Docker Compose**: Criação de imagens multi-stage, isolamento de ambientes e paridade dev/prod.
+- **Redes & Servidores**: Mikrotik RouterOS, Firewall, DNS, NAT, VLANs, Windows Server, Linux (Ubuntu/Debian).
+- **Controle de Versão**: Git, GitHub, Conventional Commits, Semantic Versioning, Workflows e automações.
+
+## 3. Detalhamento dos Projetos
+
+### Projeto 1: Hub de ONGs (Bem-Digital)
+- **Tecnologias**: Laravel, Blade, Alpine.js, Tailwind CSS, MySQL.
+- **Descrição**: Sistema de gestão modular para entidades sem fins lucrativos gerenciarem campanhas de arrecadação, controle de estoque e doadores com transparência em tempo real.
+- **Repositório**: https://github.com/DanielSatelPereira/seu-repo-bem-digital
+- **Página de Detalhes**: https://peridan.dev/pt/projetos/bem-digital
+
+### Projeto 2: Sistema de Controle de Frota (FleetManager)
+- **Tecnologias**: Laravel Sail, Docker, MySQL, Tailwind CSS.
+- **Descrição**: Desenvolvido no contexto do setor público para controle logístico de pátios e veículos na Prefeitura de Umuarama, com registros de entrada/saída, abastecimento e motoristas.
+- **Repositório**: https://github.com/DanielSatelPereira
+- **Página de Detalhes**: https://peridan.dev/pt/projetos/fleet-manager
+
+### Projeto 3: Sistema de Gestão de Investimentos
+- **Tecnologias**: PHP POO, Arquitetura MVC, MySQL, Gráficos Interativos.
+- **Descrição**: Sistema para simulação e acompanhamento de carteiras de investimento com cálculos financeiros precisos e gráficos dinâmicos de rendimento.
+- **Repositório**: https://github.com/DanielSatelPereira
+- **Página de Detalhes**: https://peridan.dev/pt/projetos/investment-manager
+
+### Projeto 4: API de Eventos & Front-end Integrado
+- **Tecnologias**: Node.js, PHP, RESTful APIs, JSON.
+- **Descrição**: Desenvolvido em maratona de programação (Hackathon) para gestão e credenciamento de participantes em eventos acadêmicos e empresariais.
+- **Repositório**: https://github.com/DanielSatelPereira
+- **Página de Detalhes**: https://peridan.dev/pt/projetos/hackathon-events-api
+
+### Projeto 5: Chopits (E-commerce)
+- **Tecnologias**: TypeScript, React, Next.js, Tailwind CSS.
+- **Descrição**: Loja virtual com fluxo completo de compras, carrinho reativo, listagem com filtros e tipagem estrita de dados.
+- **Repositório**: https://github.com/DanielSatelPereira/chopits
+- **Página de Detalhes**: https://peridan.dev/pt/projetos/chopits
