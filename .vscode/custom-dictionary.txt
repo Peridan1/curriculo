@@ -161,14 +161,11 @@ aguardando
 Aguardar
 Aguarde
 aguarde
-aida
 aimed
 ajuda
 ajuste
 Ajustes
 ajustes
-aJzDEXyJBH
-AKQtWld
 aleatórias
 ALERT
 ALERTA
@@ -374,7 +371,6 @@ ArrowRightIcon
 artefatos
 article
 árvore
-ASi
 aside
 ask
 aspect
@@ -403,7 +399,6 @@ atacado
 Atalhos
 atalhos
 ataque
-atbXgAuSW
 até
 atenção
 Atenção
@@ -483,13 +478,8 @@ Avançados
 Aviso
 AVISO
 avisos
-AvZMyRbWCP
 await
 AWS
-AXuAm
-AXuCMIJrXQiN
-AXuD
-AXuDggm
 azul
 Azul
 babel
@@ -657,8 +647,6 @@ But
 but
 button
 Button
-BVwNoLShkUc
-bxdo
 Cabeçalho
 cabeçalho
 Cabeçalhos
@@ -763,9 +751,6 @@ causas
 cause
 Cause
 causou
-cBCX
-cbW
-CCWN
 CEASA
 Cenário
 center
@@ -880,7 +865,6 @@ Clone
 cloud
 cmd
 CMD
-CnUxNSPUocoobbTI
 codar
 code
 Code
@@ -1429,7 +1413,6 @@ Degree
 deixa
 deixaram
 deixe
-DekcyEutArNwgmDfrYaTOOJL
 delay
 delays
 Delete
@@ -1553,7 +1536,6 @@ device
 devidamente
 devops
 DevOps
-dHcy
 diagnóstico
 Diagnóstico
 diagnostics
@@ -1652,8 +1634,6 @@ div
 divergências
 divisão
 diz
-dkyM
-dNNOMsPIBjW
 DNS
 doação
 doações
@@ -1704,14 +1684,11 @@ double
 doublecircle
 Douglas
 down
-DqAHyK
-DqO
 driven
 Driver
 driver
 drivers
 DRY
-DTM
 due
 duplicar
 duplo
@@ -1722,7 +1699,6 @@ Duration
 during
 Dúvidas
 dúvidas
-dxKedjt
 dynamic
 Dynamic
 DynamicFavicon
@@ -1749,7 +1725,6 @@ edge
 edição
 edições
 editor
-EDooshTH
 Educacional
 education
 Education
@@ -1764,8 +1739,6 @@ Efeitos
 efficiency
 Eficiência
 eficiente
-EjTzn
-eKYPdq
 ela
 ele
 Ele
@@ -1837,7 +1810,6 @@ enhancement
 Enhancement
 Enjoys
 enKeys
-eNO
 enObj
 enough
 enPath
@@ -2004,8 +1976,6 @@ estudantis
 estudos
 etapa
 etapas
-etk
-euZOosSRgcYpR
 eval
 even
 evenodd
@@ -2154,7 +2124,6 @@ extraction
 Faça
 faça
 façam
-fachada
 faço
 fade
 fafc
@@ -2548,7 +2517,6 @@ googleBot
 googleusercontent
 Got
 got
-Gpoh
 GPU
 gradDark
 Grade
@@ -2576,7 +2544,6 @@ Grouping
 grow
 Grupo
 gsap
-Gsb
 gstatic
 guards
 Guards
@@ -2586,8 +2553,6 @@ guia
 guidance
 Guide
 Gunship
-GWH
-gzmAyfIKL
 Habilidade
 habilidade
 habilidades
@@ -2613,8 +2578,6 @@ Hardware
 hardware
 has
 have
-HbL
-hceP
 head
 Header
 header
@@ -2638,7 +2601,6 @@ here
 hero
 Hero
 HeroProps
-hEyYHe
 hHQ
 Híbrida
 Híbrido
@@ -2711,14 +2673,12 @@ humano
 Humano
 hundred
 hurry
-hWaqNq
 Hybrid
 Hydration
 Hypothesis
 hypothesis
 hypothetical
 i18n
-iAKew
 Ice
 ico
 icon
@@ -2750,7 +2710,6 @@ ignore
 ignorePaths
 ignores
 Iguaçu
-IkBjuxCx
 image
 Image
 Imagem
@@ -3046,15 +3005,13 @@ JavaScript
 jedi
 jesse
 jfinformaticaegames
-JfUY
 job
 JobItem
 jobs
 jogos
 Jogos
 join
-jPMMmV
-JRZvmsv
+jpg
 JSDoc
 jsdoc
 json
@@ -3062,7 +3019,6 @@ JSON
 JSONs
 JSX
 jsx
-jTB
 Júnior
 Junior
 junior
@@ -3072,11 +3028,8 @@ justificado
 justificar
 justified
 justify
-JVskv
-JWoq
 Kanban
 Kavinsky
-KCAF
 kebab
 Keep
 Keeps
@@ -3091,7 +3044,6 @@ keywords
 Keywords
 KISS
 knows
-kOWjSDIm
 Kubernetes
 kubernetes
 label
@@ -3130,8 +3082,6 @@ layout
 Layout
 layouts
 lazy
-LccDrWItWJsvTEoxGiWnbDAQPrqvM
-lDuKKQBBb
 lead
 leading
 leads
@@ -3143,7 +3093,6 @@ left
 Legibilidade
 Legível
 legível
-LeHj
 Lei
 Leia
 leia
@@ -3165,7 +3114,6 @@ levels
 leveraging
 Lexend
 LGPD
-Lhvvldxb
 lib
 libc
 licenças
@@ -3175,7 +3123,6 @@ licenses
 lida
 Life
 lifecycle
-LIG
 light
 Light
 Lighthouse
@@ -3215,7 +3162,6 @@ Links
 links
 linkText
 linkUrl
-linOiPMlSjiu
 lint
 linux
 list
@@ -3286,7 +3232,6 @@ Lugar
 lugar
 lugares
 Luzes
-lznTh
 machine
 made
 mail
@@ -3380,7 +3325,6 @@ máxima
 máximo
 Maximum
 Maybe
-mcB
 mecânicas
 mechanics
 media
@@ -3465,8 +3409,6 @@ Miss
 MIT
 mjs
 mkdir
-mkWdQMF
-mLaR
 mobile
 Mobile
 mochileiro
@@ -3541,7 +3483,6 @@ movimentação
 movimento
 Movimento
 MozAppearance
-MRgDHl
 mskadu
 msOverflowStyle
 mts
@@ -3672,10 +3613,8 @@ níveis
 nível
 nLembre
 nMay
-NmT
 nNão
 nNever
-NoByAkrI
 Node
 node
 NODE
@@ -3733,7 +3672,6 @@ nPut
 npx
 nQue
 nRemember
-nRQglASVBRD
 nSaudações
 nStatus
 nType
@@ -3747,10 +3685,7 @@ nunca
 NUNCA
 Nunca
 nuvem
-NuvmP
-NvcTU
 nWe
-OapNnan
 obj
 Object
 object
@@ -3771,7 +3706,6 @@ obviamente
 Obvious
 obvious
 oceanic
-oCGlElS
 ocKA
 ocorre
 ocorrência
@@ -3867,7 +3801,6 @@ Orquestração
 orquestradas
 ortográfico
 Ortográfico
-oTeoG
 other
 Other
 Otimização
@@ -3901,7 +3834,6 @@ Overview
 overview
 OWASP
 own
-ozB
 package
 packages
 pacotes
@@ -4001,7 +3933,6 @@ PaymentError
 payments
 paz
 PAZ
-pbyZqNmfQBU
 PCs
 PDF
 peace
@@ -4117,7 +4048,6 @@ plena
 plug
 plugin
 plugins
-pmDc
 PMU
 Pneus
 png
@@ -4437,7 +4367,6 @@ Pule
 pule
 pull
 pulse
-PUP
 pura
 purchasing
 pure
@@ -4447,13 +4376,8 @@ Purpose
 purposes
 push
 Push
-PWWA
-pxkriQLRS
 pxnO
 Python
-pzn
-qbsQ
-QHun
 quadrante
 Quais
 quais
@@ -4870,8 +4794,6 @@ routines
 routing
 row
 RPGs
-RqtXs
-rrioSKO
 rule
 rules
 Rules
@@ -4883,9 +4805,6 @@ runner
 runs
 runtime
 Runtime
-RwpZc
-RxiIOKIIvKHb
-rYsolBn
 sabe
 saber
 saem
@@ -5181,7 +5100,6 @@ skip
 Skip
 skipLibCheck
 Skipping
-sKylQHjc
 slate
 Slate
 sleep
@@ -5194,7 +5112,6 @@ Slugs
 smart
 Smart
 smooth
-SmOTLZo
 snap
 snippet
 sob
@@ -5276,7 +5193,6 @@ Squircle
 src
 SRP
 SSG
-SsODBzGGk
 SSR
 Stack
 stack
@@ -5306,9 +5222,7 @@ statSync
 Status
 status
 stay
-sTcEX
 stdDeviation
-STENk
 step
 steps
 still
@@ -5451,9 +5365,7 @@ targetDirs
 targetFiles
 Targets
 Taxa
-tbarbwTJqL
 TDD
-tdTP
 Teacher
 Teaching
 teal
@@ -5583,7 +5495,6 @@ throttle
 through
 throughout
 throw
-THvZgTCwzEiDT
 ticket
 ticketing
 ticks
@@ -5625,7 +5536,6 @@ títulos
 tiver
 tmpDir
 tmpdir
-Tmy
 toalha
 toBe
 toBeDefined
@@ -5754,7 +5664,6 @@ tsconfig
 tsx
 Tudo
 TUDO
-TUltkvIcIKx
 Turbopack
 turbopack
 turmas
@@ -5821,7 +5730,6 @@ unsafe
 UNSET
 until
 unwanted
-UoKjsy
 update
 updateClock
 updating
@@ -5830,7 +5738,6 @@ uppercase
 uri
 url
 URL
-uroornwDFiyKaioSqfxFwhiFXPxZf
 Usa
 usa
 usá
@@ -5882,7 +5789,6 @@ utilizando
 utilizar
 utilize
 Utilize
-UWlTCie
 vago
 vai
 valid
@@ -5915,8 +5821,6 @@ Variável
 varreduras
 vazia
 vazio
-vbdwJw
-vchMuFUIpr
 veio
 veja
 vejo
@@ -5966,7 +5870,6 @@ viewport
 VilleSIlva
 vim
 Vim
-vIMM
 vinculados
 vindo
 Violar
@@ -5991,7 +5894,6 @@ vitrine
 Vitrine
 vivência
 Vivo
-VlX
 Você
 você
 volta
@@ -6003,8 +5905,6 @@ Volumes
 vou
 Vou
 voz
-VROe
-VRQd
 vscode
 vulnerabilidades
 Vulnerabilidades
@@ -6029,7 +5929,6 @@ Wasting
 wasting
 watch
 watching
-waVZKi
 way
 WCAG
 Web
@@ -6047,7 +5946,6 @@ welcome
 Welcome
 were
 weren
-WesoR
 wght
 whack
 What
@@ -6088,8 +5986,6 @@ withFileTypes
 within
 without
 Wizard
-wngFXuJ
-WoI
 Wonderland
 words
 wordSet
@@ -6115,21 +6011,12 @@ wrap
 writeFileSync
 writing
 wrong
-WrUASrc
-WSLHa
-WvKVj
 www
-XGRLNuswwwe
-xgWnUjkVqGnIZqXnbdYWDRI
-XgWx
 xml
 xmlns
 XSS
-XvHWHgq
-XYubII
 yaml
 yards
-YbRbzIno
 yearly
 years
 yellow
@@ -6143,11 +6030,6 @@ you
 your
 Your
 Yourself
-ySMoCe
 zero
 Zero
-zOI
 Zoom
-zsSRxcdUiJ
-zwK
-Zys
