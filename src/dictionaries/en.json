@@ -33,7 +33,7 @@
             "whoamiText": "Daniel Satel Pereira (Peridan)\nAge: 24 | Location: Umuarama/PR – Brazil\nEducation: Internet Systems (UniALFA)\nProfile: Junior Full Stack Developer passionate about scalable architecture, clean code, and high performance.",
             "skillsText": "⚡ Backend: PHP 8+, Laravel, Node.js (NestJS), Java (Spring Boot), Python\n🎨 Frontend: React 19, Next.js 16 (App Router), TypeScript, TailwindCSS v4\n🗄️ Databases: MySQL, PostgreSQL, Relational Modeling\n🛠️ Infra & DevOps: Mikrotik RouterOS, Windows Server, Docker, Git/GitHub",
             "stackText": "Architecture: Clean Code, MVC, RESTful APIs, Server Components, SSR/SSG, WCAG AAA Accessibility, and fluid 60 FPS.",
-            "projectsText": "Featured projects:\n  1. NGO Hub (Bem-Digital) - Laravel, Blade, MySQL\n  2. Fleet Manager - Laravel, Docker/Sail, MySQL\n  3. Investment Manager - PHP OOP, MVC\n  4. Events API & Front-end - Node.js, PHP\n  5. Chopits - React & Next.js E-commerce\nType 'curriculo' or 'projects' to navigate.",
+            "projectsText": "Main featured projects:\n  1. Brisamar Pescados (Next.js 16, React 19, TypeScript) - https://www.brisamarpescados.com.br\n  2. Fleet Control & Python Robot (Laravel, Docker, Python) - PMU\n  3. JF Informática e Games (SPA, Tailwind, JS) - https://jfinformaticaegames.com.br\n  4. NGO Hub (Bem-Digital) - Laravel, Blade, MySQL\n  5. Investment Manager - PHP OOP, MVC\nType 'curriculo' or 'projects' to navigate.",
             "curriculoText": "Redirecting to full formal Curriculum page...",
             "contactText": "📬 Email: danielsatelpereira@gmail.com\n📱 WhatsApp: +55 (041) 9 9952-1315\n🐙 GitHub: github.com/DanielSatelPereira\n💼 LinkedIn: linkedin.com/in/daniel-satel-pereira",
             "unknownCommand": "Command not recognized. Type 'help' to see accepted commands or 'curiosities' to explore.",
@@ -235,6 +235,72 @@
         "hubSubtitle": "A complete collection of my academic projects, professional developments, and hands-on software creations."
     },
     "projectsData": {
+        "brisamar-pescados": {
+            "featured": true,
+            "title": "Brisamar Pescados • Catalog & E-commerce",
+            "shortDescription": "High-performance Web application in Next.js and Tailwind CSS for Box 130 at CEASA Foz do Iguaçu, featuring dynamic catalog and recipes.",
+            "tags": [
+                "Next.js 16",
+                "React 19",
+                "TypeScript",
+                "Tailwind CSS",
+                "SEO"
+            ],
+            "image": "https://www.brisamarpescados.com.br/images/fachada.png",
+            "period": "Commercial Production • CEASA Foz do Iguaçu",
+            "description": "Brisamar Pescados is a traditional company with over 30 years of excellence in fresh seafood at Box 130 in CEASA Foz do Iguaçu. I engineered a modern, ultra-fast, and responsive web platform serving wholesale clients (restaurants and markets) and retail shoppers alike.",
+            "challengesTitle": "Next.js Architecture, SEO & Direct Conversion",
+            "challenges": "Built using Next.js with App Router and Server Components for instant load speeds and top Google indexability. Features categorized product filtering, a dedicated culinary recipes section with step-by-step instructions, direct WhatsApp ordering integration, and a modern oceanic aesthetic.",
+            "liveUrl": "https://www.brisamarpescados.com.br/",
+            "repoUrl": "https://github.com/DanielSatelPereira",
+            "isInternal": false,
+            "inDevelopment": false,
+            "backButton": "Back to Home"
+        },
+        "fleet-manager": {
+            "featured": true,
+            "title": "Fleet Control System & Python Data Analysis",
+            "shortDescription": "Dockerized enterprise system for public logistics management in the Municipality of Umuarama, integrated with a Python robot for spreadsheet data mining and analytics.",
+            "tags": [
+                "Laravel",
+                "Docker / Sail",
+                "Python (Pandas)",
+                "MySQL",
+                "Automation"
+            ],
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDggm4-9MRgDHl7OapNnan9bC4ozB3tdTP_J_RxiIOKIIvKHb7WrUASrc_G8Zys_tbarbwTJqL5JfUY6Lhvvldxb8CnUxNSPUocoobbTI7jPMMmV7vR5Di-LeHj9Y637hceP_lDuKKQBBb7vK0S-vchMuFUIpr4V_UoKjsy9MP_mcB-THvZgTCwzEiDT0jTB5OH7Er-EjTzn53cBCX4i_eNO7u7fL5dNNOMsPIBjW09_XgWx5wngFXuJ1linOiPMlSjiu9jW_8CG-RE",
+            "period": "Public Sector – Municipality of Umuarama",
+            "description": "Robust internal system developed to manage municipal fleet dispatch, drivers, public yards, and fuel expenditure at the Municipality of Umuarama. The application evolved with the integration of an automated Python data analysis pipeline to process raw log spreadsheets.",
+            "challengesTitle": "Hybrid Laravel + Python Integration & Data Processing",
+            "challenges": "Developed a Python robot (using Pandas and OpenPyXL) to parse, sanitize, and statistically analyze raw fuel and odometer logs, detecting consumption anomalies and generating executive analytical reports for public expenditure savings. Backend structured in Laravel with Docker/Sail for absolute reliability.",
+            "liveUrl": null,
+            "repoUrl": null,
+            "isInternal": true,
+            "inDevelopment": false,
+            "backButton": "Back to Home"
+        },
+        "jf-informatica": {
+            "featured": true,
+            "title": "JF Informática e Games • Tech Support & Repair",
+            "shortDescription": "Modern and responsive commercial SPA with dynamic Dark/Light Mode and customer acquisition funnel for PC, laptop, and gaming console repairs.",
+            "tags": [
+                "JavaScript ES6+",
+                "Tailwind CSS",
+                "Dark Mode",
+                "SPA",
+                "UI/UX"
+            ],
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMIJrXQiN8F1mkWdQMF6vIMM-JRZvmsv7C0pbyZqNmfQBU5XGRLNuswwwe4QHun2rrioSKO8DqO-JWoq1N7zwK8IH0534f8pmDc7S2M8O8DekcyEutArNwgmDfrYaTOOJL630KH6dxKedjt4v3aJzDEXyJBH5iL8d2s9ASi4PU64LccDrWItWJsvTEoxGiWnbDAQPrqvM_v1oCGlElS8xgWnUjkVqGnIZqXnbdYWDRI3H6hEyYHe88X6r-6DTM132STENk-Pj8VRQd",
+            "period": "Commercial Production • Umuarama/PR",
+            "description": "Digital platform created for a regional tech repair business specialized in computers, notebooks, printers, and gaming consoles. The goal was to establish an impactful, agile online presence with high conversion rates for local clients.",
+            "challengesTitle": "User Experience (UI/UX) & Service Funnel",
+            "challenges": "Built an ultra-fast Single Page Application (SPA) architecture with Tailwind CSS, smooth micro-interactions, persistent browser dark/light mode toggle, and an interactive quote request form routing leads directly to WhatsApp support.",
+            "liveUrl": "https://jfinformaticaegames.com.br/",
+            "repoUrl": "https://github.com/DanielSatelPereira",
+            "isInternal": false,
+            "inDevelopment": false,
+            "backButton": "Back to Home"
+        },
         "bem-digital": {
             "featured": true,
             "title": "NGO Hub (Bem-Digital)",
@@ -251,29 +317,58 @@
             "description": "Bem-Digital is a comprehensive modular system developed with Laravel (Blade/Alpine.js/Tailwind) and MySQL for managing donation campaigns, inventory control, and donor relations. It enables non-profit organizations to manage donations in real time with transparency and security.",
             "challengesTitle": "Architecture and Engineering Challenges",
             "challenges": "The project required architecting a complex relational database using polymorphism and pivot tables for a modular Roles & Permissions system. Agile teamwork using Git, Clean Architecture, and Conventional Commits.",
-            "repoUrl": "https://github.com/DanielSatelPereira/seu-repo-bem-digital",
+            "liveUrl": null,
+            "repoUrl": "https://github.com/VilleSIlva/bem_digital_trabalho_laravel",
+            "isInternal": false,
+            "inDevelopment": false,
             "backButton": "Back to Home"
         },
-        "fleet-manager": {
-            "featured": true,
-            "title": "Fleet Control System (FleetManager)",
-            "shortDescription": "Docker/Sail containerized system for managing municipal vehicles, trips, and drivers.",
+        "bolao-copa": {
+            "featured": false,
+            "title": "World Cup Pool • React Native & Spring Boot",
+            "shortDescription": "Mobile app and API built during an academic Hackathon for sports betting and score predictions with React Native and Java Spring Boot.",
             "tags": [
-                "Laravel Sail",
-                "Docker",
-                "MySQL",
-                "Tailwind CSS"
+                "React Native",
+                "Java",
+                "Spring Boot",
+                "REST API",
+                "Hackathon"
             ],
-            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDggm4-9MRgDHl7OapNnan9bC4ozB3tdTP_J_RxiIOKIIvKHb7WrUASrc_G8Zys_tbarbwTJqL5JfUY6Lhvvldxb8CnUxNSPUocoobbTI7jPMMmV7vR5Di-LeHj9Y637hceP_lDuKKQBBb7vK0S-vchMuFUIpr4V_UoKjsy9MP_mcB-THvZgTCwzEiDT0jTB5OH7Er-EjTzn53cBCX4i_eNO7u7fL5dNNOMsPIBjW09_XgWx5wngFXuJ1linOiPMlSjiu9jW_8CG-RE",
-            "period": "Public Sector – Municipality of Umuarama",
-            "description": "Robust internal system developed for the logistical control of municipal fleets. Features full CRUDs with soft deletes, real-time logging of vehicle departures/arrivals, fuel tracking, and dynamic filters.",
-            "challengesTitle": "Containerization and Performance",
-            "challenges": "Fully containerized environment using Docker and Laravel Sail to guarantee complete parity between development and production. Clean Tailwind CSS UI, strict data validation, and optimized SQL queries.",
-            "repoUrl": "https://github.com/DanielSatelPereira",
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAm3C4NmT1uroornwDFiyKaioSqfxFwhiFXPxZf0CCWN7kOWjSDIm0q34VlX-bxdo6WesoR9cbW0XvHWHgq1KCAF7Gsb6NvcTU6zsSRxcdUiJ9G9LIG0eKYPdq24R-NoByAkrI2AKQtWld4PUP6p29gc0-nRQglASVBRD9O0i9B9UWlTCie09Gv_dS9jq_euZOosSRgcYpR4XYubII2WSLHa3SsODBzGGk87dHcy_vbdwJw_waVZKi7VROe33_5WvKVj5qbsQ0NuvmP",
+            "period": "Academic Hackathon – UniALFA",
+            "description": "Mobile client-server solution created in a hackathon coding marathon for sports score predictions during the World Cup. Connects a reactive mobile app to a robust Java backend.",
+            "challengesTitle": "Mobile React Native & Spring Boot Integration",
+            "challenges": "High-velocity development under tight deadlines: engineering RESTful endpoints in Java with Spring Boot for scoring algorithms, consumed by a React Native interface.",
+            "liveUrl": null,
+            "repoUrl": "https://github.com/Keltton/Projeto-Bolao-Unialfa",
+            "isInternal": false,
+            "inDevelopment": false,
+            "backButton": "Back to Home"
+        },
+        "hotsite-unialfa": {
+            "featured": false,
+            "title": "UniALFA Hotsite • Hybrid Multi-Stack",
+            "shortDescription": "Academic event portal integrating PHP front-end with Node.js and Java microservices and APIs, currently undergoing continuous refactoring.",
+            "tags": [
+                "Node.js",
+                "Java",
+                "PHP",
+                "RESTful API",
+                "In Progress"
+            ],
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD1N78pxkriQLRS5sTcEX1gr1RwpZc51iAKew1BVwNoLShkUc8AvZMyRbWCP_Qp--EDooshTH91IkBjuxCx9XL-ySMoCe3U3YbRbzIno-f6_hWaqNq9Fy1oTeoG9mLaR9DqAHyK4i8atbXgAuSW3pzn4HbL5etk7Yd2GWH-lznTh_RqtXs8TUltkvIcIKx72Gpoh6SmOTLZo2Tmy9JVskv51rU2dkyM3zOI1WoI5PWWA_gzmAyfIKL_2rYsolBn2Eo99sKylQHjc3bN",
+            "period": "Academic Project in Refactoring",
+            "description": "Platform designed to manage event portals, registrations, and ticketing workflows at UniALFA. Combines multiple technology layers connecting a traditional PHP front-end to asynchronous backend services.",
+            "challengesTitle": "Hybrid Architecture & Service Refactoring",
+            "challenges": "Orchestrating communication between Node.js REST endpoints and auxiliary Java modules consumed by the PHP client. Under active enhancement for future public rollout.",
+            "liveUrl": null,
+            "repoUrl": "https://github.com/Peridan1/hotsite-unialfa",
+            "isInternal": false,
+            "inDevelopment": true,
             "backButton": "Back to Home"
         },
         "investment-manager": {
-            "featured": true,
+            "featured": false,
             "title": "Investment Management System",
             "shortDescription": "Object-Oriented PHP application with MVC architecture and interactive return charts.",
             "tags": [
@@ -287,26 +382,10 @@
             "description": "Application built in Object-Oriented PHP strictly following the MVC (Model-View-Controller) architecture. Enables users to register investments, track performance, and project earnings with dynamic charts.",
             "challengesTitle": "Object-Oriented Modeling & MVC",
             "challenges": "Strict separation of concerns across business rules, data persistence, and UI presentation, applying Clean Code, class abstraction, and accurate financial calculations.",
+            "liveUrl": null,
             "repoUrl": "https://github.com/DanielSatelPereira",
-            "backButton": "Back to Home"
-        },
-        "hackathon-events-api": {
-            "featured": true,
-            "title": "Events API & Integrated Front-end",
-            "shortDescription": "PHP Front-end integration consuming a full RESTful API built in Node.js.",
-            "tags": [
-                "PHP",
-                "Node.js",
-                "RESTful API",
-                "JSON",
-                "Hackathon"
-            ],
-            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD1N78pxkriQLRS5sTcEX1gr1RwpZc51iAKew1BVwNoLShkUc8AvZMyRbWCP_Qp--EDooshTH91IkBjuxCx9XL-ySMoCe3U3YbRbzIno-f6_hWaqNq9Fy1oTeoG9mLaR9DqAHyK4i8atbXgAuSW3pzn4HbL5etk7Yd2GWH-lznTh_RqtXs8TUltkvIcIKx72Gpoh6SmOTLZo2Tmy9JVskv51rU2dkyM3zOI1WoI5PWWA_gzmAyfIKL_2rYsolBn2Eo99sKylQHjc3bN",
-            "period": "Hackathon Project",
-            "description": "Programming marathon solution for participant registration and event check-ins in academic and corporate settings, featuring asynchronous inter-service communication.",
-            "challengesTitle": "API Consumption & Async Integration",
-            "challenges": "Node.js back-end structuring RESTful endpoints with authentication and pagination, coupled with a PHP front-end consuming feeds with preventive error handling.",
-            "repoUrl": "https://github.com/DanielSatelPereira",
+            "isInternal": false,
+            "inDevelopment": false,
             "backButton": "Back to Home"
         },
         "chopits": {
@@ -324,25 +403,73 @@
             "description": "Robust front-end application built to simulate the purchasing experience of a major e-commerce store, with interactive shopping cart, filtered product listings, and real-time total calculations.",
             "challengesTitle": "Strict Typing and Performance",
             "challenges": "Primary focus on strict TypeScript typing throughout the data flow, eliminating runtime errors and creating an ultra-fast UI with React components.",
+            "liveUrl": null,
             "repoUrl": "https://github.com/DanielSatelPereira/chopits",
+            "isInternal": false,
+            "inDevelopment": false,
             "backButton": "Back to Home"
         },
-        "tech-store": {
+        "e-script-website": {
             "featured": false,
-            "title": "Institutional Website | TechStore",
-            "shortDescription": "Freelance project delivered for a computer retail and repair store with modern responsive design.",
+            "title": "E-Script Website | Web Solutions",
+            "shortDescription": "Modern web platform developed to showcase scripts, automation routines, and digital web utilities.",
             "tags": [
                 "HTML5",
                 "CSS3",
                 "JavaScript",
-                "Responsive UI/UX"
+                "Web Automation"
+            ],
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD1N78pxkriQLRS5sTcEX1gr1RwpZc51iAKew1BVwNoLShkUc8AvZMyRbWCP_Qp--EDooshTH91IkBjuxCx9XL-ySMoCe3U3YbRbzIno-f6_hWaqNq9Fy1oTeoG9mLaR9DqAHyK4i8atbXgAuSW3pzn4HbL5etk7Yd2GWH-lznTh_RqtXs8TUltkvIcIKx72Gpoh6SmOTLZo2Tmy9JVskv51rU2dkyM3zOI1WoI5PWWA_gzmAyfIKL_2rYsolBn2Eo99sKylQHjc3bN",
+            "period": "Open Project • GitHub",
+            "description": "Structured website designed to showcase a catalog of scripts, automation tools, and web utilities aimed at developer productivity.",
+            "challengesTitle": "Semantic Markup & Accessibility",
+            "challenges": "Implemented with a focus on web semantic standards, ultra-lightweight asset loading, and fluid responsiveness across all screen dimensions.",
+            "liveUrl": null,
+            "repoUrl": "https://github.com/Peridan1/e-script-website",
+            "isInternal": false,
+            "inDevelopment": false,
+            "backButton": "Back to Home"
+        },
+        "alfaplus": {
+            "featured": false,
+            "title": "AlfaPlus | UniALFA Academic Portal",
+            "shortDescription": "Academic portal and system developed during the Internet Systems degree program at UniALFA.",
+            "tags": [
+                "PHP",
+                "JavaScript",
+                "HTML5/CSS3",
+                "UniALFA"
             ],
             "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDggm4-9MRgDHl7OapNnan9bC4ozB3tdTP_J_RxiIOKIIvKHb7WrUASrc_G8Zys_tbarbwTJqL5JfUY6Lhvvldxb8CnUxNSPUocoobbTI7jPMMmV7vR5Di-LeHj9Y637hceP_lDuKKQBBb7vK0S-vchMuFUIpr4V_UoKjsy9MP_mcB-THvZgTCwzEiDT0jTB5OH7Er-EjTzn53cBCX4i_eNO7u7fL5dNNOMsPIBjW09_XgWx5wngFXuJ1linOiPMlSjiu9jW_8CG-RE",
-            "period": "Professional Freelance Project",
-            "description": "Multi-page institutional website (Home, Services, About, Contact) focused on local customer acquisition and detailing equipment maintenance and retail services.",
-            "challengesTitle": "Value Delivery & Conversion-Oriented Design",
-            "challenges": "End-to-end execution: requirements gathering, information architecture, responsive design development, and mobile speed optimization.",
-            "repoUrl": "https://github.com/DanielSatelPereira",
+            "period": "Academic Project – UniALFA",
+            "description": "Application built to manage student workflows, courses, and grading within the academic ecosystem at UniALFA.",
+            "challengesTitle": "Business Logic & Data Validation",
+            "challenges": "Built authentication flows, user permission tiers, and database queries for streamlined classroom management.",
+            "liveUrl": null,
+            "repoUrl": "https://github.com/Peridan1/alfaplus-1balfa24",
+            "isInternal": false,
+            "inDevelopment": false,
+            "backButton": "Back to Home"
+        },
+        "site-vitrine": {
+            "featured": false,
+            "title": "Showcase Landing Page",
+            "shortDescription": "Clean, static, and responsive landing page built with pure HTML5 and modern CSS3.",
+            "tags": [
+                "Semantic HTML5",
+                "CSS3",
+                "Responsive Design",
+                "UI/UX"
+            ],
+            "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMIJrXQiN8F1mkWdQMF6vIMM-JRZvmsv7C0pbyZqNmfQBU5XGRLNuswwwe4QHun2rrioSKO8DqO-JWoq1N7zwK8IH0534f8pmDc7S2M8O8DekcyEutArNwgmDfrYaTOOJL630KH6dxKedjt4v3aJzDEXyJBH5iL8d2s9ASi4PU64LccDrWItWJsvTEoxGiWnbDAQPrqvM_v1oCGlElS8xgWnUjkVqGnIZqXnbdYWDRI3H6hEyYHe88X6r-6DTM132STENk-Pj8VRQd",
+            "period": "Open Project • GitHub",
+            "description": "Institutional showcase landing page featuring a responsive layout, clean typography, and visual hierarchy crafted for product and service displays.",
+            "challengesTitle": "Native Styling & Peak Performance",
+            "challenges": "Built without external CSS framework dependencies, leveraging CSS Grid, Flexbox, and native CSS animations to score 100 on Google Lighthouse.",
+            "liveUrl": null,
+            "repoUrl": "https://github.com/Peridan1/site-vitrine-html-css",
+            "isInternal": false,
+            "inDevelopment": false,
             "backButton": "Back to Home"
         }
     },

@@ -1,6 +1,6 @@
 # Daniel Satel Pereira (Peridan) - Documentação Completa para LLMs
 
-> Perfil profissional detalhado, histórico de carreira, projetos, competências e arquitetura de Daniel Satel Pereira.
+> Perfil profissional detalhado, histórico de carreira, projetos reais, competências e arquitetura de Daniel Satel Pereira.
 
 ## 1. Dados Pessoais e Resumo Profissional
 
@@ -9,23 +9,26 @@
 - **Localização**: Umuarama, Paraná, Brasil
 - **Formação**: Sistemas para Internet na UniALFA (Centro Universitário Campo Real / Alfa Umuarama)
 - **Status**: Disponível para oportunidades profissionais como Desenvolvedor Full Stack Júnior / Pleno Júnior.
-- **Contato**: danielsatelpereira@gmail.com | WhatsApp: +55 (41) 99952-1315
+- **Contato**: danielsatelpereira@gmail.com | WhatsApp: +55 (041) 99952-1315
 - **Links**:
   - Site Oficial: https://peridan.dev
-  - GitHub: https://github.com/DanielSatelPereira
+  - GitHub Principal: https://github.com/DanielSatelPereira
+  - GitHub Secundário/Organizações: https://github.com/Peridan1
   - LinkedIn: https://www.linkedin.com/in/daniel-satel-pereira/
 
 ## 2. Principais Competências e Stack Tecnológica
 
-### Backend & Linguagens
+### Backend & Automação de Dados
 - **PHP**: PHP 8.x, Programação Orientada a Objetos (POO), Arquitetura MVC, Tratamento de Erros, PDO, Composer.
 - **Laravel**: Framework completo, Eloquent ORM, Blade Templates, Migrations, Seeders, Middleware, Autenticação e APIs RESTful.
+- **Python**: Automação de scripts, processamento de planilhas brutas com Pandas e OpenPyXL, análise estatística e geração de relatórios gerenciais.
+- **Java**: Spring Boot, construção de APIs RESTful robustas e tipadas.
 - **Node.js & TypeScript**: APIs assíncronas, Express/NestJS, tipagem estrita com TypeScript.
-- **Java**: Conceitos fundamentais de orientação a objetos e Spring Boot.
 - **Bancos de Dados**: MySQL, PostgreSQL, modelagem relacional, normalização e queries otimizadas.
 
-### Frontend & UI/UX
+### Frontend & Mobile UI/UX
 - **React 19 & Next.js 16**: App Router, Server Components, Client Components, Server Actions, Dynamic Routes, Internacionalização (i18n).
+- **React Native**: Criação de interfaces reativas mobile para Android/iOS integradas a backends RESTful.
 - **Tailwind CSS v4**: Design Systems, CSS Variables nativas, temas claro/escuro dinâmicos, GPU-accelerated micro-animations.
 - **Acessibilidade & Performance**: Padrão WCAG AAA, First Contentful Paint otimizado, 60 FPS fluídos.
 
@@ -34,34 +37,70 @@
 - **Redes & Servidores**: Mikrotik RouterOS, Firewall, DNS, NAT, VLANs, Windows Server, Linux (Ubuntu/Debian).
 - **Controle de Versão**: Git, GitHub, Conventional Commits, Semantic Versioning, Workflows e automações.
 
-## 3. Detalhamento dos Projetos
+## 3. Detalhamento dos Projetos Reais e Portfólio
 
-### Projeto 1: Hub de ONGs (Bem-Digital)
+### Projeto 1: Brisamar Pescados (Comercial em Produção)
+- **Tecnologias**: Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS, Server Components, SEO avançado.
+- **Descrição**: Plataforma web de alta performance para a tradicional distribuidora e peixaria no Box 130 do CEASA de Foz do Iguaçu. Catálogo de pescados categorizado, área de receitas gastronômicas e funil direto de pedidos via WhatsApp.
+- **Site no Ar**: https://www.brisamarpescados.com.br/
+- **Página no Portfólio**: https://peridan.dev/pt/projetos/brisamar-pescados
+
+### Projeto 2: Sistema de Controle de Frota & Robô Python (Prefeitura de Umuarama)
+- **Tecnologias**: Laravel, Docker / Sail, Python (Pandas, OpenPyXL), MySQL, Tailwind CSS.
+- **Descrição**: Sistema corporativo interno para gestão da frota municipal, motoristas e pátios públicos, integrado a um pipeline automatizado em Python que realiza a ingestão, mineração e análise estatística de planilhas de abastecimento para redução de custos públicos.
+- **Status**: Sistema institucional interno de acesso restrito (sem código público por conformidade).
+- **Página no Portfólio**: https://peridan.dev/pt/projetos/fleet-manager
+
+### Projeto 3: JF Informática e Games (Comercial em Produção)
+- **Tecnologias**: JavaScript ES6+, Tailwind CSS, Dark/Light Mode dinâmico, Single Page Application (SPA).
+- **Descrição**: Website comercial e institucional focado em captação de clientes e solicitações de orçamento para serviços de assistência técnica de computadores, notebooks e consoles de videogame em Umuarama/PR.
+- **Site no Ar**: https://jfinformaticaegames.com.br/
+- **Página no Portfólio**: https://peridan.dev/pt/projetos/jf-informatica
+
+### Projeto 4: Hub de ONGs (Bem-Digital)
 - **Tecnologias**: Laravel, Blade, Alpine.js, Tailwind CSS, MySQL.
 - **Descrição**: Sistema de gestão modular para entidades sem fins lucrativos gerenciarem campanhas de arrecadação, controle de estoque e doadores com transparência em tempo real.
-- **Repositório**: https://github.com/DanielSatelPereira/seu-repo-bem-digital
-- **Página de Detalhes**: https://peridan.dev/pt/projetos/bem-digital
+- **Repositório**: https://github.com/VilleSIlva/bem_digital_trabalho_laravel
+- **Página no Portfólio**: https://peridan.dev/pt/projetos/bem-digital
 
-### Projeto 2: Sistema de Controle de Frota (FleetManager)
-- **Tecnologias**: Laravel Sail, Docker, MySQL, Tailwind CSS.
-- **Descrição**: Desenvolvido no contexto do setor público para controle logístico de pátios e veículos na Prefeitura de Umuarama, com registros de entrada/saída, abastecimento e motoristas.
-- **Repositório**: https://github.com/DanielSatelPereira
-- **Página de Detalhes**: https://peridan.dev/pt/projetos/fleet-manager
+### Projeto 5: Bolão da Copa (Hackathon UniALFA)
+- **Tecnologias**: React Native, Java (Spring Boot), RESTful API, Mobile UX.
+- **Descrição**: Solução mobile cliente-servidor para palpites esportivos desenvolvida em maratona de programação com app em React Native e backend em Java Spring Boot.
+- **Repositório**: https://github.com/Keltton/Projeto-Bolao-Unialfa
+- **Página no Portfólio**: https://peridan.dev/pt/projetos/bolao-copa
 
-### Projeto 3: Sistema de Gestão de Investimentos
+### Projeto 6: Hotsite UniALFA (Multi-Stack Híbrido)
+- **Tecnologias**: PHP, Node.js, Java, RESTful API.
+- **Descrição**: Plataforma de eventos e credenciamento acadêmico integrando frontend em PHP com serviços em Node.js e Java (em refatoração contínua).
+- **Repositório**: https://github.com/Peridan1/hotsite-unialfa
+- **Página no Portfólio**: https://peridan.dev/pt/projetos/hotsite-unialfa
+
+### Projeto 7: Sistema de Gestão de Investimentos
 - **Tecnologias**: PHP POO, Arquitetura MVC, MySQL, Gráficos Interativos.
-- **Descrição**: Sistema para simulação e acompanhamento de carteiras de investimento com cálculos financeiros precisos e gráficos dinâmicos de rendimento.
+- **Descrição**: Aplicação para simulação e acompanhamento de carteiras de investimento com cálculos financeiros precisos e gráficos dinâmicos de rendimento.
 - **Repositório**: https://github.com/DanielSatelPereira
-- **Página de Detalhes**: https://peridan.dev/pt/projetos/investment-manager
+- **Página no Portfólio**: https://peridan.dev/pt/projetos/investment-manager
 
-### Projeto 4: API de Eventos & Front-end Integrado
-- **Tecnologias**: Node.js, PHP, RESTful APIs, JSON.
-- **Descrição**: Desenvolvido em maratona de programação (Hackathon) para gestão e credenciamento de participantes em eventos acadêmicos e empresariais.
-- **Repositório**: https://github.com/DanielSatelPereira
-- **Página de Detalhes**: https://peridan.dev/pt/projetos/hackathon-events-api
-
-### Projeto 5: Chopits (E-commerce)
+### Projeto 8: Chopits (E-commerce Front-end)
 - **Tecnologias**: TypeScript, React, Next.js, Tailwind CSS.
 - **Descrição**: Loja virtual com fluxo completo de compras, carrinho reativo, listagem com filtros e tipagem estrita de dados.
 - **Repositório**: https://github.com/DanielSatelPereira/chopits
-- **Página de Detalhes**: https://peridan.dev/pt/projetos/chopits
+- **Página no Portfólio**: https://peridan.dev/pt/projetos/chopits
+
+### Projeto 9: E-Script Website
+- **Tecnologias**: HTML5, CSS3, JavaScript.
+- **Descrição**: Catálogo de scripts e automações digitais com design limpo e semântico.
+- **Repositório**: https://github.com/Peridan1/e-script-website
+- **Página no Portfólio**: https://peridan.dev/pt/projetos/e-script-website
+
+### Projeto 10: AlfaPlus (Portal Acadêmico UniALFA)
+- **Tecnologias**: PHP, JavaScript, CSS3.
+- **Descrição**: Sistema e portal acadêmico desenvolvido na graduação de Sistemas para Internet na UniALFA.
+- **Repositório**: https://github.com/Peridan1/alfaplus-1balfa24
+- **Página no Portfólio**: https://peridan.dev/pt/projetos/alfaplus
+
+### Projeto 11: Site Vitrine Institucional
+- **Tecnologias**: HTML5 Semântico, CSS3 Moderno, Flexbox/Grid.
+- **Descrição**: Landing page institucional responsiva com foco em performance pura.
+- **Repositório**: https://github.com/Peridan1/site-vitrine-html-css
+- **Página no Portfólio**: https://peridan.dev/pt/projetos/site-vitrine

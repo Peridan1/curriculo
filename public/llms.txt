@@ -1,10 +1,10 @@
 # Daniel Satel Pereira (Peridan) - Portfólio & Currículo
 
-> Portfólio e currículo profissional de Daniel Satel Pereira (Peridan). Desenvolvedor Full Stack Júnior e estudante de Sistemas para Internet na UniALFA, com foco em React 19, Next.js 16 (App Router), TypeScript, PHP 8+ (Laravel), Node.js e Docker.
+> Portfólio e currículo profissional de Daniel Satel Pereira (Peridan). Desenvolvedor Full Stack Júnior e estudante de Sistemas para Internet na UniALFA, com foco em React 19, Next.js 16 (App Router), TypeScript, PHP 8+ (Laravel), Python (Automação de Dados), Java (Spring Boot), React Native, Node.js e Docker.
 
 ## Visão Geral & Páginas Principais
 
-- [Página Inicial (PT)](https://peridan.dev/pt): Apresentação interativa com terminal web interativo, bento grid de habilidades e links rápidos.
+- [Página Inicial (PT)](https://peridan.dev/pt): Apresentação interativa com terminal web, bento grid de habilidades e links rápidos.
 - [Home Page (EN)](https://peridan.dev/en): Interactive portfolio presentation with web terminal, bento grid of skills, and highlights.
 - [Currículo Formal (PT)](https://peridan.dev/pt/curriculo): Experiência profissional completa, formação acadêmica, habilidades e certificações formatadas para visualização e impressão.
 - [Formal Resume (EN)](https://peridan.dev/en/curriculo): Complete professional experience, academic background, skills, and certifications.
@@ -14,23 +14,29 @@
 
 ## Projetos em Destaque
 
+- [Brisamar Pescados](https://peridan.dev/pt/projetos/brisamar-pescados): Aplicação comercial no ar (https://www.brisamarpescados.com.br/) construída com Next.js 16, React 19, TypeScript e Tailwind CSS para o Box 130 do CEASA em Foz do Iguaçu.
+- [Controle de Frota & Robô Python](https://peridan.dev/pt/projetos/fleet-manager): Sistema corporativo interno da Prefeitura de Umuarama em Laravel e Docker, integrado a um robô em Python (Pandas) para ingestão, mineração e análise estatística de planilhas de abastecimento.
+- [JF Informática e Games](https://peridan.dev/pt/projetos/jf-informatica): SPA comercial no ar (https://jfinformaticaegames.com.br/) com Dark/Light Mode dinâmico e funil de conversão para assistência técnica.
 - [Hub de ONGs (Bem-Digital)](https://peridan.dev/pt/projetos/bem-digital): Sistema completo em Laravel (Blade/Alpine.js/Tailwind) e MySQL para gestão de campanhas de doação, controle de estoque e doadores.
-- [Controle de Frota (FleetManager)](https://peridan.dev/pt/projetos/fleet-manager): Sistema conteinerizado com Docker e Laravel Sail para gestão de veículos, pátios públicos e motoristas na Prefeitura de Umuarama.
+- [Bolão da Copa](https://peridan.dev/pt/projetos/bolao-copa): Aplicativo mobile em React Native integrado a API em Java Spring Boot desenvolvido em Hackathon na UniALFA.
+- [Hotsite UniALFA](https://peridan.dev/pt/projetos/hotsite-unialfa): Plataforma multi-stack de eventos acadêmicos combinando PHP, APIs em Node.js e módulos Java (em fase de refatoração contínua).
 - [Gestão de Investimentos](https://peridan.dev/pt/projetos/investment-manager): Aplicação em PHP Orientado a Objetos (POO) com arquitetura MVC e gráficos de rendimento financeiro.
-- [API de Eventos & Front-end](https://peridan.dev/pt/projetos/hackathon-events-api): API RESTful em Node.js com front-end integrado em PHP desenvolvida durante Hackathon.
 - [Chopits | E-commerce](https://peridan.dev/pt/projetos/chopits): Aplicação front-end simulando e-commerce completo com Next.js, React e TypeScript com tipagem estrita.
+- [E-Script Website](https://peridan.dev/pt/projetos/e-script-website): Catálogo e landing page de utilitários e automações web no GitHub.
+- [AlfaPlus](https://peridan.dev/pt/projetos/alfaplus): Portal acadêmico desenvolvido durante o curso de Sistemas para Internet na UniALFA.
+- [Site Vitrine](https://peridan.dev/pt/projetos/site-vitrine): Landing page institucional em HTML5 e CSS3 puro com foco em alta performance.
 
 ## Competências Técnicas
 
-- **Linguagens**: PHP (8+), TypeScript, JavaScript (ES6+), Java, Python, SQL, HTML5, CSS3.
-- **Frameworks & Bibliotecas**: Laravel, React 19, Next.js 16 (App Router, Server Components), Node.js, Express, Tailwind CSS v4, Bootstrap, Alpine.js.
+- **Linguagens**: PHP (8+), TypeScript, JavaScript (ES6+), Python, Java, SQL, HTML5, CSS3.
+- **Frameworks & Bibliotecas**: Laravel, React 19, Next.js 16 (App Router, Server Components), React Native, Spring Boot, Node.js, Express, Tailwind CSS v4, Pandas, OpenPyXL, Alpine.js.
 - **Bancos de Dados**: MySQL, PostgreSQL, Modelagem Relacional e Otimização de Queries.
 - **DevOps & Infraestrutura**: Docker, Docker Compose, Git/GitHub (Conventional Commits), Linux (Ubuntu/Debian), Mikrotik RouterOS, Windows Server.
 - **Arquitetura & Qualidade**: Clean Code, MVC, RESTful APIs, SOLID, SSR/SSG, WCAG AAA Acessibilidade.
 
 ## Contato & Redes Sociais
 
-- [GitHub](https://github.com/DanielSatelPereira): Repositórios de código aberto e projetos.
+- [GitHub Daniel](https://github.com/DanielSatelPereira) e [GitHub Peridan1](https://github.com/Peridan1): Repositórios de código aberto e projetos.
 - [LinkedIn](https://www.linkedin.com/in/daniel-satel-pereira/): Perfil profissional e histórico de carreira.
 - [WhatsApp](https://wa.me/5541999521315): Canal direto para contato e contratações.
 - [E-mail](mailto:danielsatelpereira@gmail.com): danielsatelpereira@gmail.com

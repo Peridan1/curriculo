@@ -6,12 +6,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     const locales = ["pt", "en"];
     const projectSlugs = [
-        "bem-digital",
+        "brisamar-pescados",
         "fleet-manager",
+        "jf-informatica",
+        "bem-digital",
+        "bolao-copa",
+        "hotsite-unialfa",
         "investment-manager",
-        "hackathon-events-api",
         "chopits",
-        "tech-store",
+        "e-script-website",
+        "alfaplus",
+        "site-vitrine",
     ];
 
     const routes: MetadataRoute.Sitemap = [];

@@ -3,7 +3,24 @@ import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import CookieBanner from "../../../components/CookieBanner";
 import Link from "next/link";
-import { ArrowRightIcon } from "../../../components/icons";
+import {
+    ArrowRightIcon,
+    ShieldIcon,
+    CodeIcon,
+} from "../../../components/icons";
+
+interface ProjectItem {
+    featured: boolean;
+    title: string;
+    shortDescription: string;
+    tags: string[];
+    image: string;
+    period?: string;
+    liveUrl?: string | null;
+    repoUrl?: string | null;
+    isInternal?: boolean;
+    inDevelopment?: boolean;
+}
 
 const dictionaries = {
     en: () =>
@@ -50,6 +67,7 @@ export default async function ProjectsHub({
             ? resolvedParams.lang
             : "en";
     const dict = await dictionaries[lang]();
+    const projectsMap = dict.projectsData as Record<string, ProjectItem>;
 
     return (
         <main className="min-h-screen flex flex-col">
@@ -71,7 +89,7 @@ export default async function ProjectsHub({
 
                 {/* Grade com TODOS os projetos */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {Object.entries(dict.projectsData).map(
+                    {Object.entries(projectsMap).map(
                         ([slug, project]) => (
                             <div
                                 key={slug}
@@ -84,6 +102,28 @@ export default async function ProjectsHub({
                                     }}
                                 >
                                     <div className="w-full h-full bg-slate-950/20 dark:bg-slate-950/40 group-hover:bg-transparent transition-all duration-500"></div>
+
+                                    {/* Badges de Status */}
+                                    <div className="absolute top-4 right-4 z-10 flex gap-2">
+                                        {project.liveUrl && (
+                                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-600/90 text-white text-[11px] font-extrabold shadow-md backdrop-blur-xs">
+                                                <span className="size-2 rounded-full bg-white animate-ping inline-block" />
+                                                {lang === "pt" ? "No Ar" : "Live"}
+                                            </span>
+                                        )}
+                                        {project.isInternal && (
+                                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/95 text-slate-950 text-[11px] font-extrabold shadow-md backdrop-blur-xs">
+                                                <ShieldIcon className="size-3 text-slate-950" />
+                                                {lang === "pt" ? "Corporativo" : "Enterprise"}
+                                            </span>
+                                        )}
+                                        {project.inDevelopment && (
+                                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-600/90 text-white text-[11px] font-extrabold shadow-md backdrop-blur-xs">
+                                                <CodeIcon className="size-3 text-white" />
+                                                {lang === "pt" ? "Em Evolução" : "In Progress"}
+                                            </span>
+                                        )}
+                                    </div>
                                 </div>
 
                                 <div className="p-6 lg:p-8 flex flex-col grow justify-between">

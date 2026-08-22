@@ -4,7 +4,13 @@ import Footer from "../../../../components/Footer";
 import CookieBanner from "../../../../components/CookieBanner";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeftIcon, GitHubIcon } from "../../../../components/icons";
+import {
+    ArrowLeftIcon,
+    GitHubIcon,
+    ExternalLinkIcon,
+    ShieldIcon,
+    CodeIcon,
+} from "../../../../components/icons";
 
 interface ProjectDetail {
     title: string;
@@ -13,7 +19,10 @@ interface ProjectDetail {
     shortDescription?: string;
     challengesTitle: string;
     challenges: string;
-    repoUrl: string;
+    repoUrl?: string | null;
+    liveUrl?: string | null;
+    isInternal?: boolean;
+    inDevelopment?: boolean;
     backButton: string;
     image?: string;
     tags?: string[];
@@ -145,19 +154,71 @@ export default async function ProjectTemplate({
                     <p>{projectData.challenges}</p>
                 </div>
 
-                {/* Link para o Repositório / Código */}
-                <div className="mt-12">
-                    <a
-                        href={projectData.repoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-3 bg-white dark:bg-slate-900 border-2 border-cyan-500/40 hover:border-cyan-500 text-cyan-800 dark:text-cyan-400 hover:text-white dark:hover:text-slate-950 hover:bg-linear-to-r hover:from-cyan-500 hover:to-emerald-500 px-8 py-4 rounded-xl font-bold transition-all shadow-md shadow-cyan-500/10 group"
-                    >
-                        <GitHubIcon className="size-5 text-slate-900 dark:text-white group-hover:scale-110 transition-transform" />
-                        {lang === "pt"
-                            ? "Ver Repositório no GitHub"
-                            : "View GitHub Repository"}
-                    </a>
+                {/* Ações e Links */}
+                <div className="mt-12 flex flex-wrap items-center gap-4">
+                    {projectData.liveUrl && (
+                        <a
+                            href={projectData.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-3 bg-linear-to-r from-cyan-600 to-emerald-600 hover:from-cyan-500 hover:to-emerald-500 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-cyan-500/20 group hover:scale-105"
+                        >
+                            <ExternalLinkIcon className="size-5 group-hover:scale-110 transition-transform" />
+                            {lang === "pt"
+                                ? "Acessar Projeto no Ar"
+                                : "Visit Live Project"}
+                        </a>
+                    )}
+
+                    {projectData.repoUrl && (
+                        <a
+                            href={projectData.repoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-3 bg-white dark:bg-slate-900 border-2 border-cyan-500/40 hover:border-cyan-500 text-cyan-800 dark:text-cyan-400 hover:text-white dark:hover:text-slate-950 hover:bg-linear-to-r hover:from-cyan-500 hover:to-emerald-500 px-8 py-4 rounded-xl font-bold transition-all shadow-md shadow-cyan-500/10 group"
+                        >
+                            <GitHubIcon className="size-5 text-slate-900 dark:text-white group-hover:scale-110 transition-transform" />
+                            {lang === "pt"
+                                ? "Ver Código no GitHub"
+                                : "View GitHub Repository"}
+                        </a>
+                    )}
+
+                    {projectData.isInternal && (
+                        <div className="w-full p-6 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-900 dark:text-amber-200 flex items-start gap-4">
+                            <ShieldIcon className="size-6 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+                            <div>
+                                <h4 className="font-bold text-base mb-1">
+                                    {lang === "pt"
+                                        ? "Sistema Corporativo de Uso Interno"
+                                        : "Internal Corporate System"}
+                                </h4>
+                                <p className="text-sm opacity-90 leading-relaxed font-normal">
+                                    {lang === "pt"
+                                        ? "Este software opera exclusivamente na infraestrutura privada da Prefeitura Municipal de Umuarama. Código-fonte e acesso externo são restritos por diretrizes institucionais de segurança e sigilo de dados públicos."
+                                        : "This software operates exclusively within the private infrastructure of the Municipality of Umuarama. Source code and external access are restricted by institutional security policies and public data confidentiality."}
+                                </p>
+                            </div>
+                        </div>
+                    )}
+
+                    {projectData.inDevelopment && (
+                        <div className="w-full p-6 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-900 dark:text-indigo-200 flex items-start gap-4">
+                            <CodeIcon className="size-6 text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5" />
+                            <div>
+                                <h4 className="font-bold text-base mb-1">
+                                    {lang === "pt"
+                                        ? "Projeto em Fase de Refatoração e Evolução Contínua"
+                                        : "Project in Continuous Evolution & Refactoring"}
+                                </h4>
+                                <p className="text-sm opacity-90 leading-relaxed font-normal">
+                                    {lang === "pt"
+                                        ? "Esta aplicação está recebendo melhorias ativas de arquitetura e desacoplamento de microserviços. O repositório reflete o estado de integração em andamento."
+                                        : "This application is actively undergoing architectural refinements and microservice decoupling. The repository reflects the ongoing integration state."}
+                                </p>
+                            </div>
+                        </div>
+                    )}
                 </div>
             </section>
 

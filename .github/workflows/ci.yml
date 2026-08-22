@@ -1,13 +1,18 @@
-name: Next.js CI
+name: CI / Quality & Security Pipeline
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main, master, "feat/**", "fix/**" ]
   pull_request:
     branches: [ main, master ]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  build:
+  validate:
+    name: Code Quality, i18n & Typecheck
     runs-on: ubuntu-latest
 
     steps:
@@ -17,14 +22,29 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Run Linter
+      - name: Setup environment variables
+        run: |
+          if [ -f .env.example ]; then
+            cp .env.example .env
+          fi
+
+      - name: Validate i18n Dictionary Parity
+        run: node .agents/scripts/validate-i18n.mjs
+
+      - name: TypeScript Typecheck
+        run: npx tsc --noEmit
+
+      - name: Run ESLint
         run: npm run lint
 
-      - name: Build Next.js project
+      - name: Run Next.js Production Build
         run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://peridan.dev
+          NEXT_PUBLIC_ENVIRONMENT: production
