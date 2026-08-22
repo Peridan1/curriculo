@@ -1,7 +1,7 @@
 # =========================================
 # STAGE 1: Imagem Base
 # =========================================
-FROM node:20-alpine AS base
+FROM node:22-alpine AS base
 
 # =========================================
 # STAGE 2: Instalação de Dependências
