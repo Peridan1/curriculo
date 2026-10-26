@@ -20,6 +20,9 @@
 
 # Testes e Cobertura
 /coverage/
+/playwright-report/
+/test-results/
+/blob-report/
 
 # Variáveis de Ambiente (Ignorar arquivos locais com segredos, permitir .env.example)
 .env

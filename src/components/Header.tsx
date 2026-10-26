@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
@@ -20,20 +21,78 @@ interface HeaderProps {
     };
 }
 
+function MenuIcon({ className = "size-6" }: { className?: string }) {
+    return (
+        <svg
+            className={className}
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+        >
+            <line x1="4" y1="6" x2="20" y2="6" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
+    );
+}
+
+function CloseIcon({ className = "size-6" }: { className?: string }) {
+    return (
+        <svg
+            className={className}
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+        >
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+    );
+}
+
 export default function Header({ dict }: HeaderProps) {
     const pathname = usePathname();
     const router = useRouter();
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    // Descobrir qual é o idioma atual a partir do URL (ex: "/pt/projetos" -> "pt")
+    // Descobrir qual é o idioma atual a partir da URL (ex: "/pt/projetos" -> "pt")
     const currentLang = pathname.split("/")[1] || "pt";
 
-    // Função que lida com a mudança no <select>
+    // Fecha o menu mobile ao navegar (mudança de pathname)
+    useEffect(() => {
+        setIsMobileMenuOpen(false);
+    }, [pathname]);
+
+    // Fecha o menu mobile com a tecla Escape
+    useEffect(() => {
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === "Escape") {
+                setIsMobileMenuOpen(false);
+            }
+        };
+
+        if (isMobileMenuOpen) {
+            window.addEventListener("keydown", handleKeyDown);
+        }
+
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+    }, [isMobileMenuOpen]);
+
+    // Função que lida com a mudança no <select> de idioma
     const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         const newLang = e.target.value;
         const segments = pathname.split("/");
         segments[1] = newLang; // Substitui o idioma antigo pelo novo
-
-        // Redireciona para o novo URL
         router.push(segments.join("/"));
     };
 
@@ -44,6 +103,7 @@ export default function Header({ dict }: HeaderProps) {
                 <Link
                     href={`/${currentLang}`}
                     className="flex items-center gap-3 group"
+                    onClick={() => setIsMobileMenuOpen(false)}
                 >
                     <div className="size-10 bg-linear-to-br from-cyan-400 to-emerald-500 rounded-xl flex items-center justify-center text-slate-950 font-black shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
                         <TerminalIcon className="size-5" />
@@ -53,13 +113,20 @@ export default function Header({ dict }: HeaderProps) {
                     </h2>
                 </Link>
 
-                {/* Menu de Navegação Principal */}
-                <nav className="hidden md:flex items-center gap-7">
+                {/* Menu de Navegação Principal (Desktop) */}
+                <nav className="hidden md:flex items-center gap-7" aria-label="Navegação principal">
                     <Link
                         className="text-slate-950 dark:text-slate-200 hover:text-cyan-700 dark:hover:text-cyan-400 transition-colors text-sm font-black tracking-tight"
                         href={`/${currentLang}`}
                     >
                         {dict.header.home || "Início"}
+                    </Link>
+
+                    <Link
+                        className="text-slate-950 dark:text-slate-200 hover:text-cyan-700 dark:hover:text-cyan-400 transition-colors text-sm font-black tracking-tight"
+                        href={`/${currentLang}/sobre`}
+                    >
+                        {dict.header.about || "Sobre"}
                     </Link>
 
                     <Link
@@ -79,7 +146,7 @@ export default function Header({ dict }: HeaderProps) {
                     </Link>
                 </nav>
 
-                {/* Botões: Seletores de Tema e Idioma + Contato */}
+                {/* Ações: Seletores de Tema e Idioma + Contato + Botão Hambúrguer Mobile */}
                 <div className="flex items-center gap-3">
                     {/* Seletor de Tema */}
                     <ThemeToggle />
@@ -103,7 +170,7 @@ export default function Header({ dict }: HeaderProps) {
                         </option>
                     </select>
 
-                    {/* Botão de Contato */}
+                    {/* Botão de Contato (Desktop) */}
                     <a
                         href="mailto:danielsatelpereira@gmail.com"
                         className="bg-linear-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white dark:text-slate-950 px-5 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all shadow-lg shadow-cyan-600/20 hover:scale-105 hidden sm:inline-flex items-center gap-1.5"
@@ -111,8 +178,69 @@ export default function Header({ dict }: HeaderProps) {
                         <MailIcon className="size-4" />
                         {dict.header.contact}
                     </a>
+
+                    {/* Botão Hambúrguer para Menu Mobile */}
+                    <button
+                        type="button"
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        aria-expanded={isMobileMenuOpen}
+                        aria-controls="mobile-navigation"
+                        aria-label={isMobileMenuOpen ? "Fechar menu de navegação" : "Abrir menu de navegação"}
+                        className="md:hidden size-10 rounded-xl bg-slate-200 dark:bg-slate-900 border border-slate-300 dark:border-cyan-500/30 text-slate-900 dark:text-slate-100 flex items-center justify-center hover:border-cyan-500 transition-colors cursor-pointer"
+                    >
+                        {isMobileMenuOpen ? <CloseIcon className="size-5" /> : <MenuIcon className="size-5" />}
+                    </button>
                 </div>
             </div>
+
+            {/* Menu Dropdown Mobile */}
+            {isMobileMenuOpen && (
+                <div
+                    id="mobile-navigation"
+                    className="md:hidden border-b border-slate-300/80 dark:border-cyan-500/20 bg-slate-100/95 dark:bg-slate-950/95 backdrop-blur-2xl px-6 py-6 animate-in slide-in-from-top-4 duration-200"
+                >
+                    <nav className="flex flex-col gap-4" aria-label="Navegação mobile">
+                        <Link
+                            href={`/${currentLang}`}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="text-base font-black text-slate-950 dark:text-slate-100 hover:text-cyan-600 dark:hover:text-cyan-400 py-1 transition-colors"
+                        >
+                            {dict.header.home || "Início"}
+                        </Link>
+                        <Link
+                            href={`/${currentLang}/sobre`}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="text-base font-black text-slate-950 dark:text-slate-100 hover:text-cyan-600 dark:hover:text-cyan-400 py-1 transition-colors"
+                        >
+                            {dict.header.about || "Sobre"}
+                        </Link>
+                        <Link
+                            href={`/${currentLang}/projetos`}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="text-base font-black text-slate-950 dark:text-slate-100 hover:text-cyan-600 dark:hover:text-cyan-400 py-1 transition-colors"
+                        >
+                            {dict.header.projects}
+                        </Link>
+                        <Link
+                            href={`/${currentLang}/curriculo`}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="inline-flex items-center gap-2 text-base font-black text-cyan-800 dark:text-cyan-400 hover:text-emerald-600 dark:hover:text-emerald-300 py-1 transition-colors"
+                        >
+                            <CurriculumIcon className="size-4.5" />
+                            {dict.header.curriculum || "Currículo"}
+                        </Link>
+                        <div className="pt-3 border-t border-slate-300 dark:border-slate-800 flex flex-col gap-3">
+                            <a
+                                href="mailto:danielsatelpereira@gmail.com"
+                                className="inline-flex items-center justify-center gap-2 bg-linear-to-r from-cyan-600 to-blue-600 text-white dark:text-slate-950 py-3 rounded-xl text-sm font-extrabold shadow-md"
+                            >
+                                <MailIcon className="size-4" />
+                                {dict.header.contact}
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            )}
         </header>
     );
 }

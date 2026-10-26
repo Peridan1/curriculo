@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Header from "../../../components/Header";
 import CurriculumView from "../../../components/CurriculumView";
 import Footer from "../../../components/Footer";
@@ -17,10 +18,12 @@ export async function generateMetadata({
     params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
     const resolvedParams = await params;
-    const lang =
-        resolvedParams.lang === "pt" || resolvedParams.lang === "en"
-            ? resolvedParams.lang
-            : "pt";
+    const { lang } = resolvedParams;
+
+    if (lang !== "pt" && lang !== "en") {
+        notFound();
+    }
+
     const dict = await dictionaries[lang]();
 
     return {
@@ -40,17 +43,19 @@ export default async function CurriculumPage({
     params: Promise<{ lang: string }>;
 }) {
     const resolvedParams = await params;
-    const lang =
-        resolvedParams.lang === "pt" || resolvedParams.lang === "en"
-            ? resolvedParams.lang
-            : "pt";
+    const { lang } = resolvedParams;
+
+    if (lang !== "pt" && lang !== "en") {
+        notFound();
+    }
+
     const dict = await dictionaries[lang]();
 
     return (
         <main className="min-h-screen flex flex-col">
             <Header dict={dict} />
             <CurriculumView dict={dict} lang={lang} />
-            <Footer dict={dict} />
+            <Footer dict={dict} lang={lang} />
             <CookieBanner dict={dict} lang={lang} />
         </main>
     );

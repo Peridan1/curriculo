@@ -1,21 +1,8 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { getLocaleFromHeader } from "./lib/locale";
 
 const locales = ["pt", "en"];
-const defaultLocale = "pt"; // Idioma de segurança caso o navegador não informe nenhum
-
-function getLocale(request: NextRequest): string {
-    // Busca o idioma preferido do navegador do usuário pelo cabeçalho HTTP
-    const acceptLanguage = request.headers.get("accept-language");
-    
-    if (acceptLanguage) {
-        // Checa se a preferência do usuário inclui PT ou EN
-        if (acceptLanguage.toLowerCase().includes("pt")) return "pt";
-        if (acceptLanguage.toLowerCase().includes("en")) return "en";
-    }
-    
-    return defaultLocale;
-}
 
 export function proxy(request: NextRequest) {
     const { pathname } = request.nextUrl;
@@ -31,8 +18,8 @@ export function proxy(request: NextRequest) {
     }
 
     // Se NÃO tiver idioma na URL (ex: acessou apenas "/" ou "/projetos"),
-    // descobre qual o idioma do navegador do usuário
-    const locale = getLocale(request);
+    // descobre qual o idioma preferido do usuário respeitando o peso q
+    const locale = getLocaleFromHeader(request.headers.get("accept-language"));
     
     // Redireciona adicionando o idioma na frente (ex: "/" vira "/pt" ou "/en")
     request.nextUrl.pathname = `/${locale}${pathname === "/" ? "" : pathname}`;

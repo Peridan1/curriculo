@@ -17,17 +17,24 @@ interface FooterProps {
             privacy?: string;
             available?: string;
         };
+        header?: {
+            home?: string;
+            about?: string;
+            projects?: string;
+            curriculum?: string;
+        };
     };
+    lang?: string;
 }
 
-export default function Footer({ dict }: FooterProps) {
+export default function Footer({ dict, lang = "pt" }: FooterProps) {
     return (
         <footer className="bg-slate-200/80 dark:bg-slate-950/80 py-16 border-t border-slate-300/80 dark:border-cyan-500/15 relative overflow-hidden" id="contact">
             {/* Linha de Neon Superior */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-linear-to-r from-transparent via-cyan-500/40 to-transparent"></div>
 
             <div className="max-w-300 mx-auto px-6">
-                <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-12">
+                <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-8 mb-12">
                     {/* Logo e Apresentação */}
                     <div className="flex flex-col items-center md:items-start gap-3 text-center md:text-left">
                         <div className="flex items-center gap-3">
@@ -43,6 +50,30 @@ export default function Footer({ dict }: FooterProps) {
                             <br />
                             Umuarama/PR – Brasil
                         </p>
+                    </div>
+
+                    {/* Links Rápidos */}
+                    <div className="flex flex-col items-center md:items-start gap-3">
+                        <h3 className="text-xs font-black uppercase tracking-widest text-cyan-800 dark:text-cyan-400">
+                            {dict.footer.quickLinks || "Links Rápidos"}
+                        </h3>
+                        <nav className="flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs font-bold text-slate-700 dark:text-slate-300" aria-label="Links rápidos do rodapé">
+                            <Link href={`/${lang}`} className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                                {dict.header?.home || "Início"}
+                            </Link>
+                            <span>•</span>
+                            <Link href={`/${lang}/sobre`} className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                                {dict.header?.about || "Sobre"}
+                            </Link>
+                            <span>•</span>
+                            <Link href={`/${lang}/projetos`} className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                                {dict.header?.projects || "Projetos"}
+                            </Link>
+                            <span>•</span>
+                            <Link href={`/${lang}/curriculo`} className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                                {dict.header?.curriculum || "Currículo"}
+                            </Link>
+                        </nav>
                     </div>
 
                     {/* Links de Contato e Redes Sociais */}
@@ -94,12 +125,12 @@ export default function Footer({ dict }: FooterProps) {
                 </div>
 
                 <div className="pt-8 border-t border-slate-300/80 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-center">
-                    {/* Texto de Copyright e Link para Termos/Privacidade */}
+                    {/* Texto de Copyright e Link dinâmico para Termos/Privacidade */}
                     <div className="flex flex-wrap items-center justify-center gap-3 text-xs text-slate-600 dark:text-slate-400 font-medium">
                         <p>{dict.footer.copyright}</p>
                         <span>•</span>
                         <Link
-                            href="/pt/privacidade"
+                            href={`/${lang}/privacidade`}
                             className="text-cyan-800 dark:text-cyan-400 hover:underline font-bold"
                         >
                             {dict.footer.privacy || "Termos & Privacidade"}

@@ -9,13 +9,13 @@ export default function DynamicFavicon() {
     useEffect(() => {
         const iconHref = resolvedTheme === "light" ? "/icon-light.svg" : "/icon-dark.svg";
         
-        // Atualiza ou cria tag de link rel='icon' dinamicamente
-        const existingLinks = document.querySelectorAll<HTMLLinkElement>("link[rel*='icon']");
-        if (existingLinks.length > 0) {
-            existingLinks.forEach((link) => {
-                link.type = "image/svg+xml";
-                link.href = iconHref;
-            });
+        // Atualiza ou cria especificamente a tag de ícone SVG, preservando o favicon.ico estático
+        const existingSvgIcon = document.querySelector<HTMLLinkElement>(
+            "link[rel~='icon'][type='image/svg+xml']"
+        );
+
+        if (existingSvgIcon) {
+            existingSvgIcon.href = iconHref;
         } else {
             const newLink = document.createElement("link");
             newLink.rel = "icon";

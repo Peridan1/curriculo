@@ -41,7 +41,7 @@
             "triviaTech": "💻 [Trivia Tech]: Desmontou o primeiro computador aos 12 anos; configurou os primeiros switches e roteadores Mikrotik RouterOS aos 19; apaixonado por entender como as coisas funcionam desde a física do cabo de rede até o pixel renderizado no navegador.",
             "triviaMusic": "🎧 [Músicas & Sons]: Gêneros favoritos incluem Synthwave / Retrowave (música eletrônica anos 80 futurista), Lo-Fi instrumental para concentração máxima, Rock clássico (Pink Floyd, Dire Straits, Queen) e trilhas sonoras orquestradas de jogos e animes.",
             "triviaMovies": "🎬 [Filmes & Séries]: Fã incondicional de Ficção Científica e Cyberpunk: Matrix (1999), Interestelar, O Guia do Mochileiro das Galáxias, Blade Runner 2049, Star Wars (Trilogia Original) e a série Mr. Robot.",
-            "triviaGames": "🎮 [Games & RPGs]: Aprecia jogos com histórias profundas e mecânicas imersivas: RPGs (The Witcher 3, Cyberpunk 2077, Chrono Trigger), jogos de estratégia (Age of Empires) e títulos com trilhas sonoras marcantes.",
+            "triviaGames": "🎮 [Games]: Aprecia jogos com histórias profundas e gameplay marcante: Hollow Knight, Ori and the Blind Forest, God of War, além de clássicos de corrida e ação (Need for Speed Most Wanted, Midnight Club).",
             "triviaPlaylist": "🎵 [Playlist do Dev]: Músicas recomendadas para codar com foco:\n  • 'Resonance' - HOME\n  • 'Nightcall' - Kavinsky\n  • 'Tech Noir' - Gunship\n  • 'Daylight' - Lofi Girl Beats\nColoque o fone de ouvido, abra o editor e entre no estado de Flow! 🎧✨",
             "easterEgg42": "🌌 42: A Resposta Fundamental para a Vida, o Universo e Tudo Mais!\n(O Guia do Mochileiro das Galáxias - Douglas Adams)\nLembre-se: 'NÃO ENTRE EM PÂNICO' e nunca, jamais esqueça a sua toalha! 🚀🧻",
             "easterEggPeace": "🛸 'VIEMOS EM PAZ!'\nSaudações terráqueo! O sinal de rádio foi interceptado com sucesso pelo Peridan a partir do quadrante Alpha do Paraná. 👽🖖",
@@ -127,23 +127,53 @@
         "categories": {
             "backend": {
                 "name": "Back-end",
-                "items": ["PHP", "Laravel", "Java (Spring Boot)", "Node.js (NestJS)", "Python"]
+                "items": [
+                    "PHP",
+                    "Laravel",
+                    "Java (Spring Boot)",
+                    "Node.js (NestJS)",
+                    "Python"
+                ]
             },
             "frontend": {
                 "name": "Front-end",
-                "items": ["JavaScript", "TypeScript", "React", "Next.js", "React Native", "Tailwind CSS", "HTML5", "CSS3"]
+                "items": [
+                    "JavaScript",
+                    "TypeScript",
+                    "React",
+                    "Next.js",
+                    "React Native",
+                    "Tailwind CSS",
+                    "HTML5",
+                    "CSS3"
+                ]
             },
             "database": {
                 "name": "Bancos de Dados",
-                "items": ["MySQL", "Modelagem de Dados Relacionais", "Consultas Otimizadas"]
+                "items": [
+                    "MySQL",
+                    "Modelagem de Dados Relacionais",
+                    "Consultas Otimizadas"
+                ]
             },
             "engineering": {
                 "name": "Engenharia de Software & Metodologias",
-                "items": ["Clean Architecture", "Engenharia de Requisitos", "Documentação de Software", "Metodologias Ágeis (Kanban/Scrum)", "Trello"]
+                "items": [
+                    "Clean Architecture",
+                    "Engenharia de Requisitos",
+                    "Documentação de Software",
+                    "Metodologias Ágeis (Kanban/Scrum)",
+                    "Trello"
+                ]
             },
             "devops": {
                 "name": "Ferramentas & DevOps",
-                "items": ["Git & GitHub (Conventional Commits)", "Docker (Laravel Sail)", "Composer", "NPM"]
+                "items": [
+                    "Git & GitHub (Conventional Commits)",
+                    "Docker (Laravel Sail)",
+                    "Composer",
+                    "NPM"
+                ]
             }
         }
     },
@@ -188,7 +218,16 @@
                         "text": "Suporte técnico presencial e remoto, configuração de redes, formatação, diagnóstico de hardware e manutenção do parque tecnológico da prefeitura."
                     }
                 ],
-                "tags": ["Laravel", "Docker", "Sail", "MySQL", "Tailwind CSS", "Python", "React Native", "Redes"]
+                "tags": [
+                    "Laravel",
+                    "Docker",
+                    "Sail",
+                    "MySQL",
+                    "Tailwind CSS",
+                    "Python",
+                    "React Native",
+                    "Redes"
+                ]
             },
             {
                 "role": "Assistente de Manutenção e Infraestrutura",
@@ -207,7 +246,13 @@
                         "text": "Manutenção preventiva e corretiva de equipamentos, resolução ágil de chamados de TI e suporte a usuários da empresa."
                     }
                 ],
-                "tags": ["Mikrotik", "Windows Server", "Redes de Computadores", "Suporte Técnico", "Manutenção"]
+                "tags": [
+                    "Mikrotik",
+                    "Windows Server",
+                    "Redes de Computadores",
+                    "Suporte Técnico",
+                    "Manutenção"
+                ]
             },
             {
                 "role": "Professor e Tradutor de Inglês",
@@ -222,7 +267,13 @@
                         "text": "Planejamento pedagógico personalizado, tradução de materiais e mentoria individualizada para alunos com foco em conversação e escrita."
                     }
                 ],
-                "tags": ["Inglês Avançado", "Tradução Técnica", "Comunicação", "Didática", "Mentoria"]
+                "tags": [
+                    "Inglês Avançado",
+                    "Tradução Técnica",
+                    "Comunicação",
+                    "Didática",
+                    "Mentoria"
+                ]
             }
         ]
     },
@@ -232,7 +283,12 @@
         "explore": "Ver Detalhes",
         "viewAll": "Ver Todos os Projetos",
         "hubTitle": "Portfólio de Projetos",
-        "hubSubtitle": "Uma coleção completa dos meus projetos acadêmicos, desenvolvimentos profissionais e trabalhos práticos."
+        "hubSubtitle": "Uma coleção completa dos meus projetos acadêmicos, desenvolvimentos profissionais e trabalhos práticos.",
+        "status": {
+            "live": "No Ar",
+            "internal": "Corporativo",
+            "inDevelopment": "Em Evolução"
+        }
     },
     "projectsData": {
         "brisamar-pescados": {
@@ -255,7 +311,16 @@
             "repoUrl": "https://github.com/DanielSatelPereira",
             "isInternal": false,
             "inDevelopment": false,
-            "backButton": "Voltar para o Início"
+            "backButton": "Voltar para o Início",
+            "impact": "Aumento expressivo na captação de clientes de atacado e varejo com integração direta para o WhatsApp comercial e carregamento instantâneo via Server Components.",
+            "lessons": "Adoção pioneira de Next.js com App Router e otimização de imagens em larga escala para reduzir o tempo de resposta e maximizar o ranqueamento orgânico de SEO.",
+            "stackDetail": [
+                "Next.js 16 (App Router)",
+                "React 19",
+                "TypeScript com tipagem estrita",
+                "Tailwind CSS",
+                "WhatsApp Business API Flow"
+            ]
         },
         "fleet-manager": {
             "featured": true,
@@ -277,7 +342,16 @@
             "repoUrl": null,
             "isInternal": true,
             "inDevelopment": false,
-            "backButton": "Voltar para o Início"
+            "backButton": "Voltar para o Início",
+            "impact": "Automatização completa da consolidação de dados de abastecimento e hodômetro, gerando relatórios precisos que apoiam a redução de custos com combustíveis no município.",
+            "lessons": "Importância de desacoplar tarefas pesadas de ETL em scripts Python assíncronos e conteinerizar a stack com Docker/Sail para garantir reprodutibilidade total.",
+            "stackDetail": [
+                "Laravel 12 (MVC)",
+                "Docker & Docker Compose",
+                "Python (Pandas, OpenPyXL)",
+                "MySQL Relacional",
+                "Tailwind CSS"
+            ]
         },
         "jf-informatica": {
             "featured": true,
@@ -299,7 +373,15 @@
             "repoUrl": "https://github.com/DanielSatelPereira",
             "isInternal": false,
             "inDevelopment": false,
-            "backButton": "Voltar para o Início"
+            "backButton": "Voltar para o Início",
+            "impact": "Presença digital profissional no mercado local de Umuarama com funil simplificado de orçamento que aumentou o volume de chamados de assistência técnica.",
+            "lessons": "Construção de uma SPA performática sem overhead de frameworks pesados, explorando CSS moderno e JavaScript nativo.",
+            "stackDetail": [
+                "JavaScript ES6+",
+                "Tailwind CSS",
+                "Dark Mode Persistente",
+                "Arquitetura SPA"
+            ]
         },
         "bem-digital": {
             "featured": true,
@@ -321,7 +403,16 @@
             "repoUrl": "https://github.com/VilleSIlva/bem_digital_trabalho_laravel",
             "isInternal": false,
             "inDevelopment": false,
-            "backButton": "Voltar para o Início"
+            "backButton": "Voltar para o Início",
+            "impact": "Centralização das demandas de doações e controle de estoque de entidades sociais sem fins lucrativos.",
+            "lessons": "Estruturação sólida de regras de negócio em MVC com validações rigorosas de segurança e integridade de dados.",
+            "stackDetail": [
+                "Laravel",
+                "Blade Templates",
+                "MySQL",
+                "Tailwind CSS",
+                "Bootstrap Icons"
+            ]
         },
         "bolao-copa": {
             "featured": false,
@@ -514,5 +605,180 @@
         "title": "Daniel Satel Pereira (Peridan) | Desenvolvedor Full Stack",
         "description": "Portfólio de Daniel Satel Pereira (Peridan), Desenvolvedor Full Stack Júnior e estudante de Sistemas para Internet na UniALFA. Experiência em PHP, Laravel, Next.js, React, Node.js e Docker.",
         "keywords": "Daniel Satel Pereira, Peridan, Desenvolvedor Full Stack, PHP, Laravel, React, Next.js, TypeScript, Docker, UniALFA, Umuarama, Portfólio"
+    },
+    "aboutPage": {
+        "badge": "Trajetória & Essência",
+        "title": "Sobre Mim",
+        "subtitle": "História, jornada de aprendizado, universo pessoal e tecnologias na prática.",
+        "story": {
+            "title": "Minha História",
+            "p1": "Sou desenvolvedor Full Stack Júnior e acadêmico de Sistemas para Internet na UniALFA em Umuarama/PR. Minha paixão é criar softwares limpos, eficientes e visualmente impactantes, conectando a solidez da arquitetura backend com interfaces modernas e acessíveis.",
+            "p2": "Meu contato com a informática começou cedo: aos 12 anos já desmontava computadores para entender seu funcionamento interno. Mais tarde, atuei como assistente de manutenção e suporte técnico (Mikrotik, Windows Server e redes estruturadas), o que me proporcionou uma visão completa e sistêmica — da física do cabo ao pixel renderizado no navegador.",
+            "p3": "No setor público e privado, desenvolvi desde landing pages de alta conversão até sistemas corporativos em Laravel, integrações com robôs em Python e este portfólio em Next.js 16 com React 19.",
+            "tributeTitle": "Gratidão Especial",
+            "tributeText": "Obrigado, Thiago Dalfito. Foi o seu incentivo que me trouxe para a programação, e parte de cada projeto meu vem daí."
+        },
+        "techTimeline": {
+            "title": "Jornada Tecnológica",
+            "subtitle": "Como conheci e evoluí em cada tecnologia do meu ecossistema.",
+            "items": [
+                {
+                    "id": "hardware",
+                    "title": "Hardware, Redes e Mikrotik",
+                    "period": "2024 - Presente",
+                    "description": "Na Imppar (assistente de manutenção, out/2024 a fev/2025) estudei e me aprofundei em Mikrotik e Windows Server. No Colégio Geração Cima (técnico de informática, mar a out/2025) cuidei do laboratório e configurei projetores, Apple TV e Chromecast. Ao entrar na prefeitura e trabalhar com suporte, passei a entender ainda mais de computadores e de redes pelos trabalhos do dia a dia.",
+                    "tags": [
+                        "Mikrotik RouterOS",
+                        "Windows Server",
+                        "Redes Estruturadas",
+                        "Hardware",
+                        "Suporte Técnico"
+                    ],
+                    "projects": []
+                },
+                {
+                    "id": "php",
+                    "title": "PHP e Laravel",
+                    "period": "2024 - Presente",
+                    "description": "O professor Alex Morgado me apresentou ao PHP em 2024, na UniALFA, e gostei muito: exploramos várias formas da linguagem. Fiz um freelance em PHP puro com JavaScript, o site da JF Informática e Games. No suporte da prefeitura recebi a chance de criar um sistema de entrada de pátio, que hoje é o sistema de controle de frota (Laravel 12, MySQL, Tailwind e Docker/Sail), com um robô em Python para tratar os dados da API dos rastreadores. Desde março de 2026 trabalho na Casa dos Conselhos de Umuarama, onde tive contato com o Slim. Também estou refatorando meus projetos antigos da faculdade.",
+                    "tags": [
+                        "PHP 8+",
+                        "Laravel",
+                        "Slim Framework",
+                        "MySQL",
+                        "MVC"
+                    ],
+                    "projects": [
+                        "fleet-manager",
+                        "bem-digital",
+                        "investment-manager",
+                        "jf-informatica"
+                    ]
+                },
+                {
+                    "id": "docker",
+                    "title": "Docker e Linux",
+                    "period": "2024 - Presente",
+                    "description": "Depois de entrar na prefeitura comecei com dual boot para me acostumar com o Linux e a dockerizar meus projetos. Hoje dockerizo tudo pelo que sou responsável, para facilitar o desenvolvimento e o deploy ágil e padronizado.",
+                    "tags": [
+                        "Docker",
+                        "Docker Compose",
+                        "Linux (Ubuntu/Debian)",
+                        "Multi-stage Builds"
+                    ],
+                    "projects": [
+                        "fleet-manager"
+                    ]
+                },
+                {
+                    "id": "frontend",
+                    "title": "JavaScript, TypeScript, React e Next.js",
+                    "period": "2024 - Presente",
+                    "description": "Mexo com essas tecnologias há dois ou três anos. Fiz um projeto freelance e este portfólio em Next.js, e o React é a base do meu TCC. Também aprendi React Native e desenvolvi o Bolão da Copa em um hackathon da faculdade UniALFA no início de 2026. Tenho grande interesse em Angular e Vue.",
+                    "tags": [
+                        "Next.js 16",
+                        "React 19",
+                        "TypeScript",
+                        "React Native",
+                        "Tailwind CSS v4"
+                    ],
+                    "projects": [
+                        "chopits",
+                        "brisamar-pescados",
+                        "bolao-copa"
+                    ]
+                },
+                {
+                    "id": "python",
+                    "title": "Python e Automação de Dados",
+                    "period": "2024 - Presente",
+                    "description": "Python foi o motivo de eu entrar na programação: meu amigo Thiago Dalfito me incentivou a aprender e a assistir aos vídeos do Gustavo Guanabara. Hoje utilizo a linguagem em scripts de automação, manipulação de dados e integração de APIs na prefeitura.",
+                    "tags": [
+                        "Python",
+                        "Pandas",
+                        "Automação",
+                        "ETL",
+                        "APIs REST"
+                    ],
+                    "projects": [
+                        "fleet-manager"
+                    ]
+                },
+                {
+                    "id": "tailwind",
+                    "title": "Tailwind CSS",
+                    "period": "2024 - Presente",
+                    "description": "Comecei a usar no início de 2024 e adorei: acho intuitivo e uma biblioteca excelente para criação de interfaces modernas, responsivas e de altíssimo desempenho visual.",
+                    "tags": [
+                        "Tailwind CSS v4",
+                        "Design Responsivo",
+                        "Glassmorphism",
+                        "Dark Mode"
+                    ],
+                    "projects": [
+                        "bem-digital",
+                        "brisamar-pescados"
+                    ]
+                }
+            ]
+        },
+        "hobbies": {
+            "title": "Hobbies & Universo Pessoal",
+            "subtitle": "Além do código: games, trilhas sonoras, literatura e momentos de desconexão.",
+            "onlineGames": {
+                "title": "Jogos Online",
+                "items": [
+                    "League of Legends",
+                    "Valorant",
+                    "Paladins",
+                    "Fortnite",
+                    "Battle Royales (estilo PUBG)"
+                ]
+            },
+            "offlineGames": {
+                "title": "Jogos Offline",
+                "items": [
+                    "Hollow Knight",
+                    "Ori and the Blind Forest & Ori 2",
+                    "God of War",
+                    "Far Cry 3",
+                    "Just Cause 1, 2 e 3",
+                    "Black",
+                    "Call of Duty clássicos (até 2017)"
+                ]
+            },
+            "racing": {
+                "title": "Jogos de Corrida",
+                "items": [
+                    "Midnight Club",
+                    "Need for Speed Most Wanted"
+                ]
+            },
+            "booksAndMovies": {
+                "title": "Livros e Filmes",
+                "items": [
+                    "Harry Potter",
+                    "J.R.R. Tolkien (Trilogia O Senhor dos Anéis)",
+                    "Star Wars",
+                    "Matrix (1999)",
+                    "Interestelar",
+                    "O Guia do Mochileiro das Galáxias"
+                ]
+            },
+            "music": {
+                "title": "Música & Playlist",
+                "description": "Gosto de muitos estilos musicais diferentes. Synthwave, instrumental Lo-Fi para foco absoluto e rock clássico me acompanham no dia a dia de código. Confira minha playlist pública:",
+                "playlistButton": "Abrir Playlist no YouTube Music",
+                "playlistUrl": "https://music.youtube.com/playlist?list=PLr3O4xaxL7toLzlCuMIQymxLYbxAEiVsm"
+            }
+        },
+        "techMatrix": {
+            "title": "Matriz de Projetos & Tecnologias",
+            "subtitle": "Como cada tecnologia da minha jornada se conecta aos sistemas que construí.",
+            "projectColumn": "Projeto",
+            "techColumn": "Tecnologias Aplicadas",
+            "typeColumn": "Tipo / Contexto",
+            "viewProject": "Acessar Projeto"
+        }
     }
 }

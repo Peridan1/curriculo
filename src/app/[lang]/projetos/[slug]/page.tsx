@@ -26,6 +26,9 @@ interface ProjectDetail {
     backButton: string;
     image?: string;
     tags?: string[];
+    lessons?: string;
+    stackDetail?: string[];
+    impact?: string;
 }
 
 const dictionaries = {
@@ -39,25 +42,48 @@ const dictionaries = {
         ),
 };
 
+function getTechAnchor(tag: string): string | null {
+    const t = tag.toLowerCase();
+    if (t.includes("mikrotik") || t.includes("windows server") || t.includes("redes") || t.includes("hardware")) {
+        return "hardware";
+    }
+    if (t.includes("php") || t.includes("laravel") || t.includes("slim") || t.includes("mysql") || t.includes("mvc")) {
+        return "php";
+    }
+    if (t.includes("docker") || t.includes("linux")) {
+        return "docker";
+    }
+    if (t.includes("react") || t.includes("next") || t.includes("typescript") || t.includes("javascript")) {
+        return "frontend";
+    }
+    if (t.includes("python") || t.includes("pandas") || t.includes("automação") || t.includes("etl")) {
+        return "python";
+    }
+    if (t.includes("tailwind")) {
+        return "tailwind";
+    }
+    return null;
+}
+
 export async function generateMetadata({
     params,
 }: {
     params: Promise<{ lang: string; slug: string }>;
 }): Promise<Metadata> {
     const resolvedParams = await params;
-    const lang =
-        resolvedParams.lang === "pt" || resolvedParams.lang === "en"
-            ? resolvedParams.lang
-            : "pt";
-    const slug = resolvedParams.slug;
-    const dict = await dictionaries[lang]();
+    const { lang, slug } = resolvedParams;
 
+    if (lang !== "pt" && lang !== "en") {
+        notFound();
+    }
+
+    const dict = await dictionaries[lang]();
     const projectsMap = dict.projectsData as Record<string, ProjectDetail>;
     const projectData = projectsMap?.[slug];
 
     if (!projectData) {
         return {
-            title: "Projeto não encontrado | Daniel Satel Pereira",
+            title: lang === "pt" ? "Projeto não encontrado | Daniel Satel Pereira" : "Project not found | Daniel Satel Pereira",
         };
     }
 
@@ -78,19 +104,25 @@ export default async function ProjectTemplate({
     params: Promise<{ lang: string; slug: string }>;
 }) {
     const resolvedParams = await params;
-    const lang =
-        resolvedParams.lang === "pt" || resolvedParams.lang === "en"
-            ? resolvedParams.lang
-            : "en";
-    const slug = resolvedParams.slug;
-    const dict = await dictionaries[lang]();
+    const { lang, slug } = resolvedParams;
 
+    if (lang !== "pt" && lang !== "en") {
+        notFound();
+    }
+
+    const dict = await dictionaries[lang]();
     const projectsMap = dict.projectsData as Record<string, ProjectDetail>;
     const projectData = projectsMap?.[slug];
 
     if (!projectData) {
         notFound();
     }
+
+    const statusLabels = dict.projectsSection?.status || {
+        live: lang === "pt" ? "No Ar" : "Live",
+        internal: lang === "pt" ? "Corporativo" : "Enterprise",
+        inDevelopment: lang === "pt" ? "Em Evolução" : "In Progress",
+    };
 
     return (
         <main className="min-h-screen flex flex-col">
@@ -115,28 +147,64 @@ export default async function ProjectTemplate({
                     {projectData.period}
                 </p>
 
-                {/* Tags */}
+                {/* Tags conectadas com a Jornada Tecnológica na página Sobre */}
                 {projectData.tags && projectData.tags.length > 0 && (
                     <div className="flex flex-wrap gap-2 mb-8">
-                        {projectData.tags.map((tag, tIndex) => (
-                            <span
-                                key={tIndex}
-                                className="text-xs font-bold px-3 py-1 bg-cyan-100/80 dark:bg-cyan-500/10 text-cyan-950 dark:text-cyan-300 rounded-lg border border-cyan-300 dark:border-cyan-500/20"
-                            >
-                                {tag}
-                            </span>
-                        ))}
+                        {projectData.tags.map((tag, tIndex) => {
+                            const anchor = getTechAnchor(tag);
+                            if (anchor) {
+                                return (
+                                    <Link
+                                        key={tIndex}
+                                        href={`/${lang}/sobre#tech-${anchor}`}
+                                        title={lang === "pt" ? "Ver tecnologia na jornada de aprendizado" : "View technology in tech journey"}
+                                        className="text-xs font-bold px-3 py-1 bg-cyan-100/90 dark:bg-cyan-500/10 text-cyan-950 dark:text-cyan-300 rounded-lg border border-cyan-400/50 dark:border-cyan-500/20 hover:border-cyan-500 hover:scale-105 transition-all cursor-pointer shadow-xs"
+                                    >
+                                        {tag} ↗
+                                    </Link>
+                                );
+                            }
+                            return (
+                                <span
+                                    key={tIndex}
+                                    className="text-xs font-bold px-3 py-1 bg-cyan-100/80 dark:bg-cyan-500/10 text-cyan-950 dark:text-cyan-300 rounded-lg border border-cyan-300 dark:border-cyan-500/20"
+                                >
+                                    {tag}
+                                </span>
+                            );
+                        })}
                     </div>
                 )}
 
                 {/* Imagem de Destaque */}
                 {projectData.image ? (
                     <div
-                        className="w-full aspect-video bg-cover bg-center rounded-3xl border border-slate-200 dark:border-cyan-500/20 mb-10 overflow-hidden shadow-2xl shadow-cyan-500/10"
+                        className="w-full aspect-video bg-cover bg-center rounded-3xl border border-slate-200 dark:border-cyan-500/20 mb-10 overflow-hidden shadow-2xl shadow-cyan-500/10 relative"
                         style={{
                             backgroundImage: `url('${projectData.image}')`,
                         }}
-                    />
+                    >
+                        <div className="absolute top-4 right-4 z-10 flex gap-2">
+                            {projectData.liveUrl && (
+                                <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-600/90 text-white text-xs font-extrabold shadow-md backdrop-blur-xs">
+                                    <span className="size-2 rounded-full bg-white animate-ping inline-block" />
+                                    {statusLabels.live}
+                                </span>
+                            )}
+                            {projectData.isInternal && (
+                                <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-500/95 text-slate-950 text-xs font-extrabold shadow-md backdrop-blur-xs">
+                                    <ShieldIcon className="size-3 text-slate-950" />
+                                    {statusLabels.internal}
+                                </span>
+                            )}
+                            {projectData.inDevelopment && (
+                                <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-violet-600/90 text-white text-xs font-extrabold shadow-md backdrop-blur-xs">
+                                    <CodeIcon className="size-3 text-white" />
+                                    {statusLabels.inDevelopment}
+                                </span>
+                            )}
+                        </div>
+                    </div>
                 ) : (
                     <div className="w-full aspect-video bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-cyan-500/20 rounded-3xl mb-10 flex items-center justify-center">
                         <span className="text-slate-500 text-sm font-medium">
@@ -152,6 +220,44 @@ export default async function ProjectTemplate({
                         {projectData.challengesTitle}
                     </h3>
                     <p>{projectData.challenges}</p>
+                </div>
+
+                {/* Seções Opcionais Enriquecidas: Impacto, Lições e Stack Detalhada */}
+                <div className="mt-10 space-y-6">
+                    {projectData.impact && (
+                        <div className="p-6 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-950 dark:text-emerald-200">
+                            <h4 className="font-black text-lg mb-2">
+                                {lang === "pt" ? "Impacto & Resultados" : "Impact & Results"}
+                            </h4>
+                            <p className="text-base opacity-95 leading-relaxed font-normal">
+                                {projectData.impact}
+                            </p>
+                        </div>
+                    )}
+
+                    {projectData.lessons && (
+                        <div className="p-6 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-950 dark:text-cyan-200">
+                            <h4 className="font-black text-lg mb-2">
+                                {lang === "pt" ? "Lições Aprendidas" : "Lessons Learned"}
+                            </h4>
+                            <p className="text-base opacity-95 leading-relaxed font-normal">
+                                {projectData.lessons}
+                            </p>
+                        </div>
+                    )}
+
+                    {projectData.stackDetail && projectData.stackDetail.length > 0 && (
+                        <div className="p-6 rounded-2xl bg-slate-100 dark:bg-slate-900/80 border border-slate-300 dark:border-cyan-500/20">
+                            <h4 className="font-black text-lg mb-3 text-slate-900 dark:text-slate-100">
+                                {lang === "pt" ? "Stack & Componentes de Engenharia" : "Stack & Engineering Components"}
+                            </h4>
+                            <ul className="list-disc list-inside space-y-1.5 text-sm text-slate-800 dark:text-slate-300 font-medium">
+                                {projectData.stackDetail.map((detail, dIdx) => (
+                                    <li key={dIdx}>{detail}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
                 </div>
 
                 {/* Ações e Links */}
@@ -222,7 +328,7 @@ export default async function ProjectTemplate({
                 </div>
             </section>
 
-            <Footer dict={dict} />
+            <Footer dict={dict} lang={lang} />
             <CookieBanner dict={dict} lang={lang} />
         </main>
     );

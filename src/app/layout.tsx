@@ -2,10 +2,12 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { ThemeProvider } from "../components/ThemeProvider";
 import DynamicFavicon from "../components/DynamicFavicon";
+import TechAmbientBackground from "../components/TechAmbientBackground";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { getSiteUrl } from "../lib/site-url";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://peridan.dev";
+const siteUrl = getSiteUrl();
 
 export const viewport: Viewport = {
     themeColor: [
@@ -105,6 +107,7 @@ export default function RootLayout({
             <body className="antialiased">
                 <ThemeProvider>
                     <DynamicFavicon />
+                    <TechAmbientBackground />
                     {children}
                 </ThemeProvider>
                 <Analytics />

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import CookieBanner from "../../../components/CookieBanner";
@@ -39,10 +40,12 @@ export async function generateMetadata({
     params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
     const resolvedParams = await params;
-    const lang =
-        resolvedParams.lang === "pt" || resolvedParams.lang === "en"
-            ? resolvedParams.lang
-            : "pt";
+    const { lang } = resolvedParams;
+
+    if (lang !== "pt" && lang !== "en") {
+        notFound();
+    }
+
     const dict = await dictionaries[lang]();
 
     return {
@@ -62,12 +65,19 @@ export default async function ProjectsHub({
     params: Promise<{ lang: string }>;
 }) {
     const resolvedParams = await params;
-    const lang =
-        resolvedParams.lang === "pt" || resolvedParams.lang === "en"
-            ? resolvedParams.lang
-            : "en";
+    const { lang } = resolvedParams;
+
+    if (lang !== "pt" && lang !== "en") {
+        notFound();
+    }
+
     const dict = await dictionaries[lang]();
     const projectsMap = dict.projectsData as Record<string, ProjectItem>;
+    const statusLabels = dict.projectsSection?.status || {
+        live: lang === "pt" ? "No Ar" : "Live",
+        internal: lang === "pt" ? "Corporativo" : "Enterprise",
+        inDevelopment: lang === "pt" ? "Em Evolução" : "In Progress",
+    };
 
     return (
         <main className="min-h-screen flex flex-col">
@@ -108,19 +118,19 @@ export default async function ProjectsHub({
                                         {project.liveUrl && (
                                             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-600/90 text-white text-[11px] font-extrabold shadow-md backdrop-blur-xs">
                                                 <span className="size-2 rounded-full bg-white animate-ping inline-block" />
-                                                {lang === "pt" ? "No Ar" : "Live"}
+                                                {statusLabels.live}
                                             </span>
                                         )}
                                         {project.isInternal && (
                                             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/95 text-slate-950 text-[11px] font-extrabold shadow-md backdrop-blur-xs">
                                                 <ShieldIcon className="size-3 text-slate-950" />
-                                                {lang === "pt" ? "Corporativo" : "Enterprise"}
+                                                {statusLabels.internal}
                                             </span>
                                         )}
                                         {project.inDevelopment && (
                                             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-600/90 text-white text-[11px] font-extrabold shadow-md backdrop-blur-xs">
                                                 <CodeIcon className="size-3 text-white" />
-                                                {lang === "pt" ? "Em Evolução" : "In Progress"}
+                                                {statusLabels.inDevelopment}
                                             </span>
                                         )}
                                     </div>
@@ -165,7 +175,7 @@ export default async function ProjectsHub({
                 </div>
             </section>
 
-            <Footer dict={dict} />
+            <Footer dict={dict} lang={lang} />
             <CookieBanner dict={dict} lang={lang} />
         </main>
     );
