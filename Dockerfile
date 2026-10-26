@@ -22,6 +22,11 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
+# Argumentos e variáveis de ambiente de build
+ARG NEXT_PUBLIC_SITE_URL=https://peridev.com.br
+ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL
+ENV NEXT_OUTPUT=standalone
+
 # Desabilita telemetria do Next.js durante o build
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NODE_ENV=production

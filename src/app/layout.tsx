@@ -4,8 +4,9 @@ import { ThemeProvider } from "../components/ThemeProvider";
 import DynamicFavicon from "../components/DynamicFavicon";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { getSiteUrl } from "../lib/site-url";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://peridan.dev";
+const siteUrl = getSiteUrl();
 
 export const viewport: Viewport = {
     themeColor: [

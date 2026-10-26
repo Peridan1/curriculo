@@ -46,5 +46,5 @@ jobs:
       - name: Run Next.js Production Build
         run: npm run build
         env:
-          NEXT_PUBLIC_SITE_URL: https://peridan.dev
+          NEXT_PUBLIC_SITE_URL: https://peridev.com.br
           NEXT_PUBLIC_ENVIRONMENT: production
