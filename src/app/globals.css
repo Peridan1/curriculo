@@ -117,6 +117,51 @@
         border-color: rgba(0, 240, 255, 0.5);
         box-shadow: 0 0 25px rgba(0, 240, 255, 0.15);
     }
+
+    /* Otimização e animações sutis do Fundo TechAmbientBackground */
+    .tech-bg-container {
+        transform: translateZ(0);
+        will-change: transform;
+    }
+
+    .tech-glyph-float-1 {
+        animation: techFloat1 20s ease-in-out infinite;
+    }
+
+    .tech-glyph-float-2 {
+        animation: techFloat2 26s ease-in-out infinite;
+    }
+
+    .tech-glyph-pulse {
+        animation: techPulse 14s ease-in-out infinite;
+    }
+
+    @keyframes techFloat1 {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-12px);
+        }
+    }
+
+    @keyframes techFloat2 {
+        0%, 100% {
+            transform: translateY(0) translateX(0);
+        }
+        50% {
+            transform: translateY(10px) translateX(6px);
+        }
+    }
+
+    @keyframes techPulse {
+        0%, 100% {
+            opacity: 0.07;
+        }
+        50% {
+            opacity: 0.20;
+        }
+    }
 }
 
 /* Otimização de acessibilidade e redução de movimento */
