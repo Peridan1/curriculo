@@ -1,8 +1,8 @@
 # 📄 Peridan.dev — Portfólio Online & Currículo
 
-> Portfólio profissional bilíngue (PT/EN) desenvolvido com **Next.js (App Router)**, **TypeScript** e **Tailwind CSS v4**. O projeto utiliza rotas dinâmicas e dicionários JSON para internacionalização, focando em alta performance, SEO e escalabilidade.
+> Portfólio profissional bilíngue (PT/EN) desenvolvido com **Next.js (App Router)**, **React 19**, **TypeScript** e **Tailwind CSS v4**. O projeto utiliza rotas dinâmicas e dicionários JSON para internacionalização, focando em alta performance, SEO e escalabilidade.
 
-🌐 **Domínio:** `peridandev.com.br`  
+🌐 **Domínio:** `peridev.com.br`  
 🚀 **Status:** Em desenvolvimento contínuo
 
 ## 🧠 Sobre o projeto
@@ -16,13 +16,13 @@ A ideia é manter um site **simples, performático e visualmente consistente**, 
 - Servir como **currículo online bilíngue** (Inglês e Português).
 - Apresentar projetos de forma automatizada e organizada.
 - Consolidar minha identidade como desenvolvedor Full Stack.
-- Aplicar conceitos modernos de Engenharia de Software (Componentização e SSR com Next.js).
+- Aplicar conceitos modernos de Engenharia de Software (Server Components, SSR/SSG e acessibilidade no padrão WCAG AAA).
 
 ## 🛠️ Tecnologias utilizadas
 
 ### Front-end & Framework
 
-- Next.js 15+ (App Router)
+- Next.js 16 (App Router)
 - React 19
 - TypeScript
 - Tailwind CSS v4
@@ -31,7 +31,7 @@ A ideia é manter um site **simples, performático e visualmente consistente**, 
 
 - **i18n (Internacionalização):** Sistema nativo sem dependências externas, carregando dicionários (`pt.json`, `en.json`) baseado na URL.
 - **Dynamic Routes:** Geração de páginas de portfólio baseada em _slugs_ (`/projetos/[slug]`).
-- **SEO Dinâmico:** Meta tags configuradas dinamicamente para cada idioma e página.
+- **SEO Dinâmico & LLMs:** Meta tags configuradas dinamicamente para cada idioma e endpoints `/llms.txt` e `/llms-full.txt`.
 
 ## 🗂️ Estrutura do projeto
 
@@ -39,35 +39,40 @@ A ideia é manter um site **simples, performático e visualmente consistente**, 
 src/
 ├── app/
 │   ├── [lang]/
+│   │   ├── curriculo/
+│   │   ├── privacidade/
 │   │   ├── projetos/
 │   │   │   └── [slug]/
-│   │   │       └── page.tsx      # Rota dinâmica dos projetos
-│   │   ├── layout.tsx
-│   │   └── page.tsx              # Home principal
-├── components/                   # Componentes modulares (Hero, Header, Skills)
-└── dictionaries/                 # Base de dados de textos e projetos
-    ├── en.json
-    └── pt.json
+│   │   ├── sobre/
+│   │   └── page.tsx
+│   ├── globals.css
+│   ├── icon.svg
+│   ├── layout.tsx
+│   ├── robots.ts
+│   └── sitemap.ts
+├── components/                   # Componentes modulares (Hero, Header, BentoGrid, Projects, AboutView)
+├── dictionaries/                 # Base de dados de textos e projetos
+│   ├── en.json
+│   └── pt.json
+└── lib/                          # Helpers e funções puras (site-url, locale)
 ```
 
 ## 💻 Como rodar o projeto localmente
 
-```Bash
-
+```bash
 # Clone o repositório
-
 git clone https://github.com/Peridan1/curriculo.git
 
 # Entre na pasta
-
-cd seu-repo-portfolio
+cd curriculo
 
 # Instale as dependências
-
 npm install
 
-# Rode o servidor de desenvolvimento
+# Configure as variáveis de ambiente
+cp .env.example .env
 
+# Rode o servidor de desenvolvimento
 npm run dev
 
 # Acesse no navegador: http://localhost:3000/pt
@@ -75,10 +80,8 @@ npm run dev
 
 ## 👤 Autor
 
-**Daniel Satel Pereira (Peridan)** Desenvolvedor Full Stack com foco em **Interfaces Modernas e Sistemas Escaláveis**
+**Daniel Satel Pereira (Peridan)** — Desenvolvedor Full Stack com foco em **Interfaces Modernas e Sistemas Escaláveis**
 
-LinkedIn: https://www.linkedin.com/in/daniel-satel-pereira/
-
-GitHub: https://github.com/DanielSatelPereira
-
-Email: danielsatelpereira@gmail.com
+- LinkedIn: https://www.linkedin.com/in/daniel-satel-pereira/
+- GitHub: https://github.com/DanielSatelPereira
+- E-mail: danielsatelpereira@gmail.com

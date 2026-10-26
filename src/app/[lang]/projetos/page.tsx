@@ -165,7 +165,7 @@ export default async function ProjectsHub({
                 </div>
             </section>
 
-            <Footer dict={dict} />
+            <Footer dict={dict} lang={lang} />
             <CookieBanner dict={dict} lang={lang} />
         </main>
     );

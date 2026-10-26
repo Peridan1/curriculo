@@ -55,7 +55,7 @@ export default async function Home({
             <HomeHero dict={dict} lang={lang} />
             <BentoGrid dict={dict} lang={lang} />
             <Projects dict={dict} lang={lang} />
-            <Footer dict={dict} />
+            <Footer dict={dict} lang={lang} />
             <CookieBanner dict={dict} lang={lang} />
         </main>
     );

@@ -50,7 +50,7 @@ export default async function CurriculumPage({
         <main className="min-h-screen flex flex-col">
             <Header dict={dict} />
             <CurriculumView dict={dict} lang={lang} />
-            <Footer dict={dict} />
+            <Footer dict={dict} lang={lang} />
             <CookieBanner dict={dict} lang={lang} />
         </main>
     );

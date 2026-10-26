@@ -1,24 +1,14 @@
 import type { MetadataRoute } from "next";
 import { getSiteUrl } from "../lib/site-url";
+import ptDict from "../dictionaries/pt.json";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const siteUrl = getSiteUrl();
     const lastModified = new Date();
 
     const locales = ["pt", "en"];
-    const projectSlugs = [
-        "brisamar-pescados",
-        "fleet-manager",
-        "jf-informatica",
-        "bem-digital",
-        "bolao-copa",
-        "hotsite-unialfa",
-        "investment-manager",
-        "chopits",
-        "e-script-website",
-        "alfaplus",
-        "site-vitrine",
-    ];
+    // Slugs derivados dinamicamente do dicionário
+    const projectSlugs = Object.keys(ptDict.projectsData);
 
     const routes: MetadataRoute.Sitemap = [];
 
@@ -48,6 +38,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
             },
         },
     });
+
+    // Página Sobre (About)
+    for (const lang of locales) {
+        routes.push({
+            url: `${siteUrl}/${lang}/sobre`,
+            lastModified,
+            changeFrequency: "monthly",
+            priority: 0.8,
+            alternates: {
+                languages: {
+                    pt: `${siteUrl}/pt/sobre`,
+                    en: `${siteUrl}/en/sobre`,
+                },
+            },
+        });
+    }
 
     // Currículo Formal
     for (const lang of locales) {

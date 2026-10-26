@@ -41,7 +41,7 @@
             "triviaTech": "💻 [Tech Trivia]: Disassembled his first PC at age 12; configured his first Mikrotik RouterOS switches and routers at 19; passionate about understanding systems from the physical network wire up to the pixel rendered in the browser.",
             "triviaMusic": "🎧 [Music & Soundscapes]: Favorite genres include Synthwave / Retrowave (80s futuristic electronic), Lo-Fi instrumental for deep focus, Classic Rock (Pink Floyd, Dire Straits, Queen), and orchestrated anime/game soundtracks.",
             "triviaMovies": "🎬 [Movies & TV]: Huge fan of Sci-Fi and Cyberpunk: The Matrix (1999), Interstellar, The Hitchhiker's Guide to the Galaxy, Blade Runner 2049, Star Wars (Original Trilogy), and Mr. Robot.",
-            "triviaGames": "🎮 [Games & RPGs]: Enjoys games with deep lore and rich mechanics: RPGs (The Witcher 3, Cyberpunk 2077, Chrono Trigger), strategy games (Age of Empires), and titles with memorable soundtracks.",
+            "triviaGames": "🎮 [Games]: Appreciates games with rich storytelling and memorable gameplay: Hollow Knight, Ori and the Blind Forest, God of War, plus racing and action classics (Need for Speed Most Wanted, Midnight Club).",
             "triviaPlaylist": "🎵 [Dev Playlist]: Recommended tracks for deep coding flow:\n  • 'Resonance' - HOME\n  • 'Nightcall' - Kavinsky\n  • 'Tech Noir' - Gunship\n  • 'Daylight' - Lofi Girl Beats\nPut your headphones on, open your IDE and enter the Flow state! 🎧✨",
             "easterEgg42": "🌌 42: The Ultimate Answer to the Ultimate Question of Life, The Universe, and Everything!\n(The Hitchhiker's Guide to the Galaxy - Douglas Adams)\nRemember: 'DON'T PANIC' and never, ever forget your towel! 🚀🧻",
             "easterEggPeace": "🛸 'WE COME IN PEACE!'\nGreetings, cosmic traveler! Your radio transmission was successfully intercepted by Peridan from sector Alpha in Paraná, Brazil. 👽🖖",
@@ -127,23 +127,53 @@
         "categories": {
             "backend": {
                 "name": "Back-end",
-                "items": ["PHP", "Laravel", "Java (Spring Boot)", "Node.js (NestJS)", "Python"]
+                "items": [
+                    "PHP",
+                    "Laravel",
+                    "Java (Spring Boot)",
+                    "Node.js (NestJS)",
+                    "Python"
+                ]
             },
             "frontend": {
                 "name": "Front-end",
-                "items": ["JavaScript", "TypeScript", "React", "Next.js", "React Native", "Tailwind CSS", "HTML5", "CSS3"]
+                "items": [
+                    "JavaScript",
+                    "TypeScript",
+                    "React",
+                    "Next.js",
+                    "React Native",
+                    "Tailwind CSS",
+                    "HTML5",
+                    "CSS3"
+                ]
             },
             "database": {
                 "name": "Databases",
-                "items": ["MySQL", "Relational Data Modeling", "Query Optimization"]
+                "items": [
+                    "MySQL",
+                    "Relational Data Modeling",
+                    "Query Optimization"
+                ]
             },
             "engineering": {
                 "name": "Software Engineering & Methodologies",
-                "items": ["Clean Architecture", "Requirements Engineering", "Software Documentation", "Agile Methodologies (Kanban/Scrum)", "Trello"]
+                "items": [
+                    "Clean Architecture",
+                    "Requirements Engineering",
+                    "Software Documentation",
+                    "Agile Methodologies (Kanban/Scrum)",
+                    "Trello"
+                ]
             },
             "devops": {
                 "name": "Tools & DevOps",
-                "items": ["Git & GitHub (Conventional Commits)", "Docker (Laravel Sail)", "Composer", "NPM"]
+                "items": [
+                    "Git & GitHub (Conventional Commits)",
+                    "Docker (Laravel Sail)",
+                    "Composer",
+                    "NPM"
+                ]
             }
         }
     },
@@ -188,7 +218,16 @@
                         "text": "On-site and remote technical support, network configuration, disk formatting, hardware diagnostics, and maintenance of municipal tech assets."
                     }
                 ],
-                "tags": ["Laravel", "Docker", "Sail", "MySQL", "Tailwind CSS", "Python", "React Native", "Networking"]
+                "tags": [
+                    "Laravel",
+                    "Docker",
+                    "Sail",
+                    "MySQL",
+                    "Tailwind CSS",
+                    "Python",
+                    "React Native",
+                    "Networking"
+                ]
             },
             {
                 "role": "Maintenance and Infrastructure Assistant",
@@ -207,7 +246,13 @@
                         "text": "Preventive and corrective hardware maintenance, agile IT ticket resolution, and direct enterprise user support."
                     }
                 ],
-                "tags": ["Mikrotik", "Windows Server", "Computer Networks", "Technical Support", "Maintenance"]
+                "tags": [
+                    "Mikrotik",
+                    "Windows Server",
+                    "Computer Networks",
+                    "Technical Support",
+                    "Maintenance"
+                ]
             },
             {
                 "role": "English Teacher and Translator",
@@ -222,7 +267,13 @@
                         "text": "Personalized pedagogical planning, technical material translation, and individualized mentoring focused on conversation and technical writing."
                     }
                 ],
-                "tags": ["Advanced English", "Technical Translation", "Communication", "Didactics", "Mentoring"]
+                "tags": [
+                    "Advanced English",
+                    "Technical Translation",
+                    "Communication",
+                    "Didactics",
+                    "Mentoring"
+                ]
             }
         ]
     },
@@ -232,7 +283,12 @@
         "explore": "View Details",
         "viewAll": "View All Projects",
         "hubTitle": "Projects Portfolio",
-        "hubSubtitle": "A complete collection of my academic projects, professional developments, and hands-on software creations."
+        "hubSubtitle": "A complete collection of my academic projects, professional developments, and hands-on software creations.",
+        "status": {
+            "live": "Live",
+            "internal": "Enterprise",
+            "inDevelopment": "In Progress"
+        }
     },
     "projectsData": {
         "brisamar-pescados": {
@@ -514,5 +570,180 @@
         "title": "Daniel Satel Pereira (Peridan) | Full Stack Developer",
         "description": "Portfolio of Daniel Satel Pereira (Peridan), Junior Full Stack Developer and Internet Systems student at UniALFA. Experience with PHP, Laravel, Next.js, React, Node.js, and Docker.",
         "keywords": "Daniel Satel Pereira, Peridan, Full Stack Developer, PHP, Laravel, React, Next.js, TypeScript, Docker, UniALFA, Umuarama, Portfolio"
+    },
+    "aboutPage": {
+        "badge": "Journey & Essence",
+        "title": "About Me",
+        "subtitle": "Story, learning journey, personal universe, and technologies in practice.",
+        "story": {
+            "title": "My Story",
+            "p1": "I am a Junior Full Stack Developer and Internet Systems undergraduate at UniALFA in Umuarama/PR, Brazil. My passion is building clean, efficient, and visually impactful software, bridging backend solidity with modern and accessible user interfaces.",
+            "p2": "My contact with computing began early: by age 12, I was already disassembling computers to understand their internal mechanics. Later on, I worked as a maintenance assistant and IT technician (Mikrotik, Windows Server, and structured networks), acquiring a comprehensive systemic view — from network cabling physics to rendered browser pixels.",
+            "p3": "Across the public and private sectors, I developed high-converting landing pages, corporate systems in Laravel, data ingestion bots in Python, and this portfolio in Next.js 16 with React 19.",
+            "tributeTitle": "Special Gratitude",
+            "tributeText": "Thank you, Thiago Dalfito. It was your encouragement that brought me into programming, and a part of every project of mine comes from that."
+        },
+        "techTimeline": {
+            "title": "Tech Journey",
+            "subtitle": "How I discovered and evolved in each technology of my ecosystem.",
+            "items": [
+                {
+                    "id": "hardware",
+                    "title": "Hardware, Networks & Mikrotik",
+                    "period": "2024 - Present",
+                    "description": "At Imppar (maintenance assistant, Oct/2024 to Feb/2025) I studied and deepened my knowledge of Mikrotik and Windows Server. At Colégio Geração Cima (IT technician, Mar to Oct/2025) I managed computer labs and configured projectors, Apple TV, and Chromecast. Joining municipal IT support, I learned even more about computer architectures and networking from daily operations.",
+                    "tags": [
+                        "Mikrotik RouterOS",
+                        "Windows Server",
+                        "Structured Cabling",
+                        "Hardware",
+                        "Technical Support"
+                    ],
+                    "projects": []
+                },
+                {
+                    "id": "php",
+                    "title": "PHP & Laravel",
+                    "period": "2024 - Present",
+                    "description": "Professor Alex Morgado introduced me to PHP in 2024 at UniALFA, and I truly enjoyed exploring various paradigms of the language. I built a pure PHP + JS freelance site for JF Informática e Games. In municipal support, I was given the opportunity to create a fleet tracking system (Laravel 12, MySQL, Tailwind, Docker/Sail), backed by a Python bot for GPS tracker API data processing. Since March 2026, I work at Casa dos Conselhos de Umuarama with Slim framework. I am also continuously refactoring my academic projects.",
+                    "tags": [
+                        "PHP 8+",
+                        "Laravel",
+                        "Slim Framework",
+                        "MySQL",
+                        "MVC"
+                    ],
+                    "projects": [
+                        "fleet-manager",
+                        "bem-digital",
+                        "investment-manager",
+                        "jf-informatica"
+                    ]
+                },
+                {
+                    "id": "docker",
+                    "title": "Docker & Linux",
+                    "period": "2024 - Present",
+                    "description": "After joining the city hall IT department, I adopted dual-boot Linux and started containerizing my projects. Today, I dockerize everything I build for faster, reproducible, and standardized development and deployment.",
+                    "tags": [
+                        "Docker",
+                        "Docker Compose",
+                        "Linux (Ubuntu/Debian)",
+                        "Multi-stage Builds"
+                    ],
+                    "projects": [
+                        "fleet-manager"
+                    ]
+                },
+                {
+                    "id": "frontend",
+                    "title": "JavaScript, TypeScript, React & Next.js",
+                    "period": "2024 - Present",
+                    "description": "I have worked with these technologies for 2 to 3 years. I delivered freelance projects and this Next.js portfolio, and React forms the foundation of my bachelor thesis. I also learned React Native, building the Bolão da Copa app during a hackathon at UniALFA in early 2026. I have strong interest in Angular and Vue.",
+                    "tags": [
+                        "Next.js 16",
+                        "React 19",
+                        "TypeScript",
+                        "React Native",
+                        "Tailwind CSS v4"
+                    ],
+                    "projects": [
+                        "chopits",
+                        "brisamar-pescados",
+                        "bolao-copa"
+                    ]
+                },
+                {
+                    "id": "python",
+                    "title": "Python & Data Automation",
+                    "period": "2024 - Present",
+                    "description": "Python was the reason I entered programming: my friend Thiago Dalfito encouraged me to learn and watch Gustavo Guanabara's courses. Today, I apply Python for automation scripts, data pipelines, and REST API integrations at city hall.",
+                    "tags": [
+                        "Python",
+                        "Pandas",
+                        "Automation",
+                        "ETL",
+                        "REST APIs"
+                    ],
+                    "projects": [
+                        "fleet-manager"
+                    ]
+                },
+                {
+                    "id": "tailwind",
+                    "title": "Tailwind CSS",
+                    "period": "2024 - Present",
+                    "description": "I began using Tailwind in early 2024 and loved it: an intuitive, high-performance styling framework for crafting accessible, dark/light responsive interfaces.",
+                    "tags": [
+                        "Tailwind CSS v4",
+                        "Responsive Design",
+                        "Glassmorphism",
+                        "Dark Mode"
+                    ],
+                    "projects": [
+                        "bem-digital",
+                        "brisamar-pescados"
+                    ]
+                }
+            ]
+        },
+        "hobbies": {
+            "title": "Hobbies & Personal Universe",
+            "subtitle": "Beyond code: gaming, soundtracks, literature, and downtime.",
+            "onlineGames": {
+                "title": "Online Games",
+                "items": [
+                    "League of Legends",
+                    "Valorant",
+                    "Paladins",
+                    "Fortnite",
+                    "Battle Royales (PUBG-style)"
+                ]
+            },
+            "offlineGames": {
+                "title": "Offline Games",
+                "items": [
+                    "Hollow Knight",
+                    "Ori and the Blind Forest & Ori 2",
+                    "God of War",
+                    "Far Cry 3",
+                    "Just Cause 1, 2 and 3",
+                    "Black",
+                    "Classic Call of Duty (up to 2017)"
+                ]
+            },
+            "racing": {
+                "title": "Racing Games",
+                "items": [
+                    "Midnight Club",
+                    "Need for Speed Most Wanted"
+                ]
+            },
+            "booksAndMovies": {
+                "title": "Books & Movies",
+                "items": [
+                    "Harry Potter",
+                    "J.R.R. Tolkien (The Lord of the Rings)",
+                    "Star Wars",
+                    "The Matrix (1999)",
+                    "Interstellar",
+                    "The Hitchhiker's Guide to the Galaxy"
+                ]
+            },
+            "music": {
+                "title": "Music & Playlist",
+                "description": "I appreciate diverse musical genres. Synthwave, instrumental Lo-Fi for intense focus, and classic rock fuel my daily coding sessions. Check out my public playlist:",
+                "playlistButton": "Open Playlist on YouTube Music",
+                "playlistUrl": "https://music.youtube.com/playlist?list=PLr3O4xaxL7toLzlCuMIQymxLYbxAEiVsm"
+            }
+        },
+        "techMatrix": {
+            "title": "Projects & Tech Matrix",
+            "subtitle": "How every technology in my journey maps to the systems I have engineered.",
+            "projectColumn": "Project",
+            "techColumn": "Applied Technologies",
+            "typeColumn": "Type / Context",
+            "viewProject": "View Project"
+        }
     }
 }

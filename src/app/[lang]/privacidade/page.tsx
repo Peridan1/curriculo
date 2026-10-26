@@ -113,7 +113,7 @@ export default async function PrivacyPage({
                 </article>
             </section>
 
-            <Footer dict={dict} />
+            <Footer dict={dict} lang={lang} />
         </main>
     );
 }
