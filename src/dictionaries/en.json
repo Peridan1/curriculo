@@ -311,7 +311,16 @@
             "repoUrl": "https://github.com/DanielSatelPereira",
             "isInternal": false,
             "inDevelopment": false,
-            "backButton": "Back to Home"
+            "backButton": "Back to Home",
+            "impact": "Significant increase in wholesale and retail customer acquisition with direct WhatsApp commercial funnels and instant Server Component page loads.",
+            "lessons": "Pioneering adoption of Next.js App Router and large-scale image optimization to minimize response times and maximize organic SEO ranking.",
+            "stackDetail": [
+                "Next.js 16 (App Router)",
+                "React 19",
+                "Strict TypeScript",
+                "Tailwind CSS",
+                "WhatsApp Business API Flow"
+            ]
         },
         "fleet-manager": {
             "featured": true,
@@ -333,7 +342,16 @@
             "repoUrl": null,
             "isInternal": true,
             "inDevelopment": false,
-            "backButton": "Back to Home"
+            "backButton": "Back to Home",
+            "impact": "Complete automation of refueling and odometer data consolidation, providing reliable analytics that support municipal fuel expenditure reduction.",
+            "lessons": "The necessity of decoupling heavy ETL pipelines into asynchronous Python scripts and containerizing the stack with Docker/Sail for absolute reproducibility.",
+            "stackDetail": [
+                "Laravel 12 (MVC)",
+                "Docker & Docker Compose",
+                "Python (Pandas, OpenPyXL)",
+                "Relational MySQL",
+                "Tailwind CSS"
+            ]
         },
         "jf-informatica": {
             "featured": true,
@@ -355,7 +373,15 @@
             "repoUrl": "https://github.com/DanielSatelPereira",
             "isInternal": false,
             "inDevelopment": false,
-            "backButton": "Back to Home"
+            "backButton": "Back to Home",
+            "impact": "Professional digital presence in the local Umuarama market with a streamlined quote funnel that boosted technical support inquiries.",
+            "lessons": "Engineering a performant SPA without heavyweight framework overhead, leveraging modern CSS and clean native JavaScript.",
+            "stackDetail": [
+                "JavaScript ES6+",
+                "Tailwind CSS",
+                "Persistent Dark Mode",
+                "SPA Architecture"
+            ]
         },
         "bem-digital": {
             "featured": true,
@@ -377,7 +403,16 @@
             "repoUrl": "https://github.com/VilleSIlva/bem_digital_trabalho_laravel",
             "isInternal": false,
             "inDevelopment": false,
-            "backButton": "Back to Home"
+            "backButton": "Back to Home",
+            "impact": "Centralization of donation workflows and inventory management for non-profit social organizations.",
+            "lessons": "Solid architectural structuring of business logic in MVC with strict security validation and data integrity.",
+            "stackDetail": [
+                "Laravel",
+                "Blade Templates",
+                "MySQL",
+                "Tailwind CSS",
+                "Bootstrap Icons"
+            ]
         },
         "bolao-copa": {
             "featured": false,

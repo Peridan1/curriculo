@@ -30,6 +30,11 @@ interface ProjectsProps {
             subtitle?: string;
             explore: string;
             viewAll: string;
+            status?: {
+                live: string;
+                internal: string;
+                inDevelopment: string;
+            };
         };
         projectsData: Record<string, ProjectItem>;
     };
@@ -37,6 +42,11 @@ interface ProjectsProps {
 
 export default function Projects({ dict, lang }: ProjectsProps) {
     const scrollContainerRef = useRef<HTMLDivElement>(null);
+    const statusLabels = dict.projectsSection.status || {
+        live: lang === "pt" ? "No Ar" : "Live",
+        internal: lang === "pt" ? "Corporativo" : "Enterprise",
+        inDevelopment: lang === "pt" ? "Em Evolução" : "In Progress",
+    };
 
     // Filtrar os projetos marcados como destaque
     const featuredProjects = Object.entries(dict.projectsData).filter(
@@ -121,19 +131,19 @@ export default function Projects({ dict, lang }: ProjectsProps) {
                                     {project.liveUrl && (
                                         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-600/90 text-white text-[11px] font-extrabold shadow-md backdrop-blur-xs">
                                             <span className="size-2 rounded-full bg-white animate-ping inline-block" />
-                                            {lang === "pt" ? "No Ar" : "Live"}
+                                            {statusLabels.live}
                                         </span>
                                     )}
                                     {project.isInternal && (
                                         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/95 text-slate-950 text-[11px] font-extrabold shadow-md backdrop-blur-xs">
                                             <ShieldIcon className="size-3 text-slate-950" />
-                                            {lang === "pt" ? "Corporativo" : "Enterprise"}
+                                            {statusLabels.internal}
                                         </span>
                                     )}
                                     {project.inDevelopment && (
                                         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-violet-600/90 text-white text-[11px] font-extrabold shadow-md backdrop-blur-xs">
                                             <CodeIcon className="size-3 text-white" />
-                                            {lang === "pt" ? "Em Evolução" : "In Progress"}
+                                            {statusLabels.inDevelopment}
                                         </span>
                                     )}
                                 </div>

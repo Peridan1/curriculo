@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import Link from "next/link";
@@ -17,10 +18,12 @@ export async function generateMetadata({
     params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
     const resolvedParams = await params;
-    const lang =
-        resolvedParams.lang === "pt" || resolvedParams.lang === "en"
-            ? resolvedParams.lang
-            : "pt";
+    const { lang } = resolvedParams;
+
+    if (lang !== "pt" && lang !== "en") {
+        notFound();
+    }
+
     const dict = await dictionaries[lang]();
 
     return {
@@ -35,10 +38,12 @@ export default async function PrivacyPage({
     params: Promise<{ lang: string }>;
 }) {
     const resolvedParams = await params;
-    const lang =
-        resolvedParams.lang === "pt" || resolvedParams.lang === "en"
-            ? resolvedParams.lang
-            : "pt";
+    const { lang } = resolvedParams;
+
+    if (lang !== "pt" && lang !== "en") {
+        notFound();
+    }
+
     const dict = await dictionaries[lang]();
     const p = dict.privacyPage;
 
