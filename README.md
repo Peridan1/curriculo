@@ -72,8 +72,20 @@ npm install
 # Configure as variáveis de ambiente
 cp .env.example .env
 
-# Rode o servidor de desenvolvimento
+# Rode o servidor de desenvolvimento (Turbopack nativo, ~6x mais rápido)
 npm run dev
+
+# (Opcional) Executar servidor em modo Webpack legada
+npm run dev:webpack
+
+# Executar suíte de testes com cobertura (Vitest)
+npm run test:coverage
+
+# Executar testes ponta a ponta e acessibilidade (Playwright + Axe)
+npm run test:e2e
+
+# Executar verificação completa de integridade do projeto
+npm run verify
 
 # Acesse no navegador: http://localhost:3000/pt
 ```

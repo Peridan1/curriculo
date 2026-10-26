@@ -547,6 +547,7 @@ AVISO
 avisos
 await
 AWS
+Axe
 axe
 azul
 Azul
@@ -3492,6 +3493,7 @@ least
 leave
 leem
 left
+legada
 Legends
 Legibilidade
 Legível
@@ -5957,6 +5959,7 @@ sudo
 sudoers
 suficiente
 sugerido
+suíte
 Sumário
 summary
 Summary
@@ -6687,6 +6690,8 @@ webkit
 WebkitAppearance
 WebkitOverflowScrolling
 webmanifest
+Webpack
+webpack
 website
 Website
 week
