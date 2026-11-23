@@ -1,7 +1,13 @@
 @import "tailwindcss";
 
-/* Configuração do Tailwind CSS v4 para suporte a tema via classe (.dark) com next-themes */
-@custom-variant dark (&:where(.dark, .dark *));
+/* Configuração do Tailwind CSS v4 para suporte a tema via classe (.dark) com next-themes (restrito fora da impressão) */
+@custom-variant dark {
+    &:where(.dark, .dark *) {
+        @media not print {
+            @slot;
+        }
+    }
+}
 
 /* =========================================
    CONFIGURAÇÕES BASE E TEMAS DINÂMICOS
@@ -58,7 +64,7 @@
     }
 
     body {
-        font-family: "Lexend", sans-serif;
+        font-family: var(--font-lexend), "Lexend", sans-serif;
         background-color: var(--bg-dynamic);
         color: var(--text-dynamic);
         transition: background-color 0.3s ease, color 0.3s ease;
@@ -80,7 +86,7 @@
     --color-pop-yellow: var(--pop-dynamic);
     --color-pop-orange: #00ff9d;
 
-    --font-display: "Lexend", sans-serif;
+    --font-display: var(--font-lexend), "Lexend", sans-serif;
 
     --radius-DEFAULT: 0.5rem;
     --radius-lg: 0.75rem;
@@ -171,5 +177,56 @@
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
+    }
+}
+
+/* Configuração de impressão A4 em modo claro limpo */
+@page {
+    size: A4;
+    margin: 12mm 14mm;
+}
+
+@media print {
+    html,
+    :root,
+    .dark {
+        color-scheme: light !important;
+        --bg-dynamic: #ffffff;
+        --bg-surface: #ffffff;
+        --text-dynamic: #0f172a;
+        --text-muted: #334155;
+        --card-glass: #ffffff;
+        --card-border: #cbd5e1;
+        --nav-glass: #ffffff;
+    }
+
+    body {
+        background: #ffffff !important;
+        background-image: none !important;
+        background-attachment: scroll !important;
+        color: #0f172a !important;
+        transition: none !important;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .bg-clip-text {
+        -webkit-background-clip: border-box !important;
+        background-clip: border-box !important;
+        background-image: none !important;
+        -webkit-text-fill-color: #0f172a !important;
+        color: #0f172a !important;
+    }
+
+    h1,
+    h2,
+    h3 {
+        break-after: avoid;
+        page-break-after: avoid;
     }
 }

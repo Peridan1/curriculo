@@ -52,7 +52,7 @@ export default async function CurriculumPage({
     const dict = await dictionaries[lang]();
 
     return (
-        <main className="min-h-screen flex flex-col">
+        <main className="min-h-screen flex flex-col print:min-h-0 print:block">
             <Header dict={dict} />
             <CurriculumView dict={dict} lang={lang} />
             <Footer dict={dict} lang={lang} />

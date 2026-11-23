@@ -70,6 +70,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
 
     const terminalBodyRef = useRef<HTMLDivElement>(null);
     const inputRef = useRef<HTMLInputElement>(null);
+    const entryIdRef = useRef(0);
 
     // Rola para o final do terminal ao adicionar histórico
     useEffect(() => {
@@ -82,9 +83,15 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
         const cmd = rawCmd.trim().toLowerCase();
         if (!cmd) return;
 
+        // Gera IDs determinísticos sem usar Date.now() durante o fluxo de render/handlers
+        const nextEntryId = (prefix: "cmd" | "out") => {
+            entryIdRef.current += 1;
+            return `${prefix}-${entryIdRef.current}`;
+        };
+
         const newEntries: CommandHistoryItem[] = [
             {
-                id: `cmd-${Date.now()}`,
+                id: nextEntryId("cmd"),
                 type: "input",
                 text: `$ ${rawCmd.trim()}`,
             },
@@ -101,7 +108,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "ajuda":
             case "man":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.helpText,
                 });
@@ -110,7 +117,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "bio":
             case "sobre":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.whoamiText,
                 });
@@ -118,7 +125,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "skills":
             case "habilidades":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.skillsText,
                 });
@@ -126,7 +133,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "stack":
             case "tecnologias":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.stackText,
                 });
@@ -134,7 +141,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "projects":
             case "projetos":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.projectsText,
                     linkUrl: `/${lang}/projetos`,
@@ -145,7 +152,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "cv":
             case "resume":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.curriculoText,
                     linkUrl: `/${lang}/curriculo`,
@@ -159,7 +166,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "contato":
             case "social":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.contactText,
                 });
@@ -169,7 +176,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "trivia":
             case "hobbies":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.triviaMenu || "",
                 });
@@ -178,7 +185,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "curiosidades tech":
             case "curiosities tech":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.triviaTech || "",
                 });
@@ -190,7 +197,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "curiosidades musica":
             case "curiosities music":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.triviaMusic || "",
                 });
@@ -202,7 +209,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "curiosidades filmes":
             case "curiosities movies":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.triviaMovies || "",
                 });
@@ -212,7 +219,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "curiosidades games":
             case "curiosities games":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.triviaGames || "",
                 });
@@ -223,7 +230,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "curiosidades playlist":
             case "curiosities playlist":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.triviaPlaylist || "",
                 });
@@ -235,7 +242,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "towel":
             case "toalha":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.easterEgg42 || "",
                 });
@@ -247,7 +254,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "alien":
             case "et":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.easterEggPeace || "",
                 });
@@ -258,7 +265,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "rabbit":
             case "pill":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.easterEggMatrix || "",
                 });
@@ -268,7 +275,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "café":
             case "cafeina":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.easterEggCoffee || "",
                 });
@@ -279,7 +286,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "force":
             case "jedi":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.easterEggStarWars || "",
                 });
@@ -291,7 +298,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case ":wq":
             case ":q!":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.easterEggVim || "",
                 });
@@ -300,7 +307,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "rick":
             case "astley":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.easterEggRickroll || "",
                 });
@@ -310,14 +317,14 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "force-push":
             case "deploy":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.easterEggDeploy || "",
                 });
                 break;
             case "date":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: new Date().toLocaleString(lang === "pt" ? "pt-BR" : "en-US", {
                         timeZone: "America/Sao_Paulo",
@@ -329,14 +336,14 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             case "sudo":
             case "su":
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: "🔒 peridan is not in the sudoers file. This incident will be reported to Santa Claus. 🎅",
                 });
                 break;
             default:
                 newEntries.push({
-                    id: `out-${Date.now()}`,
+                    id: nextEntryId("out"),
                     type: "output",
                     text: t.unknownCommand,
                 });
@@ -384,7 +391,7 @@ export default function InteractiveTerminal({ dict, lang }: TerminalProps) {
             {/* Corpo do Terminal (Histórico de Saída) */}
             <div
                 ref={terminalBodyRef}
-                className="grow p-5 overflow-y-auto min-h-60 max-h-80 lg:max-h-96 text-xs sm:text-sm space-y-3 leading-relaxed"
+                className="grow p-5 overflow-y-auto min-h-60 max-h-80 lg:max-h-96 print:max-h-none print:overflow-visible text-xs sm:text-sm space-y-3 leading-relaxed"
                 onClick={() => inputRef.current?.focus()}
             >
                 {history.map((item) => {

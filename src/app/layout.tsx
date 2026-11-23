@@ -1,5 +1,13 @@
 import type { Metadata, Viewport } from "next";
+import { Lexend } from "next/font/google";
 import "./globals.css";
+
+const lexend = Lexend({
+    subsets: ["latin"],
+    weight: ["300", "400", "500", "600", "700", "800", "900"],
+    variable: "--font-lexend",
+    display: "swap",
+});
 import { ThemeProvider } from "../components/ThemeProvider";
 import DynamicFavicon from "../components/DynamicFavicon";
 import TechAmbientBackground from "../components/TechAmbientBackground";
@@ -97,14 +105,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="pt-BR" suppressHydrationWarning>
-            <head>
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap"
-                    rel="stylesheet"
-                />
-            </head>
-            <body className="antialiased">
+        <html lang="pt-BR" className={lexend.variable} suppressHydrationWarning>
+            <body className={`${lexend.className} antialiased`}>
                 <ThemeProvider>
                     <DynamicFavicon />
                     <TechAmbientBackground />

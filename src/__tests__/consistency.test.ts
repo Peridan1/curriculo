@@ -9,7 +9,7 @@ import { GET as getLlmsFull } from "../app/llms-full.txt/route";
 
 describe("Testes de Consistência e Integridade do Projeto", () => {
     it("mantém 100% de simetria de chaves entre os dicionários pt.json e en.json", () => {
-        function checkParity(objA: Record<string, any>, objB: Record<string, any>, currentPath = "") {
+        function checkParity(objA: Record<string, unknown>, objB: Record<string, unknown>, currentPath = "") {
             for (const key of Object.keys(objA)) {
                 const subPath = currentPath ? `${currentPath}.${key}` : key;
                 expect(key in objB, `Chave ${subPath} presente no primeiro objeto mas ausente no segundo`).toBe(true);
@@ -21,7 +21,7 @@ describe("Testes de Consistência e Integridade do Projeto", () => {
 
                 expect(typeA, `Tipo divergente na chave ${subPath}`).toBe(typeB);
                 if (typeA === "object" && valA !== null && valB !== null) {
-                    checkParity(valA, valB, subPath);
+                    checkParity(valA as Record<string, unknown>, valB as Record<string, unknown>, subPath);
                 }
             }
         }
@@ -35,7 +35,7 @@ describe("Testes de Consistência e Integridade do Projeto", () => {
         expect(projectSlugs.length).toBe(11);
 
         for (const slug of projectSlugs) {
-            const project = (ptDict.projectsData as Record<string, any>)[slug];
+            const project = (ptDict.projectsData as Record<string, { image?: string }>)[slug];
             if (project.image) {
                 const relativePath = project.image.replace(/^\//, "");
                 const fullPath = path.resolve(process.cwd(), "public", relativePath.replace(/^public\//, ""));

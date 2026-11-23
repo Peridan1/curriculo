@@ -72,8 +72,8 @@ export default function HomeHero({ dict, lang }: HomeHeroProps) {
     return (
         <section className="relative pt-24 pb-12 lg:pt-28 lg:pb-16 overflow-hidden" id="hero">
             {/* Luzes de Fundo Ambientais (Apenas no Modo Escuro) */}
-            <div className="hidden dark:block absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
-            <div className="hidden dark:block absolute top-1/3 right-10 w-100 h-100 bg-purple-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+            <div className="hidden dark:block print:hidden absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+            <div className="hidden dark:block print:hidden absolute top-1/3 right-10 w-100 h-100 bg-purple-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
             <div className="max-w-300 mx-auto px-6">
                 <div className="flex flex-col lg:flex-row items-stretch gap-8 lg:gap-10">

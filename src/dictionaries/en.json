@@ -296,11 +296,11 @@
             "title": "Brisamar Pescados • Catalog & E-commerce",
             "shortDescription": "High-performance Web application in Next.js and Tailwind CSS for Box 130 at CEASA Foz do Iguaçu, featuring dynamic catalog and recipes.",
             "tags": [
-                "Next.js 16",
-                "React 19",
+                "Next.js 14",
+                "React 18",
                 "TypeScript",
-                "Tailwind CSS",
-                "SEO"
+                "Tailwind CSS v3",
+                "Supabase"
             ],
             "image": "/images/projects/brisamar-pescados.jpg",
             "period": "Commercial Production • CEASA Foz do Iguaçu",
@@ -315,11 +315,11 @@
             "impact": "Significant increase in wholesale and retail customer acquisition with direct WhatsApp commercial funnels and instant Server Component page loads.",
             "lessons": "Pioneering adoption of Next.js App Router and large-scale image optimization to minimize response times and maximize organic SEO ranking.",
             "stackDetail": [
-                "Next.js 16 (App Router)",
-                "React 19",
+                "Next.js 14 (App Router)",
+                "React 18",
                 "Strict TypeScript",
-                "Tailwind CSS",
-                "WhatsApp Business API Flow"
+                "Tailwind CSS v3",
+                "Supabase (PostgreSQL + RLS) & WhatsApp Flow"
             ]
         },
         "fleet-manager": {
@@ -356,31 +356,32 @@
         "jf-informatica": {
             "featured": true,
             "title": "JF Informática e Games • Tech Support & Repair",
-            "shortDescription": "Modern and responsive commercial SPA with dynamic Dark/Light Mode and customer acquisition funnel for PC, laptop, and gaming console repairs.",
+            "shortDescription": "High-performance static business website built with Next.js 16, React 19, and Tailwind CSS v4 (output: 'export') featuring dynamic Dark/Light Mode and a customer acquisition funnel for PC, laptop, and gaming console repairs.",
             "tags": [
-                "JavaScript ES6+",
-                "Tailwind CSS",
-                "Dark Mode",
-                "SPA",
-                "UI/UX"
+                "Next.js 16",
+                "React 19",
+                "TypeScript",
+                "Tailwind CSS v4",
+                "SEO"
             ],
             "image": "/images/projects/jf-informatica.jpg",
             "period": "Commercial Production • Umuarama/PR",
             "description": "Digital platform created for a regional tech repair business specialized in computers, notebooks, printers, and gaming consoles. The goal was to establish an impactful, agile online presence with high conversion rates for local clients.",
             "challengesTitle": "User Experience (UI/UX) & Service Funnel",
-            "challenges": "Built an ultra-fast Single Page Application (SPA) architecture with Tailwind CSS, smooth micro-interactions, persistent browser dark/light mode toggle, and an interactive quote request form routing leads directly to WhatsApp support.",
+            "challenges": "Migration of the legacy website to a static export (output: 'export') built with Next.js 16 + React 19 and Tailwind CSS v4, preserving SEO with 301 redirects and LocalBusiness JSON-LD, alongside flash-free persistent dark/light mode and an interactive quote modal routed directly to WhatsApp.",
             "liveUrl": "https://jfinformaticaegames.com.br/",
             "repoUrl": "https://github.com/DanielSatelPereira",
             "isInternal": false,
             "inDevelopment": false,
             "backButton": "Back to Home",
             "impact": "Professional digital presence in the local Umuarama market with a streamlined quote funnel that boosted technical support inquiries.",
-            "lessons": "Engineering a performant SPA without heavyweight framework overhead, leveraging modern CSS and clean native JavaScript.",
+            "lessons": "Modernizing a legacy pure PHP website into a static Next.js 16 export with zero-cost static hosting, preserved SEO authority, and fast page load performance.",
             "stackDetail": [
-                "JavaScript ES6+",
-                "Tailwind CSS",
-                "Persistent Dark Mode",
-                "SPA Architecture"
+                "Next.js 16 (Static Export)",
+                "React 19",
+                "TypeScript",
+                "Tailwind CSS v4",
+                "SEO (301 Redirects & JSON-LD)"
             ]
         },
         "bem-digital": {
@@ -640,7 +641,7 @@
                     "id": "php",
                     "title": "PHP & Laravel",
                     "period": "2024 - Present",
-                    "description": "Professor Alex Morgado introduced me to PHP in 2024 at UniALFA, and I truly enjoyed exploring various paradigms of the language. I built a pure PHP + JS freelance site for JF Informática e Games. In municipal support, I was given the opportunity to create a fleet tracking system (Laravel 12, MySQL, Tailwind, Docker/Sail), backed by a Python bot for GPS tracker API data processing. Since March 2026, I work at Casa dos Conselhos de Umuarama with Slim framework. I am also continuously refactoring my academic projects.",
+                    "description": "Professor Alex Morgado introduced me to PHP in 2024 at UniALFA, and I truly enjoyed exploring various paradigms of the language. I built the first version of the JF Informática e Games website as a pure PHP + JS freelance project (later migrated to a static Next.js 16 export). In municipal support, I was given the opportunity to create a fleet tracking system (Laravel 12, MySQL, Tailwind, Docker/Sail), backed by a Python bot for GPS tracker API data processing. In March 2026, I transitioned internally within the city hall IT department — moving from IT support to systems analysis and development while continuing as an IT intern — taking on Slim Framework projects such as the Municipal Councils systems. I am also continuously refactoring my academic projects.",
                     "tags": [
                         "PHP 8+",
                         "Laravel",

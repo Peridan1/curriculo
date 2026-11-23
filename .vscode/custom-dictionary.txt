@@ -216,6 +216,7 @@ allFiles
 allow
 allowJs
 along
+alongside
 Alpha
 Alpine
 alpine
@@ -405,6 +406,7 @@ Argumentos
 argv
 aria
 arm
+Armazena
 armazenados
 Armazenamento
 armazenamento
@@ -496,6 +498,8 @@ atualizados
 Atualizar
 Atualmente
 atualmente
+atuando
+atuar
 Atue
 atuei
 atuo
@@ -511,6 +515,7 @@ Autenticação
 autenticação
 auth
 authentication
+authority
 Authority
 authors
 auto
@@ -545,6 +550,7 @@ Avançados
 Aviso
 AVISO
 avisos
+avoid
 await
 AWS
 Axe
@@ -778,7 +784,6 @@ caminho
 caminhos
 campaigns
 campanhas
-Campo
 can
 Can
 Canal
@@ -804,8 +809,8 @@ career
 Career
 carefully
 carga
-Cargo
 cargo
+Cargo
 carregamento
 Carregamento
 carregando
@@ -818,7 +823,6 @@ Carrossel
 cart
 Cartão
 cartões
-Casa
 case
 cases
 caso
@@ -852,6 +856,7 @@ causas
 Cause
 cause
 causou
+cbd
 CEASA
 cedo
 Cenário
@@ -862,7 +867,6 @@ centralizado
 centralizados
 centralizar
 Centralization
-Centro
 certificações
 certifications
 certo
@@ -986,6 +990,7 @@ clique
 clone
 Clone
 CloseIcon
+closeMobileMenu
 closest
 cloud
 Club
@@ -1287,6 +1292,7 @@ continuar
 continuation
 continue
 Continue
+continuing
 contínuo
 Continuous
 continuous
@@ -1388,10 +1394,11 @@ cosméticos
 cosmic
 cósmico
 Cósmico
-Cost
 cost
+Cost
 costs
 Could
+Councils
 count
 COUNT
 country
@@ -1493,6 +1500,7 @@ curso
 cursor
 cursos
 curta
+custo
 custom
 customDictionaries
 customer
@@ -1592,8 +1600,8 @@ demandas
 demonstração
 demonstrar
 demonstration
-Dentro
 dentro
+Dentro
 DENY
 department
 dependem
@@ -1643,7 +1651,6 @@ descritivos
 descrito
 Desculpa
 desde
-Desde
 deseja
 desejar
 desempenho
@@ -1701,6 +1708,7 @@ detectado
 detected
 detecting
 Detecto
+determinísticos
 dev
 Dev
 devDependencies
@@ -1829,7 +1837,6 @@ divergências
 divergente
 diverse
 divide
-Divisão
 divisão
 diz
 DNS
@@ -1944,6 +1951,7 @@ efeito
 Efeito
 efeitos
 Efeitos
+effect
 efficiency
 efficient
 Eficiência
@@ -2056,13 +2064,14 @@ entregue
 entries
 entry
 Entry
+entryIdRef
 enType
 env
 ENV
 enVal
 envExamplePath
+enviado
 Enviar
-envio
 environment
 Environment
 environments
@@ -2160,6 +2169,7 @@ estado
 Estado
 estados
 Estagiário
+estagiário
 Estágio
 Estamos
 estão
@@ -2343,13 +2353,14 @@ explícitos
 explique
 Exploração
 exploramos
-explorando
 explorar
 Explorar
 explore
 Explore
 exploring
 export
+Export
+exportação
 exportam
 exportar
 Exporte
@@ -2382,6 +2393,7 @@ faça
 façam
 facilitar
 faço
+Faculdade
 faculdade
 fade
 fafc
@@ -2506,6 +2518,7 @@ Fiz
 flag
 Flags
 flaky
+flash
 fleet
 Fleet
 flex
@@ -2523,7 +2536,6 @@ Floyd
 fluid
 fluida
 fluída
-fluidas
 fluídas
 fluídos
 Flutuante
@@ -2633,6 +2645,7 @@ framework
 Frameworks
 frameworks
 frases
+free
 Freelance
 freelance
 Freelancer
@@ -2742,8 +2755,8 @@ genéricos
 Gêneros
 genres
 geolocation
-gera
 Gera
+gera
 geração
 Geração
 gerada
@@ -2821,6 +2834,7 @@ goes
 gonna
 Good
 good
+google
 Google
 googleapis
 googleBot
@@ -2915,7 +2929,6 @@ HEALTHCHECK
 healthcheck
 healthy
 heavy
-heavyweight
 height
 Hello
 help
@@ -2974,9 +2987,12 @@ Hope
 hora
 Horizontal
 horizontalmente
+hospedagem
 host
 hosted
+hosting
 HOSTNAME
+hostname
 hot
 Hot
 hotsite
@@ -3044,6 +3060,7 @@ idioma
 Idioma
 idiomas
 Idiomas
+IDs
 idx
 Ignora
 ignore
@@ -3225,8 +3242,8 @@ instantâneo
 instáveis
 instinto
 institucionais
-Institucional
 institucional
+Institucional
 instituição
 instituições
 institution
@@ -3264,7 +3281,6 @@ Interação
 interação
 Interações
 interações
-interactions
 Interactive
 interactive
 InteractiveTerminal
@@ -3288,6 +3304,7 @@ Interfaces
 intermediário
 intermediate
 Intern
+intern
 interna
 internacionais
 internacional
@@ -3296,6 +3313,8 @@ internacionalização
 internacionalizadas
 internal
 Internal
+internally
+internamente
 internas
 international
 Internet
@@ -3469,6 +3488,7 @@ later
 laterais
 lateral
 latest
+latin
 lavar
 Law
 layer
@@ -3482,7 +3502,6 @@ lazy
 ldquo
 lead
 leading
-leads
 League
 learn
 Learned
@@ -3493,7 +3512,9 @@ least
 leave
 leem
 left
+legacy
 legada
+legado
 Legends
 Legibilidade
 Legível
@@ -3520,6 +3541,7 @@ Leve
 level
 levels
 leveraging
+lexend
 Lexend
 LGPD
 lib
@@ -3604,6 +3626,7 @@ loads
 locais
 Local
 local
+LocalBusiness
 locale
 localeCompare
 locales
@@ -3827,7 +3850,12 @@ microserviços
 middleware
 Middleware
 Midnight
+Migração
+migrado
+migrated
+Migration
 Migrations
+migrei
 Mikrotik
 mikrotik
 Mim
@@ -3864,6 +3892,7 @@ mochileiro
 Mochileiro
 mocks
 Mocks
+modal
 Mode
 mode
 Model
@@ -3877,6 +3906,8 @@ Modern
 moderna
 modernas
 Modernas
+Modernização
+Modernizing
 moderno
 modernos
 modificação
@@ -3935,6 +3966,7 @@ Movies
 movimentação
 movimento
 Movimento
+moving
 MozAppearance
 mskadu
 msOverflowStyle
@@ -3959,6 +3991,7 @@ múltiplos
 Múltiplos
 mundo
 Mundo
+Municipais
 Municipal
 municipal
 Municipality
@@ -4058,6 +4091,7 @@ nextBinPath
 nextBtn
 NextConfig
 nextConfig
+nextEntryId
 NextJS
 nextjs
 NextRequest
@@ -4124,6 +4158,7 @@ Note
 notebooks
 notFound
 nothing
+Nov
 nova
 NOVA
 Nova
@@ -4234,13 +4269,13 @@ opções
 Open
 open
 opencode
+openedMenuPathname
 openGraph
 OpenGraph
 OpenPyXL
 opera
 operação
 operacionais
-operacional
 Operacional
 operações
 operates
@@ -4340,8 +4375,8 @@ padrões
 Padrões
 padroes
 padronizado
-Page
 page
+Page
 pages
 página
 Página
@@ -4408,6 +4443,7 @@ passa
 passado
 passagem
 passam
+passando
 passar
 passaram
 passe
@@ -4476,8 +4512,6 @@ Perfil
 perfil
 performance
 Performance
-performant
-performática
 performático
 Pergunta
 perguntas
@@ -4508,9 +4542,6 @@ persistence
 persistência
 Persistência
 persistent
-Persistent
-persistente
-Persistente
 personal
 PERSONAL
 Personal
@@ -4521,7 +4552,6 @@ Personalized
 PersonIcon
 pertença
 pesadas
-pesados
 Pescados
 pescados
 peso
@@ -4661,6 +4691,7 @@ possui
 Possui
 Possuo
 postcss
+posteriormente
 postgres
 POSTGRES
 PostgreSQL
@@ -4701,6 +4732,7 @@ preferido
 preferidos
 prefers
 Prefetch
+prefix
 prefixo
 preload
 premissas
@@ -4708,16 +4740,19 @@ premium
 presença
 Presença
 presence
-Presencial
 presencial
+Presencial
 Present
 present
 presentation
 presente
 Presente
 presentes
+preservado
 preservando
 preserveAspectRatio
+preserved
+preserving
 Press
 press
 pressa
@@ -5061,8 +5096,8 @@ Ready
 ready
 reais
 Reais
-Real
 real
+Real
 Realidade
 realiza
 realmente
@@ -5120,6 +5155,8 @@ redirecionamentos
 Redirecionando
 redirect
 Redirecting
+redirects
+Redirects
 redução
 reduce
 reduced
@@ -5196,9 +5233,10 @@ reminded
 Remoção
 Remote
 remote
+remotePatterns
 remotes
-Remoto
 remoto
+Remoto
 remotos
 remove
 Remove
@@ -5313,6 +5351,7 @@ restored
 Restrições
 restrições
 restricted
+restrito
 restritos
 Result
 RESULT
@@ -5365,8 +5404,9 @@ Rings
 risca
 risk
 Risk
-robô
+RLS
 Robô
+robô
 robôs
 Robot
 robot
@@ -5399,8 +5439,8 @@ Root
 rootDir
 RootLayout
 rose
-Rota
 rota
+Rota
 rotas
 Rotas
 roteadores
@@ -5412,6 +5452,7 @@ round
 rounded
 route
 Route
+routed
 router
 Router
 RouterOS
@@ -5443,6 +5484,7 @@ safeLang
 Saída
 saída
 Sail
+saindo
 sair
 salva
 Salva
@@ -5619,10 +5661,11 @@ setCurrentTime
 setHistory
 setInput
 setInterval
-setIsMobileMenuOpen
 setItem
-setor
+setOpenedMenuPathname
 Setor
+setor
+setState
 setTheme
 setTimeout
 Setup
@@ -5696,7 +5739,6 @@ simultâneos
 sinais
 Sinais
 sinal
-Since
 síncrona
 Sincronização
 Sincronizando
@@ -5748,6 +5790,7 @@ slice
 slide
 slim
 Slim
+slot
 slow
 slug
 slugs
@@ -5871,6 +5914,7 @@ starwars
 stat
 state
 static
+Static
 statistically
 statSync
 status
@@ -5923,7 +5967,6 @@ stuff
 Stupid
 style
 Style
-stylesheet
 Styling
 styling
 sua
@@ -5943,6 +5986,7 @@ subPath
 Subseções
 SubSection
 subSections
+subsets
 Substitua
 Substitui
 substitui
@@ -5955,6 +5999,7 @@ Successfully
 sucesso
 SUCESSO
 Sucesso
+such
 sudo
 sudoers
 suficiente
@@ -5967,6 +6012,7 @@ summaryText
 summaryTitle
 Sunk
 sunk
+Supabase
 superados
 Superfície
 superfície
@@ -6025,6 +6071,7 @@ Tailwind
 TailwindCSS
 tailwindcss
 take
+taking
 tamanho
 Tamanho
 tamanhos
@@ -6070,8 +6117,8 @@ Técnica
 técnica
 Técnicas
 técnicas
-Técnico
 técnico
+Técnico
 técnicos
 Técnicos
 tecnologia
@@ -6232,7 +6279,6 @@ titles
 Título
 título
 títulos
-tive
 tiver
 tmpDir
 tmpdir
@@ -6254,7 +6300,7 @@ TODO
 todos
 Todos
 TODOS
-toggle
+toggleMobileMenu
 toggles
 toHaveAttribute
 toHaveBeenCalledWith
@@ -6324,6 +6370,7 @@ Transformar
 Transformou
 transições
 transition
+transitioned
 translate
 translateX
 translateY
@@ -6445,7 +6492,6 @@ universais
 universe
 UNIVERSE
 Universe
-Universitário
 university
 Universo
 UNIVERSO
@@ -6548,6 +6594,7 @@ value
 Vantagens
 var
 varejo
+variable
 Variables
 variant
 variantes
@@ -6561,7 +6608,6 @@ various
 varreduras
 vazia
 vazio
-veicular
 veio
 veja
 vejo
@@ -6701,7 +6747,6 @@ welcome
 Welcome
 were
 weren
-wght
 whack
 What
 what

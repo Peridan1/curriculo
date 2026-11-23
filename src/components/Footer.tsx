@@ -29,7 +29,7 @@ interface FooterProps {
 
 export default function Footer({ dict, lang = "pt" }: FooterProps) {
     return (
-        <footer className="bg-slate-200/80 dark:bg-slate-950/80 py-16 border-t border-slate-300/80 dark:border-cyan-500/15 relative overflow-hidden" id="contact">
+        <footer className="bg-slate-200/80 dark:bg-slate-950/80 py-16 border-t border-slate-300/80 dark:border-cyan-500/15 relative overflow-hidden print:hidden" id="contact">
             {/* Linha de Neon Superior */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-linear-to-r from-transparent via-cyan-500/40 to-transparent"></div>
 

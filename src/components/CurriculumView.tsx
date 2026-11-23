@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import {
     ArrowLeftIcon,
@@ -92,8 +93,8 @@ export default function CurriculumView({ dict, lang }: CurriculumViewProps) {
     };
 
     return (
-        <div className="min-h-screen py-28 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-220 mx-auto">
+        <div className="min-h-screen py-28 px-4 sm:px-6 lg:px-8 print:min-h-0 print:py-0 print:px-0">
+            <div className="max-w-220 mx-auto print:max-w-none print:w-full">
                 {/* Barra Superior de Ações (Oculta na Impressão) */}
                 <div className="print:hidden flex flex-wrap items-center justify-between gap-4 mb-8">
                     <Link
@@ -105,6 +106,7 @@ export default function CurriculumView({ dict, lang }: CurriculumViewProps) {
                     </Link>
 
                     <button
+                        type="button"
                         onClick={handlePrint}
                         className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-linear-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white dark:text-slate-950 font-black text-sm transition-all shadow-lg shadow-cyan-600/20 hover:scale-105 cursor-pointer"
                     >
@@ -114,10 +116,10 @@ export default function CurriculumView({ dict, lang }: CurriculumViewProps) {
                 </div>
 
                 {/* Folha do Currículo Formal */}
-                <article className="bg-white dark:bg-slate-900/90 border border-slate-300 dark:border-cyan-500/20 rounded-3xl p-8 sm:p-12 shadow-2xl print:border-none print:shadow-none print:p-0 print:bg-white print:text-black">
+                <article className="bg-white dark:bg-slate-900/90 border border-slate-300 dark:border-cyan-500/20 rounded-3xl p-8 sm:p-12 shadow-2xl print:border-none print:shadow-none print:p-0 print:bg-white print:text-black print:rounded-none">
                     {/* Cabeçalho do Currículo */}
-                    <header className="border-b border-slate-200 dark:border-slate-800 pb-8 mb-8">
-                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+                    <header className="border-b border-slate-200 dark:border-slate-800 pb-8 mb-8 print:pb-4 print:mb-5 print:border-slate-300">
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4 print:flex-row print:items-center print:mb-2">
                             <div>
                                 <span className="text-xs font-black uppercase tracking-widest text-cyan-800 dark:text-cyan-400">
                                     {cp.badge}
@@ -132,30 +134,32 @@ export default function CurriculumView({ dict, lang }: CurriculumViewProps) {
 
                             {/* Foto discreta para o CV */}
                             <div className="size-20 rounded-2xl overflow-hidden border-2 border-cyan-500/30 shrink-0 self-start print:hidden">
-                                <img
+                                <Image
                                     src="https://lh3.googleusercontent.com/a/ACg8ocKA38c3_AAu3Yq_pxnO-CO1FQX_T5NcvTUZjjuGmn02FFyORv8hHQ=s288-c-no"
                                     alt="Daniel Satel Pereira"
+                                    width={80}
+                                    height={80}
                                     className="w-full h-full object-cover"
                                 />
                             </div>
                         </div>
 
                         {/* Dados de Contato e Localização */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-xs text-slate-800 dark:text-slate-300 font-semibold pt-2">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-xs text-slate-800 dark:text-slate-300 font-semibold pt-2 print:grid-cols-2 print:gap-x-6 print:gap-y-1 print:pt-1">
                             <div>📍 {personal.location}</div>
                             <div>🎂 {personal.age} ({personal.status})</div>
                             <div>
-                                ✉️ <a href={`mailto:${personal.email}`} className="text-cyan-800 dark:text-cyan-400 hover:underline">{personal.email}</a>
+                                ✉️ <a href={`mailto:${personal.email}`} className="text-cyan-800 dark:text-cyan-400 hover:underline print:no-underline print:text-slate-900">{personal.email}</a>
                             </div>
                             <div>
-                                📱 <a href="https://wa.me/5541999521315" className="text-cyan-800 dark:text-cyan-400 hover:underline">{personal.phone}</a>
+                                📱 <a href="https://wa.me/5541999521315" className="text-cyan-800 dark:text-cyan-400 hover:underline print:no-underline print:text-slate-900">{personal.phone}</a>
                             </div>
                         </div>
                     </header>
 
                     {/* Sumário Executivo */}
-                    <section className="mb-10">
-                        <h2 className="text-lg font-black uppercase tracking-wider text-cyan-900 dark:text-cyan-400 border-b border-cyan-500/20 pb-2 mb-3 flex items-center gap-2">
+                    <section className="mb-10 print:mb-5">
+                        <h2 className="text-lg font-black uppercase tracking-wider text-cyan-900 dark:text-cyan-400 border-b border-cyan-500/20 pb-2 mb-3 flex items-center gap-2 break-after-avoid print:text-base print:mb-2 print:pb-1 print:border-slate-300">
                             <PersonIcon className="size-5" />
                             {cp.summaryTitle}
                         </h2>
@@ -165,14 +169,14 @@ export default function CurriculumView({ dict, lang }: CurriculumViewProps) {
                     </section>
 
                     {/* Matriz de Competências Técnicas */}
-                    <section className="mb-10">
-                        <h2 className="text-lg font-black uppercase tracking-wider text-cyan-900 dark:text-cyan-400 border-b border-cyan-500/20 pb-2 mb-4 flex items-center gap-2">
+                    <section className="mb-10 print:mb-5">
+                        <h2 className="text-lg font-black uppercase tracking-wider text-cyan-900 dark:text-cyan-400 border-b border-cyan-500/20 pb-2 mb-4 flex items-center gap-2 break-after-avoid print:text-base print:mb-2 print:pb-1 print:border-slate-300">
                             <CodeIcon className="size-5" />
                             {cp.skillsTitle}
                         </h2>
-                        <div className="space-y-3 text-xs leading-relaxed">
+                        <div className="space-y-3 text-xs leading-relaxed print:space-y-1.5">
                             {Object.entries(skills).map(([key, cat]) => (
-                                <div key={key} className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-2">
+                                <div key={key} className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-2 print:flex-row print:items-baseline print:gap-2">
                                     <span className="font-black text-slate-950 dark:text-slate-100 min-w-44 shrink-0">
                                         • {cat.name}:
                                     </span>
@@ -185,20 +189,20 @@ export default function CurriculumView({ dict, lang }: CurriculumViewProps) {
                     </section>
 
                     {/* Experiência Profissional */}
-                    <section className="mb-10">
-                        <h2 className="text-lg font-black uppercase tracking-wider text-cyan-900 dark:text-cyan-400 border-b border-cyan-500/20 pb-2 mb-6 flex items-center gap-2">
+                    <section className="mb-10 print:mb-5">
+                        <h2 className="text-lg font-black uppercase tracking-wider text-cyan-900 dark:text-cyan-400 border-b border-cyan-500/20 pb-2 mb-6 flex items-center gap-2 break-after-avoid print:text-base print:mb-2 print:pb-1 print:border-slate-300">
                             <WorkIcon className="size-5" />
                             {cp.experienceTitle}
                         </h2>
 
-                        <div className="space-y-8">
+                        <div className="space-y-8 print:space-y-4">
                             {experience.map((job, idx) => (
-                                <div key={idx} className="relative pl-4 border-l-2 border-cyan-500/30">
+                                <div key={idx} className="relative pl-4 border-l-2 border-cyan-500/30 break-inside-avoid print:border-slate-300">
                                     <div className="flex flex-wrap items-center justify-between gap-2 mb-1">
                                         <h3 className="text-base font-black text-slate-950 dark:text-slate-100">
                                             {job.role}
                                         </h3>
-                                        <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-300 border border-slate-300 dark:border-slate-700">
+                                        <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-300 border border-slate-300 dark:border-slate-700 print:bg-slate-100 print:text-slate-900 print:border-slate-300">
                                             {job.date}
                                         </span>
                                     </div>
@@ -210,7 +214,7 @@ export default function CurriculumView({ dict, lang }: CurriculumViewProps) {
                                     </p>
 
                                     {job.subSections && job.subSections.length > 0 && (
-                                        <div className="space-y-1.5 mb-3 bg-slate-50 dark:bg-slate-950/50 p-3 rounded-xl border border-slate-200 dark:border-slate-800">
+                                        <div className="space-y-1.5 mb-3 bg-slate-50 dark:bg-slate-950/50 p-3 rounded-xl border border-slate-200 dark:border-slate-800 break-inside-avoid print:bg-slate-50 print:border-slate-200 print:p-2 print:mb-2">
                                             {job.subSections.map((sub, sIdx) => (
                                                 <div key={sIdx} className="text-xs leading-relaxed">
                                                     <span className="font-bold text-cyan-900 dark:text-cyan-300 mr-1">
@@ -228,7 +232,7 @@ export default function CurriculumView({ dict, lang }: CurriculumViewProps) {
                                         {job.tags.map((t, tIdx) => (
                                             <span
                                                 key={tIdx}
-                                                className="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300"
+                                                className="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 print:bg-slate-100 print:text-slate-900 print:border print:border-slate-300"
                                             >
                                                 {t}
                                             </span>
@@ -241,14 +245,14 @@ export default function CurriculumView({ dict, lang }: CurriculumViewProps) {
 
                     {/* Formação Educacional */}
                     <section>
-                        <h2 className="text-lg font-black uppercase tracking-wider text-emerald-900 dark:text-emerald-400 border-b border-emerald-500/20 pb-2 mb-4 flex items-center gap-2">
+                        <h2 className="text-lg font-black uppercase tracking-wider text-emerald-900 dark:text-emerald-400 border-b border-emerald-500/20 pb-2 mb-4 flex items-center gap-2 break-after-avoid print:text-base print:mb-2 print:pb-1 print:border-slate-300">
                             <SchoolIcon className="size-5" />
                             {cp.educationTitle}
                         </h2>
 
                         <div className="space-y-4">
                             {education.map((item, idx) => (
-                                <div key={idx} className="text-xs">
+                                <div key={idx} className="text-xs break-inside-avoid">
                                     <div className="flex flex-wrap items-center justify-between gap-1 mb-1">
                                         <h3 className="text-sm font-black text-slate-950 dark:text-slate-100">
                                             {item.degree}

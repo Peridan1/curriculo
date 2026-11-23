@@ -152,7 +152,7 @@ export default function TechAmbientBackground() {
                             className="tech-glyph-pulse"
                             opacity="0.08"
                         >
-                            // clean-code
+                            {"// clean-code"}
                         </text>
                     </g>
 

@@ -1,8 +1,6 @@
 import Link from "next/link";
 import {
     TerminalIcon,
-    CodeIcon,
-    ShieldIcon,
     ExternalLinkIcon,
     ArrowRightIcon,
 } from "./icons";
