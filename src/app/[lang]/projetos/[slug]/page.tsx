@@ -125,15 +125,15 @@ export default async function ProjectTemplate({
     };
 
     return (
-        <main className="min-h-screen flex flex-col">
+        <main className="min-h-screen flex flex-col print:min-h-0 print:block">
             <Header dict={dict} />
 
             {/* Esqueleto Dinâmico do Projeto */}
-            <section className="grow pt-32 pb-24 px-6 max-w-240 mx-auto w-full">
+            <section className="grow pt-32 pb-24 px-6 max-w-240 mx-auto w-full print:pt-0 print:pb-0 print:px-0 print:max-w-none">
                 {/* Botão Dinâmico de Voltar */}
                 <Link
                     href={`/${lang}/#projects`}
-                    className="inline-flex items-center gap-2 text-cyan-800 dark:text-cyan-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors mb-8 font-black text-sm"
+                    className="print:hidden inline-flex items-center gap-2 text-cyan-800 dark:text-cyan-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors mb-8 font-black text-sm"
                 >
                     <ArrowLeftIcon className="size-4" />
                     {projectData.backButton}
@@ -261,13 +261,13 @@ export default async function ProjectTemplate({
                 </div>
 
                 {/* Ações e Links */}
-                <div className="mt-12 flex flex-wrap items-center gap-4">
+                <div className="mt-12 print:mt-6 flex flex-wrap items-center gap-4">
                     {projectData.liveUrl && (
                         <a
                             href={projectData.liveUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-3 bg-linear-to-r from-cyan-600 to-emerald-600 hover:from-cyan-500 hover:to-emerald-500 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-cyan-500/20 group hover:scale-105"
+                            className="print:hidden inline-flex items-center gap-3 bg-linear-to-r from-cyan-600 to-emerald-600 hover:from-cyan-500 hover:to-emerald-500 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-cyan-500/20 group hover:scale-105"
                         >
                             <ExternalLinkIcon className="size-5 group-hover:scale-110 transition-transform" />
                             {lang === "pt"
@@ -281,7 +281,7 @@ export default async function ProjectTemplate({
                             href={projectData.repoUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-3 bg-white dark:bg-slate-900 border-2 border-cyan-500/40 hover:border-cyan-500 text-cyan-800 dark:text-cyan-400 hover:text-white dark:hover:text-slate-950 hover:bg-linear-to-r hover:from-cyan-500 hover:to-emerald-500 px-8 py-4 rounded-xl font-bold transition-all shadow-md shadow-cyan-500/10 group"
+                            className="print:hidden inline-flex items-center gap-3 bg-white dark:bg-slate-900 border-2 border-cyan-500/40 hover:border-cyan-500 text-cyan-800 dark:text-cyan-400 hover:text-white dark:hover:text-slate-950 hover:bg-linear-to-r hover:from-cyan-500 hover:to-emerald-500 px-8 py-4 rounded-xl font-bold transition-all shadow-md shadow-cyan-500/10 group"
                         >
                             <GitHubIcon className="size-5 text-slate-900 dark:text-white group-hover:scale-110 transition-transform" />
                             {lang === "pt"

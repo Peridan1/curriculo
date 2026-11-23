@@ -48,14 +48,14 @@ export default async function PrivacyPage({
     const p = dict.privacyPage;
 
     return (
-        <main className="min-h-screen flex flex-col">
+        <main className="min-h-screen flex flex-col print:min-h-0 print:block">
             <Header dict={dict} />
 
-            <section className="grow pt-32 pb-24 px-6 max-w-220 mx-auto w-full">
+            <section className="grow pt-32 pb-24 px-6 max-w-220 mx-auto w-full print:pt-0 print:pb-0 print:px-0 print:max-w-none">
                 {/* Botão de Retorno */}
                 <Link
                     href={`/${lang}`}
-                    className="inline-flex items-center gap-2 text-cyan-800 dark:text-cyan-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors mb-8 font-black text-sm"
+                    className="print:hidden inline-flex items-center gap-2 text-cyan-800 dark:text-cyan-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors mb-8 font-black text-sm"
                 >
                     <ArrowLeftIcon className="size-4" />
                     {p.backHome}
@@ -75,7 +75,7 @@ export default async function PrivacyPage({
                 </div>
 
                 {/* Seções de Termos e Privacidade */}
-                <article className="space-y-8 bg-white dark:bg-slate-900/90 border border-slate-300 dark:border-cyan-500/20 rounded-3xl p-8 sm:p-12 shadow-xl text-slate-900 dark:text-slate-200">
+                <article className="space-y-8 bg-white dark:bg-slate-900/90 border border-slate-300 dark:border-cyan-500/20 rounded-3xl p-8 sm:p-12 shadow-xl text-slate-900 dark:text-slate-200 print:border-none print:shadow-none print:p-0 print:rounded-none">
                     {/* 1. Visão Geral */}
                     <div>
                         <h2 className="text-lg font-black text-slate-950 dark:text-white mb-3">

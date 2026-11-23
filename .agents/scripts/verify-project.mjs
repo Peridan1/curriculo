@@ -56,7 +56,7 @@ function runStep(cmd, description) {
     execSync(cmd, { cwd: rootDir, stdio: "inherit" });
     log("ok", `${description} concluído com sucesso!`);
     return true;
-  } catch (error) {
+  } catch {
     log("error", `Falha ao executar: ${description}`);
     return false;
   }

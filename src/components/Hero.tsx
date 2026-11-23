@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
     TerminalIcon,
     ProjectIcon,
@@ -138,8 +139,10 @@ export default function Hero({ dict }: HeroProps) {
 
                             {/* Frame da Foto */}
                             <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-3xl overflow-hidden bg-slate-200 dark:bg-slate-900 border-2 border-cyan-500/30 shadow-2xl">
-                                <img
+                                <Image
                                     alt="Daniel Satel Pereira (Peridan)"
+                                    width={320}
+                                    height={320}
                                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
                                     src="https://lh3.googleusercontent.com/a/ACg8ocKA38c3_AAu3Yq_pxnO-CO1FQX_T5NcvTUZjjuGmn02FFyORv8hHQ=s288-c-no"
                                 />

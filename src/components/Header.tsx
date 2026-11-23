@@ -61,21 +61,22 @@ function CloseIcon({ className = "size-6" }: { className?: string }) {
 export default function Header({ dict }: HeaderProps) {
     const pathname = usePathname();
     const router = useRouter();
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    // Armazena a rota onde o menu foi aberto; ao mudar de rota, fecha automaticamente sem setState em effect
+    const [openedMenuPathname, setOpenedMenuPathname] = useState<string | null>(null);
+    const isMobileMenuOpen = openedMenuPathname === pathname;
 
     // Descobrir qual é o idioma atual a partir da URL (ex: "/pt/projetos" -> "pt")
     const currentLang = pathname.split("/")[1] || "pt";
 
-    // Fecha o menu mobile ao navegar (mudança de pathname)
-    useEffect(() => {
-        setIsMobileMenuOpen(false);
-    }, [pathname]);
+    const closeMobileMenu = () => setOpenedMenuPathname(null);
+    const toggleMobileMenu = () =>
+        setOpenedMenuPathname((prev) => (prev === pathname ? null : pathname));
 
     // Fecha o menu mobile com a tecla Escape
     useEffect(() => {
         const handleKeyDown = (event: KeyboardEvent) => {
             if (event.key === "Escape") {
-                setIsMobileMenuOpen(false);
+                setOpenedMenuPathname(null);
             }
         };
 
@@ -103,7 +104,7 @@ export default function Header({ dict }: HeaderProps) {
                 <Link
                     href={`/${currentLang}`}
                     className="flex items-center gap-3 group"
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={closeMobileMenu}
                 >
                     <div className="size-10 bg-linear-to-br from-cyan-400 to-emerald-500 rounded-xl flex items-center justify-center text-slate-950 font-black shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
                         <TerminalIcon className="size-5" />
@@ -182,7 +183,7 @@ export default function Header({ dict }: HeaderProps) {
                     {/* Botão Hambúrguer para Menu Mobile */}
                     <button
                         type="button"
-                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        onClick={toggleMobileMenu}
                         aria-expanded={isMobileMenuOpen}
                         aria-controls="mobile-navigation"
                         aria-label={isMobileMenuOpen ? "Fechar menu de navegação" : "Abrir menu de navegação"}
@@ -202,28 +203,28 @@ export default function Header({ dict }: HeaderProps) {
                     <nav className="flex flex-col gap-4" aria-label="Navegação mobile">
                         <Link
                             href={`/${currentLang}`}
-                            onClick={() => setIsMobileMenuOpen(false)}
+                            onClick={closeMobileMenu}
                             className="text-base font-black text-slate-950 dark:text-slate-100 hover:text-cyan-600 dark:hover:text-cyan-400 py-1 transition-colors"
                         >
                             {dict.header.home || "Início"}
                         </Link>
                         <Link
                             href={`/${currentLang}/sobre`}
-                            onClick={() => setIsMobileMenuOpen(false)}
+                            onClick={closeMobileMenu}
                             className="text-base font-black text-slate-950 dark:text-slate-100 hover:text-cyan-600 dark:hover:text-cyan-400 py-1 transition-colors"
                         >
                             {dict.header.about || "Sobre"}
                         </Link>
                         <Link
                             href={`/${currentLang}/projetos`}
-                            onClick={() => setIsMobileMenuOpen(false)}
+                            onClick={closeMobileMenu}
                             className="text-base font-black text-slate-950 dark:text-slate-100 hover:text-cyan-600 dark:hover:text-cyan-400 py-1 transition-colors"
                         >
                             {dict.header.projects}
                         </Link>
                         <Link
                             href={`/${currentLang}/curriculo`}
-                            onClick={() => setIsMobileMenuOpen(false)}
+                            onClick={closeMobileMenu}
                             className="inline-flex items-center gap-2 text-base font-black text-cyan-800 dark:text-cyan-400 hover:text-emerald-600 dark:hover:text-emerald-300 py-1 transition-colors"
                         >
                             <CurriculumIcon className="size-4.5" />

@@ -21,6 +21,14 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   // Oculta o cabeçalho X-Powered-By por segurança (Fingerprinting protection)
   poweredByHeader: false,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+      },
+    ],
+  },
 
   // Cabeçalhos HTTP de Segurança recomendados pela OWASP
   async headers() {
