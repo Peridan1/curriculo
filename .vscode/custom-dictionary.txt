@@ -216,6 +216,7 @@ allFiles
 allow
 allowJs
 along
+alongside
 Alpha
 Alpine
 alpine
@@ -405,6 +406,7 @@ Argumentos
 argv
 aria
 arm
+Armazena
 armazenados
 Armazenamento
 armazenamento
@@ -511,6 +513,7 @@ Autenticação
 autenticação
 auth
 authentication
+authority
 Authority
 authors
 auto
@@ -545,6 +548,7 @@ Avançados
 Aviso
 AVISO
 avisos
+avoid
 await
 AWS
 Axe
@@ -778,7 +782,6 @@ caminho
 caminhos
 campaigns
 campanhas
-Campo
 can
 Can
 Canal
@@ -852,6 +855,7 @@ causas
 Cause
 cause
 causou
+cbd
 CEASA
 cedo
 Cenário
@@ -862,7 +866,6 @@ centralizado
 centralizados
 centralizar
 Centralization
-Centro
 certificações
 certifications
 certo
@@ -986,6 +989,7 @@ clique
 clone
 Clone
 CloseIcon
+closeMobileMenu
 closest
 cloud
 Club
@@ -1388,8 +1392,8 @@ cosméticos
 cosmic
 cósmico
 Cósmico
-Cost
 cost
+Cost
 costs
 Could
 count
@@ -1493,6 +1497,7 @@ curso
 cursor
 cursos
 curta
+custo
 custom
 customDictionaries
 customer
@@ -1701,6 +1706,7 @@ detectado
 detected
 detecting
 Detecto
+determinísticos
 dev
 Dev
 devDependencies
@@ -1944,6 +1950,7 @@ efeito
 Efeito
 efeitos
 Efeitos
+effect
 efficiency
 efficient
 Eficiência
@@ -2056,13 +2063,14 @@ entregue
 entries
 entry
 Entry
+entryIdRef
 enType
 env
 ENV
 enVal
 envExamplePath
+enviado
 Enviar
-envio
 environment
 Environment
 environments
@@ -2343,13 +2351,14 @@ explícitos
 explique
 Exploração
 exploramos
-explorando
 explorar
 Explorar
 explore
 Explore
 exploring
 export
+Export
+exportação
 exportam
 exportar
 Exporte
@@ -2382,6 +2391,7 @@ faça
 façam
 facilitar
 faço
+Faculdade
 faculdade
 fade
 fafc
@@ -2506,6 +2516,7 @@ Fiz
 flag
 Flags
 flaky
+flash
 fleet
 Fleet
 flex
@@ -2523,7 +2534,6 @@ Floyd
 fluid
 fluida
 fluída
-fluidas
 fluídas
 fluídos
 Flutuante
@@ -2633,6 +2643,7 @@ framework
 Frameworks
 frameworks
 frases
+free
 Freelance
 freelance
 Freelancer
@@ -2742,8 +2753,8 @@ genéricos
 Gêneros
 genres
 geolocation
-gera
 Gera
+gera
 geração
 Geração
 gerada
@@ -2821,6 +2832,7 @@ goes
 gonna
 Good
 good
+google
 Google
 googleapis
 googleBot
@@ -2915,7 +2927,6 @@ HEALTHCHECK
 healthcheck
 healthy
 heavy
-heavyweight
 height
 Hello
 help
@@ -2974,9 +2985,12 @@ Hope
 hora
 Horizontal
 horizontalmente
+hospedagem
 host
 hosted
+hosting
 HOSTNAME
+hostname
 hot
 Hot
 hotsite
@@ -3044,6 +3058,7 @@ idioma
 Idioma
 idiomas
 Idiomas
+IDs
 idx
 Ignora
 ignore
@@ -3225,8 +3240,8 @@ instantâneo
 instáveis
 instinto
 institucionais
-Institucional
 institucional
+Institucional
 instituição
 instituições
 institution
@@ -3264,7 +3279,6 @@ Interação
 interação
 Interações
 interações
-interactions
 Interactive
 interactive
 InteractiveTerminal
@@ -3469,6 +3483,7 @@ later
 laterais
 lateral
 latest
+latin
 lavar
 Law
 layer
@@ -3482,7 +3497,6 @@ lazy
 ldquo
 lead
 leading
-leads
 League
 learn
 Learned
@@ -3493,7 +3507,9 @@ least
 leave
 leem
 left
+legacy
 legada
+legado
 Legends
 Legibilidade
 Legível
@@ -3520,6 +3536,7 @@ Leve
 level
 levels
 leveraging
+lexend
 Lexend
 LGPD
 lib
@@ -3604,6 +3621,7 @@ loads
 locais
 Local
 local
+LocalBusiness
 locale
 localeCompare
 locales
@@ -3827,6 +3845,10 @@ microserviços
 middleware
 Middleware
 Midnight
+Migração
+migrado
+migrated
+Migration
 Migrations
 Mikrotik
 mikrotik
@@ -3864,6 +3886,7 @@ mochileiro
 Mochileiro
 mocks
 Mocks
+modal
 Mode
 mode
 Model
@@ -3877,6 +3900,8 @@ Modern
 moderna
 modernas
 Modernas
+Modernização
+Modernizing
 moderno
 modernos
 modificação
@@ -4058,6 +4083,7 @@ nextBinPath
 nextBtn
 NextConfig
 nextConfig
+nextEntryId
 NextJS
 nextjs
 NextRequest
@@ -4234,6 +4260,7 @@ opções
 Open
 open
 opencode
+openedMenuPathname
 openGraph
 OpenGraph
 OpenPyXL
@@ -4340,8 +4367,8 @@ padrões
 Padrões
 padroes
 padronizado
-Page
 page
+Page
 pages
 página
 Página
@@ -4476,8 +4503,6 @@ Perfil
 perfil
 performance
 Performance
-performant
-performática
 performático
 Pergunta
 perguntas
@@ -4508,9 +4533,6 @@ persistence
 persistência
 Persistência
 persistent
-Persistent
-persistente
-Persistente
 personal
 PERSONAL
 Personal
@@ -4521,7 +4543,6 @@ Personalized
 PersonIcon
 pertença
 pesadas
-pesados
 Pescados
 pescados
 peso
@@ -4661,6 +4682,7 @@ possui
 Possui
 Possuo
 postcss
+posteriormente
 postgres
 POSTGRES
 PostgreSQL
@@ -4701,6 +4723,7 @@ preferido
 preferidos
 prefers
 Prefetch
+prefix
 prefixo
 preload
 premissas
@@ -4716,8 +4739,11 @@ presentation
 presente
 Presente
 presentes
+preservado
 preservando
 preserveAspectRatio
+preserved
+preserving
 Press
 press
 pressa
@@ -5061,8 +5087,8 @@ Ready
 ready
 reais
 Reais
-Real
 real
+Real
 Realidade
 realiza
 realmente
@@ -5120,6 +5146,8 @@ redirecionamentos
 Redirecionando
 redirect
 Redirecting
+redirects
+Redirects
 redução
 reduce
 reduced
@@ -5196,6 +5224,7 @@ reminded
 Remoção
 Remote
 remote
+remotePatterns
 remotes
 Remoto
 remoto
@@ -5313,6 +5342,7 @@ restored
 Restrições
 restrições
 restricted
+restrito
 restritos
 Result
 RESULT
@@ -5365,6 +5395,7 @@ Rings
 risca
 risk
 Risk
+RLS
 robô
 Robô
 robôs
@@ -5399,8 +5430,8 @@ Root
 rootDir
 RootLayout
 rose
-Rota
 rota
+Rota
 rotas
 Rotas
 roteadores
@@ -5412,6 +5443,7 @@ round
 rounded
 route
 Route
+routed
 router
 Router
 RouterOS
@@ -5619,10 +5651,11 @@ setCurrentTime
 setHistory
 setInput
 setInterval
-setIsMobileMenuOpen
 setItem
+setOpenedMenuPathname
 setor
 Setor
+setState
 setTheme
 setTimeout
 Setup
@@ -5748,6 +5781,7 @@ slice
 slide
 slim
 Slim
+slot
 slow
 slug
 slugs
@@ -5871,6 +5905,7 @@ starwars
 stat
 state
 static
+Static
 statistically
 statSync
 status
@@ -5923,7 +5958,6 @@ stuff
 Stupid
 style
 Style
-stylesheet
 Styling
 styling
 sua
@@ -5943,6 +5977,7 @@ subPath
 Subseções
 SubSection
 subSections
+subsets
 Substitua
 Substitui
 substitui
@@ -5967,6 +6002,7 @@ summaryText
 summaryTitle
 Sunk
 sunk
+Supabase
 superados
 Superfície
 superfície
@@ -6254,7 +6290,7 @@ TODO
 todos
 Todos
 TODOS
-toggle
+toggleMobileMenu
 toggles
 toHaveAttribute
 toHaveBeenCalledWith
@@ -6445,7 +6481,6 @@ universais
 universe
 UNIVERSE
 Universe
-Universitário
 university
 Universo
 UNIVERSO
@@ -6548,6 +6583,7 @@ value
 Vantagens
 var
 varejo
+variable
 Variables
 variant
 variantes
@@ -6701,7 +6737,6 @@ welcome
 Welcome
 were
 weren
-wght
 whack
 What
 what

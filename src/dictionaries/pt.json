@@ -296,11 +296,11 @@
             "title": "Brisamar Pescados • Catálogo & E-commerce",
             "shortDescription": "Aplicação Web de alta performance em Next.js e Tailwind CSS para o Box 130 do CEASA Foz do Iguaçu, com catálogo dinâmico e receitas.",
             "tags": [
-                "Next.js 16",
-                "React 19",
+                "Next.js 14",
+                "React 18",
                 "TypeScript",
-                "Tailwind CSS",
-                "SEO"
+                "Tailwind CSS v3",
+                "Supabase"
             ],
             "image": "/images/projects/brisamar-pescados.jpg",
             "period": "Produção Comercial • CEASA Foz do Iguaçu",
@@ -315,11 +315,11 @@
             "impact": "Aumento expressivo na captação de clientes de atacado e varejo com integração direta para o WhatsApp comercial e carregamento instantâneo via Server Components.",
             "lessons": "Adoção pioneira de Next.js com App Router e otimização de imagens em larga escala para reduzir o tempo de resposta e maximizar o ranqueamento orgânico de SEO.",
             "stackDetail": [
-                "Next.js 16 (App Router)",
-                "React 19",
+                "Next.js 14 (App Router)",
+                "React 18",
                 "TypeScript com tipagem estrita",
-                "Tailwind CSS",
-                "WhatsApp Business API Flow"
+                "Tailwind CSS v3",
+                "Supabase (PostgreSQL + RLS) & WhatsApp Flow"
             ]
         },
         "fleet-manager": {
@@ -356,31 +356,32 @@
         "jf-informatica": {
             "featured": true,
             "title": "JF Informática e Games • Assistência Técnica",
-            "shortDescription": "SPA comercial moderna e responsiva com Dark/Light Mode dinâmico e funil de atendimento para manutenção de PCs, notebooks e consoles.",
+            "shortDescription": "Site institucional estático de alta performance em Next.js 16, React 19 e Tailwind CSS v4 (output: 'export') com Dark/Light Mode dinâmico e funil de atendimento para manutenção de PCs, notebooks e consoles.",
             "tags": [
-                "JavaScript ES6+",
-                "Tailwind CSS",
-                "Dark Mode",
-                "SPA",
-                "UI/UX"
+                "Next.js 16",
+                "React 19",
+                "TypeScript",
+                "Tailwind CSS v4",
+                "SEO"
             ],
             "image": "/images/projects/jf-informatica.jpg",
             "period": "Produção Comercial • Umuarama/PR",
             "description": "Plataforma digital desenvolvida para uma empresa especializada em assistência técnica e manutenção de computadores, notebooks, impressoras e consoles de videogame. O objetivo foi criar uma presença digital marcante, ágil e com alto índice de conversão de clientes locais.",
             "challengesTitle": "Experiência do Usuário (UI/UX) e Funil de Atendimento",
-            "challenges": "Implementação de arquitetura Single Page Application (SPA) ultra rápida com Tailwind CSS, transições fluidas, alternância de tema claro/escuro persistente no navegador e formulário interativo de orçamento com envio direto para o atendimento via WhatsApp.",
+            "challenges": "Migração do site legado para exportação estática (output: 'export') em Next.js 16 + React 19 com Tailwind CSS v4, preservando o SEO com redirecionamentos 301 e JSON-LD LocalBusiness, além de alternância de tema claro/escuro sem flash e modal interativo de orçamento enviado direto para o WhatsApp.",
             "liveUrl": "https://jfinformaticaegames.com.br/",
             "repoUrl": "https://github.com/DanielSatelPereira",
             "isInternal": false,
             "inDevelopment": false,
             "backButton": "Voltar para o Início",
             "impact": "Presença digital profissional no mercado local de Umuarama com funil simplificado de orçamento que aumentou o volume de chamados de assistência técnica.",
-            "lessons": "Construção de uma SPA performática sem overhead de frameworks pesados, explorando CSS moderno e JavaScript nativo.",
+            "lessons": "Modernização de um projeto legado em PHP puro para exportação estática em Next.js 16 com hospedagem de custo zero, SEO preservado e excelente performance de carregamento.",
             "stackDetail": [
-                "JavaScript ES6+",
-                "Tailwind CSS",
-                "Dark Mode Persistente",
-                "Arquitetura SPA"
+                "Next.js 16 (Static Export)",
+                "React 19",
+                "TypeScript",
+                "Tailwind CSS v4",
+                "SEO (Redirects 301 & JSON-LD)"
             ]
         },
         "bem-digital": {
@@ -640,7 +641,7 @@
                     "id": "php",
                     "title": "PHP e Laravel",
                     "period": "2024 - Presente",
-                    "description": "O professor Alex Morgado me apresentou ao PHP em 2024, na UniALFA, e gostei muito: exploramos várias formas da linguagem. Fiz um freelance em PHP puro com JavaScript, o site da JF Informática e Games. No suporte da prefeitura recebi a chance de criar um sistema de entrada de pátio, que hoje é o sistema de controle de frota (Laravel 12, MySQL, Tailwind e Docker/Sail), com um robô em Python para tratar os dados da API dos rastreadores. Desde março de 2026 trabalho na Casa dos Conselhos de Umuarama, onde tive contato com o Slim. Também estou refatorando meus projetos antigos da faculdade.",
+                    "description": "O professor Alex Morgado me apresentou ao PHP em 2024, na UniALFA, e gostei muito: exploramos várias formas da linguagem. Fiz o primeiro site da JF Informática e Games como freelance em PHP puro com JavaScript (posteriormente migrado para Next.js 16 estático). No suporte da prefeitura recebi a chance de criar um sistema de entrada de pátio, que hoje é o sistema de controle de frota (Laravel 12, MySQL, Tailwind e Docker/Sail), com um robô em Python para tratar os dados da API dos rastreadores. Desde março de 2026 trabalho na Casa dos Conselhos de Umuarama, onde tive contato com o Slim. Também estou refatorando meus projetos antigos da faculdade.",
                     "tags": [
                         "PHP 8+",
                         "Laravel",

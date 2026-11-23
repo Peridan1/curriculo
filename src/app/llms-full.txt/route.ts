@@ -27,7 +27,7 @@ export async function GET() {
 - **Nome**: Daniel Satel Pereira
 - **Nome Artístico / Nickname**: Peridan (Peridan.dev)
 - **Localização**: Umuarama, Paraná, Brasil
-- **Formação**: Sistemas para Internet na UniALFA (Centro Universitário Campo Real / Alfa Umuarama)
+- **Formação**: Sistemas para Internet na UniALFA (Faculdade Alfa Umuarama)
 - **Status**: Disponível para oportunidades profissionais como Desenvolvedor Full Stack Júnior.
 - **Contato**: danielsatelpereira@gmail.com | WhatsApp: +55 (041) 99952-1315
 - **Links**:
