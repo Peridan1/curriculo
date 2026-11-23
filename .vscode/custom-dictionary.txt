@@ -498,6 +498,8 @@ atualizados
 Atualizar
 Atualmente
 atualmente
+atuando
+atuar
 Atue
 atuei
 atuo
@@ -807,8 +809,8 @@ career
 Career
 carefully
 carga
-Cargo
 cargo
+Cargo
 carregamento
 Carregamento
 carregando
@@ -821,7 +823,6 @@ Carrossel
 cart
 Cartão
 cartões
-Casa
 case
 cases
 caso
@@ -1291,6 +1292,7 @@ continuar
 continuation
 continue
 Continue
+continuing
 contínuo
 Continuous
 continuous
@@ -1396,6 +1398,7 @@ cost
 Cost
 costs
 Could
+Councils
 count
 COUNT
 country
@@ -1597,8 +1600,8 @@ demandas
 demonstração
 demonstrar
 demonstration
-Dentro
 dentro
+Dentro
 DENY
 department
 dependem
@@ -1648,7 +1651,6 @@ descritivos
 descrito
 Desculpa
 desde
-Desde
 deseja
 desejar
 desempenho
@@ -1835,7 +1837,6 @@ divergências
 divergente
 diverse
 divide
-Divisão
 divisão
 diz
 DNS
@@ -2168,6 +2169,7 @@ estado
 Estado
 estados
 Estagiário
+estagiário
 Estágio
 Estamos
 estão
@@ -3302,6 +3304,7 @@ Interfaces
 intermediário
 intermediate
 Intern
+intern
 interna
 internacionais
 internacional
@@ -3310,6 +3313,8 @@ internacionalização
 internacionalizadas
 internal
 Internal
+internally
+internamente
 internas
 international
 Internet
@@ -3850,6 +3855,7 @@ migrado
 migrated
 Migration
 Migrations
+migrei
 Mikrotik
 mikrotik
 Mim
@@ -3960,6 +3966,7 @@ Movies
 movimentação
 movimento
 Movimento
+moving
 MozAppearance
 mskadu
 msOverflowStyle
@@ -3984,6 +3991,7 @@ múltiplos
 Múltiplos
 mundo
 Mundo
+Municipais
 Municipal
 municipal
 Municipality
@@ -4150,6 +4158,7 @@ Note
 notebooks
 notFound
 nothing
+Nov
 nova
 NOVA
 Nova
@@ -4267,7 +4276,6 @@ OpenPyXL
 opera
 operação
 operacionais
-operacional
 Operacional
 operações
 operates
@@ -4435,6 +4443,7 @@ passa
 passado
 passagem
 passam
+passando
 passar
 passaram
 passe
@@ -4731,8 +4740,8 @@ premium
 presença
 Presença
 presence
-Presencial
 presencial
+Presencial
 Present
 present
 presentation
@@ -5226,8 +5235,8 @@ Remote
 remote
 remotePatterns
 remotes
-Remoto
 remoto
+Remoto
 remotos
 remove
 Remove
@@ -5396,8 +5405,8 @@ risca
 risk
 Risk
 RLS
-robô
 Robô
+robô
 robôs
 Robot
 robot
@@ -5475,6 +5484,7 @@ safeLang
 Saída
 saída
 Sail
+saindo
 sair
 salva
 Salva
@@ -5653,8 +5663,8 @@ setInput
 setInterval
 setItem
 setOpenedMenuPathname
-setor
 Setor
+setor
 setState
 setTheme
 setTimeout
@@ -5729,7 +5739,6 @@ simultâneos
 sinais
 Sinais
 sinal
-Since
 síncrona
 Sincronização
 Sincronizando
@@ -5990,6 +5999,7 @@ Successfully
 sucesso
 SUCESSO
 Sucesso
+such
 sudo
 sudoers
 suficiente
@@ -6061,6 +6071,7 @@ Tailwind
 TailwindCSS
 tailwindcss
 take
+taking
 tamanho
 Tamanho
 tamanhos
@@ -6106,8 +6117,8 @@ Técnica
 técnica
 Técnicas
 técnicas
-Técnico
 técnico
+Técnico
 técnicos
 Técnicos
 tecnologia
@@ -6268,7 +6279,6 @@ titles
 Título
 título
 títulos
-tive
 tiver
 tmpDir
 tmpdir
@@ -6360,6 +6370,7 @@ Transformar
 Transformou
 transições
 transition
+transitioned
 translate
 translateX
 translateY
@@ -6597,7 +6608,6 @@ various
 varreduras
 vazia
 vazio
-veicular
 veio
 veja
 vejo

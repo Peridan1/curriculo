@@ -641,7 +641,7 @@
                     "id": "php",
                     "title": "PHP e Laravel",
                     "period": "2024 - Presente",
-                    "description": "O professor Alex Morgado me apresentou ao PHP em 2024, na UniALFA, e gostei muito: exploramos várias formas da linguagem. Fiz o primeiro site da JF Informática e Games como freelance em PHP puro com JavaScript (posteriormente migrado para Next.js 16 estático). No suporte da prefeitura recebi a chance de criar um sistema de entrada de pátio, que hoje é o sistema de controle de frota (Laravel 12, MySQL, Tailwind e Docker/Sail), com um robô em Python para tratar os dados da API dos rastreadores. Desde março de 2026 trabalho na Casa dos Conselhos de Umuarama, onde tive contato com o Slim. Também estou refatorando meus projetos antigos da faculdade.",
+                    "description": "O professor Alex Morgado me apresentou ao PHP em 2024, na UniALFA, e gostei muito: exploramos várias formas da linguagem. Fiz o primeiro site da JF Informática e Games como freelance em PHP puro com JavaScript (posteriormente migrado para Next.js 16 estático). No suporte da prefeitura recebi a chance de criar um sistema de entrada de pátio, que hoje é o sistema de controle de frota (Laravel 12, MySQL, Tailwind e Docker/Sail), com um robô em Python para tratar os dados da API dos rastreadores. Em março de 2026 migrei internamente dentro do setor de T.I. da prefeitura — saindo do suporte para análise e desenvolvimento de sistemas, mantendo o cargo de estagiário —, passando a atuar também com Slim Framework nos sistemas dos Conselhos Municipais. Também estou refatorando meus projetos antigos da faculdade.",
                     "tags": [
                         "PHP 8+",
                         "Laravel",

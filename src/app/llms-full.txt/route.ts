@@ -64,14 +64,15 @@ ${projectsDetailed}
 
 ## 4. Experiência Profissional Cronológica
 
-1. **Prefeitura Municipal de Umuarama / Casa dos Conselhos** (Mar/2026 - Presente)
-   - Desenvolvimento web e manutenção de sistemas em PHP (Slim Framework e Laravel), automações com Python e suporte operacional.
-2. **Prefeitura Municipal de Umuarama / Divisão de Frotas** (Fev/2025 - Mar/2026)
-   - Criação e implantação do Sistema de Controle de Frotas (Laravel 12, MySQL, Docker) e robô Python para integração de telemetria veicular.
-3. **Colégio Geração Cima** (Mar/2025 - Out/2025)
-   - Técnico de Informática: suporte a laboratórios, configuração de projetores, Apple TV, rede e switches.
-4. **Imppar** (Out/2024 - Fev/2025)
-   - Assistente de Manutenção: Mikrotik RouterOS, Windows Server e redes estruturadas.
+1. **Prefeitura Municipal de Umuarama — Setor de T.I.** (Nov/2025 - Presente) — *Estagiário de T.I.*
+   - **Análise e Desenvolvimento de Sistemas** (Mar/2026 - Presente): mudança interna de frente dentro do mesmo setor de T.I., atuando no desenvolvimento e manutenção de sistemas internos em PHP (Laravel e Slim Framework, incluindo sistemas de Frotas e dos Conselhos Municipais), automações em Python e conteinerização com Docker.
+   - **Suporte de T.I. e Desenvolvimento Inicial** (Nov/2025 - Mar/2026): suporte técnico presencial e remoto, redes/hardware e criação inicial do Sistema de Controle de Frotas (Laravel 12, MySQL, Docker) com automações de telemetria em Python.
+2. **Colégio Geração Cima** (Mar/2025 - Out/2025) — *Técnico de Informática*
+   - Suporte a laboratórios, configuração de projetores, Apple TV, Chromecast, rede e switches.
+3. **Imppar Importadora Paranaense** (Out/2024 - Fev/2025) — *Assistente de Manutenção e Infraestrutura*
+   - Mikrotik RouterOS, Windows Server, redes estruturadas e manutenção preventiva/corretiva.
+4. **Professor Particular / Freelancer** (2019 - Presente) — *Professor e Tradutor de Inglês*
+   - Aulas particulares de inglês (básico ao intermediário) e tradução de materiais técnicos.
 `;
 
     return new Response(content, {

@@ -641,7 +641,7 @@
                     "id": "php",
                     "title": "PHP & Laravel",
                     "period": "2024 - Present",
-                    "description": "Professor Alex Morgado introduced me to PHP in 2024 at UniALFA, and I truly enjoyed exploring various paradigms of the language. I built the first version of the JF Informática e Games website as a pure PHP + JS freelance project (later migrated to a static Next.js 16 export). In municipal support, I was given the opportunity to create a fleet tracking system (Laravel 12, MySQL, Tailwind, Docker/Sail), backed by a Python bot for GPS tracker API data processing. Since March 2026, I work at Casa dos Conselhos de Umuarama with Slim framework. I am also continuously refactoring my academic projects.",
+                    "description": "Professor Alex Morgado introduced me to PHP in 2024 at UniALFA, and I truly enjoyed exploring various paradigms of the language. I built the first version of the JF Informática e Games website as a pure PHP + JS freelance project (later migrated to a static Next.js 16 export). In municipal support, I was given the opportunity to create a fleet tracking system (Laravel 12, MySQL, Tailwind, Docker/Sail), backed by a Python bot for GPS tracker API data processing. In March 2026, I transitioned internally within the city hall IT department — moving from IT support to systems analysis and development while continuing as an IT intern — taking on Slim Framework projects such as the Municipal Councils systems. I am also continuously refactoring my academic projects.",
                     "tags": [
                         "PHP 8+",
                         "Laravel",
