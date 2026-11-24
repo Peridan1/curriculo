@@ -291,6 +291,76 @@
         }
     },
     "projectsData": {
+        "fluxo-social": {
+            "featured": true,
+            "title": "Fluxo Social • Gestão Operacional de CRAS (TCC)",
+            "shortDescription": "Monolito modular para gestão socioassistencial (CRAS/SUAS) com Multi-Tenancy lógico, RBAC, LGPD, validação de documentos e 179 arquivos de teste.",
+            "tags": [
+                "Java 21",
+                "Spring Boot 3",
+                "React 19",
+                "PostgreSQL",
+                "LGPD"
+            ],
+            "image": "/images/projects/fluxo-social.webp",
+            "gallery": [
+                "/images/projects/fluxo-social-02-prontuario.webp",
+                "/images/projects/fluxo-social-03-login.webp"
+            ],
+            "period": "TCC UniALFA • Engenharia de Software & LGPD",
+            "description": "Plataforma socioassistencial desenvolvida como Trabalho de Conclusão de Curso (TCC) para substituir fichas físicas em unidades de CRAS (Centro de Referência de Assistência Social). Estrutura o atendimento familiar completo, evolução técnica, concessão de benefícios e emissão de relatórios oficiais RMA (MDS).",
+            "challengesTitle": "Multi-Tenancy, Conformidade LGPD e Segurança de Dados Sensíveis",
+            "challenges": "Arquitetura em monolito modular (Java 21 + Spring Boot 3.4 + Flyway com 14 migrações PostgreSQL 16) aplicando isolamento multi-tenant lógico por unidade (cras_id), RBAC granular por perfil e salvaguardas rigorosas de LGPD: mascaramento nativo de CPF/NIS, rate limit para revelação auditada em log, validação de uploads por magic bytes (Apache Tika) e validação pública de documentos emitidos.",
+            "liveUrl": null,
+            "repoUrl": "https://github.com/Pestanadev/fluxo-social",
+            "isInternal": false,
+            "inDevelopment": false,
+            "backButton": "Voltar para o Início",
+            "impact": "Substituição integral de prontuários em papel por linha do tempo unificada com sigilo profissional SUAS, geração automatizada de relatórios RMA em PDF/XLSX e cobertura ampla com 179 arquivos de teste (61 Java + 118 Vitest) além de 15 ADRs e OpenAPI.",
+            "lessons": "Modelagem de domínio socioassistencial com rastreabilidade completa, equilíbrio entre segurança LGPD e usabilidade no atendimento de balcão, e disciplina de testes automatizados entre backend Spring e frontend React 19.",
+            "stackDetail": [
+                "Java 21 & Spring Boot 3.4 (Monolito Modular)",
+                "PostgreSQL 16 + Flyway (14 migrações)",
+                "React 19, TypeScript, Vite & Tailwind CSS",
+                "Apache Tika, OpenPDF, Apache POI & OpenAPI",
+                "179 arquivos de teste (JUnit / MockMvc + Vitest) & Storybook"
+            ]
+        },
+        "conselhos-municipais": {
+            "featured": true,
+            "title": "Conselhos Municipais • Portal Público & Backoffice Financeiro",
+            "shortDescription": "Modernização de ecossistema público (Portal Institucional + Admin Financeiro) em PHP 8.2, Slim 3, Doctrine ORM, PostgreSQL 16 e integração SOAP/SIBAR com a Caixa.",
+            "tags": [
+                "PHP 8.2",
+                "Slim 3",
+                "Doctrine ORM",
+                "PostgreSQL",
+                "SOAP / SIBAR"
+            ],
+            "image": "/images/projects/conselhos-municipais.webp",
+            "gallery": [
+                "/images/projects/conselhos-municipais-02-portal.webp",
+                "/images/projects/conselhos-municipais-03-boleto.webp"
+            ],
+            "period": "Setor Público – Prefeitura Municipal de Umuarama",
+            "description": "Ecossistema composto pelo portal público dos Conselhos Municipais (CMDCA e CMDI) e pelo painel administrativo e financeiro compartilhando base PostgreSQL 16. Permite gestão de editais, notícias, entidades sociais, projetos aprovados e destinação de doações com emissão e conciliação de boletos.",
+            "challengesTitle": "Modernização de Legado e Integração Bancária SOAP/XSD (SIBAR)",
+            "challenges": "Migração estrutural de sistema legado em PHP 7.1 para PHP 8.2 FPM com Nginx SSL e Docker. Adequação estrita ao schema SOAP/XSD da Caixa Econômica Federal (SIBAR) para registro de boletos, proxy seguro com visualização de boleto PDF inline, conciliação automática via Cron, barra de acessibilidade (VLibras, alto contraste e fonte) e suíte automatizada em PHPUnit.",
+            "liveUrl": null,
+            "repoUrl": null,
+            "isInternal": true,
+            "inDevelopment": false,
+            "backButton": "Voltar para o Início",
+            "impact": "Continuidade segura e rastreável das campanhas municipais de destinação de imposto (Fica Leão), redução de falhas operacionais na emissão/baixa de boletos e ganho de acessibilidade para cidadãos e entidades.",
+            "lessons": "Estratégias seguras de modernização incremental de código legado em produção, validação rigorosa de contratos XML/SOAP bancários e isolamento entre portal público e backoffice financeiro.",
+            "stackDetail": [
+                "PHP 8.2 FPM, Slim Framework 3.12 & Twig 3",
+                "Doctrine ORM 2.14 & PostgreSQL 16",
+                "Integração SOAP/XSD Caixa (SIBAR) & mPDF",
+                "Firebase JWT, Cron de Conciliação & 28 arquivos PHPUnit",
+                "Acessibilidade (VLibras, Alto Contraste) & Nginx SSL"
+            ]
+        },
         "brisamar-pescados": {
             "featured": true,
             "title": "Brisamar Pescados • Catálogo & E-commerce",
@@ -308,7 +378,7 @@
             "challengesTitle": "Arquitetura Next.js, SEO e Conversão Direta",
             "challenges": "Construído utilizando Next.js com App Router e Server Components para máxima velocidade de carregamento e indexação impecável no Google. Possui catálogo de produtos categorizado com filtros rápidos, seção dedicada de receitas culinárias com passo a passo, integração direta com WhatsApp para pedidos e design temático moderno.",
             "liveUrl": "https://www.brisamarpescados.com.br/",
-            "repoUrl": "https://github.com/DanielSatelPereira",
+            "repoUrl": "https://github.com/Peridan1/peixaria-ribamar",
             "isInternal": false,
             "inDevelopment": false,
             "backButton": "Voltar para o Início",
@@ -324,33 +394,33 @@
         },
         "fleet-manager": {
             "featured": true,
-            "title": "Sistema de Controle de Frota & Análise de Dados Python",
-            "shortDescription": "Sistema corporativo conteinerizado em Docker para gestão logística pública na Prefeitura de Umuarama, integrado a um robô em Python para mineração e análise de planilhas.",
+            "title": "Sistema de Controle de Frota & Worker Python/Redis",
+            "shortDescription": "Sistema corporativo conteinerizado em Laravel 12, MySQL 8, Redis e Worker Python (Polars/PyArrow) para gestão de pátio, telemetria e relatórios públicos na Prefeitura de Umuarama.",
             "tags": [
-                "Laravel",
+                "Laravel 12",
                 "Docker / Sail",
-                "Python (Pandas)",
-                "MySQL",
-                "Automação"
+                "Redis",
+                "Python (Polars)",
+                "MySQL"
             ],
             "image": "/images/projects/fleet-manager.jpg",
             "period": "Setor Público – Prefeitura Municipal de Umuarama",
-            "description": "Sistema interno robusto desenvolvido para gerenciar a movimentação de frotas, motoristas, pátios públicos e controle de combustível na Prefeitura de Umuarama. A aplicação evoluiu com a integração de um pipeline analítico em Python para processamento de grandes volumes de dados brutos.",
-            "challengesTitle": "Integração Híbrida Laravel + Python e Processamento de Dados",
-            "challenges": "Desenvolvimento de um robô em Python (utilizando Pandas e OpenPyXL) que realiza parsing, sanitização e análise estatística de planilhas de abastecimento e hodômetros, identificando anomalias de consumo e gerando relatórios gerenciais consolidados para economia de recursos públicos. Backend estruturado em Laravel com Docker/Sail para estabilidade absoluta.",
+            "description": "Sistema interno desenvolvido para gerenciar a movimentação de frotas, motoristas, pátios públicos e telemetria GPS na Prefeitura de Umuarama. Evoluiu para uma arquitetura orientada a eventos com fila Redis FIFO, worker dedicado em Python 3.12 e controle granular de módulos em tempo de execução.",
+            "challengesTitle": "Arquitetura Laravel + Redis + Worker Python e Kill Switch em Runtime",
+            "challenges": "Processamento assíncrono de relatórios gerenciais e análises via fila Redis consumida por Worker Python (Polars, PyArrow e XlsxWriter), garantindo alta vazão sem travar requisições web. Implementação de Kill Switch dinâmico de módulos via cache/middleware, trava de retorno, autenticação Sanctum, auditoria técnica com toggle JSON (Spatie Activitylog) e cobertura automatizada PHPUnit + pytest.",
             "liveUrl": null,
             "repoUrl": null,
             "isInternal": true,
             "inDevelopment": false,
             "backButton": "Voltar para o Início",
-            "impact": "Automatização completa da consolidação de dados de abastecimento e hodômetro, gerando relatórios precisos que apoiam a redução de custos com combustíveis no município.",
-            "lessons": "Importância de desacoplar tarefas pesadas de ETL em scripts Python assíncronos e conteinerizar a stack com Docker/Sail para garantir reprodutibilidade total.",
+            "impact": "Automatização de relatórios pesados de frota e telemetria sem gargalos no PHP, rastreabilidade completa de alterações em auditoria JSON e operação contínua com manuais por perfil.",
+            "lessons": "Desacoplamento de processamento analítico pesado via Redis + Python Polars e uso de feature flags/Kill Switch em runtime para governança segura de módulos em ambiente corporativo.",
             "stackDetail": [
-                "Laravel 12 (MVC)",
-                "Docker & Docker Compose",
-                "Python (Pandas, OpenPyXL)",
-                "MySQL Relacional",
-                "Tailwind CSS"
+                "Laravel 12 (PHP 8.3), Sanctum & Spatie Activitylog",
+                "Redis (Fila FIFO) & Worker Python 3.12 (Polars, PyArrow, XlsxWriter)",
+                "MySQL 8 Relacional & DomPDF",
+                "Alpine.js 3, Tailwind CSS & Chart.js 4",
+                "Docker / Laravel Sail & Testes PHPUnit + pytest"
             ]
         },
         "jf-informatica": {
@@ -370,7 +440,7 @@
             "challengesTitle": "Experiência do Usuário (UI/UX) e Funil de Atendimento",
             "challenges": "Migração do site legado para exportação estática (output: 'export') em Next.js 16 + React 19 com Tailwind CSS v4, preservando o SEO com redirecionamentos 301 e JSON-LD LocalBusiness, além de alternância de tema claro/escuro sem flash e modal interativo de orçamento enviado direto para o WhatsApp.",
             "liveUrl": "https://jfinformaticaegames.com.br/",
-            "repoUrl": "https://github.com/DanielSatelPereira",
+            "repoUrl": "https://github.com/Peridan1/JFInfo",
             "isInternal": false,
             "inDevelopment": false,
             "backButton": "Voltar para o Início",
@@ -475,7 +545,7 @@
             "challengesTitle": "Modelagem Orientada a Objetos e MVC",
             "challenges": "Separação estrita de responsabilidades entre regras de negócio, persistência de dados e apresentação visual, aplicando princípios de Clean Code, abstração de classes e cálculos financeiros precisos.",
             "liveUrl": null,
-            "repoUrl": "https://github.com/DanielSatelPereira",
+            "repoUrl": "https://github.com/Peridan1/investimentos-php-poo",
             "isInternal": false,
             "inDevelopment": false,
             "backButton": "Voltar para o Início"

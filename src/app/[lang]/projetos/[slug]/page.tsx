@@ -3,6 +3,7 @@ import Header from "../../../../components/Header";
 import Footer from "../../../../components/Footer";
 import CookieBanner from "../../../../components/CookieBanner";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import {
     ArrowLeftIcon,
@@ -25,6 +26,7 @@ interface ProjectDetail {
     inDevelopment?: boolean;
     backButton: string;
     image?: string;
+    gallery?: string[];
     tags?: string[];
     lessons?: string;
     stackDetail?: string[];
@@ -47,16 +49,24 @@ function getTechAnchor(tag: string): string | null {
     if (t.includes("mikrotik") || t.includes("windows server") || t.includes("redes") || t.includes("hardware")) {
         return "hardware";
     }
-    if (t.includes("php") || t.includes("laravel") || t.includes("slim") || t.includes("mysql") || t.includes("mvc")) {
+    if (
+        t.includes("php") ||
+        t.includes("laravel") ||
+        t.includes("slim") ||
+        t.includes("doctrine") ||
+        t.includes("mysql") ||
+        t.includes("postgres") ||
+        t.includes("mvc")
+    ) {
         return "php";
     }
-    if (t.includes("docker") || t.includes("linux")) {
+    if (t.includes("docker") || t.includes("linux") || t.includes("redis") || t.includes("kubernetes")) {
         return "docker";
     }
     if (t.includes("react") || t.includes("next") || t.includes("typescript") || t.includes("javascript")) {
         return "frontend";
     }
-    if (t.includes("python") || t.includes("pandas") || t.includes("automação") || t.includes("etl")) {
+    if (t.includes("python") || t.includes("pandas") || t.includes("polars") || t.includes("automação") || t.includes("etl")) {
         return "python";
     }
     if (t.includes("tailwind")) {
@@ -216,9 +226,9 @@ export default async function ProjectTemplate({
                 {/* Descrições e Desafios com Contraste Alto */}
                 <div className="space-y-6 text-slate-900 dark:text-slate-200 leading-relaxed text-base sm:text-lg font-medium">
                     <p>{projectData.description}</p>
-                    <h3 className="text-2xl font-black text-cyan-800 dark:text-cyan-400 mt-8">
+                    <h2 className="text-2xl font-black text-cyan-800 dark:text-cyan-400 mt-8">
                         {projectData.challengesTitle}
-                    </h3>
+                    </h2>
                     <p>{projectData.challenges}</p>
                 </div>
 
@@ -226,9 +236,9 @@ export default async function ProjectTemplate({
                 <div className="mt-10 space-y-6">
                     {projectData.impact && (
                         <div className="p-6 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-950 dark:text-emerald-200">
-                            <h4 className="font-black text-lg mb-2">
+                            <h3 className="font-black text-lg mb-2">
                                 {lang === "pt" ? "Impacto & Resultados" : "Impact & Results"}
-                            </h4>
+                            </h3>
                             <p className="text-base opacity-95 leading-relaxed font-normal">
                                 {projectData.impact}
                             </p>
@@ -237,9 +247,9 @@ export default async function ProjectTemplate({
 
                     {projectData.lessons && (
                         <div className="p-6 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-950 dark:text-cyan-200">
-                            <h4 className="font-black text-lg mb-2">
+                            <h3 className="font-black text-lg mb-2">
                                 {lang === "pt" ? "Lições Aprendidas" : "Lessons Learned"}
-                            </h4>
+                            </h3>
                             <p className="text-base opacity-95 leading-relaxed font-normal">
                                 {projectData.lessons}
                             </p>
@@ -248,9 +258,9 @@ export default async function ProjectTemplate({
 
                     {projectData.stackDetail && projectData.stackDetail.length > 0 && (
                         <div className="p-6 rounded-2xl bg-slate-100 dark:bg-slate-900/80 border border-slate-300 dark:border-cyan-500/20">
-                            <h4 className="font-black text-lg mb-3 text-slate-900 dark:text-slate-100">
+                            <h3 className="font-black text-lg mb-3 text-slate-900 dark:text-slate-100">
                                 {lang === "pt" ? "Stack & Componentes de Engenharia" : "Stack & Engineering Components"}
-                            </h4>
+                            </h3>
                             <ul className="list-disc list-inside space-y-1.5 text-sm text-slate-800 dark:text-slate-300 font-medium">
                                 {projectData.stackDetail.map((detail, dIdx) => (
                                     <li key={dIdx}>{detail}</li>
@@ -259,6 +269,31 @@ export default async function ProjectTemplate({
                         </div>
                     )}
                 </div>
+
+                {/* Galeria de Telas */}
+                {projectData.gallery && projectData.gallery.length > 0 && (
+                    <div className="mt-12">
+                        <h2 className="text-2xl font-black text-cyan-800 dark:text-cyan-400 mb-6">
+                            {lang === "pt" ? "Galeria de Telas" : "Screen Gallery"}
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            {projectData.gallery.map((img, gIdx) => (
+                                <div
+                                    key={gIdx}
+                                    className="relative aspect-video rounded-2xl overflow-hidden border border-slate-200 dark:border-cyan-500/20 shadow-lg bg-slate-100 dark:bg-slate-900"
+                                >
+                                    <Image
+                                        src={img}
+                                        alt={`${projectData.title} - ${gIdx + 2}`}
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                        className="object-cover"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
 
                 {/* Ações e Links */}
                 <div className="mt-12 print:mt-6 flex flex-wrap items-center gap-4">
@@ -294,11 +329,11 @@ export default async function ProjectTemplate({
                         <div className="w-full p-6 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-900 dark:text-amber-200 flex items-start gap-4">
                             <ShieldIcon className="size-6 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
                             <div>
-                                <h4 className="font-bold text-base mb-1">
+                                <h3 className="font-bold text-base mb-1">
                                     {lang === "pt"
                                         ? "Sistema Corporativo de Uso Interno"
                                         : "Internal Corporate System"}
-                                </h4>
+                                </h3>
                                 <p className="text-sm opacity-90 leading-relaxed font-normal">
                                     {lang === "pt"
                                         ? "Este software opera exclusivamente na infraestrutura privada da Prefeitura Municipal de Umuarama. Código-fonte e acesso externo são restritos por diretrizes institucionais de segurança e sigilo de dados públicos."
@@ -312,11 +347,11 @@ export default async function ProjectTemplate({
                         <div className="w-full p-6 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-900 dark:text-indigo-200 flex items-start gap-4">
                             <CodeIcon className="size-6 text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5" />
                             <div>
-                                <h4 className="font-bold text-base mb-1">
+                                <h3 className="font-bold text-base mb-1">
                                     {lang === "pt"
                                         ? "Projeto em Fase de Refatoração e Evolução Contínua"
                                         : "Project in Continuous Evolution & Refactoring"}
-                                </h4>
+                                </h3>
                                 <p className="text-sm opacity-90 leading-relaxed font-normal">
                                     {lang === "pt"
                                         ? "Esta aplicação está recebendo melhorias ativas de arquitetura e desacoplamento de microserviços. O repositório reflete o estado de integração em andamento."

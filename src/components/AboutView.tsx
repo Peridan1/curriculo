@@ -74,6 +74,8 @@ export default function AboutView({ lang, dict }: AboutViewProps) {
 
     // Matriz de projetos x tecnologias mapeadas
     const matrixProjects = [
+        { slug: "fluxo-social", type: lang === "pt" ? "TCC / Full Stack & LGPD" : "Capstone / Full Stack & LGPD" },
+        { slug: "conselhos-municipais", type: lang === "pt" ? "Corporativo / PMU" : "Corporate / PMU" },
         { slug: "brisamar-pescados", type: lang === "pt" ? "Comercial / Produção" : "Commercial / Production" },
         { slug: "fleet-manager", type: lang === "pt" ? "Corporativo / PMU" : "Corporate / PMU" },
         { slug: "jf-informatica", type: lang === "pt" ? "Freelance / Produção" : "Freelance / Production" },
