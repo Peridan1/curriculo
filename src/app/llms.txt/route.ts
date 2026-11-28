@@ -39,7 +39,7 @@ ${Object.entries(ptDict.projectsData)
 
 ## Contato & Redes Sociais
 
-- [GitHub Daniel](https://github.com/DanielSatelPereira) e [GitHub Peridan1](https://github.com/Peridan1): Repositórios de código aberto e projetos.
+- [GitHub Peridan1](https://github.com/Peridan1): Repositórios de código aberto e projetos.
 - [LinkedIn](https://www.linkedin.com/in/daniel-satel-pereira/): Perfil profissional e histórico de carreira.
 - [WhatsApp](https://wa.me/5541999521315): Canal direto para contato e contratações.
 - [E-mail](mailto:danielsatelpereira@gmail.com): danielsatelpereira@gmail.com

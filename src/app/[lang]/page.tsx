@@ -53,13 +53,15 @@ export default async function Home({
     const dict = await dictionaries[lang]();
 
     return (
-        <main className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col">
             <Header dict={dict} />
-            <HomeHero dict={dict} lang={lang} />
-            <BentoGrid dict={dict} lang={lang} />
-            <Projects dict={dict} lang={lang} />
+            <main className="grow">
+                <HomeHero dict={dict} lang={lang} />
+                <Projects dict={dict} lang={lang} />
+                <BentoGrid dict={dict} lang={lang} />
+            </main>
             <Footer dict={dict} lang={lang} />
             <CookieBanner dict={dict} lang={lang} />
-        </main>
+        </div>
     );
 }

@@ -4,9 +4,9 @@ import "./globals.css";
 
 const lexend = Lexend({
     subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700", "800", "900"],
+    weight: ["400", "500", "600", "700", "800", "900"],
     variable: "--font-lexend",
-    display: "swap",
+    display: "optional",
 });
 import { ThemeProvider } from "../components/ThemeProvider";
 import DynamicFavicon from "../components/DynamicFavicon";
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     authors: [
         {
             name: "Daniel Satel Pereira",
-            url: "https://github.com/DanielSatelPereira",
+            url: "https://github.com/Peridan1",
         },
     ],
     creator: "Daniel Satel Pereira",

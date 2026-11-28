@@ -103,7 +103,7 @@ export default function Footer({ dict, lang = "pt" }: FooterProps) {
                         {/* GitHub */}
                         <a
                             className="p-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-cyan-500/20 text-slate-900 dark:text-slate-300 hover:text-cyan-700 dark:hover:text-cyan-400 hover:border-cyan-500 transition-all shadow-xs hover:shadow-cyan-500/10 group"
-                            href="https://github.com/DanielSatelPereira"
+                            href="https://github.com/Peridan1"
                             target="_blank"
                             rel="noopener noreferrer"
                             title="GitHub"

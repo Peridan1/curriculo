@@ -109,7 +109,7 @@ export default function Hero({ dict }: HeroProps) {
 
                             {/* GitHub */}
                             <a
-                                href="https://github.com/DanielSatelPereira"
+                                href="https://github.com/Peridan1"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-white dark:bg-slate-900 border border-slate-300 dark:border-white/15 text-slate-950 dark:text-slate-200 px-5 py-3.5 rounded-xl font-bold text-sm sm:text-base hover:bg-slate-100 dark:hover:bg-white/10 hover:border-slate-400 transition-all flex items-center gap-2 shadow-xs group"

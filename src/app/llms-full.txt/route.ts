@@ -33,8 +33,7 @@ export async function GET() {
 - **Links**:
   - Site Oficial: ${siteUrl}
   - Sobre Mim: ${siteUrl}/pt/sobre
-  - GitHub Principal: https://github.com/DanielSatelPereira
-  - GitHub Secundário/Organizações: https://github.com/Peridan1
+  - GitHub Principal: https://github.com/Peridan1
   - LinkedIn: https://www.linkedin.com/in/daniel-satel-pereira/
 
 ## 2. Principais Competências e Stack Tecnológica
