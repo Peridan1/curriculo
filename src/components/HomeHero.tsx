@@ -162,7 +162,7 @@ export default function HomeHero({ dict, lang }: HomeHeroProps) {
                                 <span>LinkedIn</span>
                             </a>
                             <a
-                                href="https://github.com/DanielSatelPereira"
+                                href="https://github.com/Peridan1"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center gap-2 px-4 py-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-white/15 text-slate-950 dark:text-slate-200 hover:border-slate-400 text-xs font-bold transition-all hover:scale-105 shadow-xs group"

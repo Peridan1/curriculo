@@ -109,9 +109,9 @@ export default function Header({ dict }: HeaderProps) {
                     <div className="size-10 bg-linear-to-br from-cyan-400 to-emerald-500 rounded-xl flex items-center justify-center text-slate-950 font-black shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
                         <TerminalIcon className="size-5" />
                     </div>
-                    <h2 className="text-cyan-700 dark:text-cyan-400 text-xl font-black tracking-tight group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors">
+                    <span className="text-cyan-700 dark:text-cyan-400 text-xl font-black tracking-tight group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors">
                         Peridan<span className="text-slate-950 dark:text-slate-100">.dev</span>
-                    </h2>
+                    </span>
                 </Link>
 
                 {/* Menu de Navegação Principal (Desktop) */}

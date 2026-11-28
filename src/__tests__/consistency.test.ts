@@ -32,19 +32,26 @@ describe("Testes de Consistência e Integridade do Projeto", () => {
 
     it("garante que todo projeto em projectsData possui imagem física existente em public/images/projects", () => {
         const projectSlugs = Object.keys(ptDict.projectsData);
-        expect(projectSlugs.length).toBe(11);
+        expect(projectSlugs.length).toBe(13);
 
         for (const slug of projectSlugs) {
-            const project = (ptDict.projectsData as Record<string, { image?: string }>)[slug];
+            const project = (ptDict.projectsData as Record<string, { image?: string; gallery?: string[] }>)[slug];
             if (project.image) {
                 const relativePath = project.image.replace(/^\//, "");
                 const fullPath = path.resolve(process.cwd(), "public", relativePath.replace(/^public\//, ""));
                 expect(fs.existsSync(fullPath), `Imagem não encontrada para projeto ${slug}: ${fullPath}`).toBe(true);
             }
+            if (Array.isArray(project.gallery)) {
+                for (const galleryImg of project.gallery) {
+                    const relativePath = galleryImg.replace(/^\//, "");
+                    const fullPath = path.resolve(process.cwd(), "public", relativePath.replace(/^public\//, ""));
+                    expect(fs.existsSync(fullPath), `Imagem de galeria não encontrada para projeto ${slug}: ${fullPath}`).toBe(true);
+                }
+            }
         }
     });
 
-    it("garante que sitemap.ts inclui todas as rotas canônicas e todos os 11 slugs em ambos os idiomas", () => {
+    it("garante que sitemap.ts inclui todas as rotas canônicas e todos os 13 slugs em ambos os idiomas", () => {
         const routes = sitemap();
         const urls = routes.map((r) => r.url);
         const slugs = Object.keys(ptDict.projectsData);

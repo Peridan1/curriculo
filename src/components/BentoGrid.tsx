@@ -152,7 +152,7 @@ export default function BentoGrid({ dict, lang }: BentoProps) {
                                 </span>
                                 <CalendarIcon className="size-6 text-purple-700 dark:text-purple-400" />
                             </div>
-                            <div className="text-2xl font-black font-mono text-purple-700 dark:text-purple-300 mb-2">
+                            <div className="text-2xl font-black font-mono tabular-nums whitespace-nowrap text-purple-700 dark:text-purple-300 mb-2">
                                 {currentTime || "00:00:00"}
                             </div>
                             <h3 className="text-lg font-extrabold text-slate-950 dark:text-slate-100 mb-1">
